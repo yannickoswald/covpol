@@ -1,0 +1,5736 @@
+Entity,Code,Day,lockdown
+Afghanistan,AFG,01/03/2020,0
+Afghanistan,AFG,02/03/2020,0
+Afghanistan,AFG,03/03/2020,0
+Afghanistan,AFG,04/03/2020,0
+Afghanistan,AFG,05/03/2020,0
+Afghanistan,AFG,06/03/2020,0
+Afghanistan,AFG,07/03/2020,0
+Afghanistan,AFG,08/03/2020,0
+Afghanistan,AFG,09/03/2020,0
+Afghanistan,AFG,10/03/2020,0
+Afghanistan,AFG,11/03/2020,0
+Afghanistan,AFG,12/03/2020,0
+Afghanistan,AFG,13/03/2020,0
+Afghanistan,AFG,14/03/2020,1
+Afghanistan,AFG,15/03/2020,1
+Afghanistan,AFG,16/03/2020,1
+Afghanistan,AFG,17/03/2020,1
+Afghanistan,AFG,18/03/2020,1
+Afghanistan,AFG,19/03/2020,1
+Afghanistan,AFG,20/03/2020,1
+Afghanistan,AFG,21/03/2020,1
+Afghanistan,AFG,22/03/2020,1
+Afghanistan,AFG,23/03/2020,1
+Afghanistan,AFG,24/03/2020,1
+Afghanistan,AFG,25/03/2020,1
+Afghanistan,AFG,26/03/2020,1
+Afghanistan,AFG,27/03/2020,1
+Afghanistan,AFG,28/03/2020,1
+Afghanistan,AFG,29/03/2020,1
+Afghanistan,AFG,30/03/2020,1
+Afghanistan,AFG,31/03/2020,1
+Albania,ALB,01/03/2020,0
+Albania,ALB,02/03/2020,0
+Albania,ALB,03/03/2020,0
+Albania,ALB,04/03/2020,0
+Albania,ALB,05/03/2020,0
+Albania,ALB,06/03/2020,0
+Albania,ALB,07/03/2020,0
+Albania,ALB,08/03/2020,0
+Albania,ALB,09/03/2020,1
+Albania,ALB,10/03/2020,1
+Albania,ALB,11/03/2020,1
+Albania,ALB,12/03/2020,1
+Albania,ALB,13/03/2020,1
+Albania,ALB,14/03/2020,1
+Albania,ALB,15/03/2020,1
+Albania,ALB,16/03/2020,1
+Albania,ALB,17/03/2020,1
+Albania,ALB,18/03/2020,1
+Albania,ALB,19/03/2020,1
+Albania,ALB,20/03/2020,1
+Albania,ALB,21/03/2020,1
+Albania,ALB,22/03/2020,1
+Albania,ALB,23/03/2020,1
+Albania,ALB,24/03/2020,1
+Albania,ALB,25/03/2020,1
+Albania,ALB,26/03/2020,1
+Albania,ALB,27/03/2020,1
+Albania,ALB,28/03/2020,1
+Albania,ALB,29/03/2020,1
+Albania,ALB,30/03/2020,1
+Albania,ALB,31/03/2020,1
+Algeria,DZA,01/03/2020,0
+Algeria,DZA,02/03/2020,0
+Algeria,DZA,03/03/2020,0
+Algeria,DZA,04/03/2020,0
+Algeria,DZA,05/03/2020,0
+Algeria,DZA,06/03/2020,0
+Algeria,DZA,07/03/2020,0
+Algeria,DZA,08/03/2020,0
+Algeria,DZA,09/03/2020,0
+Algeria,DZA,10/03/2020,0
+Algeria,DZA,11/03/2020,0
+Algeria,DZA,12/03/2020,1
+Algeria,DZA,13/03/2020,1
+Algeria,DZA,14/03/2020,1
+Algeria,DZA,15/03/2020,1
+Algeria,DZA,16/03/2020,1
+Algeria,DZA,17/03/2020,1
+Algeria,DZA,18/03/2020,1
+Algeria,DZA,19/03/2020,1
+Algeria,DZA,20/03/2020,1
+Algeria,DZA,21/03/2020,1
+Algeria,DZA,22/03/2020,1
+Algeria,DZA,23/03/2020,1
+Algeria,DZA,24/03/2020,1
+Algeria,DZA,25/03/2020,1
+Algeria,DZA,26/03/2020,1
+Algeria,DZA,27/03/2020,1
+Algeria,DZA,28/03/2020,1
+Algeria,DZA,29/03/2020,1
+Algeria,DZA,30/03/2020,1
+Algeria,DZA,31/03/2020,1
+Andorra,AND,01/03/2020,0
+Andorra,AND,02/03/2020,0
+Andorra,AND,03/03/2020,0
+Andorra,AND,04/03/2020,0
+Andorra,AND,05/03/2020,0
+Andorra,AND,06/03/2020,0
+Andorra,AND,07/03/2020,0
+Andorra,AND,08/03/2020,0
+Andorra,AND,09/03/2020,0
+Andorra,AND,10/03/2020,0
+Andorra,AND,11/03/2020,0
+Andorra,AND,12/03/2020,0
+Andorra,AND,13/03/2020,0
+Andorra,AND,14/03/2020,0
+Andorra,AND,15/03/2020,0
+Andorra,AND,16/03/2020,1
+Andorra,AND,17/03/2020,1
+Andorra,AND,18/03/2020,1
+Andorra,AND,19/03/2020,1
+Andorra,AND,20/03/2020,1
+Andorra,AND,21/03/2020,1
+Andorra,AND,22/03/2020,1
+Andorra,AND,23/03/2020,1
+Andorra,AND,24/03/2020,1
+Andorra,AND,25/03/2020,1
+Andorra,AND,26/03/2020,1
+Andorra,AND,27/03/2020,1
+Andorra,AND,28/03/2020,1
+Andorra,AND,29/03/2020,1
+Andorra,AND,30/03/2020,1
+Andorra,AND,31/03/2020,1
+Angola,AGO,01/03/2020,0
+Angola,AGO,02/03/2020,0
+Angola,AGO,03/03/2020,0
+Angola,AGO,04/03/2020,0
+Angola,AGO,05/03/2020,0
+Angola,AGO,06/03/2020,0
+Angola,AGO,07/03/2020,0
+Angola,AGO,08/03/2020,0
+Angola,AGO,09/03/2020,0
+Angola,AGO,10/03/2020,0
+Angola,AGO,11/03/2020,0
+Angola,AGO,12/03/2020,0
+Angola,AGO,13/03/2020,0
+Angola,AGO,14/03/2020,0
+Angola,AGO,15/03/2020,0
+Angola,AGO,16/03/2020,0
+Angola,AGO,17/03/2020,0
+Angola,AGO,18/03/2020,0
+Angola,AGO,19/03/2020,0
+Angola,AGO,20/03/2020,0
+Angola,AGO,21/03/2020,0
+Angola,AGO,22/03/2020,0
+Angola,AGO,23/03/2020,0
+Angola,AGO,24/03/2020,1
+Angola,AGO,25/03/2020,1
+Angola,AGO,26/03/2020,1
+Angola,AGO,27/03/2020,1
+Angola,AGO,28/03/2020,1
+Angola,AGO,29/03/2020,1
+Angola,AGO,30/03/2020,1
+Angola,AGO,31/03/2020,1
+Argentina,ARG,01/03/2020,0
+Argentina,ARG,02/03/2020,0
+Argentina,ARG,03/03/2020,0
+Argentina,ARG,04/03/2020,0
+Argentina,ARG,05/03/2020,0
+Argentina,ARG,06/03/2020,0
+Argentina,ARG,07/03/2020,0
+Argentina,ARG,08/03/2020,0
+Argentina,ARG,09/03/2020,0
+Argentina,ARG,10/03/2020,0
+Argentina,ARG,11/03/2020,0
+Argentina,ARG,12/03/2020,0
+Argentina,ARG,13/03/2020,0
+Argentina,ARG,14/03/2020,0
+Argentina,ARG,15/03/2020,0
+Argentina,ARG,16/03/2020,1
+Argentina,ARG,17/03/2020,1
+Argentina,ARG,18/03/2020,1
+Argentina,ARG,19/03/2020,1
+Argentina,ARG,20/03/2020,1
+Argentina,ARG,21/03/2020,1
+Argentina,ARG,22/03/2020,1
+Argentina,ARG,23/03/2020,1
+Argentina,ARG,24/03/2020,1
+Argentina,ARG,25/03/2020,1
+Argentina,ARG,26/03/2020,1
+Argentina,ARG,27/03/2020,1
+Argentina,ARG,28/03/2020,1
+Argentina,ARG,29/03/2020,1
+Argentina,ARG,30/03/2020,1
+Argentina,ARG,31/03/2020,1
+Aruba,ABW,01/03/2020,0
+Aruba,ABW,02/03/2020,0
+Aruba,ABW,03/03/2020,0
+Aruba,ABW,04/03/2020,0
+Aruba,ABW,05/03/2020,0
+Aruba,ABW,06/03/2020,0
+Aruba,ABW,07/03/2020,0
+Aruba,ABW,08/03/2020,0
+Aruba,ABW,09/03/2020,0
+Aruba,ABW,10/03/2020,0
+Aruba,ABW,11/03/2020,0
+Aruba,ABW,12/03/2020,0
+Aruba,ABW,13/03/2020,0
+Aruba,ABW,14/03/2020,0
+Aruba,ABW,15/03/2020,0
+Aruba,ABW,16/03/2020,1
+Aruba,ABW,17/03/2020,1
+Aruba,ABW,18/03/2020,1
+Aruba,ABW,19/03/2020,1
+Aruba,ABW,20/03/2020,1
+Aruba,ABW,21/03/2020,1
+Aruba,ABW,22/03/2020,1
+Aruba,ABW,23/03/2020,1
+Aruba,ABW,24/03/2020,1
+Aruba,ABW,25/03/2020,1
+Aruba,ABW,26/03/2020,1
+Aruba,ABW,27/03/2020,1
+Aruba,ABW,28/03/2020,1
+Aruba,ABW,29/03/2020,1
+Aruba,ABW,30/03/2020,1
+Aruba,ABW,31/03/2020,1
+Australia,AUS,01/03/2020,0
+Australia,AUS,02/03/2020,0
+Australia,AUS,03/03/2020,0
+Australia,AUS,04/03/2020,0
+Australia,AUS,05/03/2020,0
+Australia,AUS,06/03/2020,0
+Australia,AUS,07/03/2020,0
+Australia,AUS,08/03/2020,0
+Australia,AUS,09/03/2020,0
+Australia,AUS,10/03/2020,0
+Australia,AUS,11/03/2020,0
+Australia,AUS,12/03/2020,0
+Australia,AUS,13/03/2020,0
+Australia,AUS,14/03/2020,0
+Australia,AUS,15/03/2020,0
+Australia,AUS,16/03/2020,0
+Australia,AUS,17/03/2020,0
+Australia,AUS,18/03/2020,0
+Australia,AUS,19/03/2020,0
+Australia,AUS,20/03/2020,0
+Australia,AUS,21/03/2020,0
+Australia,AUS,22/03/2020,0
+Australia,AUS,23/03/2020,0
+Australia,AUS,24/03/2020,1
+Australia,AUS,25/03/2020,1
+Australia,AUS,26/03/2020,1
+Australia,AUS,27/03/2020,1
+Australia,AUS,28/03/2020,1
+Australia,AUS,29/03/2020,1
+Australia,AUS,30/03/2020,1
+Australia,AUS,31/03/2020,1
+Austria,AUT,01/03/2020,0
+Austria,AUT,02/03/2020,0
+Austria,AUT,03/03/2020,0
+Austria,AUT,04/03/2020,0
+Austria,AUT,05/03/2020,0
+Austria,AUT,06/03/2020,0
+Austria,AUT,07/03/2020,0
+Austria,AUT,08/03/2020,0
+Austria,AUT,09/03/2020,0
+Austria,AUT,10/03/2020,0
+Austria,AUT,11/03/2020,0
+Austria,AUT,12/03/2020,0
+Austria,AUT,13/03/2020,0
+Austria,AUT,14/03/2020,0
+Austria,AUT,15/03/2020,0
+Austria,AUT,16/03/2020,0
+Austria,AUT,17/03/2020,0
+Austria,AUT,18/03/2020,0
+Austria,AUT,19/03/2020,0
+Austria,AUT,20/03/2020,0
+Austria,AUT,21/03/2020,0
+Austria,AUT,22/03/2020,0
+Austria,AUT,23/03/2020,0
+Austria,AUT,24/03/2020,0
+Austria,AUT,25/03/2020,0
+Austria,AUT,26/03/2020,0
+Austria,AUT,27/03/2020,0
+Austria,AUT,28/03/2020,0
+Austria,AUT,29/03/2020,0
+Austria,AUT,30/03/2020,0
+Austria,AUT,31/03/2020,0
+Azerbaijan,AZE,01/03/2020,0
+Azerbaijan,AZE,02/03/2020,0
+Azerbaijan,AZE,03/03/2020,1
+Azerbaijan,AZE,04/03/2020,1
+Azerbaijan,AZE,05/03/2020,1
+Azerbaijan,AZE,06/03/2020,1
+Azerbaijan,AZE,07/03/2020,1
+Azerbaijan,AZE,08/03/2020,1
+Azerbaijan,AZE,09/03/2020,1
+Azerbaijan,AZE,10/03/2020,1
+Azerbaijan,AZE,11/03/2020,1
+Azerbaijan,AZE,12/03/2020,1
+Azerbaijan,AZE,13/03/2020,1
+Azerbaijan,AZE,14/03/2020,1
+Azerbaijan,AZE,15/03/2020,1
+Azerbaijan,AZE,16/03/2020,1
+Azerbaijan,AZE,17/03/2020,1
+Azerbaijan,AZE,18/03/2020,1
+Azerbaijan,AZE,19/03/2020,1
+Azerbaijan,AZE,20/03/2020,1
+Azerbaijan,AZE,21/03/2020,1
+Azerbaijan,AZE,22/03/2020,1
+Azerbaijan,AZE,23/03/2020,1
+Azerbaijan,AZE,24/03/2020,1
+Azerbaijan,AZE,25/03/2020,1
+Azerbaijan,AZE,26/03/2020,1
+Azerbaijan,AZE,27/03/2020,1
+Azerbaijan,AZE,28/03/2020,1
+Azerbaijan,AZE,29/03/2020,1
+Azerbaijan,AZE,30/03/2020,1
+Azerbaijan,AZE,31/03/2020,1
+Bahamas,BHS,01/03/2020,0
+Bahamas,BHS,02/03/2020,0
+Bahamas,BHS,03/03/2020,0
+Bahamas,BHS,04/03/2020,0
+Bahamas,BHS,05/03/2020,0
+Bahamas,BHS,06/03/2020,0
+Bahamas,BHS,07/03/2020,0
+Bahamas,BHS,08/03/2020,0
+Bahamas,BHS,09/03/2020,0
+Bahamas,BHS,10/03/2020,0
+Bahamas,BHS,11/03/2020,0
+Bahamas,BHS,12/03/2020,0
+Bahamas,BHS,13/03/2020,0
+Bahamas,BHS,14/03/2020,0
+Bahamas,BHS,15/03/2020,0
+Bahamas,BHS,16/03/2020,1
+Bahamas,BHS,17/03/2020,1
+Bahamas,BHS,18/03/2020,1
+Bahamas,BHS,19/03/2020,1
+Bahamas,BHS,20/03/2020,1
+Bahamas,BHS,21/03/2020,1
+Bahamas,BHS,22/03/2020,1
+Bahamas,BHS,23/03/2020,1
+Bahamas,BHS,24/03/2020,1
+Bahamas,BHS,25/03/2020,1
+Bahamas,BHS,26/03/2020,1
+Bahamas,BHS,27/03/2020,1
+Bahamas,BHS,28/03/2020,1
+Bahamas,BHS,29/03/2020,1
+Bahamas,BHS,30/03/2020,1
+Bahamas,BHS,31/03/2020,1
+Bahrain,BHR,01/03/2020,1
+Bahrain,BHR,02/03/2020,1
+Bahrain,BHR,03/03/2020,1
+Bahrain,BHR,04/03/2020,1
+Bahrain,BHR,05/03/2020,1
+Bahrain,BHR,06/03/2020,1
+Bahrain,BHR,07/03/2020,1
+Bahrain,BHR,08/03/2020,1
+Bahrain,BHR,09/03/2020,1
+Bahrain,BHR,10/03/2020,1
+Bahrain,BHR,11/03/2020,1
+Bahrain,BHR,12/03/2020,1
+Bahrain,BHR,13/03/2020,1
+Bahrain,BHR,14/03/2020,1
+Bahrain,BHR,15/03/2020,1
+Bahrain,BHR,16/03/2020,1
+Bahrain,BHR,17/03/2020,1
+Bahrain,BHR,18/03/2020,1
+Bahrain,BHR,19/03/2020,1
+Bahrain,BHR,20/03/2020,1
+Bahrain,BHR,21/03/2020,1
+Bahrain,BHR,22/03/2020,1
+Bahrain,BHR,23/03/2020,1
+Bahrain,BHR,24/03/2020,1
+Bahrain,BHR,25/03/2020,1
+Bahrain,BHR,26/03/2020,1
+Bahrain,BHR,27/03/2020,1
+Bahrain,BHR,28/03/2020,1
+Bahrain,BHR,29/03/2020,1
+Bahrain,BHR,30/03/2020,1
+Bahrain,BHR,31/03/2020,1
+Bangladesh,BGD,01/03/2020,0
+Bangladesh,BGD,02/03/2020,0
+Bangladesh,BGD,03/03/2020,0
+Bangladesh,BGD,04/03/2020,0
+Bangladesh,BGD,05/03/2020,0
+Bangladesh,BGD,06/03/2020,0
+Bangladesh,BGD,07/03/2020,0
+Bangladesh,BGD,08/03/2020,0
+Bangladesh,BGD,09/03/2020,0
+Bangladesh,BGD,10/03/2020,0
+Bangladesh,BGD,11/03/2020,0
+Bangladesh,BGD,12/03/2020,0
+Bangladesh,BGD,13/03/2020,0
+Bangladesh,BGD,14/03/2020,0
+Bangladesh,BGD,15/03/2020,0
+Bangladesh,BGD,16/03/2020,1
+Bangladesh,BGD,17/03/2020,1
+Bangladesh,BGD,18/03/2020,1
+Bangladesh,BGD,19/03/2020,1
+Bangladesh,BGD,20/03/2020,1
+Bangladesh,BGD,21/03/2020,1
+Bangladesh,BGD,22/03/2020,1
+Bangladesh,BGD,23/03/2020,1
+Bangladesh,BGD,24/03/2020,1
+Bangladesh,BGD,25/03/2020,1
+Bangladesh,BGD,26/03/2020,1
+Bangladesh,BGD,27/03/2020,1
+Bangladesh,BGD,28/03/2020,1
+Bangladesh,BGD,29/03/2020,1
+Bangladesh,BGD,30/03/2020,1
+Bangladesh,BGD,31/03/2020,1
+Barbados,BRB,01/03/2020,0
+Barbados,BRB,02/03/2020,0
+Barbados,BRB,03/03/2020,0
+Barbados,BRB,04/03/2020,0
+Barbados,BRB,05/03/2020,0
+Barbados,BRB,06/03/2020,0
+Barbados,BRB,07/03/2020,0
+Barbados,BRB,08/03/2020,0
+Barbados,BRB,09/03/2020,0
+Barbados,BRB,10/03/2020,0
+Barbados,BRB,11/03/2020,0
+Barbados,BRB,12/03/2020,0
+Barbados,BRB,13/03/2020,0
+Barbados,BRB,14/03/2020,0
+Barbados,BRB,15/03/2020,0
+Barbados,BRB,16/03/2020,0
+Barbados,BRB,17/03/2020,0
+Barbados,BRB,18/03/2020,0
+Barbados,BRB,19/03/2020,1
+Barbados,BRB,20/03/2020,1
+Barbados,BRB,21/03/2020,1
+Barbados,BRB,22/03/2020,1
+Barbados,BRB,23/03/2020,1
+Barbados,BRB,24/03/2020,1
+Barbados,BRB,25/03/2020,1
+Barbados,BRB,26/03/2020,1
+Barbados,BRB,27/03/2020,1
+Barbados,BRB,28/03/2020,1
+Barbados,BRB,29/03/2020,1
+Barbados,BRB,30/03/2020,1
+Barbados,BRB,31/03/2020,1
+Belarus,BLR,01/03/2020,0
+Belarus,BLR,02/03/2020,0
+Belarus,BLR,03/03/2020,0
+Belarus,BLR,04/03/2020,0
+Belarus,BLR,05/03/2020,0
+Belarus,BLR,06/03/2020,0
+Belarus,BLR,07/03/2020,0
+Belarus,BLR,08/03/2020,0
+Belarus,BLR,09/03/2020,0
+Belarus,BLR,10/03/2020,0
+Belarus,BLR,11/03/2020,0
+Belarus,BLR,12/03/2020,0
+Belarus,BLR,13/03/2020,0
+Belarus,BLR,14/03/2020,0
+Belarus,BLR,15/03/2020,0
+Belarus,BLR,16/03/2020,0
+Belarus,BLR,17/03/2020,0
+Belarus,BLR,18/03/2020,0
+Belarus,BLR,19/03/2020,0
+Belarus,BLR,20/03/2020,0
+Belarus,BLR,21/03/2020,0
+Belarus,BLR,22/03/2020,0
+Belarus,BLR,23/03/2020,0
+Belarus,BLR,24/03/2020,0
+Belarus,BLR,25/03/2020,0
+Belarus,BLR,26/03/2020,0
+Belarus,BLR,27/03/2020,0
+Belarus,BLR,28/03/2020,0
+Belarus,BLR,29/03/2020,0
+Belarus,BLR,30/03/2020,0
+Belarus,BLR,31/03/2020,0
+Belgium,BEL,01/03/2020,0
+Belgium,BEL,02/03/2020,0
+Belgium,BEL,03/03/2020,0
+Belgium,BEL,04/03/2020,0
+Belgium,BEL,05/03/2020,0
+Belgium,BEL,06/03/2020,0
+Belgium,BEL,07/03/2020,0
+Belgium,BEL,08/03/2020,0
+Belgium,BEL,09/03/2020,0
+Belgium,BEL,10/03/2020,0
+Belgium,BEL,11/03/2020,0
+Belgium,BEL,12/03/2020,0
+Belgium,BEL,13/03/2020,0
+Belgium,BEL,14/03/2020,0
+Belgium,BEL,15/03/2020,0
+Belgium,BEL,16/03/2020,0
+Belgium,BEL,17/03/2020,0
+Belgium,BEL,18/03/2020,0
+Belgium,BEL,19/03/2020,0
+Belgium,BEL,20/03/2020,0
+Belgium,BEL,21/03/2020,0
+Belgium,BEL,22/03/2020,0
+Belgium,BEL,23/03/2020,0
+Belgium,BEL,24/03/2020,0
+Belgium,BEL,25/03/2020,0
+Belgium,BEL,26/03/2020,0
+Belgium,BEL,27/03/2020,0
+Belgium,BEL,28/03/2020,0
+Belgium,BEL,29/03/2020,0
+Belgium,BEL,30/03/2020,0
+Belgium,BEL,31/03/2020,0
+Belize,BLZ,01/03/2020,0
+Belize,BLZ,02/03/2020,0
+Belize,BLZ,03/03/2020,0
+Belize,BLZ,04/03/2020,0
+Belize,BLZ,05/03/2020,0
+Belize,BLZ,06/03/2020,0
+Belize,BLZ,07/03/2020,0
+Belize,BLZ,08/03/2020,0
+Belize,BLZ,09/03/2020,0
+Belize,BLZ,10/03/2020,0
+Belize,BLZ,11/03/2020,0
+Belize,BLZ,12/03/2020,0
+Belize,BLZ,13/03/2020,0
+Belize,BLZ,14/03/2020,0
+Belize,BLZ,15/03/2020,0
+Belize,BLZ,16/03/2020,0
+Belize,BLZ,17/03/2020,0
+Belize,BLZ,18/03/2020,0
+Belize,BLZ,19/03/2020,0
+Belize,BLZ,20/03/2020,1
+Belize,BLZ,21/03/2020,1
+Belize,BLZ,22/03/2020,1
+Belize,BLZ,23/03/2020,1
+Belize,BLZ,24/03/2020,1
+Belize,BLZ,25/03/2020,1
+Belize,BLZ,26/03/2020,1
+Belize,BLZ,27/03/2020,1
+Belize,BLZ,28/03/2020,1
+Belize,BLZ,29/03/2020,1
+Belize,BLZ,30/03/2020,1
+Belize,BLZ,31/03/2020,1
+Benin,BEN,01/03/2020,0
+Benin,BEN,02/03/2020,0
+Benin,BEN,03/03/2020,0
+Benin,BEN,04/03/2020,0
+Benin,BEN,05/03/2020,0
+Benin,BEN,06/03/2020,0
+Benin,BEN,07/03/2020,0
+Benin,BEN,08/03/2020,0
+Benin,BEN,09/03/2020,0
+Benin,BEN,10/03/2020,0
+Benin,BEN,11/03/2020,0
+Benin,BEN,12/03/2020,0
+Benin,BEN,13/03/2020,0
+Benin,BEN,14/03/2020,0
+Benin,BEN,15/03/2020,0
+Benin,BEN,16/03/2020,0
+Benin,BEN,17/03/2020,0
+Benin,BEN,18/03/2020,0
+Benin,BEN,19/03/2020,0
+Benin,BEN,20/03/2020,0
+Benin,BEN,21/03/2020,0
+Benin,BEN,22/03/2020,0
+Benin,BEN,23/03/2020,0
+Benin,BEN,24/03/2020,0
+Benin,BEN,25/03/2020,0
+Benin,BEN,26/03/2020,0
+Benin,BEN,27/03/2020,0
+Benin,BEN,28/03/2020,0
+Benin,BEN,29/03/2020,0
+Benin,BEN,30/03/2020,1
+Benin,BEN,31/03/2020,1
+Bermuda,BMU,01/03/2020,0
+Bermuda,BMU,02/03/2020,0
+Bermuda,BMU,03/03/2020,0
+Bermuda,BMU,04/03/2020,0
+Bermuda,BMU,05/03/2020,0
+Bermuda,BMU,06/03/2020,0
+Bermuda,BMU,07/03/2020,0
+Bermuda,BMU,08/03/2020,0
+Bermuda,BMU,09/03/2020,0
+Bermuda,BMU,10/03/2020,0
+Bermuda,BMU,11/03/2020,0
+Bermuda,BMU,12/03/2020,0
+Bermuda,BMU,13/03/2020,0
+Bermuda,BMU,14/03/2020,0
+Bermuda,BMU,15/03/2020,0
+Bermuda,BMU,16/03/2020,0
+Bermuda,BMU,17/03/2020,0
+Bermuda,BMU,18/03/2020,0
+Bermuda,BMU,19/03/2020,0
+Bermuda,BMU,20/03/2020,0
+Bermuda,BMU,21/03/2020,0
+Bermuda,BMU,22/03/2020,0
+Bermuda,BMU,23/03/2020,0
+Bermuda,BMU,24/03/2020,0
+Bermuda,BMU,25/03/2020,0
+Bermuda,BMU,26/03/2020,0
+Bermuda,BMU,27/03/2020,0
+Bermuda,BMU,28/03/2020,0
+Bermuda,BMU,29/03/2020,1
+Bermuda,BMU,30/03/2020,1
+Bermuda,BMU,31/03/2020,1
+Bhutan,BTN,01/03/2020,0
+Bhutan,BTN,02/03/2020,0
+Bhutan,BTN,03/03/2020,0
+Bhutan,BTN,04/03/2020,0
+Bhutan,BTN,05/03/2020,0
+Bhutan,BTN,06/03/2020,1
+Bhutan,BTN,07/03/2020,1
+Bhutan,BTN,08/03/2020,1
+Bhutan,BTN,09/03/2020,1
+Bhutan,BTN,10/03/2020,1
+Bhutan,BTN,11/03/2020,1
+Bhutan,BTN,12/03/2020,1
+Bhutan,BTN,13/03/2020,1
+Bhutan,BTN,14/03/2020,1
+Bhutan,BTN,15/03/2020,1
+Bhutan,BTN,16/03/2020,1
+Bhutan,BTN,17/03/2020,1
+Bhutan,BTN,18/03/2020,1
+Bhutan,BTN,19/03/2020,1
+Bhutan,BTN,20/03/2020,1
+Bhutan,BTN,21/03/2020,1
+Bhutan,BTN,22/03/2020,1
+Bhutan,BTN,23/03/2020,1
+Bhutan,BTN,24/03/2020,1
+Bhutan,BTN,25/03/2020,1
+Bhutan,BTN,26/03/2020,1
+Bhutan,BTN,27/03/2020,1
+Bhutan,BTN,28/03/2020,1
+Bhutan,BTN,29/03/2020,1
+Bhutan,BTN,30/03/2020,1
+Bhutan,BTN,31/03/2020,1
+Bolivia,BOL,01/03/2020,0
+Bolivia,BOL,02/03/2020,0
+Bolivia,BOL,03/03/2020,0
+Bolivia,BOL,04/03/2020,0
+Bolivia,BOL,05/03/2020,0
+Bolivia,BOL,06/03/2020,0
+Bolivia,BOL,07/03/2020,0
+Bolivia,BOL,08/03/2020,0
+Bolivia,BOL,09/03/2020,0
+Bolivia,BOL,10/03/2020,0
+Bolivia,BOL,11/03/2020,0
+Bolivia,BOL,12/03/2020,1
+Bolivia,BOL,13/03/2020,1
+Bolivia,BOL,14/03/2020,1
+Bolivia,BOL,15/03/2020,1
+Bolivia,BOL,16/03/2020,1
+Bolivia,BOL,17/03/2020,1
+Bolivia,BOL,18/03/2020,1
+Bolivia,BOL,19/03/2020,1
+Bolivia,BOL,20/03/2020,1
+Bolivia,BOL,21/03/2020,1
+Bolivia,BOL,22/03/2020,1
+Bolivia,BOL,23/03/2020,1
+Bolivia,BOL,24/03/2020,1
+Bolivia,BOL,25/03/2020,1
+Bolivia,BOL,26/03/2020,1
+Bolivia,BOL,27/03/2020,1
+Bolivia,BOL,28/03/2020,1
+Bolivia,BOL,29/03/2020,1
+Bolivia,BOL,30/03/2020,1
+Bolivia,BOL,31/03/2020,1
+Bosnia and Herzegovina,BIH,01/03/2020,0
+Bosnia and Herzegovina,BIH,02/03/2020,0
+Bosnia and Herzegovina,BIH,03/03/2020,0
+Bosnia and Herzegovina,BIH,04/03/2020,0
+Bosnia and Herzegovina,BIH,05/03/2020,0
+Bosnia and Herzegovina,BIH,06/03/2020,0
+Bosnia and Herzegovina,BIH,07/03/2020,0
+Bosnia and Herzegovina,BIH,08/03/2020,0
+Bosnia and Herzegovina,BIH,09/03/2020,0
+Bosnia and Herzegovina,BIH,10/03/2020,0
+Bosnia and Herzegovina,BIH,11/03/2020,1
+Bosnia and Herzegovina,BIH,12/03/2020,1
+Bosnia and Herzegovina,BIH,13/03/2020,1
+Bosnia and Herzegovina,BIH,14/03/2020,1
+Bosnia and Herzegovina,BIH,15/03/2020,1
+Bosnia and Herzegovina,BIH,16/03/2020,1
+Bosnia and Herzegovina,BIH,17/03/2020,1
+Bosnia and Herzegovina,BIH,18/03/2020,1
+Bosnia and Herzegovina,BIH,19/03/2020,1
+Bosnia and Herzegovina,BIH,20/03/2020,1
+Bosnia and Herzegovina,BIH,21/03/2020,1
+Bosnia and Herzegovina,BIH,22/03/2020,1
+Bosnia and Herzegovina,BIH,23/03/2020,1
+Bosnia and Herzegovina,BIH,24/03/2020,1
+Bosnia and Herzegovina,BIH,25/03/2020,1
+Bosnia and Herzegovina,BIH,26/03/2020,1
+Bosnia and Herzegovina,BIH,27/03/2020,1
+Bosnia and Herzegovina,BIH,28/03/2020,1
+Bosnia and Herzegovina,BIH,29/03/2020,1
+Bosnia and Herzegovina,BIH,30/03/2020,1
+Bosnia and Herzegovina,BIH,31/03/2020,1
+Botswana,BWA,01/03/2020,0
+Botswana,BWA,02/03/2020,0
+Botswana,BWA,03/03/2020,0
+Botswana,BWA,04/03/2020,0
+Botswana,BWA,05/03/2020,0
+Botswana,BWA,06/03/2020,0
+Botswana,BWA,07/03/2020,0
+Botswana,BWA,08/03/2020,0
+Botswana,BWA,09/03/2020,0
+Botswana,BWA,10/03/2020,0
+Botswana,BWA,11/03/2020,0
+Botswana,BWA,12/03/2020,0
+Botswana,BWA,13/03/2020,0
+Botswana,BWA,14/03/2020,0
+Botswana,BWA,15/03/2020,0
+Botswana,BWA,16/03/2020,0
+Botswana,BWA,17/03/2020,0
+Botswana,BWA,18/03/2020,0
+Botswana,BWA,19/03/2020,1
+Botswana,BWA,20/03/2020,1
+Botswana,BWA,21/03/2020,1
+Botswana,BWA,22/03/2020,1
+Botswana,BWA,23/03/2020,1
+Botswana,BWA,24/03/2020,1
+Botswana,BWA,25/03/2020,1
+Botswana,BWA,26/03/2020,1
+Botswana,BWA,27/03/2020,1
+Botswana,BWA,28/03/2020,1
+Botswana,BWA,29/03/2020,1
+Botswana,BWA,30/03/2020,1
+Botswana,BWA,31/03/2020,1
+Brazil,BRA,01/03/2020,0
+Brazil,BRA,02/03/2020,0
+Brazil,BRA,03/03/2020,0
+Brazil,BRA,04/03/2020,0
+Brazil,BRA,05/03/2020,0
+Brazil,BRA,06/03/2020,0
+Brazil,BRA,07/03/2020,0
+Brazil,BRA,08/03/2020,0
+Brazil,BRA,09/03/2020,0
+Brazil,BRA,10/03/2020,0
+Brazil,BRA,11/03/2020,0
+Brazil,BRA,12/03/2020,1
+Brazil,BRA,13/03/2020,1
+Brazil,BRA,14/03/2020,1
+Brazil,BRA,15/03/2020,1
+Brazil,BRA,16/03/2020,1
+Brazil,BRA,17/03/2020,1
+Brazil,BRA,18/03/2020,1
+Brazil,BRA,19/03/2020,1
+Brazil,BRA,20/03/2020,1
+Brazil,BRA,21/03/2020,1
+Brazil,BRA,22/03/2020,1
+Brazil,BRA,23/03/2020,1
+Brazil,BRA,24/03/2020,1
+Brazil,BRA,25/03/2020,1
+Brazil,BRA,26/03/2020,1
+Brazil,BRA,27/03/2020,1
+Brazil,BRA,28/03/2020,1
+Brazil,BRA,29/03/2020,1
+Brazil,BRA,30/03/2020,1
+Brazil,BRA,31/03/2020,1
+Brunei,BRN,01/03/2020,0
+Brunei,BRN,02/03/2020,0
+Brunei,BRN,03/03/2020,0
+Brunei,BRN,04/03/2020,0
+Brunei,BRN,05/03/2020,0
+Brunei,BRN,06/03/2020,0
+Brunei,BRN,07/03/2020,0
+Brunei,BRN,08/03/2020,0
+Brunei,BRN,09/03/2020,0
+Brunei,BRN,10/03/2020,0
+Brunei,BRN,11/03/2020,1
+Brunei,BRN,12/03/2020,1
+Brunei,BRN,13/03/2020,1
+Brunei,BRN,14/03/2020,1
+Brunei,BRN,15/03/2020,1
+Brunei,BRN,16/03/2020,1
+Brunei,BRN,17/03/2020,1
+Brunei,BRN,18/03/2020,1
+Brunei,BRN,19/03/2020,1
+Brunei,BRN,20/03/2020,1
+Brunei,BRN,21/03/2020,1
+Brunei,BRN,22/03/2020,1
+Brunei,BRN,23/03/2020,1
+Brunei,BRN,24/03/2020,1
+Brunei,BRN,25/03/2020,1
+Brunei,BRN,26/03/2020,1
+Brunei,BRN,27/03/2020,1
+Brunei,BRN,28/03/2020,1
+Brunei,BRN,29/03/2020,1
+Brunei,BRN,30/03/2020,1
+Brunei,BRN,31/03/2020,1
+Bulgaria,BGR,01/03/2020,0
+Bulgaria,BGR,02/03/2020,0
+Bulgaria,BGR,03/03/2020,0
+Bulgaria,BGR,04/03/2020,0
+Bulgaria,BGR,05/03/2020,0
+Bulgaria,BGR,06/03/2020,0
+Bulgaria,BGR,07/03/2020,0
+Bulgaria,BGR,08/03/2020,0
+Bulgaria,BGR,09/03/2020,0
+Bulgaria,BGR,10/03/2020,0
+Bulgaria,BGR,11/03/2020,0
+Bulgaria,BGR,12/03/2020,0
+Bulgaria,BGR,13/03/2020,1
+Bulgaria,BGR,14/03/2020,1
+Bulgaria,BGR,15/03/2020,1
+Bulgaria,BGR,16/03/2020,1
+Bulgaria,BGR,17/03/2020,1
+Bulgaria,BGR,18/03/2020,1
+Bulgaria,BGR,19/03/2020,1
+Bulgaria,BGR,20/03/2020,1
+Bulgaria,BGR,21/03/2020,1
+Bulgaria,BGR,22/03/2020,1
+Bulgaria,BGR,23/03/2020,1
+Bulgaria,BGR,24/03/2020,1
+Bulgaria,BGR,25/03/2020,1
+Bulgaria,BGR,26/03/2020,1
+Bulgaria,BGR,27/03/2020,1
+Bulgaria,BGR,28/03/2020,1
+Bulgaria,BGR,29/03/2020,1
+Bulgaria,BGR,30/03/2020,1
+Bulgaria,BGR,31/03/2020,1
+Burkina Faso,BFA,01/03/2020,0
+Burkina Faso,BFA,02/03/2020,0
+Burkina Faso,BFA,03/03/2020,0
+Burkina Faso,BFA,04/03/2020,0
+Burkina Faso,BFA,05/03/2020,0
+Burkina Faso,BFA,06/03/2020,0
+Burkina Faso,BFA,07/03/2020,0
+Burkina Faso,BFA,08/03/2020,0
+Burkina Faso,BFA,09/03/2020,0
+Burkina Faso,BFA,10/03/2020,0
+Burkina Faso,BFA,11/03/2020,0
+Burkina Faso,BFA,12/03/2020,0
+Burkina Faso,BFA,13/03/2020,0
+Burkina Faso,BFA,14/03/2020,0
+Burkina Faso,BFA,15/03/2020,0
+Burkina Faso,BFA,16/03/2020,1
+Burkina Faso,BFA,17/03/2020,1
+Burkina Faso,BFA,18/03/2020,1
+Burkina Faso,BFA,19/03/2020,1
+Burkina Faso,BFA,20/03/2020,1
+Burkina Faso,BFA,21/03/2020,1
+Burkina Faso,BFA,22/03/2020,1
+Burkina Faso,BFA,23/03/2020,1
+Burkina Faso,BFA,24/03/2020,1
+Burkina Faso,BFA,25/03/2020,1
+Burkina Faso,BFA,26/03/2020,1
+Burkina Faso,BFA,27/03/2020,1
+Burkina Faso,BFA,28/03/2020,1
+Burkina Faso,BFA,29/03/2020,1
+Burkina Faso,BFA,30/03/2020,1
+Burkina Faso,BFA,31/03/2020,1
+Burundi,BDI,01/03/2020,0
+Burundi,BDI,02/03/2020,0
+Burundi,BDI,03/03/2020,0
+Burundi,BDI,04/03/2020,0
+Burundi,BDI,05/03/2020,0
+Burundi,BDI,06/03/2020,0
+Burundi,BDI,07/03/2020,0
+Burundi,BDI,08/03/2020,0
+Burundi,BDI,09/03/2020,0
+Burundi,BDI,10/03/2020,0
+Burundi,BDI,11/03/2020,0
+Burundi,BDI,12/03/2020,0
+Burundi,BDI,13/03/2020,0
+Burundi,BDI,14/03/2020,0
+Burundi,BDI,15/03/2020,0
+Burundi,BDI,16/03/2020,0
+Burundi,BDI,17/03/2020,0
+Burundi,BDI,18/03/2020,0
+Burundi,BDI,19/03/2020,0
+Burundi,BDI,20/03/2020,0
+Burundi,BDI,21/03/2020,0
+Burundi,BDI,22/03/2020,0
+Burundi,BDI,23/03/2020,0
+Burundi,BDI,24/03/2020,0
+Burundi,BDI,25/03/2020,0
+Burundi,BDI,26/03/2020,0
+Burundi,BDI,27/03/2020,0
+Burundi,BDI,28/03/2020,0
+Burundi,BDI,29/03/2020,0
+Burundi,BDI,30/03/2020,0
+Burundi,BDI,31/03/2020,0
+Cambodia,KHM,01/03/2020,0
+Cambodia,KHM,02/03/2020,0
+Cambodia,KHM,03/03/2020,0
+Cambodia,KHM,04/03/2020,0
+Cambodia,KHM,05/03/2020,0
+Cambodia,KHM,06/03/2020,0
+Cambodia,KHM,07/03/2020,1
+Cambodia,KHM,08/03/2020,1
+Cambodia,KHM,09/03/2020,1
+Cambodia,KHM,10/03/2020,1
+Cambodia,KHM,11/03/2020,1
+Cambodia,KHM,12/03/2020,1
+Cambodia,KHM,13/03/2020,1
+Cambodia,KHM,14/03/2020,1
+Cambodia,KHM,15/03/2020,1
+Cambodia,KHM,16/03/2020,1
+Cambodia,KHM,17/03/2020,1
+Cambodia,KHM,18/03/2020,1
+Cambodia,KHM,19/03/2020,1
+Cambodia,KHM,20/03/2020,1
+Cambodia,KHM,21/03/2020,1
+Cambodia,KHM,22/03/2020,1
+Cambodia,KHM,23/03/2020,1
+Cambodia,KHM,24/03/2020,1
+Cambodia,KHM,25/03/2020,1
+Cambodia,KHM,26/03/2020,1
+Cambodia,KHM,27/03/2020,1
+Cambodia,KHM,28/03/2020,1
+Cambodia,KHM,29/03/2020,1
+Cambodia,KHM,30/03/2020,1
+Cambodia,KHM,31/03/2020,1
+Cameroon,CMR,01/03/2020,0
+Cameroon,CMR,02/03/2020,0
+Cameroon,CMR,03/03/2020,0
+Cameroon,CMR,04/03/2020,0
+Cameroon,CMR,05/03/2020,0
+Cameroon,CMR,06/03/2020,0
+Cameroon,CMR,07/03/2020,0
+Cameroon,CMR,08/03/2020,0
+Cameroon,CMR,09/03/2020,0
+Cameroon,CMR,10/03/2020,0
+Cameroon,CMR,11/03/2020,0
+Cameroon,CMR,12/03/2020,0
+Cameroon,CMR,13/03/2020,0
+Cameroon,CMR,14/03/2020,0
+Cameroon,CMR,15/03/2020,0
+Cameroon,CMR,16/03/2020,0
+Cameroon,CMR,17/03/2020,0
+Cameroon,CMR,18/03/2020,1
+Cameroon,CMR,19/03/2020,1
+Cameroon,CMR,20/03/2020,1
+Cameroon,CMR,21/03/2020,1
+Cameroon,CMR,22/03/2020,1
+Cameroon,CMR,23/03/2020,1
+Cameroon,CMR,24/03/2020,1
+Cameroon,CMR,25/03/2020,1
+Cameroon,CMR,26/03/2020,1
+Cameroon,CMR,27/03/2020,1
+Cameroon,CMR,28/03/2020,1
+Cameroon,CMR,29/03/2020,1
+Cameroon,CMR,30/03/2020,1
+Cameroon,CMR,31/03/2020,1
+Canada,CAN,01/03/2020,0
+Canada,CAN,02/03/2020,0
+Canada,CAN,03/03/2020,0
+Canada,CAN,04/03/2020,0
+Canada,CAN,05/03/2020,0
+Canada,CAN,06/03/2020,0
+Canada,CAN,07/03/2020,0
+Canada,CAN,08/03/2020,0
+Canada,CAN,09/03/2020,0
+Canada,CAN,10/03/2020,0
+Canada,CAN,11/03/2020,0
+Canada,CAN,12/03/2020,0
+Canada,CAN,13/03/2020,0
+Canada,CAN,14/03/2020,0
+Canada,CAN,15/03/2020,0
+Canada,CAN,16/03/2020,1
+Canada,CAN,17/03/2020,1
+Canada,CAN,18/03/2020,1
+Canada,CAN,19/03/2020,1
+Canada,CAN,20/03/2020,1
+Canada,CAN,21/03/2020,1
+Canada,CAN,22/03/2020,1
+Canada,CAN,23/03/2020,1
+Canada,CAN,24/03/2020,1
+Canada,CAN,25/03/2020,1
+Canada,CAN,26/03/2020,1
+Canada,CAN,27/03/2020,1
+Canada,CAN,28/03/2020,1
+Canada,CAN,29/03/2020,1
+Canada,CAN,30/03/2020,1
+Canada,CAN,31/03/2020,1
+Cape Verde,CPV,01/03/2020,0
+Cape Verde,CPV,02/03/2020,0
+Cape Verde,CPV,03/03/2020,0
+Cape Verde,CPV,04/03/2020,0
+Cape Verde,CPV,05/03/2020,0
+Cape Verde,CPV,06/03/2020,0
+Cape Verde,CPV,07/03/2020,0
+Cape Verde,CPV,08/03/2020,0
+Cape Verde,CPV,09/03/2020,0
+Cape Verde,CPV,10/03/2020,0
+Cape Verde,CPV,11/03/2020,0
+Cape Verde,CPV,12/03/2020,0
+Cape Verde,CPV,13/03/2020,0
+Cape Verde,CPV,14/03/2020,0
+Cape Verde,CPV,15/03/2020,0
+Cape Verde,CPV,16/03/2020,0
+Cape Verde,CPV,17/03/2020,0
+Cape Verde,CPV,18/03/2020,0
+Cape Verde,CPV,19/03/2020,0
+Cape Verde,CPV,20/03/2020,0
+Cape Verde,CPV,21/03/2020,0
+Cape Verde,CPV,22/03/2020,0
+Cape Verde,CPV,23/03/2020,0
+Cape Verde,CPV,24/03/2020,0
+Cape Verde,CPV,25/03/2020,0
+Cape Verde,CPV,26/03/2020,0
+Cape Verde,CPV,27/03/2020,0
+Cape Verde,CPV,28/03/2020,1
+Cape Verde,CPV,29/03/2020,1
+Cape Verde,CPV,30/03/2020,1
+Cape Verde,CPV,31/03/2020,1
+Central African Republic,CAF,01/03/2020,0
+Central African Republic,CAF,02/03/2020,0
+Central African Republic,CAF,03/03/2020,0
+Central African Republic,CAF,04/03/2020,0
+Central African Republic,CAF,05/03/2020,0
+Central African Republic,CAF,06/03/2020,0
+Central African Republic,CAF,07/03/2020,0
+Central African Republic,CAF,08/03/2020,0
+Central African Republic,CAF,09/03/2020,0
+Central African Republic,CAF,10/03/2020,0
+Central African Republic,CAF,11/03/2020,0
+Central African Republic,CAF,12/03/2020,0
+Central African Republic,CAF,13/03/2020,0
+Central African Republic,CAF,14/03/2020,0
+Central African Republic,CAF,15/03/2020,0
+Central African Republic,CAF,16/03/2020,0
+Central African Republic,CAF,17/03/2020,0
+Central African Republic,CAF,18/03/2020,0
+Central African Republic,CAF,19/03/2020,0
+Central African Republic,CAF,20/03/2020,0
+Central African Republic,CAF,21/03/2020,0
+Central African Republic,CAF,22/03/2020,0
+Central African Republic,CAF,23/03/2020,0
+Central African Republic,CAF,24/03/2020,0
+Central African Republic,CAF,25/03/2020,0
+Central African Republic,CAF,26/03/2020,1
+Central African Republic,CAF,27/03/2020,1
+Central African Republic,CAF,28/03/2020,1
+Central African Republic,CAF,29/03/2020,1
+Central African Republic,CAF,30/03/2020,1
+Central African Republic,CAF,31/03/2020,1
+Chad,TCD,01/03/2020,0
+Chad,TCD,02/03/2020,0
+Chad,TCD,03/03/2020,0
+Chad,TCD,04/03/2020,0
+Chad,TCD,05/03/2020,0
+Chad,TCD,06/03/2020,0
+Chad,TCD,07/03/2020,0
+Chad,TCD,08/03/2020,0
+Chad,TCD,09/03/2020,0
+Chad,TCD,10/03/2020,0
+Chad,TCD,11/03/2020,0
+Chad,TCD,12/03/2020,0
+Chad,TCD,13/03/2020,0
+Chad,TCD,14/03/2020,0
+Chad,TCD,15/03/2020,0
+Chad,TCD,16/03/2020,0
+Chad,TCD,17/03/2020,0
+Chad,TCD,18/03/2020,0
+Chad,TCD,19/03/2020,0
+Chad,TCD,20/03/2020,0
+Chad,TCD,21/03/2020,0
+Chad,TCD,22/03/2020,0
+Chad,TCD,23/03/2020,0
+Chad,TCD,24/03/2020,0
+Chad,TCD,25/03/2020,0
+Chad,TCD,26/03/2020,0
+Chad,TCD,27/03/2020,0
+Chad,TCD,28/03/2020,0
+Chad,TCD,29/03/2020,0
+Chad,TCD,30/03/2020,0
+Chad,TCD,31/03/2020,0
+Chile,CHL,01/03/2020,0
+Chile,CHL,02/03/2020,0
+Chile,CHL,03/03/2020,0
+Chile,CHL,04/03/2020,0
+Chile,CHL,05/03/2020,0
+Chile,CHL,06/03/2020,0
+Chile,CHL,07/03/2020,0
+Chile,CHL,08/03/2020,0
+Chile,CHL,09/03/2020,0
+Chile,CHL,10/03/2020,0
+Chile,CHL,11/03/2020,0
+Chile,CHL,12/03/2020,0
+Chile,CHL,13/03/2020,0
+Chile,CHL,14/03/2020,0
+Chile,CHL,15/03/2020,1
+Chile,CHL,16/03/2020,1
+Chile,CHL,17/03/2020,1
+Chile,CHL,18/03/2020,1
+Chile,CHL,19/03/2020,1
+Chile,CHL,20/03/2020,1
+Chile,CHL,21/03/2020,1
+Chile,CHL,22/03/2020,1
+Chile,CHL,23/03/2020,1
+Chile,CHL,24/03/2020,1
+Chile,CHL,25/03/2020,1
+Chile,CHL,26/03/2020,1
+Chile,CHL,27/03/2020,1
+Chile,CHL,28/03/2020,1
+Chile,CHL,29/03/2020,1
+Chile,CHL,30/03/2020,1
+Chile,CHL,31/03/2020,1
+China,CHN,01/03/2020,1
+China,CHN,02/03/2020,1
+China,CHN,03/03/2020,1
+China,CHN,04/03/2020,1
+China,CHN,05/03/2020,1
+China,CHN,06/03/2020,1
+China,CHN,07/03/2020,1
+China,CHN,08/03/2020,1
+China,CHN,09/03/2020,1
+China,CHN,10/03/2020,1
+China,CHN,11/03/2020,1
+China,CHN,12/03/2020,1
+China,CHN,13/03/2020,1
+China,CHN,14/03/2020,1
+China,CHN,15/03/2020,1
+China,CHN,16/03/2020,1
+China,CHN,17/03/2020,1
+China,CHN,18/03/2020,1
+China,CHN,19/03/2020,1
+China,CHN,20/03/2020,1
+China,CHN,21/03/2020,1
+China,CHN,22/03/2020,1
+China,CHN,23/03/2020,1
+China,CHN,24/03/2020,1
+China,CHN,25/03/2020,1
+China,CHN,26/03/2020,1
+China,CHN,27/03/2020,1
+China,CHN,28/03/2020,1
+China,CHN,29/03/2020,1
+China,CHN,30/03/2020,1
+China,CHN,31/03/2020,1
+Colombia,COL,01/03/2020,0
+Colombia,COL,02/03/2020,0
+Colombia,COL,03/03/2020,0
+Colombia,COL,04/03/2020,0
+Colombia,COL,05/03/2020,0
+Colombia,COL,06/03/2020,0
+Colombia,COL,07/03/2020,0
+Colombia,COL,08/03/2020,0
+Colombia,COL,09/03/2020,0
+Colombia,COL,10/03/2020,0
+Colombia,COL,11/03/2020,0
+Colombia,COL,12/03/2020,0
+Colombia,COL,13/03/2020,0
+Colombia,COL,14/03/2020,0
+Colombia,COL,15/03/2020,0
+Colombia,COL,16/03/2020,1
+Colombia,COL,17/03/2020,1
+Colombia,COL,18/03/2020,1
+Colombia,COL,19/03/2020,1
+Colombia,COL,20/03/2020,1
+Colombia,COL,21/03/2020,1
+Colombia,COL,22/03/2020,1
+Colombia,COL,23/03/2020,1
+Colombia,COL,24/03/2020,1
+Colombia,COL,25/03/2020,1
+Colombia,COL,26/03/2020,1
+Colombia,COL,27/03/2020,1
+Colombia,COL,28/03/2020,1
+Colombia,COL,29/03/2020,1
+Colombia,COL,30/03/2020,1
+Colombia,COL,31/03/2020,1
+Congo,COG,01/03/2020,0
+Congo,COG,02/03/2020,0
+Congo,COG,03/03/2020,0
+Congo,COG,04/03/2020,0
+Congo,COG,05/03/2020,0
+Congo,COG,06/03/2020,0
+Congo,COG,07/03/2020,0
+Congo,COG,08/03/2020,0
+Congo,COG,09/03/2020,0
+Congo,COG,10/03/2020,0
+Congo,COG,11/03/2020,0
+Congo,COG,12/03/2020,0
+Congo,COG,13/03/2020,0
+Congo,COG,14/03/2020,0
+Congo,COG,15/03/2020,0
+Congo,COG,16/03/2020,0
+Congo,COG,17/03/2020,0
+Congo,COG,18/03/2020,0
+Congo,COG,19/03/2020,0
+Congo,COG,20/03/2020,0
+Congo,COG,21/03/2020,0
+Congo,COG,22/03/2020,0
+Congo,COG,23/03/2020,0
+Congo,COG,24/03/2020,0
+Congo,COG,25/03/2020,0
+Congo,COG,26/03/2020,0
+Congo,COG,27/03/2020,0
+Congo,COG,28/03/2020,1
+Congo,COG,29/03/2020,1
+Congo,COG,30/03/2020,1
+Congo,COG,31/03/2020,1
+Costa Rica,CRI,01/03/2020,0
+Costa Rica,CRI,02/03/2020,0
+Costa Rica,CRI,03/03/2020,0
+Costa Rica,CRI,04/03/2020,0
+Costa Rica,CRI,05/03/2020,0
+Costa Rica,CRI,06/03/2020,0
+Costa Rica,CRI,07/03/2020,0
+Costa Rica,CRI,08/03/2020,0
+Costa Rica,CRI,09/03/2020,0
+Costa Rica,CRI,10/03/2020,0
+Costa Rica,CRI,11/03/2020,0
+Costa Rica,CRI,12/03/2020,0
+Costa Rica,CRI,13/03/2020,0
+Costa Rica,CRI,14/03/2020,0
+Costa Rica,CRI,15/03/2020,0
+Costa Rica,CRI,16/03/2020,0
+Costa Rica,CRI,17/03/2020,1
+Costa Rica,CRI,18/03/2020,1
+Costa Rica,CRI,19/03/2020,1
+Costa Rica,CRI,20/03/2020,1
+Costa Rica,CRI,21/03/2020,1
+Costa Rica,CRI,22/03/2020,1
+Costa Rica,CRI,23/03/2020,1
+Costa Rica,CRI,24/03/2020,1
+Costa Rica,CRI,25/03/2020,1
+Costa Rica,CRI,26/03/2020,1
+Costa Rica,CRI,27/03/2020,1
+Costa Rica,CRI,28/03/2020,1
+Costa Rica,CRI,29/03/2020,1
+Costa Rica,CRI,30/03/2020,1
+Costa Rica,CRI,31/03/2020,1
+Cote d'Ivoire,CIV,01/03/2020,0
+Cote d'Ivoire,CIV,02/03/2020,0
+Cote d'Ivoire,CIV,03/03/2020,0
+Cote d'Ivoire,CIV,04/03/2020,0
+Cote d'Ivoire,CIV,05/03/2020,0
+Cote d'Ivoire,CIV,06/03/2020,0
+Cote d'Ivoire,CIV,07/03/2020,0
+Cote d'Ivoire,CIV,08/03/2020,0
+Cote d'Ivoire,CIV,09/03/2020,0
+Cote d'Ivoire,CIV,10/03/2020,0
+Cote d'Ivoire,CIV,11/03/2020,0
+Cote d'Ivoire,CIV,12/03/2020,0
+Cote d'Ivoire,CIV,13/03/2020,0
+Cote d'Ivoire,CIV,14/03/2020,0
+Cote d'Ivoire,CIV,15/03/2020,0
+Cote d'Ivoire,CIV,16/03/2020,1
+Cote d'Ivoire,CIV,17/03/2020,1
+Cote d'Ivoire,CIV,18/03/2020,1
+Cote d'Ivoire,CIV,19/03/2020,1
+Cote d'Ivoire,CIV,20/03/2020,1
+Cote d'Ivoire,CIV,21/03/2020,1
+Cote d'Ivoire,CIV,22/03/2020,1
+Cote d'Ivoire,CIV,23/03/2020,1
+Cote d'Ivoire,CIV,24/03/2020,1
+Cote d'Ivoire,CIV,25/03/2020,1
+Cote d'Ivoire,CIV,26/03/2020,1
+Cote d'Ivoire,CIV,27/03/2020,1
+Cote d'Ivoire,CIV,28/03/2020,1
+Cote d'Ivoire,CIV,29/03/2020,1
+Cote d'Ivoire,CIV,30/03/2020,1
+Cote d'Ivoire,CIV,31/03/2020,1
+Croatia,HRV,01/03/2020,0
+Croatia,HRV,02/03/2020,0
+Croatia,HRV,03/03/2020,0
+Croatia,HRV,04/03/2020,0
+Croatia,HRV,05/03/2020,0
+Croatia,HRV,06/03/2020,0
+Croatia,HRV,07/03/2020,0
+Croatia,HRV,08/03/2020,0
+Croatia,HRV,09/03/2020,0
+Croatia,HRV,10/03/2020,0
+Croatia,HRV,11/03/2020,0
+Croatia,HRV,12/03/2020,0
+Croatia,HRV,13/03/2020,1
+Croatia,HRV,14/03/2020,1
+Croatia,HRV,15/03/2020,1
+Croatia,HRV,16/03/2020,1
+Croatia,HRV,17/03/2020,1
+Croatia,HRV,18/03/2020,1
+Croatia,HRV,19/03/2020,1
+Croatia,HRV,20/03/2020,1
+Croatia,HRV,21/03/2020,1
+Croatia,HRV,22/03/2020,1
+Croatia,HRV,23/03/2020,1
+Croatia,HRV,24/03/2020,1
+Croatia,HRV,25/03/2020,1
+Croatia,HRV,26/03/2020,1
+Croatia,HRV,27/03/2020,1
+Croatia,HRV,28/03/2020,1
+Croatia,HRV,29/03/2020,1
+Croatia,HRV,30/03/2020,1
+Croatia,HRV,31/03/2020,1
+Cuba,CUB,01/03/2020,0
+Cuba,CUB,02/03/2020,0
+Cuba,CUB,03/03/2020,0
+Cuba,CUB,04/03/2020,0
+Cuba,CUB,05/03/2020,0
+Cuba,CUB,06/03/2020,0
+Cuba,CUB,07/03/2020,0
+Cuba,CUB,08/03/2020,0
+Cuba,CUB,09/03/2020,0
+Cuba,CUB,10/03/2020,0
+Cuba,CUB,11/03/2020,0
+Cuba,CUB,12/03/2020,0
+Cuba,CUB,13/03/2020,0
+Cuba,CUB,14/03/2020,0
+Cuba,CUB,15/03/2020,0
+Cuba,CUB,16/03/2020,0
+Cuba,CUB,17/03/2020,0
+Cuba,CUB,18/03/2020,0
+Cuba,CUB,19/03/2020,0
+Cuba,CUB,20/03/2020,0
+Cuba,CUB,21/03/2020,0
+Cuba,CUB,22/03/2020,0
+Cuba,CUB,23/03/2020,0
+Cuba,CUB,24/03/2020,1
+Cuba,CUB,25/03/2020,1
+Cuba,CUB,26/03/2020,1
+Cuba,CUB,27/03/2020,1
+Cuba,CUB,28/03/2020,1
+Cuba,CUB,29/03/2020,1
+Cuba,CUB,30/03/2020,1
+Cuba,CUB,31/03/2020,1
+Cyprus,CYP,01/03/2020,0
+Cyprus,CYP,02/03/2020,0
+Cyprus,CYP,03/03/2020,0
+Cyprus,CYP,04/03/2020,0
+Cyprus,CYP,05/03/2020,0
+Cyprus,CYP,06/03/2020,0
+Cyprus,CYP,07/03/2020,0
+Cyprus,CYP,08/03/2020,0
+Cyprus,CYP,09/03/2020,0
+Cyprus,CYP,10/03/2020,0
+Cyprus,CYP,11/03/2020,0
+Cyprus,CYP,12/03/2020,0
+Cyprus,CYP,13/03/2020,1
+Cyprus,CYP,14/03/2020,1
+Cyprus,CYP,15/03/2020,1
+Cyprus,CYP,16/03/2020,1
+Cyprus,CYP,17/03/2020,1
+Cyprus,CYP,18/03/2020,1
+Cyprus,CYP,19/03/2020,1
+Cyprus,CYP,20/03/2020,1
+Cyprus,CYP,21/03/2020,1
+Cyprus,CYP,22/03/2020,1
+Cyprus,CYP,23/03/2020,1
+Cyprus,CYP,24/03/2020,1
+Cyprus,CYP,25/03/2020,1
+Cyprus,CYP,26/03/2020,1
+Cyprus,CYP,27/03/2020,1
+Cyprus,CYP,28/03/2020,1
+Cyprus,CYP,29/03/2020,1
+Cyprus,CYP,30/03/2020,1
+Cyprus,CYP,31/03/2020,1
+Czechia,CZE,01/03/2020,0
+Czechia,CZE,02/03/2020,0
+Czechia,CZE,03/03/2020,0
+Czechia,CZE,04/03/2020,0
+Czechia,CZE,05/03/2020,0
+Czechia,CZE,06/03/2020,0
+Czechia,CZE,07/03/2020,0
+Czechia,CZE,08/03/2020,0
+Czechia,CZE,09/03/2020,0
+Czechia,CZE,10/03/2020,0
+Czechia,CZE,11/03/2020,1
+Czechia,CZE,12/03/2020,1
+Czechia,CZE,13/03/2020,1
+Czechia,CZE,14/03/2020,1
+Czechia,CZE,15/03/2020,1
+Czechia,CZE,16/03/2020,1
+Czechia,CZE,17/03/2020,1
+Czechia,CZE,18/03/2020,1
+Czechia,CZE,19/03/2020,1
+Czechia,CZE,20/03/2020,1
+Czechia,CZE,21/03/2020,1
+Czechia,CZE,22/03/2020,1
+Czechia,CZE,23/03/2020,1
+Czechia,CZE,24/03/2020,1
+Czechia,CZE,25/03/2020,1
+Czechia,CZE,26/03/2020,1
+Czechia,CZE,27/03/2020,1
+Czechia,CZE,28/03/2020,1
+Czechia,CZE,29/03/2020,1
+Czechia,CZE,30/03/2020,1
+Czechia,CZE,31/03/2020,1
+Democratic Republic of Congo,COD,01/03/2020,0
+Democratic Republic of Congo,COD,02/03/2020,0
+Democratic Republic of Congo,COD,03/03/2020,0
+Democratic Republic of Congo,COD,04/03/2020,0
+Democratic Republic of Congo,COD,05/03/2020,0
+Democratic Republic of Congo,COD,06/03/2020,0
+Democratic Republic of Congo,COD,07/03/2020,0
+Democratic Republic of Congo,COD,08/03/2020,0
+Democratic Republic of Congo,COD,09/03/2020,0
+Democratic Republic of Congo,COD,10/03/2020,0
+Democratic Republic of Congo,COD,11/03/2020,0
+Democratic Republic of Congo,COD,12/03/2020,0
+Democratic Republic of Congo,COD,13/03/2020,0
+Democratic Republic of Congo,COD,14/03/2020,0
+Democratic Republic of Congo,COD,15/03/2020,0
+Democratic Republic of Congo,COD,16/03/2020,0
+Democratic Republic of Congo,COD,17/03/2020,0
+Democratic Republic of Congo,COD,18/03/2020,0
+Democratic Republic of Congo,COD,19/03/2020,1
+Democratic Republic of Congo,COD,20/03/2020,1
+Democratic Republic of Congo,COD,21/03/2020,1
+Democratic Republic of Congo,COD,22/03/2020,1
+Democratic Republic of Congo,COD,23/03/2020,1
+Democratic Republic of Congo,COD,24/03/2020,1
+Democratic Republic of Congo,COD,25/03/2020,1
+Democratic Republic of Congo,COD,26/03/2020,1
+Democratic Republic of Congo,COD,27/03/2020,1
+Democratic Republic of Congo,COD,28/03/2020,1
+Democratic Republic of Congo,COD,29/03/2020,1
+Democratic Republic of Congo,COD,30/03/2020,1
+Democratic Republic of Congo,COD,31/03/2020,1
+Denmark,DNK,01/03/2020,0
+Denmark,DNK,02/03/2020,0
+Denmark,DNK,03/03/2020,0
+Denmark,DNK,04/03/2020,0
+Denmark,DNK,05/03/2020,0
+Denmark,DNK,06/03/2020,0
+Denmark,DNK,07/03/2020,0
+Denmark,DNK,08/03/2020,0
+Denmark,DNK,09/03/2020,0
+Denmark,DNK,10/03/2020,0
+Denmark,DNK,11/03/2020,0
+Denmark,DNK,12/03/2020,0
+Denmark,DNK,13/03/2020,1
+Denmark,DNK,14/03/2020,1
+Denmark,DNK,15/03/2020,1
+Denmark,DNK,16/03/2020,1
+Denmark,DNK,17/03/2020,1
+Denmark,DNK,18/03/2020,1
+Denmark,DNK,19/03/2020,1
+Denmark,DNK,20/03/2020,1
+Denmark,DNK,21/03/2020,1
+Denmark,DNK,22/03/2020,1
+Denmark,DNK,23/03/2020,1
+Denmark,DNK,24/03/2020,1
+Denmark,DNK,25/03/2020,1
+Denmark,DNK,26/03/2020,1
+Denmark,DNK,27/03/2020,1
+Denmark,DNK,28/03/2020,1
+Denmark,DNK,29/03/2020,1
+Denmark,DNK,30/03/2020,1
+Denmark,DNK,31/03/2020,1
+Djibouti,DJI,01/03/2020,0
+Djibouti,DJI,02/03/2020,0
+Djibouti,DJI,03/03/2020,0
+Djibouti,DJI,04/03/2020,0
+Djibouti,DJI,05/03/2020,0
+Djibouti,DJI,06/03/2020,0
+Djibouti,DJI,07/03/2020,0
+Djibouti,DJI,08/03/2020,0
+Djibouti,DJI,09/03/2020,0
+Djibouti,DJI,10/03/2020,0
+Djibouti,DJI,11/03/2020,0
+Djibouti,DJI,12/03/2020,0
+Djibouti,DJI,13/03/2020,0
+Djibouti,DJI,14/03/2020,0
+Djibouti,DJI,15/03/2020,0
+Djibouti,DJI,16/03/2020,0
+Djibouti,DJI,17/03/2020,0
+Djibouti,DJI,18/03/2020,0
+Djibouti,DJI,19/03/2020,1
+Djibouti,DJI,20/03/2020,1
+Djibouti,DJI,21/03/2020,1
+Djibouti,DJI,22/03/2020,1
+Djibouti,DJI,23/03/2020,1
+Djibouti,DJI,24/03/2020,1
+Djibouti,DJI,25/03/2020,1
+Djibouti,DJI,26/03/2020,1
+Djibouti,DJI,27/03/2020,1
+Djibouti,DJI,28/03/2020,1
+Djibouti,DJI,29/03/2020,1
+Djibouti,DJI,30/03/2020,1
+Djibouti,DJI,31/03/2020,1
+Dominica,DMA,01/03/2020,0
+Dominica,DMA,02/03/2020,0
+Dominica,DMA,03/03/2020,0
+Dominica,DMA,04/03/2020,0
+Dominica,DMA,05/03/2020,0
+Dominica,DMA,06/03/2020,0
+Dominica,DMA,07/03/2020,0
+Dominica,DMA,08/03/2020,0
+Dominica,DMA,09/03/2020,0
+Dominica,DMA,10/03/2020,0
+Dominica,DMA,11/03/2020,0
+Dominica,DMA,12/03/2020,0
+Dominica,DMA,13/03/2020,0
+Dominica,DMA,14/03/2020,0
+Dominica,DMA,15/03/2020,0
+Dominica,DMA,16/03/2020,0
+Dominica,DMA,17/03/2020,0
+Dominica,DMA,18/03/2020,0
+Dominica,DMA,19/03/2020,0
+Dominica,DMA,20/03/2020,0
+Dominica,DMA,21/03/2020,0
+Dominica,DMA,22/03/2020,0
+Dominica,DMA,23/03/2020,1
+Dominica,DMA,24/03/2020,1
+Dominica,DMA,25/03/2020,1
+Dominica,DMA,26/03/2020,1
+Dominica,DMA,27/03/2020,1
+Dominica,DMA,28/03/2020,1
+Dominica,DMA,29/03/2020,1
+Dominica,DMA,30/03/2020,1
+Dominica,DMA,31/03/2020,1
+Dominican Republic,DOM,01/03/2020,0
+Dominican Republic,DOM,02/03/2020,0
+Dominican Republic,DOM,03/03/2020,0
+Dominican Republic,DOM,04/03/2020,0
+Dominican Republic,DOM,05/03/2020,0
+Dominican Republic,DOM,06/03/2020,0
+Dominican Republic,DOM,07/03/2020,0
+Dominican Republic,DOM,08/03/2020,0
+Dominican Republic,DOM,09/03/2020,0
+Dominican Republic,DOM,10/03/2020,0
+Dominican Republic,DOM,11/03/2020,0
+Dominican Republic,DOM,12/03/2020,0
+Dominican Republic,DOM,13/03/2020,0
+Dominican Republic,DOM,14/03/2020,0
+Dominican Republic,DOM,15/03/2020,0
+Dominican Republic,DOM,16/03/2020,0
+Dominican Republic,DOM,17/03/2020,0
+Dominican Republic,DOM,18/03/2020,0
+Dominican Republic,DOM,19/03/2020,1
+Dominican Republic,DOM,20/03/2020,1
+Dominican Republic,DOM,21/03/2020,1
+Dominican Republic,DOM,22/03/2020,1
+Dominican Republic,DOM,23/03/2020,1
+Dominican Republic,DOM,24/03/2020,1
+Dominican Republic,DOM,25/03/2020,1
+Dominican Republic,DOM,26/03/2020,1
+Dominican Republic,DOM,27/03/2020,1
+Dominican Republic,DOM,28/03/2020,1
+Dominican Republic,DOM,29/03/2020,1
+Dominican Republic,DOM,30/03/2020,1
+Dominican Republic,DOM,31/03/2020,1
+Ecuador,ECU,01/03/2020,0
+Ecuador,ECU,02/03/2020,0
+Ecuador,ECU,03/03/2020,0
+Ecuador,ECU,04/03/2020,0
+Ecuador,ECU,05/03/2020,0
+Ecuador,ECU,06/03/2020,0
+Ecuador,ECU,07/03/2020,0
+Ecuador,ECU,08/03/2020,0
+Ecuador,ECU,09/03/2020,0
+Ecuador,ECU,10/03/2020,0
+Ecuador,ECU,11/03/2020,0
+Ecuador,ECU,12/03/2020,0
+Ecuador,ECU,13/03/2020,1
+Ecuador,ECU,14/03/2020,1
+Ecuador,ECU,15/03/2020,1
+Ecuador,ECU,16/03/2020,1
+Ecuador,ECU,17/03/2020,1
+Ecuador,ECU,18/03/2020,1
+Ecuador,ECU,19/03/2020,1
+Ecuador,ECU,20/03/2020,1
+Ecuador,ECU,21/03/2020,1
+Ecuador,ECU,22/03/2020,1
+Ecuador,ECU,23/03/2020,1
+Ecuador,ECU,24/03/2020,1
+Ecuador,ECU,25/03/2020,1
+Ecuador,ECU,26/03/2020,1
+Ecuador,ECU,27/03/2020,1
+Ecuador,ECU,28/03/2020,1
+Ecuador,ECU,29/03/2020,1
+Ecuador,ECU,30/03/2020,1
+Ecuador,ECU,31/03/2020,1
+Egypt,EGY,01/03/2020,0
+Egypt,EGY,02/03/2020,0
+Egypt,EGY,03/03/2020,0
+Egypt,EGY,04/03/2020,0
+Egypt,EGY,05/03/2020,0
+Egypt,EGY,06/03/2020,0
+Egypt,EGY,07/03/2020,0
+Egypt,EGY,08/03/2020,0
+Egypt,EGY,09/03/2020,0
+Egypt,EGY,10/03/2020,0
+Egypt,EGY,11/03/2020,0
+Egypt,EGY,12/03/2020,0
+Egypt,EGY,13/03/2020,0
+Egypt,EGY,14/03/2020,0
+Egypt,EGY,15/03/2020,1
+Egypt,EGY,16/03/2020,1
+Egypt,EGY,17/03/2020,1
+Egypt,EGY,18/03/2020,1
+Egypt,EGY,19/03/2020,1
+Egypt,EGY,20/03/2020,1
+Egypt,EGY,21/03/2020,1
+Egypt,EGY,22/03/2020,1
+Egypt,EGY,23/03/2020,1
+Egypt,EGY,24/03/2020,1
+Egypt,EGY,25/03/2020,1
+Egypt,EGY,26/03/2020,1
+Egypt,EGY,27/03/2020,1
+Egypt,EGY,28/03/2020,1
+Egypt,EGY,29/03/2020,1
+Egypt,EGY,30/03/2020,1
+Egypt,EGY,31/03/2020,1
+El Salvador,SLV,01/03/2020,0
+El Salvador,SLV,02/03/2020,0
+El Salvador,SLV,03/03/2020,0
+El Salvador,SLV,04/03/2020,0
+El Salvador,SLV,05/03/2020,0
+El Salvador,SLV,06/03/2020,0
+El Salvador,SLV,07/03/2020,0
+El Salvador,SLV,08/03/2020,0
+El Salvador,SLV,09/03/2020,0
+El Salvador,SLV,10/03/2020,0
+El Salvador,SLV,11/03/2020,1
+El Salvador,SLV,12/03/2020,1
+El Salvador,SLV,13/03/2020,1
+El Salvador,SLV,14/03/2020,1
+El Salvador,SLV,15/03/2020,1
+El Salvador,SLV,16/03/2020,1
+El Salvador,SLV,17/03/2020,1
+El Salvador,SLV,18/03/2020,1
+El Salvador,SLV,19/03/2020,1
+El Salvador,SLV,20/03/2020,1
+El Salvador,SLV,21/03/2020,1
+El Salvador,SLV,22/03/2020,1
+El Salvador,SLV,23/03/2020,1
+El Salvador,SLV,24/03/2020,1
+El Salvador,SLV,25/03/2020,1
+El Salvador,SLV,26/03/2020,1
+El Salvador,SLV,27/03/2020,1
+El Salvador,SLV,28/03/2020,1
+El Salvador,SLV,29/03/2020,1
+El Salvador,SLV,30/03/2020,1
+El Salvador,SLV,31/03/2020,1
+Eritrea,ERI,01/03/2020,0
+Eritrea,ERI,02/03/2020,0
+Eritrea,ERI,03/03/2020,0
+Eritrea,ERI,04/03/2020,0
+Eritrea,ERI,05/03/2020,0
+Eritrea,ERI,06/03/2020,0
+Eritrea,ERI,07/03/2020,0
+Eritrea,ERI,08/03/2020,0
+Eritrea,ERI,09/03/2020,0
+Eritrea,ERI,10/03/2020,0
+Eritrea,ERI,11/03/2020,0
+Eritrea,ERI,12/03/2020,0
+Eritrea,ERI,13/03/2020,0
+Eritrea,ERI,14/03/2020,0
+Eritrea,ERI,15/03/2020,0
+Eritrea,ERI,16/03/2020,0
+Eritrea,ERI,17/03/2020,0
+Eritrea,ERI,18/03/2020,0
+Eritrea,ERI,19/03/2020,0
+Eritrea,ERI,20/03/2020,0
+Eritrea,ERI,21/03/2020,0
+Eritrea,ERI,22/03/2020,0
+Eritrea,ERI,23/03/2020,0
+Eritrea,ERI,24/03/2020,0
+Eritrea,ERI,25/03/2020,0
+Eritrea,ERI,26/03/2020,0
+Eritrea,ERI,27/03/2020,1
+Eritrea,ERI,28/03/2020,1
+Eritrea,ERI,29/03/2020,1
+Eritrea,ERI,30/03/2020,1
+Eritrea,ERI,31/03/2020,1
+Estonia,EST,01/03/2020,0
+Estonia,EST,02/03/2020,0
+Estonia,EST,03/03/2020,0
+Estonia,EST,04/03/2020,0
+Estonia,EST,05/03/2020,0
+Estonia,EST,06/03/2020,0
+Estonia,EST,07/03/2020,0
+Estonia,EST,08/03/2020,0
+Estonia,EST,09/03/2020,0
+Estonia,EST,10/03/2020,0
+Estonia,EST,11/03/2020,0
+Estonia,EST,12/03/2020,0
+Estonia,EST,13/03/2020,0
+Estonia,EST,14/03/2020,0
+Estonia,EST,15/03/2020,0
+Estonia,EST,16/03/2020,1
+Estonia,EST,17/03/2020,1
+Estonia,EST,18/03/2020,1
+Estonia,EST,19/03/2020,1
+Estonia,EST,20/03/2020,1
+Estonia,EST,21/03/2020,1
+Estonia,EST,22/03/2020,1
+Estonia,EST,23/03/2020,1
+Estonia,EST,24/03/2020,1
+Estonia,EST,25/03/2020,1
+Estonia,EST,26/03/2020,1
+Estonia,EST,27/03/2020,1
+Estonia,EST,28/03/2020,1
+Estonia,EST,29/03/2020,1
+Estonia,EST,30/03/2020,1
+Estonia,EST,31/03/2020,1
+Eswatini,SWZ,01/03/2020,0
+Eswatini,SWZ,02/03/2020,0
+Eswatini,SWZ,03/03/2020,0
+Eswatini,SWZ,04/03/2020,0
+Eswatini,SWZ,05/03/2020,0
+Eswatini,SWZ,06/03/2020,0
+Eswatini,SWZ,07/03/2020,0
+Eswatini,SWZ,08/03/2020,0
+Eswatini,SWZ,09/03/2020,0
+Eswatini,SWZ,10/03/2020,0
+Eswatini,SWZ,11/03/2020,0
+Eswatini,SWZ,12/03/2020,0
+Eswatini,SWZ,13/03/2020,0
+Eswatini,SWZ,14/03/2020,0
+Eswatini,SWZ,15/03/2020,0
+Eswatini,SWZ,16/03/2020,0
+Eswatini,SWZ,17/03/2020,1
+Eswatini,SWZ,18/03/2020,1
+Eswatini,SWZ,19/03/2020,1
+Eswatini,SWZ,20/03/2020,1
+Eswatini,SWZ,21/03/2020,1
+Eswatini,SWZ,22/03/2020,1
+Eswatini,SWZ,23/03/2020,1
+Eswatini,SWZ,24/03/2020,1
+Eswatini,SWZ,25/03/2020,1
+Eswatini,SWZ,26/03/2020,1
+Eswatini,SWZ,27/03/2020,1
+Eswatini,SWZ,28/03/2020,1
+Eswatini,SWZ,29/03/2020,1
+Eswatini,SWZ,30/03/2020,1
+Eswatini,SWZ,31/03/2020,1
+Ethiopia,ETH,01/03/2020,0
+Ethiopia,ETH,02/03/2020,0
+Ethiopia,ETH,03/03/2020,0
+Ethiopia,ETH,04/03/2020,0
+Ethiopia,ETH,05/03/2020,0
+Ethiopia,ETH,06/03/2020,0
+Ethiopia,ETH,07/03/2020,0
+Ethiopia,ETH,08/03/2020,0
+Ethiopia,ETH,09/03/2020,0
+Ethiopia,ETH,10/03/2020,0
+Ethiopia,ETH,11/03/2020,0
+Ethiopia,ETH,12/03/2020,0
+Ethiopia,ETH,13/03/2020,0
+Ethiopia,ETH,14/03/2020,0
+Ethiopia,ETH,15/03/2020,0
+Ethiopia,ETH,16/03/2020,0
+Ethiopia,ETH,17/03/2020,0
+Ethiopia,ETH,18/03/2020,0
+Ethiopia,ETH,19/03/2020,0
+Ethiopia,ETH,20/03/2020,0
+Ethiopia,ETH,21/03/2020,0
+Ethiopia,ETH,22/03/2020,0
+Ethiopia,ETH,23/03/2020,0
+Ethiopia,ETH,24/03/2020,0
+Ethiopia,ETH,25/03/2020,1
+Ethiopia,ETH,26/03/2020,1
+Ethiopia,ETH,27/03/2020,1
+Ethiopia,ETH,28/03/2020,1
+Ethiopia,ETH,29/03/2020,1
+Ethiopia,ETH,30/03/2020,1
+Ethiopia,ETH,31/03/2020,1
+Faeroe Islands,FRO,01/03/2020,0
+Faeroe Islands,FRO,02/03/2020,0
+Faeroe Islands,FRO,03/03/2020,0
+Faeroe Islands,FRO,04/03/2020,0
+Faeroe Islands,FRO,05/03/2020,0
+Faeroe Islands,FRO,06/03/2020,0
+Faeroe Islands,FRO,07/03/2020,0
+Faeroe Islands,FRO,08/03/2020,0
+Faeroe Islands,FRO,09/03/2020,0
+Faeroe Islands,FRO,10/03/2020,0
+Faeroe Islands,FRO,11/03/2020,0
+Faeroe Islands,FRO,12/03/2020,0
+Faeroe Islands,FRO,13/03/2020,0
+Faeroe Islands,FRO,14/03/2020,0
+Faeroe Islands,FRO,15/03/2020,0
+Faeroe Islands,FRO,16/03/2020,1
+Faeroe Islands,FRO,17/03/2020,1
+Faeroe Islands,FRO,18/03/2020,1
+Faeroe Islands,FRO,19/03/2020,1
+Faeroe Islands,FRO,20/03/2020,1
+Faeroe Islands,FRO,21/03/2020,1
+Faeroe Islands,FRO,22/03/2020,1
+Faeroe Islands,FRO,23/03/2020,1
+Faeroe Islands,FRO,24/03/2020,1
+Faeroe Islands,FRO,25/03/2020,1
+Faeroe Islands,FRO,26/03/2020,1
+Faeroe Islands,FRO,27/03/2020,1
+Faeroe Islands,FRO,28/03/2020,1
+Faeroe Islands,FRO,29/03/2020,1
+Faeroe Islands,FRO,30/03/2020,1
+Faeroe Islands,FRO,31/03/2020,1
+Fiji,FJI,01/03/2020,0
+Fiji,FJI,02/03/2020,0
+Fiji,FJI,03/03/2020,0
+Fiji,FJI,04/03/2020,0
+Fiji,FJI,05/03/2020,0
+Fiji,FJI,06/03/2020,0
+Fiji,FJI,07/03/2020,0
+Fiji,FJI,08/03/2020,0
+Fiji,FJI,09/03/2020,0
+Fiji,FJI,10/03/2020,0
+Fiji,FJI,11/03/2020,0
+Fiji,FJI,12/03/2020,0
+Fiji,FJI,13/03/2020,0
+Fiji,FJI,14/03/2020,0
+Fiji,FJI,15/03/2020,0
+Fiji,FJI,16/03/2020,0
+Fiji,FJI,17/03/2020,0
+Fiji,FJI,18/03/2020,0
+Fiji,FJI,19/03/2020,1
+Fiji,FJI,20/03/2020,1
+Fiji,FJI,21/03/2020,1
+Fiji,FJI,22/03/2020,1
+Fiji,FJI,23/03/2020,1
+Fiji,FJI,24/03/2020,1
+Fiji,FJI,25/03/2020,1
+Fiji,FJI,26/03/2020,1
+Fiji,FJI,27/03/2020,1
+Fiji,FJI,28/03/2020,1
+Fiji,FJI,29/03/2020,1
+Fiji,FJI,30/03/2020,1
+Fiji,FJI,31/03/2020,1
+Finland,FIN,01/03/2020,0
+Finland,FIN,02/03/2020,0
+Finland,FIN,03/03/2020,0
+Finland,FIN,04/03/2020,0
+Finland,FIN,05/03/2020,0
+Finland,FIN,06/03/2020,0
+Finland,FIN,07/03/2020,0
+Finland,FIN,08/03/2020,0
+Finland,FIN,09/03/2020,0
+Finland,FIN,10/03/2020,0
+Finland,FIN,11/03/2020,0
+Finland,FIN,12/03/2020,0
+Finland,FIN,13/03/2020,0
+Finland,FIN,14/03/2020,0
+Finland,FIN,15/03/2020,0
+Finland,FIN,16/03/2020,0
+Finland,FIN,17/03/2020,0
+Finland,FIN,18/03/2020,0
+Finland,FIN,19/03/2020,0
+Finland,FIN,20/03/2020,0
+Finland,FIN,21/03/2020,0
+Finland,FIN,22/03/2020,0
+Finland,FIN,23/03/2020,0
+Finland,FIN,24/03/2020,0
+Finland,FIN,25/03/2020,0
+Finland,FIN,26/03/2020,0
+Finland,FIN,27/03/2020,0
+Finland,FIN,28/03/2020,0
+Finland,FIN,29/03/2020,0
+Finland,FIN,30/03/2020,0
+Finland,FIN,31/03/2020,0
+France,FRA,01/03/2020,0
+France,FRA,02/03/2020,1
+France,FRA,03/03/2020,1
+France,FRA,04/03/2020,1
+France,FRA,05/03/2020,1
+France,FRA,06/03/2020,1
+France,FRA,07/03/2020,1
+France,FRA,08/03/2020,1
+France,FRA,09/03/2020,1
+France,FRA,10/03/2020,1
+France,FRA,11/03/2020,1
+France,FRA,12/03/2020,1
+France,FRA,13/03/2020,1
+France,FRA,14/03/2020,1
+France,FRA,15/03/2020,1
+France,FRA,16/03/2020,1
+France,FRA,17/03/2020,1
+France,FRA,18/03/2020,1
+France,FRA,19/03/2020,1
+France,FRA,20/03/2020,1
+France,FRA,21/03/2020,1
+France,FRA,22/03/2020,1
+France,FRA,23/03/2020,1
+France,FRA,24/03/2020,1
+France,FRA,25/03/2020,1
+France,FRA,26/03/2020,1
+France,FRA,27/03/2020,1
+France,FRA,28/03/2020,1
+France,FRA,29/03/2020,1
+France,FRA,30/03/2020,1
+France,FRA,31/03/2020,1
+Gabon,GAB,01/03/2020,0
+Gabon,GAB,02/03/2020,0
+Gabon,GAB,03/03/2020,0
+Gabon,GAB,04/03/2020,0
+Gabon,GAB,05/03/2020,0
+Gabon,GAB,06/03/2020,0
+Gabon,GAB,07/03/2020,0
+Gabon,GAB,08/03/2020,0
+Gabon,GAB,09/03/2020,0
+Gabon,GAB,10/03/2020,0
+Gabon,GAB,11/03/2020,0
+Gabon,GAB,12/03/2020,0
+Gabon,GAB,13/03/2020,0
+Gabon,GAB,14/03/2020,0
+Gabon,GAB,15/03/2020,0
+Gabon,GAB,16/03/2020,1
+Gabon,GAB,17/03/2020,1
+Gabon,GAB,18/03/2020,1
+Gabon,GAB,19/03/2020,1
+Gabon,GAB,20/03/2020,1
+Gabon,GAB,21/03/2020,1
+Gabon,GAB,22/03/2020,1
+Gabon,GAB,23/03/2020,1
+Gabon,GAB,24/03/2020,1
+Gabon,GAB,25/03/2020,1
+Gabon,GAB,26/03/2020,1
+Gabon,GAB,27/03/2020,1
+Gabon,GAB,28/03/2020,1
+Gabon,GAB,29/03/2020,1
+Gabon,GAB,30/03/2020,1
+Gabon,GAB,31/03/2020,1
+Gambia,GMB,01/03/2020,0
+Gambia,GMB,02/03/2020,0
+Gambia,GMB,03/03/2020,0
+Gambia,GMB,04/03/2020,0
+Gambia,GMB,05/03/2020,0
+Gambia,GMB,06/03/2020,0
+Gambia,GMB,07/03/2020,0
+Gambia,GMB,08/03/2020,0
+Gambia,GMB,09/03/2020,0
+Gambia,GMB,10/03/2020,0
+Gambia,GMB,11/03/2020,0
+Gambia,GMB,12/03/2020,0
+Gambia,GMB,13/03/2020,0
+Gambia,GMB,14/03/2020,0
+Gambia,GMB,15/03/2020,0
+Gambia,GMB,16/03/2020,0
+Gambia,GMB,17/03/2020,0
+Gambia,GMB,18/03/2020,1
+Gambia,GMB,19/03/2020,1
+Gambia,GMB,20/03/2020,1
+Gambia,GMB,21/03/2020,1
+Gambia,GMB,22/03/2020,1
+Gambia,GMB,23/03/2020,1
+Gambia,GMB,24/03/2020,1
+Gambia,GMB,25/03/2020,1
+Gambia,GMB,26/03/2020,1
+Gambia,GMB,27/03/2020,1
+Gambia,GMB,28/03/2020,1
+Gambia,GMB,29/03/2020,1
+Gambia,GMB,30/03/2020,1
+Gambia,GMB,31/03/2020,1
+Georgia,GEO,01/03/2020,0
+Georgia,GEO,02/03/2020,1
+Georgia,GEO,03/03/2020,1
+Georgia,GEO,04/03/2020,1
+Georgia,GEO,05/03/2020,1
+Georgia,GEO,06/03/2020,1
+Georgia,GEO,07/03/2020,1
+Georgia,GEO,08/03/2020,1
+Georgia,GEO,09/03/2020,1
+Georgia,GEO,10/03/2020,1
+Georgia,GEO,11/03/2020,1
+Georgia,GEO,12/03/2020,1
+Georgia,GEO,13/03/2020,1
+Georgia,GEO,14/03/2020,1
+Georgia,GEO,15/03/2020,1
+Georgia,GEO,16/03/2020,1
+Georgia,GEO,17/03/2020,1
+Georgia,GEO,18/03/2020,1
+Georgia,GEO,19/03/2020,1
+Georgia,GEO,20/03/2020,1
+Georgia,GEO,21/03/2020,1
+Georgia,GEO,22/03/2020,1
+Georgia,GEO,23/03/2020,1
+Georgia,GEO,24/03/2020,1
+Georgia,GEO,25/03/2020,1
+Georgia,GEO,26/03/2020,1
+Georgia,GEO,27/03/2020,1
+Georgia,GEO,28/03/2020,1
+Georgia,GEO,29/03/2020,1
+Georgia,GEO,30/03/2020,1
+Georgia,GEO,31/03/2020,1
+Germany,DEU,01/03/2020,0
+Germany,DEU,02/03/2020,0
+Germany,DEU,03/03/2020,0
+Germany,DEU,04/03/2020,0
+Germany,DEU,05/03/2020,0
+Germany,DEU,06/03/2020,0
+Germany,DEU,07/03/2020,0
+Germany,DEU,08/03/2020,0
+Germany,DEU,09/03/2020,0
+Germany,DEU,10/03/2020,0
+Germany,DEU,11/03/2020,0
+Germany,DEU,12/03/2020,0
+Germany,DEU,13/03/2020,0
+Germany,DEU,14/03/2020,0
+Germany,DEU,15/03/2020,0
+Germany,DEU,16/03/2020,1
+Germany,DEU,17/03/2020,1
+Germany,DEU,18/03/2020,1
+Germany,DEU,19/03/2020,1
+Germany,DEU,20/03/2020,1
+Germany,DEU,21/03/2020,1
+Germany,DEU,22/03/2020,1
+Germany,DEU,23/03/2020,1
+Germany,DEU,24/03/2020,1
+Germany,DEU,25/03/2020,1
+Germany,DEU,26/03/2020,1
+Germany,DEU,27/03/2020,1
+Germany,DEU,28/03/2020,1
+Germany,DEU,29/03/2020,1
+Germany,DEU,30/03/2020,1
+Germany,DEU,31/03/2020,1
+Ghana,GHA,01/03/2020,0
+Ghana,GHA,02/03/2020,0
+Ghana,GHA,03/03/2020,0
+Ghana,GHA,04/03/2020,0
+Ghana,GHA,05/03/2020,0
+Ghana,GHA,06/03/2020,0
+Ghana,GHA,07/03/2020,0
+Ghana,GHA,08/03/2020,0
+Ghana,GHA,09/03/2020,0
+Ghana,GHA,10/03/2020,0
+Ghana,GHA,11/03/2020,0
+Ghana,GHA,12/03/2020,0
+Ghana,GHA,13/03/2020,0
+Ghana,GHA,14/03/2020,0
+Ghana,GHA,15/03/2020,0
+Ghana,GHA,16/03/2020,1
+Ghana,GHA,17/03/2020,1
+Ghana,GHA,18/03/2020,1
+Ghana,GHA,19/03/2020,1
+Ghana,GHA,20/03/2020,1
+Ghana,GHA,21/03/2020,1
+Ghana,GHA,22/03/2020,1
+Ghana,GHA,23/03/2020,1
+Ghana,GHA,24/03/2020,1
+Ghana,GHA,25/03/2020,1
+Ghana,GHA,26/03/2020,1
+Ghana,GHA,27/03/2020,1
+Ghana,GHA,28/03/2020,1
+Ghana,GHA,29/03/2020,1
+Ghana,GHA,30/03/2020,1
+Ghana,GHA,31/03/2020,1
+Greece,GRC,01/03/2020,0
+Greece,GRC,02/03/2020,0
+Greece,GRC,03/03/2020,0
+Greece,GRC,04/03/2020,0
+Greece,GRC,05/03/2020,1
+Greece,GRC,06/03/2020,1
+Greece,GRC,07/03/2020,1
+Greece,GRC,08/03/2020,1
+Greece,GRC,09/03/2020,1
+Greece,GRC,10/03/2020,1
+Greece,GRC,11/03/2020,1
+Greece,GRC,12/03/2020,1
+Greece,GRC,13/03/2020,1
+Greece,GRC,14/03/2020,1
+Greece,GRC,15/03/2020,1
+Greece,GRC,16/03/2020,1
+Greece,GRC,17/03/2020,1
+Greece,GRC,18/03/2020,1
+Greece,GRC,19/03/2020,1
+Greece,GRC,20/03/2020,1
+Greece,GRC,21/03/2020,1
+Greece,GRC,22/03/2020,1
+Greece,GRC,23/03/2020,1
+Greece,GRC,24/03/2020,1
+Greece,GRC,25/03/2020,1
+Greece,GRC,26/03/2020,1
+Greece,GRC,27/03/2020,1
+Greece,GRC,28/03/2020,1
+Greece,GRC,29/03/2020,1
+Greece,GRC,30/03/2020,1
+Greece,GRC,31/03/2020,1
+Greenland,GRL,01/03/2020,0
+Greenland,GRL,02/03/2020,0
+Greenland,GRL,03/03/2020,0
+Greenland,GRL,04/03/2020,0
+Greenland,GRL,05/03/2020,0
+Greenland,GRL,06/03/2020,0
+Greenland,GRL,07/03/2020,0
+Greenland,GRL,08/03/2020,0
+Greenland,GRL,09/03/2020,0
+Greenland,GRL,10/03/2020,0
+Greenland,GRL,11/03/2020,0
+Greenland,GRL,12/03/2020,0
+Greenland,GRL,13/03/2020,0
+Greenland,GRL,14/03/2020,0
+Greenland,GRL,15/03/2020,0
+Greenland,GRL,16/03/2020,0
+Greenland,GRL,17/03/2020,0
+Greenland,GRL,18/03/2020,0
+Greenland,GRL,19/03/2020,1
+Greenland,GRL,20/03/2020,1
+Greenland,GRL,21/03/2020,1
+Greenland,GRL,22/03/2020,1
+Greenland,GRL,23/03/2020,1
+Greenland,GRL,24/03/2020,1
+Greenland,GRL,25/03/2020,1
+Greenland,GRL,26/03/2020,1
+Greenland,GRL,27/03/2020,1
+Greenland,GRL,28/03/2020,1
+Greenland,GRL,29/03/2020,1
+Greenland,GRL,30/03/2020,1
+Greenland,GRL,31/03/2020,1
+Guam,GUM,01/03/2020,0
+Guam,GUM,02/03/2020,0
+Guam,GUM,03/03/2020,0
+Guam,GUM,04/03/2020,0
+Guam,GUM,05/03/2020,0
+Guam,GUM,06/03/2020,0
+Guam,GUM,07/03/2020,0
+Guam,GUM,08/03/2020,0
+Guam,GUM,09/03/2020,0
+Guam,GUM,10/03/2020,0
+Guam,GUM,11/03/2020,0
+Guam,GUM,12/03/2020,0
+Guam,GUM,13/03/2020,0
+Guam,GUM,14/03/2020,0
+Guam,GUM,15/03/2020,0
+Guam,GUM,16/03/2020,1
+Guam,GUM,17/03/2020,1
+Guam,GUM,18/03/2020,1
+Guam,GUM,19/03/2020,1
+Guam,GUM,20/03/2020,1
+Guam,GUM,21/03/2020,1
+Guam,GUM,22/03/2020,1
+Guam,GUM,23/03/2020,1
+Guam,GUM,24/03/2020,1
+Guam,GUM,25/03/2020,1
+Guam,GUM,26/03/2020,1
+Guam,GUM,27/03/2020,1
+Guam,GUM,28/03/2020,1
+Guam,GUM,29/03/2020,1
+Guam,GUM,30/03/2020,1
+Guam,GUM,31/03/2020,1
+Guatemala,GTM,01/03/2020,0
+Guatemala,GTM,02/03/2020,0
+Guatemala,GTM,03/03/2020,0
+Guatemala,GTM,04/03/2020,0
+Guatemala,GTM,05/03/2020,0
+Guatemala,GTM,06/03/2020,0
+Guatemala,GTM,07/03/2020,0
+Guatemala,GTM,08/03/2020,0
+Guatemala,GTM,09/03/2020,0
+Guatemala,GTM,10/03/2020,0
+Guatemala,GTM,11/03/2020,0
+Guatemala,GTM,12/03/2020,0
+Guatemala,GTM,13/03/2020,0
+Guatemala,GTM,14/03/2020,0
+Guatemala,GTM,15/03/2020,0
+Guatemala,GTM,16/03/2020,1
+Guatemala,GTM,17/03/2020,1
+Guatemala,GTM,18/03/2020,1
+Guatemala,GTM,19/03/2020,1
+Guatemala,GTM,20/03/2020,1
+Guatemala,GTM,21/03/2020,1
+Guatemala,GTM,22/03/2020,1
+Guatemala,GTM,23/03/2020,1
+Guatemala,GTM,24/03/2020,1
+Guatemala,GTM,25/03/2020,1
+Guatemala,GTM,26/03/2020,1
+Guatemala,GTM,27/03/2020,1
+Guatemala,GTM,28/03/2020,1
+Guatemala,GTM,29/03/2020,1
+Guatemala,GTM,30/03/2020,1
+Guatemala,GTM,31/03/2020,1
+Guinea,GIN,01/03/2020,0
+Guinea,GIN,02/03/2020,0
+Guinea,GIN,03/03/2020,0
+Guinea,GIN,04/03/2020,0
+Guinea,GIN,05/03/2020,0
+Guinea,GIN,06/03/2020,0
+Guinea,GIN,07/03/2020,0
+Guinea,GIN,08/03/2020,0
+Guinea,GIN,09/03/2020,0
+Guinea,GIN,10/03/2020,0
+Guinea,GIN,11/03/2020,0
+Guinea,GIN,12/03/2020,0
+Guinea,GIN,13/03/2020,0
+Guinea,GIN,14/03/2020,0
+Guinea,GIN,15/03/2020,0
+Guinea,GIN,16/03/2020,0
+Guinea,GIN,17/03/2020,0
+Guinea,GIN,18/03/2020,0
+Guinea,GIN,19/03/2020,0
+Guinea,GIN,20/03/2020,0
+Guinea,GIN,21/03/2020,0
+Guinea,GIN,22/03/2020,0
+Guinea,GIN,23/03/2020,0
+Guinea,GIN,24/03/2020,0
+Guinea,GIN,25/03/2020,0
+Guinea,GIN,26/03/2020,0
+Guinea,GIN,27/03/2020,1
+Guinea,GIN,28/03/2020,1
+Guinea,GIN,29/03/2020,1
+Guinea,GIN,30/03/2020,1
+Guinea,GIN,31/03/2020,1
+Guyana,GUY,01/03/2020,0
+Guyana,GUY,02/03/2020,0
+Guyana,GUY,03/03/2020,0
+Guyana,GUY,04/03/2020,0
+Guyana,GUY,05/03/2020,0
+Guyana,GUY,06/03/2020,0
+Guyana,GUY,07/03/2020,0
+Guyana,GUY,08/03/2020,0
+Guyana,GUY,09/03/2020,0
+Guyana,GUY,10/03/2020,0
+Guyana,GUY,11/03/2020,0
+Guyana,GUY,12/03/2020,0
+Guyana,GUY,13/03/2020,0
+Guyana,GUY,14/03/2020,0
+Guyana,GUY,15/03/2020,0
+Guyana,GUY,16/03/2020,1
+Guyana,GUY,17/03/2020,1
+Guyana,GUY,18/03/2020,1
+Guyana,GUY,19/03/2020,1
+Guyana,GUY,20/03/2020,1
+Guyana,GUY,21/03/2020,1
+Guyana,GUY,22/03/2020,1
+Guyana,GUY,23/03/2020,1
+Guyana,GUY,24/03/2020,1
+Guyana,GUY,25/03/2020,1
+Guyana,GUY,26/03/2020,1
+Guyana,GUY,27/03/2020,1
+Guyana,GUY,28/03/2020,1
+Guyana,GUY,29/03/2020,1
+Guyana,GUY,30/03/2020,1
+Guyana,GUY,31/03/2020,1
+Haiti,HTI,01/03/2020,0
+Haiti,HTI,02/03/2020,0
+Haiti,HTI,03/03/2020,0
+Haiti,HTI,04/03/2020,0
+Haiti,HTI,05/03/2020,0
+Haiti,HTI,06/03/2020,0
+Haiti,HTI,07/03/2020,0
+Haiti,HTI,08/03/2020,0
+Haiti,HTI,09/03/2020,0
+Haiti,HTI,10/03/2020,0
+Haiti,HTI,11/03/2020,0
+Haiti,HTI,12/03/2020,0
+Haiti,HTI,13/03/2020,0
+Haiti,HTI,14/03/2020,0
+Haiti,HTI,15/03/2020,1
+Haiti,HTI,16/03/2020,1
+Haiti,HTI,17/03/2020,1
+Haiti,HTI,18/03/2020,1
+Haiti,HTI,19/03/2020,1
+Haiti,HTI,20/03/2020,1
+Haiti,HTI,21/03/2020,1
+Haiti,HTI,22/03/2020,1
+Haiti,HTI,23/03/2020,1
+Haiti,HTI,24/03/2020,1
+Haiti,HTI,25/03/2020,1
+Haiti,HTI,26/03/2020,1
+Haiti,HTI,27/03/2020,1
+Haiti,HTI,28/03/2020,1
+Haiti,HTI,29/03/2020,1
+Haiti,HTI,30/03/2020,1
+Haiti,HTI,31/03/2020,1
+Honduras,HND,01/03/2020,0
+Honduras,HND,02/03/2020,0
+Honduras,HND,03/03/2020,0
+Honduras,HND,04/03/2020,0
+Honduras,HND,05/03/2020,0
+Honduras,HND,06/03/2020,0
+Honduras,HND,07/03/2020,0
+Honduras,HND,08/03/2020,0
+Honduras,HND,09/03/2020,0
+Honduras,HND,10/03/2020,0
+Honduras,HND,11/03/2020,0
+Honduras,HND,12/03/2020,0
+Honduras,HND,13/03/2020,1
+Honduras,HND,14/03/2020,1
+Honduras,HND,15/03/2020,1
+Honduras,HND,16/03/2020,1
+Honduras,HND,17/03/2020,1
+Honduras,HND,18/03/2020,1
+Honduras,HND,19/03/2020,1
+Honduras,HND,20/03/2020,1
+Honduras,HND,21/03/2020,1
+Honduras,HND,22/03/2020,1
+Honduras,HND,23/03/2020,1
+Honduras,HND,24/03/2020,1
+Honduras,HND,25/03/2020,1
+Honduras,HND,26/03/2020,1
+Honduras,HND,27/03/2020,1
+Honduras,HND,28/03/2020,1
+Honduras,HND,29/03/2020,1
+Honduras,HND,30/03/2020,1
+Honduras,HND,31/03/2020,1
+Hong Kong,HKG,01/03/2020,1
+Hong Kong,HKG,02/03/2020,1
+Hong Kong,HKG,03/03/2020,1
+Hong Kong,HKG,04/03/2020,1
+Hong Kong,HKG,05/03/2020,1
+Hong Kong,HKG,06/03/2020,1
+Hong Kong,HKG,07/03/2020,1
+Hong Kong,HKG,08/03/2020,1
+Hong Kong,HKG,09/03/2020,1
+Hong Kong,HKG,10/03/2020,1
+Hong Kong,HKG,11/03/2020,1
+Hong Kong,HKG,12/03/2020,1
+Hong Kong,HKG,13/03/2020,1
+Hong Kong,HKG,14/03/2020,1
+Hong Kong,HKG,15/03/2020,1
+Hong Kong,HKG,16/03/2020,1
+Hong Kong,HKG,17/03/2020,1
+Hong Kong,HKG,18/03/2020,1
+Hong Kong,HKG,19/03/2020,1
+Hong Kong,HKG,20/03/2020,1
+Hong Kong,HKG,21/03/2020,1
+Hong Kong,HKG,22/03/2020,1
+Hong Kong,HKG,23/03/2020,1
+Hong Kong,HKG,24/03/2020,1
+Hong Kong,HKG,25/03/2020,1
+Hong Kong,HKG,26/03/2020,1
+Hong Kong,HKG,27/03/2020,1
+Hong Kong,HKG,28/03/2020,1
+Hong Kong,HKG,29/03/2020,1
+Hong Kong,HKG,30/03/2020,1
+Hong Kong,HKG,31/03/2020,1
+Hungary,HUN,01/03/2020,0
+Hungary,HUN,02/03/2020,0
+Hungary,HUN,03/03/2020,0
+Hungary,HUN,04/03/2020,0
+Hungary,HUN,05/03/2020,0
+Hungary,HUN,06/03/2020,0
+Hungary,HUN,07/03/2020,0
+Hungary,HUN,08/03/2020,0
+Hungary,HUN,09/03/2020,0
+Hungary,HUN,10/03/2020,0
+Hungary,HUN,11/03/2020,0
+Hungary,HUN,12/03/2020,0
+Hungary,HUN,13/03/2020,0
+Hungary,HUN,14/03/2020,0
+Hungary,HUN,15/03/2020,0
+Hungary,HUN,16/03/2020,1
+Hungary,HUN,17/03/2020,1
+Hungary,HUN,18/03/2020,1
+Hungary,HUN,19/03/2020,1
+Hungary,HUN,20/03/2020,1
+Hungary,HUN,21/03/2020,1
+Hungary,HUN,22/03/2020,1
+Hungary,HUN,23/03/2020,1
+Hungary,HUN,24/03/2020,1
+Hungary,HUN,25/03/2020,1
+Hungary,HUN,26/03/2020,1
+Hungary,HUN,27/03/2020,1
+Hungary,HUN,28/03/2020,1
+Hungary,HUN,29/03/2020,1
+Hungary,HUN,30/03/2020,1
+Hungary,HUN,31/03/2020,1
+Iceland,ISL,01/03/2020,0
+Iceland,ISL,02/03/2020,0
+Iceland,ISL,03/03/2020,0
+Iceland,ISL,04/03/2020,0
+Iceland,ISL,05/03/2020,0
+Iceland,ISL,06/03/2020,0
+Iceland,ISL,07/03/2020,0
+Iceland,ISL,08/03/2020,0
+Iceland,ISL,09/03/2020,0
+Iceland,ISL,10/03/2020,0
+Iceland,ISL,11/03/2020,0
+Iceland,ISL,12/03/2020,0
+Iceland,ISL,13/03/2020,0
+Iceland,ISL,14/03/2020,0
+Iceland,ISL,15/03/2020,0
+Iceland,ISL,16/03/2020,0
+Iceland,ISL,17/03/2020,0
+Iceland,ISL,18/03/2020,0
+Iceland,ISL,19/03/2020,0
+Iceland,ISL,20/03/2020,0
+Iceland,ISL,21/03/2020,0
+Iceland,ISL,22/03/2020,0
+Iceland,ISL,23/03/2020,0
+Iceland,ISL,24/03/2020,0
+Iceland,ISL,25/03/2020,0
+Iceland,ISL,26/03/2020,0
+Iceland,ISL,27/03/2020,0
+Iceland,ISL,28/03/2020,0
+Iceland,ISL,29/03/2020,0
+Iceland,ISL,30/03/2020,0
+Iceland,ISL,31/03/2020,0
+India,IND,01/03/2020,0
+India,IND,02/03/2020,0
+India,IND,03/03/2020,0
+India,IND,04/03/2020,0
+India,IND,05/03/2020,0
+India,IND,06/03/2020,0
+India,IND,07/03/2020,0
+India,IND,08/03/2020,0
+India,IND,09/03/2020,0
+India,IND,10/03/2020,0
+India,IND,11/03/2020,0
+India,IND,12/03/2020,0
+India,IND,13/03/2020,1
+India,IND,14/03/2020,1
+India,IND,15/03/2020,1
+India,IND,16/03/2020,1
+India,IND,17/03/2020,1
+India,IND,18/03/2020,1
+India,IND,19/03/2020,1
+India,IND,20/03/2020,1
+India,IND,21/03/2020,1
+India,IND,22/03/2020,1
+India,IND,23/03/2020,1
+India,IND,24/03/2020,1
+India,IND,25/03/2020,1
+India,IND,26/03/2020,1
+India,IND,27/03/2020,1
+India,IND,28/03/2020,1
+India,IND,29/03/2020,1
+India,IND,30/03/2020,1
+India,IND,31/03/2020,1
+Indonesia,IDN,01/03/2020,1
+Indonesia,IDN,02/03/2020,1
+Indonesia,IDN,03/03/2020,1
+Indonesia,IDN,04/03/2020,1
+Indonesia,IDN,05/03/2020,1
+Indonesia,IDN,06/03/2020,1
+Indonesia,IDN,07/03/2020,1
+Indonesia,IDN,08/03/2020,1
+Indonesia,IDN,09/03/2020,1
+Indonesia,IDN,10/03/2020,1
+Indonesia,IDN,11/03/2020,1
+Indonesia,IDN,12/03/2020,1
+Indonesia,IDN,13/03/2020,1
+Indonesia,IDN,14/03/2020,1
+Indonesia,IDN,15/03/2020,1
+Indonesia,IDN,16/03/2020,1
+Indonesia,IDN,17/03/2020,1
+Indonesia,IDN,18/03/2020,1
+Indonesia,IDN,19/03/2020,1
+Indonesia,IDN,20/03/2020,1
+Indonesia,IDN,21/03/2020,1
+Indonesia,IDN,22/03/2020,1
+Indonesia,IDN,23/03/2020,1
+Indonesia,IDN,24/03/2020,1
+Indonesia,IDN,25/03/2020,1
+Indonesia,IDN,26/03/2020,1
+Indonesia,IDN,27/03/2020,1
+Indonesia,IDN,28/03/2020,1
+Indonesia,IDN,29/03/2020,1
+Indonesia,IDN,30/03/2020,1
+Indonesia,IDN,31/03/2020,1
+Iran,IRN,01/03/2020,0
+Iran,IRN,02/03/2020,0
+Iran,IRN,03/03/2020,0
+Iran,IRN,04/03/2020,0
+Iran,IRN,05/03/2020,1
+Iran,IRN,06/03/2020,1
+Iran,IRN,07/03/2020,1
+Iran,IRN,08/03/2020,1
+Iran,IRN,09/03/2020,1
+Iran,IRN,10/03/2020,1
+Iran,IRN,11/03/2020,1
+Iran,IRN,12/03/2020,1
+Iran,IRN,13/03/2020,1
+Iran,IRN,14/03/2020,1
+Iran,IRN,15/03/2020,1
+Iran,IRN,16/03/2020,1
+Iran,IRN,17/03/2020,1
+Iran,IRN,18/03/2020,1
+Iran,IRN,19/03/2020,1
+Iran,IRN,20/03/2020,1
+Iran,IRN,21/03/2020,1
+Iran,IRN,22/03/2020,1
+Iran,IRN,23/03/2020,1
+Iran,IRN,24/03/2020,1
+Iran,IRN,25/03/2020,1
+Iran,IRN,26/03/2020,1
+Iran,IRN,27/03/2020,1
+Iran,IRN,28/03/2020,1
+Iran,IRN,29/03/2020,1
+Iran,IRN,30/03/2020,1
+Iran,IRN,31/03/2020,1
+Iraq,IRQ,01/03/2020,1
+Iraq,IRQ,02/03/2020,1
+Iraq,IRQ,03/03/2020,1
+Iraq,IRQ,04/03/2020,1
+Iraq,IRQ,05/03/2020,1
+Iraq,IRQ,06/03/2020,1
+Iraq,IRQ,07/03/2020,1
+Iraq,IRQ,08/03/2020,1
+Iraq,IRQ,09/03/2020,1
+Iraq,IRQ,10/03/2020,1
+Iraq,IRQ,11/03/2020,1
+Iraq,IRQ,12/03/2020,1
+Iraq,IRQ,13/03/2020,1
+Iraq,IRQ,14/03/2020,1
+Iraq,IRQ,15/03/2020,1
+Iraq,IRQ,16/03/2020,1
+Iraq,IRQ,17/03/2020,1
+Iraq,IRQ,18/03/2020,1
+Iraq,IRQ,19/03/2020,1
+Iraq,IRQ,20/03/2020,1
+Iraq,IRQ,21/03/2020,1
+Iraq,IRQ,22/03/2020,1
+Iraq,IRQ,23/03/2020,1
+Iraq,IRQ,24/03/2020,1
+Iraq,IRQ,25/03/2020,1
+Iraq,IRQ,26/03/2020,1
+Iraq,IRQ,27/03/2020,1
+Iraq,IRQ,28/03/2020,1
+Iraq,IRQ,29/03/2020,1
+Iraq,IRQ,30/03/2020,1
+Iraq,IRQ,31/03/2020,1
+Ireland,IRL,01/03/2020,0
+Ireland,IRL,02/03/2020,0
+Ireland,IRL,03/03/2020,0
+Ireland,IRL,04/03/2020,0
+Ireland,IRL,05/03/2020,0
+Ireland,IRL,06/03/2020,0
+Ireland,IRL,07/03/2020,0
+Ireland,IRL,08/03/2020,0
+Ireland,IRL,09/03/2020,0
+Ireland,IRL,10/03/2020,0
+Ireland,IRL,11/03/2020,0
+Ireland,IRL,12/03/2020,0
+Ireland,IRL,13/03/2020,1
+Ireland,IRL,14/03/2020,1
+Ireland,IRL,15/03/2020,1
+Ireland,IRL,16/03/2020,1
+Ireland,IRL,17/03/2020,1
+Ireland,IRL,18/03/2020,1
+Ireland,IRL,19/03/2020,1
+Ireland,IRL,20/03/2020,1
+Ireland,IRL,21/03/2020,1
+Ireland,IRL,22/03/2020,1
+Ireland,IRL,23/03/2020,1
+Ireland,IRL,24/03/2020,1
+Ireland,IRL,25/03/2020,1
+Ireland,IRL,26/03/2020,1
+Ireland,IRL,27/03/2020,1
+Ireland,IRL,28/03/2020,1
+Ireland,IRL,29/03/2020,1
+Ireland,IRL,30/03/2020,1
+Ireland,IRL,31/03/2020,1
+Israel,ISR,01/03/2020,0
+Israel,ISR,02/03/2020,0
+Israel,ISR,03/03/2020,0
+Israel,ISR,04/03/2020,0
+Israel,ISR,05/03/2020,0
+Israel,ISR,06/03/2020,0
+Israel,ISR,07/03/2020,0
+Israel,ISR,08/03/2020,0
+Israel,ISR,09/03/2020,0
+Israel,ISR,10/03/2020,0
+Israel,ISR,11/03/2020,0
+Israel,ISR,12/03/2020,0
+Israel,ISR,13/03/2020,1
+Israel,ISR,14/03/2020,1
+Israel,ISR,15/03/2020,1
+Israel,ISR,16/03/2020,1
+Israel,ISR,17/03/2020,1
+Israel,ISR,18/03/2020,1
+Israel,ISR,19/03/2020,1
+Israel,ISR,20/03/2020,1
+Israel,ISR,21/03/2020,1
+Israel,ISR,22/03/2020,1
+Israel,ISR,23/03/2020,1
+Israel,ISR,24/03/2020,1
+Israel,ISR,25/03/2020,1
+Israel,ISR,26/03/2020,1
+Israel,ISR,27/03/2020,1
+Israel,ISR,28/03/2020,1
+Israel,ISR,29/03/2020,1
+Israel,ISR,30/03/2020,1
+Israel,ISR,31/03/2020,1
+Italy,ITA,01/03/2020,1
+Italy,ITA,02/03/2020,1
+Italy,ITA,03/03/2020,1
+Italy,ITA,04/03/2020,1
+Italy,ITA,05/03/2020,1
+Italy,ITA,06/03/2020,1
+Italy,ITA,07/03/2020,1
+Italy,ITA,08/03/2020,1
+Italy,ITA,09/03/2020,1
+Italy,ITA,10/03/2020,1
+Italy,ITA,11/03/2020,1
+Italy,ITA,12/03/2020,1
+Italy,ITA,13/03/2020,1
+Italy,ITA,14/03/2020,1
+Italy,ITA,15/03/2020,1
+Italy,ITA,16/03/2020,1
+Italy,ITA,17/03/2020,1
+Italy,ITA,18/03/2020,1
+Italy,ITA,19/03/2020,1
+Italy,ITA,20/03/2020,1
+Italy,ITA,21/03/2020,1
+Italy,ITA,22/03/2020,1
+Italy,ITA,23/03/2020,1
+Italy,ITA,24/03/2020,1
+Italy,ITA,25/03/2020,1
+Italy,ITA,26/03/2020,1
+Italy,ITA,27/03/2020,1
+Italy,ITA,28/03/2020,1
+Italy,ITA,29/03/2020,1
+Italy,ITA,30/03/2020,1
+Italy,ITA,31/03/2020,1
+Jamaica,JAM,01/03/2020,0
+Jamaica,JAM,02/03/2020,0
+Jamaica,JAM,03/03/2020,0
+Jamaica,JAM,04/03/2020,0
+Jamaica,JAM,05/03/2020,0
+Jamaica,JAM,06/03/2020,0
+Jamaica,JAM,07/03/2020,0
+Jamaica,JAM,08/03/2020,0
+Jamaica,JAM,09/03/2020,0
+Jamaica,JAM,10/03/2020,0
+Jamaica,JAM,11/03/2020,0
+Jamaica,JAM,12/03/2020,0
+Jamaica,JAM,13/03/2020,1
+Jamaica,JAM,14/03/2020,1
+Jamaica,JAM,15/03/2020,1
+Jamaica,JAM,16/03/2020,1
+Jamaica,JAM,17/03/2020,1
+Jamaica,JAM,18/03/2020,1
+Jamaica,JAM,19/03/2020,1
+Jamaica,JAM,20/03/2020,1
+Jamaica,JAM,21/03/2020,1
+Jamaica,JAM,22/03/2020,1
+Jamaica,JAM,23/03/2020,1
+Jamaica,JAM,24/03/2020,1
+Jamaica,JAM,25/03/2020,1
+Jamaica,JAM,26/03/2020,1
+Jamaica,JAM,27/03/2020,1
+Jamaica,JAM,28/03/2020,1
+Jamaica,JAM,29/03/2020,1
+Jamaica,JAM,30/03/2020,1
+Jamaica,JAM,31/03/2020,1
+Japan,JPN,01/03/2020,0
+Japan,JPN,02/03/2020,1
+Japan,JPN,03/03/2020,1
+Japan,JPN,04/03/2020,1
+Japan,JPN,05/03/2020,1
+Japan,JPN,06/03/2020,1
+Japan,JPN,07/03/2020,1
+Japan,JPN,08/03/2020,1
+Japan,JPN,09/03/2020,1
+Japan,JPN,10/03/2020,1
+Japan,JPN,11/03/2020,1
+Japan,JPN,12/03/2020,1
+Japan,JPN,13/03/2020,1
+Japan,JPN,14/03/2020,1
+Japan,JPN,15/03/2020,1
+Japan,JPN,16/03/2020,1
+Japan,JPN,17/03/2020,1
+Japan,JPN,18/03/2020,1
+Japan,JPN,19/03/2020,1
+Japan,JPN,20/03/2020,1
+Japan,JPN,21/03/2020,1
+Japan,JPN,22/03/2020,1
+Japan,JPN,23/03/2020,1
+Japan,JPN,24/03/2020,1
+Japan,JPN,25/03/2020,1
+Japan,JPN,26/03/2020,1
+Japan,JPN,27/03/2020,1
+Japan,JPN,28/03/2020,1
+Japan,JPN,29/03/2020,1
+Japan,JPN,30/03/2020,1
+Japan,JPN,31/03/2020,1
+Jordan,JOR,01/03/2020,0
+Jordan,JOR,02/03/2020,0
+Jordan,JOR,03/03/2020,0
+Jordan,JOR,04/03/2020,0
+Jordan,JOR,05/03/2020,0
+Jordan,JOR,06/03/2020,0
+Jordan,JOR,07/03/2020,0
+Jordan,JOR,08/03/2020,0
+Jordan,JOR,09/03/2020,0
+Jordan,JOR,10/03/2020,0
+Jordan,JOR,11/03/2020,0
+Jordan,JOR,12/03/2020,0
+Jordan,JOR,13/03/2020,0
+Jordan,JOR,14/03/2020,0
+Jordan,JOR,15/03/2020,1
+Jordan,JOR,16/03/2020,1
+Jordan,JOR,17/03/2020,1
+Jordan,JOR,18/03/2020,1
+Jordan,JOR,19/03/2020,1
+Jordan,JOR,20/03/2020,1
+Jordan,JOR,21/03/2020,1
+Jordan,JOR,22/03/2020,1
+Jordan,JOR,23/03/2020,1
+Jordan,JOR,24/03/2020,1
+Jordan,JOR,25/03/2020,1
+Jordan,JOR,26/03/2020,1
+Jordan,JOR,27/03/2020,1
+Jordan,JOR,28/03/2020,1
+Jordan,JOR,29/03/2020,1
+Jordan,JOR,30/03/2020,1
+Jordan,JOR,31/03/2020,1
+Kazakhstan,KAZ,01/03/2020,0
+Kazakhstan,KAZ,02/03/2020,0
+Kazakhstan,KAZ,03/03/2020,0
+Kazakhstan,KAZ,04/03/2020,0
+Kazakhstan,KAZ,05/03/2020,0
+Kazakhstan,KAZ,06/03/2020,0
+Kazakhstan,KAZ,07/03/2020,0
+Kazakhstan,KAZ,08/03/2020,0
+Kazakhstan,KAZ,09/03/2020,0
+Kazakhstan,KAZ,10/03/2020,0
+Kazakhstan,KAZ,11/03/2020,0
+Kazakhstan,KAZ,12/03/2020,0
+Kazakhstan,KAZ,13/03/2020,0
+Kazakhstan,KAZ,14/03/2020,0
+Kazakhstan,KAZ,15/03/2020,0
+Kazakhstan,KAZ,16/03/2020,1
+Kazakhstan,KAZ,17/03/2020,1
+Kazakhstan,KAZ,18/03/2020,1
+Kazakhstan,KAZ,19/03/2020,1
+Kazakhstan,KAZ,20/03/2020,1
+Kazakhstan,KAZ,21/03/2020,1
+Kazakhstan,KAZ,22/03/2020,1
+Kazakhstan,KAZ,23/03/2020,1
+Kazakhstan,KAZ,24/03/2020,1
+Kazakhstan,KAZ,25/03/2020,1
+Kazakhstan,KAZ,26/03/2020,1
+Kazakhstan,KAZ,27/03/2020,1
+Kazakhstan,KAZ,28/03/2020,1
+Kazakhstan,KAZ,29/03/2020,1
+Kazakhstan,KAZ,30/03/2020,1
+Kazakhstan,KAZ,31/03/2020,1
+Kenya,KEN,01/03/2020,0
+Kenya,KEN,02/03/2020,0
+Kenya,KEN,03/03/2020,0
+Kenya,KEN,04/03/2020,0
+Kenya,KEN,05/03/2020,0
+Kenya,KEN,06/03/2020,0
+Kenya,KEN,07/03/2020,0
+Kenya,KEN,08/03/2020,0
+Kenya,KEN,09/03/2020,0
+Kenya,KEN,10/03/2020,0
+Kenya,KEN,11/03/2020,0
+Kenya,KEN,12/03/2020,0
+Kenya,KEN,13/03/2020,0
+Kenya,KEN,14/03/2020,0
+Kenya,KEN,15/03/2020,1
+Kenya,KEN,16/03/2020,1
+Kenya,KEN,17/03/2020,1
+Kenya,KEN,18/03/2020,1
+Kenya,KEN,19/03/2020,1
+Kenya,KEN,20/03/2020,1
+Kenya,KEN,21/03/2020,1
+Kenya,KEN,22/03/2020,1
+Kenya,KEN,23/03/2020,1
+Kenya,KEN,24/03/2020,1
+Kenya,KEN,25/03/2020,1
+Kenya,KEN,26/03/2020,1
+Kenya,KEN,27/03/2020,1
+Kenya,KEN,28/03/2020,1
+Kenya,KEN,29/03/2020,1
+Kenya,KEN,30/03/2020,1
+Kenya,KEN,31/03/2020,1
+Kiribati,KIR,01/03/2020,0
+Kiribati,KIR,02/03/2020,0
+Kiribati,KIR,03/03/2020,0
+Kiribati,KIR,04/03/2020,0
+Kiribati,KIR,05/03/2020,0
+Kiribati,KIR,06/03/2020,0
+Kiribati,KIR,07/03/2020,0
+Kiribati,KIR,08/03/2020,0
+Kiribati,KIR,09/03/2020,0
+Kiribati,KIR,10/03/2020,0
+Kiribati,KIR,11/03/2020,0
+Kiribati,KIR,12/03/2020,0
+Kiribati,KIR,13/03/2020,0
+Kiribati,KIR,14/03/2020,0
+Kiribati,KIR,15/03/2020,0
+Kiribati,KIR,16/03/2020,0
+Kiribati,KIR,17/03/2020,0
+Kiribati,KIR,18/03/2020,0
+Kiribati,KIR,19/03/2020,0
+Kiribati,KIR,20/03/2020,0
+Kiribati,KIR,21/03/2020,0
+Kiribati,KIR,22/03/2020,0
+Kiribati,KIR,23/03/2020,0
+Kiribati,KIR,24/03/2020,0
+Kiribati,KIR,25/03/2020,0
+Kiribati,KIR,26/03/2020,0
+Kiribati,KIR,27/03/2020,0
+Kiribati,KIR,28/03/2020,0
+Kiribati,KIR,29/03/2020,0
+Kiribati,KIR,30/03/2020,1
+Kiribati,KIR,31/03/2020,1
+Kosovo,OWID_KOS,01/03/2020,0
+Kosovo,OWID_KOS,02/03/2020,0
+Kosovo,OWID_KOS,03/03/2020,0
+Kosovo,OWID_KOS,04/03/2020,0
+Kosovo,OWID_KOS,05/03/2020,0
+Kosovo,OWID_KOS,06/03/2020,0
+Kosovo,OWID_KOS,07/03/2020,0
+Kosovo,OWID_KOS,08/03/2020,0
+Kosovo,OWID_KOS,09/03/2020,0
+Kosovo,OWID_KOS,10/03/2020,0
+Kosovo,OWID_KOS,11/03/2020,0
+Kosovo,OWID_KOS,12/03/2020,1
+Kosovo,OWID_KOS,13/03/2020,1
+Kosovo,OWID_KOS,14/03/2020,1
+Kosovo,OWID_KOS,15/03/2020,1
+Kosovo,OWID_KOS,16/03/2020,1
+Kosovo,OWID_KOS,17/03/2020,1
+Kosovo,OWID_KOS,18/03/2020,1
+Kosovo,OWID_KOS,19/03/2020,1
+Kosovo,OWID_KOS,20/03/2020,1
+Kosovo,OWID_KOS,21/03/2020,1
+Kosovo,OWID_KOS,22/03/2020,1
+Kosovo,OWID_KOS,23/03/2020,1
+Kosovo,OWID_KOS,24/03/2020,1
+Kosovo,OWID_KOS,25/03/2020,1
+Kosovo,OWID_KOS,26/03/2020,1
+Kosovo,OWID_KOS,27/03/2020,1
+Kosovo,OWID_KOS,28/03/2020,1
+Kosovo,OWID_KOS,29/03/2020,1
+Kosovo,OWID_KOS,30/03/2020,1
+Kosovo,OWID_KOS,31/03/2020,1
+Kuwait,KWT,01/03/2020,1
+Kuwait,KWT,02/03/2020,1
+Kuwait,KWT,03/03/2020,1
+Kuwait,KWT,04/03/2020,1
+Kuwait,KWT,05/03/2020,1
+Kuwait,KWT,06/03/2020,1
+Kuwait,KWT,07/03/2020,1
+Kuwait,KWT,08/03/2020,1
+Kuwait,KWT,09/03/2020,1
+Kuwait,KWT,10/03/2020,1
+Kuwait,KWT,11/03/2020,1
+Kuwait,KWT,12/03/2020,1
+Kuwait,KWT,13/03/2020,1
+Kuwait,KWT,14/03/2020,1
+Kuwait,KWT,15/03/2020,1
+Kuwait,KWT,16/03/2020,1
+Kuwait,KWT,17/03/2020,1
+Kuwait,KWT,18/03/2020,1
+Kuwait,KWT,19/03/2020,1
+Kuwait,KWT,20/03/2020,1
+Kuwait,KWT,21/03/2020,1
+Kuwait,KWT,22/03/2020,1
+Kuwait,KWT,23/03/2020,1
+Kuwait,KWT,24/03/2020,1
+Kuwait,KWT,25/03/2020,1
+Kuwait,KWT,26/03/2020,1
+Kuwait,KWT,27/03/2020,1
+Kuwait,KWT,28/03/2020,1
+Kuwait,KWT,29/03/2020,1
+Kuwait,KWT,30/03/2020,1
+Kuwait,KWT,31/03/2020,1
+Kyrgyzstan,KGZ,01/03/2020,0
+Kyrgyzstan,KGZ,02/03/2020,0
+Kyrgyzstan,KGZ,03/03/2020,0
+Kyrgyzstan,KGZ,04/03/2020,0
+Kyrgyzstan,KGZ,05/03/2020,0
+Kyrgyzstan,KGZ,06/03/2020,0
+Kyrgyzstan,KGZ,07/03/2020,0
+Kyrgyzstan,KGZ,08/03/2020,0
+Kyrgyzstan,KGZ,09/03/2020,0
+Kyrgyzstan,KGZ,10/03/2020,0
+Kyrgyzstan,KGZ,11/03/2020,0
+Kyrgyzstan,KGZ,12/03/2020,0
+Kyrgyzstan,KGZ,13/03/2020,0
+Kyrgyzstan,KGZ,14/03/2020,0
+Kyrgyzstan,KGZ,15/03/2020,0
+Kyrgyzstan,KGZ,16/03/2020,1
+Kyrgyzstan,KGZ,17/03/2020,1
+Kyrgyzstan,KGZ,18/03/2020,1
+Kyrgyzstan,KGZ,19/03/2020,1
+Kyrgyzstan,KGZ,20/03/2020,1
+Kyrgyzstan,KGZ,21/03/2020,1
+Kyrgyzstan,KGZ,22/03/2020,1
+Kyrgyzstan,KGZ,23/03/2020,1
+Kyrgyzstan,KGZ,24/03/2020,1
+Kyrgyzstan,KGZ,25/03/2020,1
+Kyrgyzstan,KGZ,26/03/2020,1
+Kyrgyzstan,KGZ,27/03/2020,1
+Kyrgyzstan,KGZ,28/03/2020,1
+Kyrgyzstan,KGZ,29/03/2020,1
+Kyrgyzstan,KGZ,30/03/2020,1
+Kyrgyzstan,KGZ,31/03/2020,1
+Laos,LAO,01/03/2020,0
+Laos,LAO,02/03/2020,0
+Laos,LAO,03/03/2020,0
+Laos,LAO,04/03/2020,0
+Laos,LAO,05/03/2020,0
+Laos,LAO,06/03/2020,0
+Laos,LAO,07/03/2020,0
+Laos,LAO,08/03/2020,0
+Laos,LAO,09/03/2020,0
+Laos,LAO,10/03/2020,0
+Laos,LAO,11/03/2020,0
+Laos,LAO,12/03/2020,0
+Laos,LAO,13/03/2020,0
+Laos,LAO,14/03/2020,0
+Laos,LAO,15/03/2020,0
+Laos,LAO,16/03/2020,0
+Laos,LAO,17/03/2020,0
+Laos,LAO,18/03/2020,0
+Laos,LAO,19/03/2020,1
+Laos,LAO,20/03/2020,1
+Laos,LAO,21/03/2020,1
+Laos,LAO,22/03/2020,1
+Laos,LAO,23/03/2020,1
+Laos,LAO,24/03/2020,1
+Laos,LAO,25/03/2020,1
+Laos,LAO,26/03/2020,1
+Laos,LAO,27/03/2020,1
+Laos,LAO,28/03/2020,1
+Laos,LAO,29/03/2020,1
+Laos,LAO,30/03/2020,1
+Laos,LAO,31/03/2020,1
+Latvia,LVA,01/03/2020,0
+Latvia,LVA,02/03/2020,0
+Latvia,LVA,03/03/2020,0
+Latvia,LVA,04/03/2020,0
+Latvia,LVA,05/03/2020,0
+Latvia,LVA,06/03/2020,0
+Latvia,LVA,07/03/2020,0
+Latvia,LVA,08/03/2020,0
+Latvia,LVA,09/03/2020,0
+Latvia,LVA,10/03/2020,0
+Latvia,LVA,11/03/2020,0
+Latvia,LVA,12/03/2020,0
+Latvia,LVA,13/03/2020,1
+Latvia,LVA,14/03/2020,1
+Latvia,LVA,15/03/2020,1
+Latvia,LVA,16/03/2020,1
+Latvia,LVA,17/03/2020,1
+Latvia,LVA,18/03/2020,1
+Latvia,LVA,19/03/2020,1
+Latvia,LVA,20/03/2020,1
+Latvia,LVA,21/03/2020,1
+Latvia,LVA,22/03/2020,1
+Latvia,LVA,23/03/2020,1
+Latvia,LVA,24/03/2020,1
+Latvia,LVA,25/03/2020,1
+Latvia,LVA,26/03/2020,1
+Latvia,LVA,27/03/2020,1
+Latvia,LVA,28/03/2020,1
+Latvia,LVA,29/03/2020,1
+Latvia,LVA,30/03/2020,1
+Latvia,LVA,31/03/2020,1
+Lebanon,LBN,01/03/2020,1
+Lebanon,LBN,02/03/2020,1
+Lebanon,LBN,03/03/2020,1
+Lebanon,LBN,04/03/2020,1
+Lebanon,LBN,05/03/2020,1
+Lebanon,LBN,06/03/2020,1
+Lebanon,LBN,07/03/2020,1
+Lebanon,LBN,08/03/2020,1
+Lebanon,LBN,09/03/2020,1
+Lebanon,LBN,10/03/2020,1
+Lebanon,LBN,11/03/2020,1
+Lebanon,LBN,12/03/2020,1
+Lebanon,LBN,13/03/2020,1
+Lebanon,LBN,14/03/2020,1
+Lebanon,LBN,15/03/2020,1
+Lebanon,LBN,16/03/2020,1
+Lebanon,LBN,17/03/2020,1
+Lebanon,LBN,18/03/2020,1
+Lebanon,LBN,19/03/2020,1
+Lebanon,LBN,20/03/2020,1
+Lebanon,LBN,21/03/2020,1
+Lebanon,LBN,22/03/2020,1
+Lebanon,LBN,23/03/2020,1
+Lebanon,LBN,24/03/2020,1
+Lebanon,LBN,25/03/2020,1
+Lebanon,LBN,26/03/2020,1
+Lebanon,LBN,27/03/2020,1
+Lebanon,LBN,28/03/2020,1
+Lebanon,LBN,29/03/2020,1
+Lebanon,LBN,30/03/2020,1
+Lebanon,LBN,31/03/2020,1
+Lesotho,LSO,01/03/2020,0
+Lesotho,LSO,02/03/2020,0
+Lesotho,LSO,03/03/2020,0
+Lesotho,LSO,04/03/2020,0
+Lesotho,LSO,05/03/2020,0
+Lesotho,LSO,06/03/2020,0
+Lesotho,LSO,07/03/2020,0
+Lesotho,LSO,08/03/2020,0
+Lesotho,LSO,09/03/2020,0
+Lesotho,LSO,10/03/2020,0
+Lesotho,LSO,11/03/2020,0
+Lesotho,LSO,12/03/2020,0
+Lesotho,LSO,13/03/2020,0
+Lesotho,LSO,14/03/2020,0
+Lesotho,LSO,15/03/2020,0
+Lesotho,LSO,16/03/2020,0
+Lesotho,LSO,17/03/2020,0
+Lesotho,LSO,18/03/2020,1
+Lesotho,LSO,19/03/2020,1
+Lesotho,LSO,20/03/2020,1
+Lesotho,LSO,21/03/2020,1
+Lesotho,LSO,22/03/2020,1
+Lesotho,LSO,23/03/2020,1
+Lesotho,LSO,24/03/2020,1
+Lesotho,LSO,25/03/2020,1
+Lesotho,LSO,26/03/2020,1
+Lesotho,LSO,27/03/2020,1
+Lesotho,LSO,28/03/2020,1
+Lesotho,LSO,29/03/2020,1
+Lesotho,LSO,30/03/2020,1
+Lesotho,LSO,31/03/2020,1
+Liberia,LBR,01/03/2020,0
+Liberia,LBR,02/03/2020,0
+Liberia,LBR,03/03/2020,0
+Liberia,LBR,04/03/2020,0
+Liberia,LBR,05/03/2020,0
+Liberia,LBR,06/03/2020,0
+Liberia,LBR,07/03/2020,0
+Liberia,LBR,08/03/2020,0
+Liberia,LBR,09/03/2020,0
+Liberia,LBR,10/03/2020,0
+Liberia,LBR,11/03/2020,0
+Liberia,LBR,12/03/2020,0
+Liberia,LBR,13/03/2020,0
+Liberia,LBR,14/03/2020,0
+Liberia,LBR,15/03/2020,0
+Liberia,LBR,16/03/2020,0
+Liberia,LBR,17/03/2020,1
+Liberia,LBR,18/03/2020,1
+Liberia,LBR,19/03/2020,1
+Liberia,LBR,20/03/2020,1
+Liberia,LBR,21/03/2020,1
+Liberia,LBR,22/03/2020,1
+Liberia,LBR,23/03/2020,1
+Liberia,LBR,24/03/2020,1
+Liberia,LBR,25/03/2020,1
+Liberia,LBR,26/03/2020,1
+Liberia,LBR,27/03/2020,1
+Liberia,LBR,28/03/2020,1
+Liberia,LBR,29/03/2020,1
+Liberia,LBR,30/03/2020,1
+Liberia,LBR,31/03/2020,1
+Libya,LBY,01/03/2020,0
+Libya,LBY,02/03/2020,0
+Libya,LBY,03/03/2020,0
+Libya,LBY,04/03/2020,0
+Libya,LBY,05/03/2020,0
+Libya,LBY,06/03/2020,0
+Libya,LBY,07/03/2020,0
+Libya,LBY,08/03/2020,0
+Libya,LBY,09/03/2020,0
+Libya,LBY,10/03/2020,0
+Libya,LBY,11/03/2020,0
+Libya,LBY,12/03/2020,0
+Libya,LBY,13/03/2020,0
+Libya,LBY,14/03/2020,0
+Libya,LBY,15/03/2020,1
+Libya,LBY,16/03/2020,1
+Libya,LBY,17/03/2020,1
+Libya,LBY,18/03/2020,1
+Libya,LBY,19/03/2020,1
+Libya,LBY,20/03/2020,1
+Libya,LBY,21/03/2020,1
+Libya,LBY,22/03/2020,1
+Libya,LBY,23/03/2020,1
+Libya,LBY,24/03/2020,1
+Libya,LBY,25/03/2020,1
+Libya,LBY,26/03/2020,1
+Libya,LBY,27/03/2020,1
+Libya,LBY,28/03/2020,1
+Libya,LBY,29/03/2020,1
+Libya,LBY,30/03/2020,1
+Libya,LBY,31/03/2020,1
+Liechtenstein,LIE,01/03/2020,0
+Liechtenstein,LIE,02/03/2020,0
+Liechtenstein,LIE,03/03/2020,0
+Liechtenstein,LIE,04/03/2020,0
+Liechtenstein,LIE,05/03/2020,0
+Liechtenstein,LIE,06/03/2020,0
+Liechtenstein,LIE,07/03/2020,0
+Liechtenstein,LIE,08/03/2020,0
+Liechtenstein,LIE,09/03/2020,0
+Liechtenstein,LIE,10/03/2020,0
+Liechtenstein,LIE,11/03/2020,0
+Liechtenstein,LIE,12/03/2020,0
+Liechtenstein,LIE,13/03/2020,1
+Liechtenstein,LIE,14/03/2020,1
+Liechtenstein,LIE,15/03/2020,1
+Liechtenstein,LIE,16/03/2020,1
+Liechtenstein,LIE,17/03/2020,1
+Liechtenstein,LIE,18/03/2020,1
+Liechtenstein,LIE,19/03/2020,1
+Liechtenstein,LIE,20/03/2020,1
+Liechtenstein,LIE,21/03/2020,1
+Liechtenstein,LIE,22/03/2020,1
+Liechtenstein,LIE,23/03/2020,1
+Liechtenstein,LIE,24/03/2020,1
+Liechtenstein,LIE,25/03/2020,1
+Liechtenstein,LIE,26/03/2020,1
+Liechtenstein,LIE,27/03/2020,1
+Liechtenstein,LIE,28/03/2020,1
+Liechtenstein,LIE,29/03/2020,1
+Liechtenstein,LIE,30/03/2020,1
+Liechtenstein,LIE,31/03/2020,1
+Lithuania,LTU,01/03/2020,0
+Lithuania,LTU,02/03/2020,0
+Lithuania,LTU,03/03/2020,0
+Lithuania,LTU,04/03/2020,0
+Lithuania,LTU,05/03/2020,0
+Lithuania,LTU,06/03/2020,0
+Lithuania,LTU,07/03/2020,0
+Lithuania,LTU,08/03/2020,0
+Lithuania,LTU,09/03/2020,0
+Lithuania,LTU,10/03/2020,0
+Lithuania,LTU,11/03/2020,0
+Lithuania,LTU,12/03/2020,0
+Lithuania,LTU,13/03/2020,0
+Lithuania,LTU,14/03/2020,0
+Lithuania,LTU,15/03/2020,0
+Lithuania,LTU,16/03/2020,1
+Lithuania,LTU,17/03/2020,1
+Lithuania,LTU,18/03/2020,1
+Lithuania,LTU,19/03/2020,1
+Lithuania,LTU,20/03/2020,1
+Lithuania,LTU,21/03/2020,1
+Lithuania,LTU,22/03/2020,1
+Lithuania,LTU,23/03/2020,1
+Lithuania,LTU,24/03/2020,1
+Lithuania,LTU,25/03/2020,1
+Lithuania,LTU,26/03/2020,1
+Lithuania,LTU,27/03/2020,1
+Lithuania,LTU,28/03/2020,1
+Lithuania,LTU,29/03/2020,1
+Lithuania,LTU,30/03/2020,1
+Lithuania,LTU,31/03/2020,1
+Luxembourg,LUX,01/03/2020,0
+Luxembourg,LUX,02/03/2020,0
+Luxembourg,LUX,03/03/2020,0
+Luxembourg,LUX,04/03/2020,0
+Luxembourg,LUX,05/03/2020,0
+Luxembourg,LUX,06/03/2020,0
+Luxembourg,LUX,07/03/2020,0
+Luxembourg,LUX,08/03/2020,0
+Luxembourg,LUX,09/03/2020,0
+Luxembourg,LUX,10/03/2020,0
+Luxembourg,LUX,11/03/2020,0
+Luxembourg,LUX,12/03/2020,0
+Luxembourg,LUX,13/03/2020,0
+Luxembourg,LUX,14/03/2020,0
+Luxembourg,LUX,15/03/2020,0
+Luxembourg,LUX,16/03/2020,1
+Luxembourg,LUX,17/03/2020,1
+Luxembourg,LUX,18/03/2020,1
+Luxembourg,LUX,19/03/2020,1
+Luxembourg,LUX,20/03/2020,1
+Luxembourg,LUX,21/03/2020,1
+Luxembourg,LUX,22/03/2020,1
+Luxembourg,LUX,23/03/2020,1
+Luxembourg,LUX,24/03/2020,1
+Luxembourg,LUX,25/03/2020,1
+Luxembourg,LUX,26/03/2020,1
+Luxembourg,LUX,27/03/2020,1
+Luxembourg,LUX,28/03/2020,1
+Luxembourg,LUX,29/03/2020,1
+Luxembourg,LUX,30/03/2020,1
+Luxembourg,LUX,31/03/2020,1
+Macao,MAC,01/03/2020,1
+Macao,MAC,02/03/2020,1
+Macao,MAC,03/03/2020,1
+Macao,MAC,04/03/2020,1
+Macao,MAC,05/03/2020,1
+Macao,MAC,06/03/2020,1
+Macao,MAC,07/03/2020,1
+Macao,MAC,08/03/2020,1
+Macao,MAC,09/03/2020,1
+Macao,MAC,10/03/2020,1
+Macao,MAC,11/03/2020,1
+Macao,MAC,12/03/2020,1
+Macao,MAC,13/03/2020,1
+Macao,MAC,14/03/2020,1
+Macao,MAC,15/03/2020,1
+Macao,MAC,16/03/2020,1
+Macao,MAC,17/03/2020,1
+Macao,MAC,18/03/2020,1
+Macao,MAC,19/03/2020,1
+Macao,MAC,20/03/2020,1
+Macao,MAC,21/03/2020,1
+Macao,MAC,22/03/2020,1
+Macao,MAC,23/03/2020,1
+Macao,MAC,24/03/2020,1
+Macao,MAC,25/03/2020,1
+Macao,MAC,26/03/2020,1
+Macao,MAC,27/03/2020,1
+Macao,MAC,28/03/2020,1
+Macao,MAC,29/03/2020,1
+Macao,MAC,30/03/2020,1
+Macao,MAC,31/03/2020,1
+Madagascar,MDG,01/03/2020,0
+Madagascar,MDG,02/03/2020,0
+Madagascar,MDG,03/03/2020,0
+Madagascar,MDG,04/03/2020,0
+Madagascar,MDG,05/03/2020,0
+Madagascar,MDG,06/03/2020,0
+Madagascar,MDG,07/03/2020,0
+Madagascar,MDG,08/03/2020,0
+Madagascar,MDG,09/03/2020,0
+Madagascar,MDG,10/03/2020,0
+Madagascar,MDG,11/03/2020,0
+Madagascar,MDG,12/03/2020,0
+Madagascar,MDG,13/03/2020,0
+Madagascar,MDG,14/03/2020,0
+Madagascar,MDG,15/03/2020,0
+Madagascar,MDG,16/03/2020,0
+Madagascar,MDG,17/03/2020,0
+Madagascar,MDG,18/03/2020,0
+Madagascar,MDG,19/03/2020,0
+Madagascar,MDG,20/03/2020,0
+Madagascar,MDG,21/03/2020,1
+Madagascar,MDG,22/03/2020,1
+Madagascar,MDG,23/03/2020,1
+Madagascar,MDG,24/03/2020,1
+Madagascar,MDG,25/03/2020,1
+Madagascar,MDG,26/03/2020,1
+Madagascar,MDG,27/03/2020,1
+Madagascar,MDG,28/03/2020,1
+Madagascar,MDG,29/03/2020,1
+Madagascar,MDG,30/03/2020,1
+Madagascar,MDG,31/03/2020,1
+Malawi,MWI,01/03/2020,0
+Malawi,MWI,02/03/2020,0
+Malawi,MWI,03/03/2020,0
+Malawi,MWI,04/03/2020,0
+Malawi,MWI,05/03/2020,0
+Malawi,MWI,06/03/2020,0
+Malawi,MWI,07/03/2020,0
+Malawi,MWI,08/03/2020,0
+Malawi,MWI,09/03/2020,0
+Malawi,MWI,10/03/2020,0
+Malawi,MWI,11/03/2020,0
+Malawi,MWI,12/03/2020,0
+Malawi,MWI,13/03/2020,0
+Malawi,MWI,14/03/2020,0
+Malawi,MWI,15/03/2020,0
+Malawi,MWI,16/03/2020,0
+Malawi,MWI,17/03/2020,0
+Malawi,MWI,18/03/2020,0
+Malawi,MWI,19/03/2020,0
+Malawi,MWI,20/03/2020,0
+Malawi,MWI,21/03/2020,0
+Malawi,MWI,22/03/2020,0
+Malawi,MWI,23/03/2020,1
+Malawi,MWI,24/03/2020,1
+Malawi,MWI,25/03/2020,1
+Malawi,MWI,26/03/2020,1
+Malawi,MWI,27/03/2020,1
+Malawi,MWI,28/03/2020,1
+Malawi,MWI,29/03/2020,1
+Malawi,MWI,30/03/2020,1
+Malawi,MWI,31/03/2020,1
+Malaysia,MYS,01/03/2020,0
+Malaysia,MYS,02/03/2020,0
+Malaysia,MYS,03/03/2020,0
+Malaysia,MYS,04/03/2020,0
+Malaysia,MYS,05/03/2020,0
+Malaysia,MYS,06/03/2020,0
+Malaysia,MYS,07/03/2020,0
+Malaysia,MYS,08/03/2020,0
+Malaysia,MYS,09/03/2020,0
+Malaysia,MYS,10/03/2020,0
+Malaysia,MYS,11/03/2020,0
+Malaysia,MYS,12/03/2020,0
+Malaysia,MYS,13/03/2020,0
+Malaysia,MYS,14/03/2020,1
+Malaysia,MYS,15/03/2020,1
+Malaysia,MYS,16/03/2020,1
+Malaysia,MYS,17/03/2020,1
+Malaysia,MYS,18/03/2020,1
+Malaysia,MYS,19/03/2020,1
+Malaysia,MYS,20/03/2020,1
+Malaysia,MYS,21/03/2020,1
+Malaysia,MYS,22/03/2020,1
+Malaysia,MYS,23/03/2020,1
+Malaysia,MYS,24/03/2020,1
+Malaysia,MYS,25/03/2020,1
+Malaysia,MYS,26/03/2020,1
+Malaysia,MYS,27/03/2020,1
+Malaysia,MYS,28/03/2020,1
+Malaysia,MYS,29/03/2020,1
+Malaysia,MYS,30/03/2020,1
+Malaysia,MYS,31/03/2020,1
+Mali,MLI,01/03/2020,0
+Mali,MLI,02/03/2020,0
+Mali,MLI,03/03/2020,0
+Mali,MLI,04/03/2020,0
+Mali,MLI,05/03/2020,0
+Mali,MLI,06/03/2020,0
+Mali,MLI,07/03/2020,0
+Mali,MLI,08/03/2020,0
+Mali,MLI,09/03/2020,0
+Mali,MLI,10/03/2020,0
+Mali,MLI,11/03/2020,0
+Mali,MLI,12/03/2020,0
+Mali,MLI,13/03/2020,0
+Mali,MLI,14/03/2020,0
+Mali,MLI,15/03/2020,0
+Mali,MLI,16/03/2020,0
+Mali,MLI,17/03/2020,0
+Mali,MLI,18/03/2020,0
+Mali,MLI,19/03/2020,1
+Mali,MLI,20/03/2020,1
+Mali,MLI,21/03/2020,1
+Mali,MLI,22/03/2020,1
+Mali,MLI,23/03/2020,1
+Mali,MLI,24/03/2020,1
+Mali,MLI,25/03/2020,1
+Mali,MLI,26/03/2020,1
+Mali,MLI,27/03/2020,1
+Mali,MLI,28/03/2020,1
+Mali,MLI,29/03/2020,1
+Mali,MLI,30/03/2020,1
+Mali,MLI,31/03/2020,1
+Malta,MLT,01/03/2020,0
+Malta,MLT,02/03/2020,0
+Malta,MLT,03/03/2020,0
+Malta,MLT,04/03/2020,0
+Malta,MLT,05/03/2020,0
+Malta,MLT,06/03/2020,0
+Malta,MLT,07/03/2020,0
+Malta,MLT,08/03/2020,0
+Malta,MLT,09/03/2020,0
+Malta,MLT,10/03/2020,0
+Malta,MLT,11/03/2020,0
+Malta,MLT,12/03/2020,0
+Malta,MLT,13/03/2020,1
+Malta,MLT,14/03/2020,1
+Malta,MLT,15/03/2020,1
+Malta,MLT,16/03/2020,1
+Malta,MLT,17/03/2020,1
+Malta,MLT,18/03/2020,1
+Malta,MLT,19/03/2020,1
+Malta,MLT,20/03/2020,1
+Malta,MLT,21/03/2020,1
+Malta,MLT,22/03/2020,1
+Malta,MLT,23/03/2020,1
+Malta,MLT,24/03/2020,1
+Malta,MLT,25/03/2020,1
+Malta,MLT,26/03/2020,1
+Malta,MLT,27/03/2020,1
+Malta,MLT,28/03/2020,1
+Malta,MLT,29/03/2020,1
+Malta,MLT,30/03/2020,1
+Malta,MLT,31/03/2020,1
+Mauritania,MRT,01/03/2020,0
+Mauritania,MRT,02/03/2020,0
+Mauritania,MRT,03/03/2020,0
+Mauritania,MRT,04/03/2020,0
+Mauritania,MRT,05/03/2020,0
+Mauritania,MRT,06/03/2020,0
+Mauritania,MRT,07/03/2020,0
+Mauritania,MRT,08/03/2020,0
+Mauritania,MRT,09/03/2020,0
+Mauritania,MRT,10/03/2020,0
+Mauritania,MRT,11/03/2020,0
+Mauritania,MRT,12/03/2020,0
+Mauritania,MRT,13/03/2020,0
+Mauritania,MRT,14/03/2020,0
+Mauritania,MRT,15/03/2020,0
+Mauritania,MRT,16/03/2020,1
+Mauritania,MRT,17/03/2020,1
+Mauritania,MRT,18/03/2020,1
+Mauritania,MRT,19/03/2020,1
+Mauritania,MRT,20/03/2020,1
+Mauritania,MRT,21/03/2020,1
+Mauritania,MRT,22/03/2020,1
+Mauritania,MRT,23/03/2020,1
+Mauritania,MRT,24/03/2020,1
+Mauritania,MRT,25/03/2020,1
+Mauritania,MRT,26/03/2020,1
+Mauritania,MRT,27/03/2020,1
+Mauritania,MRT,28/03/2020,1
+Mauritania,MRT,29/03/2020,1
+Mauritania,MRT,30/03/2020,1
+Mauritania,MRT,31/03/2020,1
+Mauritius,MUS,01/03/2020,0
+Mauritius,MUS,02/03/2020,0
+Mauritius,MUS,03/03/2020,0
+Mauritius,MUS,04/03/2020,0
+Mauritius,MUS,05/03/2020,0
+Mauritius,MUS,06/03/2020,0
+Mauritius,MUS,07/03/2020,0
+Mauritius,MUS,08/03/2020,0
+Mauritius,MUS,09/03/2020,0
+Mauritius,MUS,10/03/2020,0
+Mauritius,MUS,11/03/2020,0
+Mauritius,MUS,12/03/2020,0
+Mauritius,MUS,13/03/2020,0
+Mauritius,MUS,14/03/2020,0
+Mauritius,MUS,15/03/2020,0
+Mauritius,MUS,16/03/2020,0
+Mauritius,MUS,17/03/2020,0
+Mauritius,MUS,18/03/2020,0
+Mauritius,MUS,19/03/2020,1
+Mauritius,MUS,20/03/2020,1
+Mauritius,MUS,21/03/2020,1
+Mauritius,MUS,22/03/2020,1
+Mauritius,MUS,23/03/2020,1
+Mauritius,MUS,24/03/2020,1
+Mauritius,MUS,25/03/2020,1
+Mauritius,MUS,26/03/2020,1
+Mauritius,MUS,27/03/2020,1
+Mauritius,MUS,28/03/2020,1
+Mauritius,MUS,29/03/2020,1
+Mauritius,MUS,30/03/2020,1
+Mauritius,MUS,31/03/2020,1
+Mexico,MEX,01/03/2020,0
+Mexico,MEX,02/03/2020,0
+Mexico,MEX,03/03/2020,0
+Mexico,MEX,04/03/2020,0
+Mexico,MEX,05/03/2020,0
+Mexico,MEX,06/03/2020,0
+Mexico,MEX,07/03/2020,0
+Mexico,MEX,08/03/2020,0
+Mexico,MEX,09/03/2020,0
+Mexico,MEX,10/03/2020,0
+Mexico,MEX,11/03/2020,0
+Mexico,MEX,12/03/2020,0
+Mexico,MEX,13/03/2020,0
+Mexico,MEX,14/03/2020,0
+Mexico,MEX,15/03/2020,0
+Mexico,MEX,16/03/2020,0
+Mexico,MEX,17/03/2020,0
+Mexico,MEX,18/03/2020,0
+Mexico,MEX,19/03/2020,0
+Mexico,MEX,20/03/2020,0
+Mexico,MEX,21/03/2020,0
+Mexico,MEX,22/03/2020,0
+Mexico,MEX,23/03/2020,1
+Mexico,MEX,24/03/2020,1
+Mexico,MEX,25/03/2020,1
+Mexico,MEX,26/03/2020,1
+Mexico,MEX,27/03/2020,1
+Mexico,MEX,28/03/2020,1
+Mexico,MEX,29/03/2020,1
+Mexico,MEX,30/03/2020,1
+Mexico,MEX,31/03/2020,1
+Moldova,MDA,01/03/2020,0
+Moldova,MDA,02/03/2020,0
+Moldova,MDA,03/03/2020,0
+Moldova,MDA,04/03/2020,0
+Moldova,MDA,05/03/2020,0
+Moldova,MDA,06/03/2020,0
+Moldova,MDA,07/03/2020,0
+Moldova,MDA,08/03/2020,0
+Moldova,MDA,09/03/2020,0
+Moldova,MDA,10/03/2020,0
+Moldova,MDA,11/03/2020,1
+Moldova,MDA,12/03/2020,1
+Moldova,MDA,13/03/2020,1
+Moldova,MDA,14/03/2020,1
+Moldova,MDA,15/03/2020,1
+Moldova,MDA,16/03/2020,1
+Moldova,MDA,17/03/2020,1
+Moldova,MDA,18/03/2020,1
+Moldova,MDA,19/03/2020,1
+Moldova,MDA,20/03/2020,1
+Moldova,MDA,21/03/2020,1
+Moldova,MDA,22/03/2020,1
+Moldova,MDA,23/03/2020,1
+Moldova,MDA,24/03/2020,1
+Moldova,MDA,25/03/2020,1
+Moldova,MDA,26/03/2020,1
+Moldova,MDA,27/03/2020,1
+Moldova,MDA,28/03/2020,1
+Moldova,MDA,29/03/2020,1
+Moldova,MDA,30/03/2020,1
+Moldova,MDA,31/03/2020,1
+Monaco,MCO,01/03/2020,0
+Monaco,MCO,02/03/2020,0
+Monaco,MCO,03/03/2020,0
+Monaco,MCO,04/03/2020,0
+Monaco,MCO,05/03/2020,0
+Monaco,MCO,06/03/2020,0
+Monaco,MCO,07/03/2020,0
+Monaco,MCO,08/03/2020,0
+Monaco,MCO,09/03/2020,0
+Monaco,MCO,10/03/2020,0
+Monaco,MCO,11/03/2020,0
+Monaco,MCO,12/03/2020,0
+Monaco,MCO,13/03/2020,1
+Monaco,MCO,14/03/2020,1
+Monaco,MCO,15/03/2020,1
+Monaco,MCO,16/03/2020,1
+Monaco,MCO,17/03/2020,1
+Monaco,MCO,18/03/2020,1
+Monaco,MCO,19/03/2020,1
+Monaco,MCO,20/03/2020,1
+Monaco,MCO,21/03/2020,1
+Monaco,MCO,22/03/2020,1
+Monaco,MCO,23/03/2020,1
+Monaco,MCO,24/03/2020,1
+Monaco,MCO,25/03/2020,1
+Monaco,MCO,26/03/2020,1
+Monaco,MCO,27/03/2020,1
+Monaco,MCO,28/03/2020,1
+Monaco,MCO,29/03/2020,1
+Monaco,MCO,30/03/2020,1
+Monaco,MCO,31/03/2020,1
+Mongolia,MNG,01/03/2020,1
+Mongolia,MNG,02/03/2020,1
+Mongolia,MNG,03/03/2020,1
+Mongolia,MNG,04/03/2020,1
+Mongolia,MNG,05/03/2020,1
+Mongolia,MNG,06/03/2020,1
+Mongolia,MNG,07/03/2020,1
+Mongolia,MNG,08/03/2020,1
+Mongolia,MNG,09/03/2020,1
+Mongolia,MNG,10/03/2020,1
+Mongolia,MNG,11/03/2020,1
+Mongolia,MNG,12/03/2020,1
+Mongolia,MNG,13/03/2020,1
+Mongolia,MNG,14/03/2020,1
+Mongolia,MNG,15/03/2020,1
+Mongolia,MNG,16/03/2020,1
+Mongolia,MNG,17/03/2020,1
+Mongolia,MNG,18/03/2020,1
+Mongolia,MNG,19/03/2020,1
+Mongolia,MNG,20/03/2020,1
+Mongolia,MNG,21/03/2020,1
+Mongolia,MNG,22/03/2020,1
+Mongolia,MNG,23/03/2020,1
+Mongolia,MNG,24/03/2020,1
+Mongolia,MNG,25/03/2020,1
+Mongolia,MNG,26/03/2020,1
+Mongolia,MNG,27/03/2020,1
+Mongolia,MNG,28/03/2020,1
+Mongolia,MNG,29/03/2020,1
+Mongolia,MNG,30/03/2020,1
+Mongolia,MNG,31/03/2020,1
+Morocco,MAR,01/03/2020,0
+Morocco,MAR,02/03/2020,0
+Morocco,MAR,03/03/2020,0
+Morocco,MAR,04/03/2020,0
+Morocco,MAR,05/03/2020,0
+Morocco,MAR,06/03/2020,0
+Morocco,MAR,07/03/2020,0
+Morocco,MAR,08/03/2020,0
+Morocco,MAR,09/03/2020,0
+Morocco,MAR,10/03/2020,0
+Morocco,MAR,11/03/2020,0
+Morocco,MAR,12/03/2020,0
+Morocco,MAR,13/03/2020,0
+Morocco,MAR,14/03/2020,0
+Morocco,MAR,15/03/2020,0
+Morocco,MAR,16/03/2020,1
+Morocco,MAR,17/03/2020,1
+Morocco,MAR,18/03/2020,1
+Morocco,MAR,19/03/2020,1
+Morocco,MAR,20/03/2020,1
+Morocco,MAR,21/03/2020,1
+Morocco,MAR,22/03/2020,1
+Morocco,MAR,23/03/2020,1
+Morocco,MAR,24/03/2020,1
+Morocco,MAR,25/03/2020,1
+Morocco,MAR,26/03/2020,1
+Morocco,MAR,27/03/2020,1
+Morocco,MAR,28/03/2020,1
+Morocco,MAR,29/03/2020,1
+Morocco,MAR,30/03/2020,1
+Morocco,MAR,31/03/2020,1
+Mozambique,MOZ,01/03/2020,0
+Mozambique,MOZ,02/03/2020,0
+Mozambique,MOZ,03/03/2020,0
+Mozambique,MOZ,04/03/2020,0
+Mozambique,MOZ,05/03/2020,0
+Mozambique,MOZ,06/03/2020,0
+Mozambique,MOZ,07/03/2020,0
+Mozambique,MOZ,08/03/2020,0
+Mozambique,MOZ,09/03/2020,0
+Mozambique,MOZ,10/03/2020,0
+Mozambique,MOZ,11/03/2020,0
+Mozambique,MOZ,12/03/2020,0
+Mozambique,MOZ,13/03/2020,0
+Mozambique,MOZ,14/03/2020,0
+Mozambique,MOZ,15/03/2020,0
+Mozambique,MOZ,16/03/2020,0
+Mozambique,MOZ,17/03/2020,0
+Mozambique,MOZ,18/03/2020,0
+Mozambique,MOZ,19/03/2020,0
+Mozambique,MOZ,20/03/2020,0
+Mozambique,MOZ,21/03/2020,0
+Mozambique,MOZ,22/03/2020,0
+Mozambique,MOZ,23/03/2020,1
+Mozambique,MOZ,24/03/2020,1
+Mozambique,MOZ,25/03/2020,1
+Mozambique,MOZ,26/03/2020,1
+Mozambique,MOZ,27/03/2020,1
+Mozambique,MOZ,28/03/2020,1
+Mozambique,MOZ,29/03/2020,1
+Mozambique,MOZ,30/03/2020,1
+Mozambique,MOZ,31/03/2020,1
+Myanmar,MMR,01/03/2020,0
+Myanmar,MMR,02/03/2020,0
+Myanmar,MMR,03/03/2020,0
+Myanmar,MMR,04/03/2020,0
+Myanmar,MMR,05/03/2020,0
+Myanmar,MMR,06/03/2020,0
+Myanmar,MMR,07/03/2020,0
+Myanmar,MMR,08/03/2020,0
+Myanmar,MMR,09/03/2020,0
+Myanmar,MMR,10/03/2020,0
+Myanmar,MMR,11/03/2020,0
+Myanmar,MMR,12/03/2020,0
+Myanmar,MMR,13/03/2020,0
+Myanmar,MMR,14/03/2020,0
+Myanmar,MMR,15/03/2020,0
+Myanmar,MMR,16/03/2020,0
+Myanmar,MMR,17/03/2020,0
+Myanmar,MMR,18/03/2020,0
+Myanmar,MMR,19/03/2020,0
+Myanmar,MMR,20/03/2020,0
+Myanmar,MMR,21/03/2020,0
+Myanmar,MMR,22/03/2020,0
+Myanmar,MMR,23/03/2020,0
+Myanmar,MMR,24/03/2020,1
+Myanmar,MMR,25/03/2020,1
+Myanmar,MMR,26/03/2020,1
+Myanmar,MMR,27/03/2020,1
+Myanmar,MMR,28/03/2020,1
+Myanmar,MMR,29/03/2020,1
+Myanmar,MMR,30/03/2020,1
+Myanmar,MMR,31/03/2020,1
+Namibia,NAM,01/03/2020,0
+Namibia,NAM,02/03/2020,0
+Namibia,NAM,03/03/2020,0
+Namibia,NAM,04/03/2020,0
+Namibia,NAM,05/03/2020,0
+Namibia,NAM,06/03/2020,0
+Namibia,NAM,07/03/2020,0
+Namibia,NAM,08/03/2020,0
+Namibia,NAM,09/03/2020,0
+Namibia,NAM,10/03/2020,0
+Namibia,NAM,11/03/2020,0
+Namibia,NAM,12/03/2020,0
+Namibia,NAM,13/03/2020,0
+Namibia,NAM,14/03/2020,0
+Namibia,NAM,15/03/2020,0
+Namibia,NAM,16/03/2020,0
+Namibia,NAM,17/03/2020,1
+Namibia,NAM,18/03/2020,1
+Namibia,NAM,19/03/2020,1
+Namibia,NAM,20/03/2020,1
+Namibia,NAM,21/03/2020,1
+Namibia,NAM,22/03/2020,1
+Namibia,NAM,23/03/2020,1
+Namibia,NAM,24/03/2020,1
+Namibia,NAM,25/03/2020,1
+Namibia,NAM,26/03/2020,1
+Namibia,NAM,27/03/2020,1
+Namibia,NAM,28/03/2020,1
+Namibia,NAM,29/03/2020,1
+Namibia,NAM,30/03/2020,1
+Namibia,NAM,31/03/2020,1
+Nepal,NPL,01/03/2020,0
+Nepal,NPL,02/03/2020,0
+Nepal,NPL,03/03/2020,0
+Nepal,NPL,04/03/2020,0
+Nepal,NPL,05/03/2020,0
+Nepal,NPL,06/03/2020,0
+Nepal,NPL,07/03/2020,0
+Nepal,NPL,08/03/2020,0
+Nepal,NPL,09/03/2020,0
+Nepal,NPL,10/03/2020,0
+Nepal,NPL,11/03/2020,0
+Nepal,NPL,12/03/2020,0
+Nepal,NPL,13/03/2020,0
+Nepal,NPL,14/03/2020,0
+Nepal,NPL,15/03/2020,0
+Nepal,NPL,16/03/2020,0
+Nepal,NPL,17/03/2020,0
+Nepal,NPL,18/03/2020,0
+Nepal,NPL,19/03/2020,1
+Nepal,NPL,20/03/2020,1
+Nepal,NPL,21/03/2020,1
+Nepal,NPL,22/03/2020,1
+Nepal,NPL,23/03/2020,1
+Nepal,NPL,24/03/2020,1
+Nepal,NPL,25/03/2020,1
+Nepal,NPL,26/03/2020,1
+Nepal,NPL,27/03/2020,1
+Nepal,NPL,28/03/2020,1
+Nepal,NPL,29/03/2020,1
+Nepal,NPL,30/03/2020,1
+Nepal,NPL,31/03/2020,1
+Netherlands,NLD,01/03/2020,0
+Netherlands,NLD,02/03/2020,0
+Netherlands,NLD,03/03/2020,0
+Netherlands,NLD,04/03/2020,0
+Netherlands,NLD,05/03/2020,0
+Netherlands,NLD,06/03/2020,0
+Netherlands,NLD,07/03/2020,0
+Netherlands,NLD,08/03/2020,0
+Netherlands,NLD,09/03/2020,0
+Netherlands,NLD,10/03/2020,0
+Netherlands,NLD,11/03/2020,0
+Netherlands,NLD,12/03/2020,0
+Netherlands,NLD,13/03/2020,0
+Netherlands,NLD,14/03/2020,0
+Netherlands,NLD,15/03/2020,0
+Netherlands,NLD,16/03/2020,1
+Netherlands,NLD,17/03/2020,1
+Netherlands,NLD,18/03/2020,1
+Netherlands,NLD,19/03/2020,1
+Netherlands,NLD,20/03/2020,1
+Netherlands,NLD,21/03/2020,1
+Netherlands,NLD,22/03/2020,1
+Netherlands,NLD,23/03/2020,1
+Netherlands,NLD,24/03/2020,1
+Netherlands,NLD,25/03/2020,1
+Netherlands,NLD,26/03/2020,1
+Netherlands,NLD,27/03/2020,1
+Netherlands,NLD,28/03/2020,1
+Netherlands,NLD,29/03/2020,1
+Netherlands,NLD,30/03/2020,1
+Netherlands,NLD,31/03/2020,1
+New Zealand,NZL,01/03/2020,0
+New Zealand,NZL,02/03/2020,0
+New Zealand,NZL,03/03/2020,0
+New Zealand,NZL,04/03/2020,0
+New Zealand,NZL,05/03/2020,0
+New Zealand,NZL,06/03/2020,0
+New Zealand,NZL,07/03/2020,0
+New Zealand,NZL,08/03/2020,0
+New Zealand,NZL,09/03/2020,0
+New Zealand,NZL,10/03/2020,0
+New Zealand,NZL,11/03/2020,0
+New Zealand,NZL,12/03/2020,0
+New Zealand,NZL,13/03/2020,0
+New Zealand,NZL,14/03/2020,0
+New Zealand,NZL,15/03/2020,0
+New Zealand,NZL,16/03/2020,0
+New Zealand,NZL,17/03/2020,0
+New Zealand,NZL,18/03/2020,0
+New Zealand,NZL,19/03/2020,0
+New Zealand,NZL,20/03/2020,0
+New Zealand,NZL,21/03/2020,0
+New Zealand,NZL,22/03/2020,0
+New Zealand,NZL,23/03/2020,0
+New Zealand,NZL,24/03/2020,1
+New Zealand,NZL,25/03/2020,1
+New Zealand,NZL,26/03/2020,1
+New Zealand,NZL,27/03/2020,1
+New Zealand,NZL,28/03/2020,1
+New Zealand,NZL,29/03/2020,1
+New Zealand,NZL,30/03/2020,1
+New Zealand,NZL,31/03/2020,1
+Nicaragua,NIC,01/03/2020,0
+Nicaragua,NIC,02/03/2020,0
+Nicaragua,NIC,03/03/2020,0
+Nicaragua,NIC,04/03/2020,0
+Nicaragua,NIC,05/03/2020,0
+Nicaragua,NIC,06/03/2020,0
+Nicaragua,NIC,07/03/2020,0
+Nicaragua,NIC,08/03/2020,0
+Nicaragua,NIC,09/03/2020,0
+Nicaragua,NIC,10/03/2020,0
+Nicaragua,NIC,11/03/2020,0
+Nicaragua,NIC,12/03/2020,0
+Nicaragua,NIC,13/03/2020,0
+Nicaragua,NIC,14/03/2020,0
+Nicaragua,NIC,15/03/2020,0
+Nicaragua,NIC,16/03/2020,0
+Nicaragua,NIC,17/03/2020,0
+Nicaragua,NIC,18/03/2020,0
+Nicaragua,NIC,19/03/2020,0
+Nicaragua,NIC,20/03/2020,0
+Nicaragua,NIC,21/03/2020,0
+Nicaragua,NIC,22/03/2020,0
+Nicaragua,NIC,23/03/2020,0
+Nicaragua,NIC,24/03/2020,0
+Nicaragua,NIC,25/03/2020,0
+Nicaragua,NIC,26/03/2020,0
+Nicaragua,NIC,27/03/2020,0
+Nicaragua,NIC,28/03/2020,0
+Nicaragua,NIC,29/03/2020,0
+Nicaragua,NIC,30/03/2020,0
+Nicaragua,NIC,31/03/2020,0
+Niger,NER,01/03/2020,0
+Niger,NER,02/03/2020,0
+Niger,NER,03/03/2020,0
+Niger,NER,04/03/2020,0
+Niger,NER,05/03/2020,0
+Niger,NER,06/03/2020,0
+Niger,NER,07/03/2020,0
+Niger,NER,08/03/2020,0
+Niger,NER,09/03/2020,0
+Niger,NER,10/03/2020,0
+Niger,NER,11/03/2020,0
+Niger,NER,12/03/2020,0
+Niger,NER,13/03/2020,0
+Niger,NER,14/03/2020,0
+Niger,NER,15/03/2020,0
+Niger,NER,16/03/2020,0
+Niger,NER,17/03/2020,0
+Niger,NER,18/03/2020,0
+Niger,NER,19/03/2020,0
+Niger,NER,20/03/2020,1
+Niger,NER,21/03/2020,1
+Niger,NER,22/03/2020,1
+Niger,NER,23/03/2020,1
+Niger,NER,24/03/2020,1
+Niger,NER,25/03/2020,1
+Niger,NER,26/03/2020,1
+Niger,NER,27/03/2020,1
+Niger,NER,28/03/2020,1
+Niger,NER,29/03/2020,1
+Niger,NER,30/03/2020,1
+Niger,NER,31/03/2020,1
+Nigeria,NGA,01/03/2020,0
+Nigeria,NGA,02/03/2020,0
+Nigeria,NGA,03/03/2020,0
+Nigeria,NGA,04/03/2020,0
+Nigeria,NGA,05/03/2020,0
+Nigeria,NGA,06/03/2020,0
+Nigeria,NGA,07/03/2020,0
+Nigeria,NGA,08/03/2020,0
+Nigeria,NGA,09/03/2020,0
+Nigeria,NGA,10/03/2020,0
+Nigeria,NGA,11/03/2020,0
+Nigeria,NGA,12/03/2020,0
+Nigeria,NGA,13/03/2020,0
+Nigeria,NGA,14/03/2020,0
+Nigeria,NGA,15/03/2020,0
+Nigeria,NGA,16/03/2020,0
+Nigeria,NGA,17/03/2020,0
+Nigeria,NGA,18/03/2020,0
+Nigeria,NGA,19/03/2020,0
+Nigeria,NGA,20/03/2020,0
+Nigeria,NGA,21/03/2020,0
+Nigeria,NGA,22/03/2020,0
+Nigeria,NGA,23/03/2020,0
+Nigeria,NGA,24/03/2020,0
+Nigeria,NGA,25/03/2020,0
+Nigeria,NGA,26/03/2020,1
+Nigeria,NGA,27/03/2020,1
+Nigeria,NGA,28/03/2020,1
+Nigeria,NGA,29/03/2020,1
+Nigeria,NGA,30/03/2020,1
+Nigeria,NGA,31/03/2020,1
+Norway,NOR,01/03/2020,0
+Norway,NOR,02/03/2020,0
+Norway,NOR,03/03/2020,0
+Norway,NOR,04/03/2020,0
+Norway,NOR,05/03/2020,0
+Norway,NOR,06/03/2020,0
+Norway,NOR,07/03/2020,0
+Norway,NOR,08/03/2020,0
+Norway,NOR,09/03/2020,0
+Norway,NOR,10/03/2020,0
+Norway,NOR,11/03/2020,0
+Norway,NOR,12/03/2020,1
+Norway,NOR,13/03/2020,1
+Norway,NOR,14/03/2020,1
+Norway,NOR,15/03/2020,1
+Norway,NOR,16/03/2020,1
+Norway,NOR,17/03/2020,1
+Norway,NOR,18/03/2020,1
+Norway,NOR,19/03/2020,1
+Norway,NOR,20/03/2020,1
+Norway,NOR,21/03/2020,1
+Norway,NOR,22/03/2020,1
+Norway,NOR,23/03/2020,1
+Norway,NOR,24/03/2020,1
+Norway,NOR,25/03/2020,1
+Norway,NOR,26/03/2020,1
+Norway,NOR,27/03/2020,1
+Norway,NOR,28/03/2020,1
+Norway,NOR,29/03/2020,1
+Norway,NOR,30/03/2020,1
+Norway,NOR,31/03/2020,1
+Oman,OMN,01/03/2020,0
+Oman,OMN,02/03/2020,0
+Oman,OMN,03/03/2020,0
+Oman,OMN,04/03/2020,0
+Oman,OMN,05/03/2020,0
+Oman,OMN,06/03/2020,0
+Oman,OMN,07/03/2020,0
+Oman,OMN,08/03/2020,0
+Oman,OMN,09/03/2020,0
+Oman,OMN,10/03/2020,0
+Oman,OMN,11/03/2020,0
+Oman,OMN,12/03/2020,0
+Oman,OMN,13/03/2020,0
+Oman,OMN,14/03/2020,0
+Oman,OMN,15/03/2020,1
+Oman,OMN,16/03/2020,1
+Oman,OMN,17/03/2020,1
+Oman,OMN,18/03/2020,1
+Oman,OMN,19/03/2020,1
+Oman,OMN,20/03/2020,1
+Oman,OMN,21/03/2020,1
+Oman,OMN,22/03/2020,1
+Oman,OMN,23/03/2020,1
+Oman,OMN,24/03/2020,1
+Oman,OMN,25/03/2020,1
+Oman,OMN,26/03/2020,1
+Oman,OMN,27/03/2020,1
+Oman,OMN,28/03/2020,1
+Oman,OMN,29/03/2020,1
+Oman,OMN,30/03/2020,1
+Oman,OMN,31/03/2020,1
+Pakistan,PAK,01/03/2020,1
+Pakistan,PAK,02/03/2020,1
+Pakistan,PAK,03/03/2020,1
+Pakistan,PAK,04/03/2020,1
+Pakistan,PAK,05/03/2020,1
+Pakistan,PAK,06/03/2020,1
+Pakistan,PAK,07/03/2020,1
+Pakistan,PAK,08/03/2020,1
+Pakistan,PAK,09/03/2020,1
+Pakistan,PAK,10/03/2020,1
+Pakistan,PAK,11/03/2020,1
+Pakistan,PAK,12/03/2020,1
+Pakistan,PAK,13/03/2020,1
+Pakistan,PAK,14/03/2020,1
+Pakistan,PAK,15/03/2020,1
+Pakistan,PAK,16/03/2020,1
+Pakistan,PAK,17/03/2020,1
+Pakistan,PAK,18/03/2020,1
+Pakistan,PAK,19/03/2020,1
+Pakistan,PAK,20/03/2020,1
+Pakistan,PAK,21/03/2020,1
+Pakistan,PAK,22/03/2020,1
+Pakistan,PAK,23/03/2020,1
+Pakistan,PAK,24/03/2020,1
+Pakistan,PAK,25/03/2020,1
+Pakistan,PAK,26/03/2020,1
+Pakistan,PAK,27/03/2020,1
+Pakistan,PAK,28/03/2020,1
+Pakistan,PAK,29/03/2020,1
+Pakistan,PAK,30/03/2020,1
+Pakistan,PAK,31/03/2020,1
+Palestine,PSE,01/03/2020,0
+Palestine,PSE,02/03/2020,0
+Palestine,PSE,03/03/2020,0
+Palestine,PSE,04/03/2020,0
+Palestine,PSE,05/03/2020,0
+Palestine,PSE,06/03/2020,1
+Palestine,PSE,07/03/2020,1
+Palestine,PSE,08/03/2020,1
+Palestine,PSE,09/03/2020,1
+Palestine,PSE,10/03/2020,1
+Palestine,PSE,11/03/2020,1
+Palestine,PSE,12/03/2020,1
+Palestine,PSE,13/03/2020,1
+Palestine,PSE,14/03/2020,1
+Palestine,PSE,15/03/2020,1
+Palestine,PSE,16/03/2020,1
+Palestine,PSE,17/03/2020,1
+Palestine,PSE,18/03/2020,1
+Palestine,PSE,19/03/2020,1
+Palestine,PSE,20/03/2020,1
+Palestine,PSE,21/03/2020,1
+Palestine,PSE,22/03/2020,1
+Palestine,PSE,23/03/2020,1
+Palestine,PSE,24/03/2020,1
+Palestine,PSE,25/03/2020,1
+Palestine,PSE,26/03/2020,1
+Palestine,PSE,27/03/2020,1
+Palestine,PSE,28/03/2020,1
+Palestine,PSE,29/03/2020,1
+Palestine,PSE,30/03/2020,1
+Palestine,PSE,31/03/2020,1
+Panama,PAN,01/03/2020,0
+Panama,PAN,02/03/2020,0
+Panama,PAN,03/03/2020,0
+Panama,PAN,04/03/2020,0
+Panama,PAN,05/03/2020,0
+Panama,PAN,06/03/2020,0
+Panama,PAN,07/03/2020,0
+Panama,PAN,08/03/2020,0
+Panama,PAN,09/03/2020,0
+Panama,PAN,10/03/2020,0
+Panama,PAN,11/03/2020,0
+Panama,PAN,12/03/2020,1
+Panama,PAN,13/03/2020,1
+Panama,PAN,14/03/2020,1
+Panama,PAN,15/03/2020,1
+Panama,PAN,16/03/2020,1
+Panama,PAN,17/03/2020,1
+Panama,PAN,18/03/2020,1
+Panama,PAN,19/03/2020,1
+Panama,PAN,20/03/2020,1
+Panama,PAN,21/03/2020,1
+Panama,PAN,22/03/2020,1
+Panama,PAN,23/03/2020,1
+Panama,PAN,24/03/2020,1
+Panama,PAN,25/03/2020,1
+Panama,PAN,26/03/2020,1
+Panama,PAN,27/03/2020,1
+Panama,PAN,28/03/2020,1
+Panama,PAN,29/03/2020,1
+Panama,PAN,30/03/2020,1
+Panama,PAN,31/03/2020,1
+Papua New Guinea,PNG,01/03/2020,0
+Papua New Guinea,PNG,02/03/2020,0
+Papua New Guinea,PNG,03/03/2020,0
+Papua New Guinea,PNG,04/03/2020,0
+Papua New Guinea,PNG,05/03/2020,0
+Papua New Guinea,PNG,06/03/2020,0
+Papua New Guinea,PNG,07/03/2020,0
+Papua New Guinea,PNG,08/03/2020,0
+Papua New Guinea,PNG,09/03/2020,0
+Papua New Guinea,PNG,10/03/2020,0
+Papua New Guinea,PNG,11/03/2020,0
+Papua New Guinea,PNG,12/03/2020,0
+Papua New Guinea,PNG,13/03/2020,0
+Papua New Guinea,PNG,14/03/2020,0
+Papua New Guinea,PNG,15/03/2020,0
+Papua New Guinea,PNG,16/03/2020,0
+Papua New Guinea,PNG,17/03/2020,0
+Papua New Guinea,PNG,18/03/2020,0
+Papua New Guinea,PNG,19/03/2020,0
+Papua New Guinea,PNG,20/03/2020,0
+Papua New Guinea,PNG,21/03/2020,0
+Papua New Guinea,PNG,22/03/2020,0
+Papua New Guinea,PNG,23/03/2020,1
+Papua New Guinea,PNG,24/03/2020,1
+Papua New Guinea,PNG,25/03/2020,1
+Papua New Guinea,PNG,26/03/2020,1
+Papua New Guinea,PNG,27/03/2020,1
+Papua New Guinea,PNG,28/03/2020,1
+Papua New Guinea,PNG,29/03/2020,1
+Papua New Guinea,PNG,30/03/2020,1
+Papua New Guinea,PNG,31/03/2020,1
+Paraguay,PRY,01/03/2020,0
+Paraguay,PRY,02/03/2020,0
+Paraguay,PRY,03/03/2020,0
+Paraguay,PRY,04/03/2020,0
+Paraguay,PRY,05/03/2020,0
+Paraguay,PRY,06/03/2020,0
+Paraguay,PRY,07/03/2020,0
+Paraguay,PRY,08/03/2020,0
+Paraguay,PRY,09/03/2020,0
+Paraguay,PRY,10/03/2020,1
+Paraguay,PRY,11/03/2020,1
+Paraguay,PRY,12/03/2020,1
+Paraguay,PRY,13/03/2020,1
+Paraguay,PRY,14/03/2020,1
+Paraguay,PRY,15/03/2020,1
+Paraguay,PRY,16/03/2020,1
+Paraguay,PRY,17/03/2020,1
+Paraguay,PRY,18/03/2020,1
+Paraguay,PRY,19/03/2020,1
+Paraguay,PRY,20/03/2020,1
+Paraguay,PRY,21/03/2020,1
+Paraguay,PRY,22/03/2020,1
+Paraguay,PRY,23/03/2020,1
+Paraguay,PRY,24/03/2020,1
+Paraguay,PRY,25/03/2020,1
+Paraguay,PRY,26/03/2020,1
+Paraguay,PRY,27/03/2020,1
+Paraguay,PRY,28/03/2020,1
+Paraguay,PRY,29/03/2020,1
+Paraguay,PRY,30/03/2020,1
+Paraguay,PRY,31/03/2020,1
+Peru,PER,01/03/2020,0
+Peru,PER,02/03/2020,0
+Peru,PER,03/03/2020,0
+Peru,PER,04/03/2020,0
+Peru,PER,05/03/2020,0
+Peru,PER,06/03/2020,0
+Peru,PER,07/03/2020,0
+Peru,PER,08/03/2020,0
+Peru,PER,09/03/2020,0
+Peru,PER,10/03/2020,0
+Peru,PER,11/03/2020,0
+Peru,PER,12/03/2020,1
+Peru,PER,13/03/2020,1
+Peru,PER,14/03/2020,1
+Peru,PER,15/03/2020,1
+Peru,PER,16/03/2020,1
+Peru,PER,17/03/2020,1
+Peru,PER,18/03/2020,1
+Peru,PER,19/03/2020,1
+Peru,PER,20/03/2020,1
+Peru,PER,21/03/2020,1
+Peru,PER,22/03/2020,1
+Peru,PER,23/03/2020,1
+Peru,PER,24/03/2020,1
+Peru,PER,25/03/2020,1
+Peru,PER,26/03/2020,1
+Peru,PER,27/03/2020,1
+Peru,PER,28/03/2020,1
+Peru,PER,29/03/2020,1
+Peru,PER,30/03/2020,1
+Peru,PER,31/03/2020,1
+Philippines,PHL,01/03/2020,0
+Philippines,PHL,02/03/2020,0
+Philippines,PHL,03/03/2020,0
+Philippines,PHL,04/03/2020,0
+Philippines,PHL,05/03/2020,0
+Philippines,PHL,06/03/2020,0
+Philippines,PHL,07/03/2020,0
+Philippines,PHL,08/03/2020,0
+Philippines,PHL,09/03/2020,0
+Philippines,PHL,10/03/2020,1
+Philippines,PHL,11/03/2020,1
+Philippines,PHL,12/03/2020,1
+Philippines,PHL,13/03/2020,1
+Philippines,PHL,14/03/2020,1
+Philippines,PHL,15/03/2020,1
+Philippines,PHL,16/03/2020,1
+Philippines,PHL,17/03/2020,1
+Philippines,PHL,18/03/2020,1
+Philippines,PHL,19/03/2020,1
+Philippines,PHL,20/03/2020,1
+Philippines,PHL,21/03/2020,1
+Philippines,PHL,22/03/2020,1
+Philippines,PHL,23/03/2020,1
+Philippines,PHL,24/03/2020,1
+Philippines,PHL,25/03/2020,1
+Philippines,PHL,26/03/2020,1
+Philippines,PHL,27/03/2020,1
+Philippines,PHL,28/03/2020,1
+Philippines,PHL,29/03/2020,1
+Philippines,PHL,30/03/2020,1
+Philippines,PHL,31/03/2020,1
+Poland,POL,01/03/2020,0
+Poland,POL,02/03/2020,0
+Poland,POL,03/03/2020,0
+Poland,POL,04/03/2020,0
+Poland,POL,05/03/2020,0
+Poland,POL,06/03/2020,0
+Poland,POL,07/03/2020,0
+Poland,POL,08/03/2020,0
+Poland,POL,09/03/2020,0
+Poland,POL,10/03/2020,0
+Poland,POL,11/03/2020,0
+Poland,POL,12/03/2020,1
+Poland,POL,13/03/2020,1
+Poland,POL,14/03/2020,1
+Poland,POL,15/03/2020,1
+Poland,POL,16/03/2020,1
+Poland,POL,17/03/2020,1
+Poland,POL,18/03/2020,1
+Poland,POL,19/03/2020,1
+Poland,POL,20/03/2020,1
+Poland,POL,21/03/2020,1
+Poland,POL,22/03/2020,1
+Poland,POL,23/03/2020,1
+Poland,POL,24/03/2020,1
+Poland,POL,25/03/2020,1
+Poland,POL,26/03/2020,1
+Poland,POL,27/03/2020,1
+Poland,POL,28/03/2020,1
+Poland,POL,29/03/2020,1
+Poland,POL,30/03/2020,1
+Poland,POL,31/03/2020,1
+Portugal,PRT,01/03/2020,0
+Portugal,PRT,02/03/2020,0
+Portugal,PRT,03/03/2020,0
+Portugal,PRT,04/03/2020,0
+Portugal,PRT,05/03/2020,0
+Portugal,PRT,06/03/2020,0
+Portugal,PRT,07/03/2020,0
+Portugal,PRT,08/03/2020,0
+Portugal,PRT,09/03/2020,1
+Portugal,PRT,10/03/2020,1
+Portugal,PRT,11/03/2020,1
+Portugal,PRT,12/03/2020,1
+Portugal,PRT,13/03/2020,1
+Portugal,PRT,14/03/2020,1
+Portugal,PRT,15/03/2020,1
+Portugal,PRT,16/03/2020,1
+Portugal,PRT,17/03/2020,1
+Portugal,PRT,18/03/2020,1
+Portugal,PRT,19/03/2020,1
+Portugal,PRT,20/03/2020,1
+Portugal,PRT,21/03/2020,1
+Portugal,PRT,22/03/2020,1
+Portugal,PRT,23/03/2020,1
+Portugal,PRT,24/03/2020,1
+Portugal,PRT,25/03/2020,1
+Portugal,PRT,26/03/2020,1
+Portugal,PRT,27/03/2020,1
+Portugal,PRT,28/03/2020,1
+Portugal,PRT,29/03/2020,1
+Portugal,PRT,30/03/2020,1
+Portugal,PRT,31/03/2020,1
+Puerto Rico,PRI,01/03/2020,0
+Puerto Rico,PRI,02/03/2020,0
+Puerto Rico,PRI,03/03/2020,0
+Puerto Rico,PRI,04/03/2020,0
+Puerto Rico,PRI,05/03/2020,0
+Puerto Rico,PRI,06/03/2020,0
+Puerto Rico,PRI,07/03/2020,0
+Puerto Rico,PRI,08/03/2020,0
+Puerto Rico,PRI,09/03/2020,0
+Puerto Rico,PRI,10/03/2020,0
+Puerto Rico,PRI,11/03/2020,0
+Puerto Rico,PRI,12/03/2020,0
+Puerto Rico,PRI,13/03/2020,0
+Puerto Rico,PRI,14/03/2020,0
+Puerto Rico,PRI,15/03/2020,0
+Puerto Rico,PRI,16/03/2020,1
+Puerto Rico,PRI,17/03/2020,1
+Puerto Rico,PRI,18/03/2020,1
+Puerto Rico,PRI,19/03/2020,1
+Puerto Rico,PRI,20/03/2020,1
+Puerto Rico,PRI,21/03/2020,1
+Puerto Rico,PRI,22/03/2020,1
+Puerto Rico,PRI,23/03/2020,1
+Puerto Rico,PRI,24/03/2020,1
+Puerto Rico,PRI,25/03/2020,1
+Puerto Rico,PRI,26/03/2020,1
+Puerto Rico,PRI,27/03/2020,1
+Puerto Rico,PRI,28/03/2020,1
+Puerto Rico,PRI,29/03/2020,1
+Puerto Rico,PRI,30/03/2020,1
+Puerto Rico,PRI,31/03/2020,1
+Qatar,QAT,01/03/2020,0
+Qatar,QAT,02/03/2020,0
+Qatar,QAT,03/03/2020,0
+Qatar,QAT,04/03/2020,0
+Qatar,QAT,05/03/2020,0
+Qatar,QAT,06/03/2020,0
+Qatar,QAT,07/03/2020,0
+Qatar,QAT,08/03/2020,0
+Qatar,QAT,09/03/2020,0
+Qatar,QAT,10/03/2020,1
+Qatar,QAT,11/03/2020,1
+Qatar,QAT,12/03/2020,1
+Qatar,QAT,13/03/2020,1
+Qatar,QAT,14/03/2020,1
+Qatar,QAT,15/03/2020,1
+Qatar,QAT,16/03/2020,1
+Qatar,QAT,17/03/2020,1
+Qatar,QAT,18/03/2020,1
+Qatar,QAT,19/03/2020,1
+Qatar,QAT,20/03/2020,1
+Qatar,QAT,21/03/2020,1
+Qatar,QAT,22/03/2020,1
+Qatar,QAT,23/03/2020,1
+Qatar,QAT,24/03/2020,1
+Qatar,QAT,25/03/2020,1
+Qatar,QAT,26/03/2020,1
+Qatar,QAT,27/03/2020,1
+Qatar,QAT,28/03/2020,1
+Qatar,QAT,29/03/2020,1
+Qatar,QAT,30/03/2020,1
+Qatar,QAT,31/03/2020,1
+Romania,ROU,01/03/2020,0
+Romania,ROU,02/03/2020,0
+Romania,ROU,03/03/2020,0
+Romania,ROU,04/03/2020,0
+Romania,ROU,05/03/2020,0
+Romania,ROU,06/03/2020,0
+Romania,ROU,07/03/2020,0
+Romania,ROU,08/03/2020,0
+Romania,ROU,09/03/2020,0
+Romania,ROU,10/03/2020,0
+Romania,ROU,11/03/2020,1
+Romania,ROU,12/03/2020,1
+Romania,ROU,13/03/2020,1
+Romania,ROU,14/03/2020,1
+Romania,ROU,15/03/2020,1
+Romania,ROU,16/03/2020,1
+Romania,ROU,17/03/2020,1
+Romania,ROU,18/03/2020,1
+Romania,ROU,19/03/2020,1
+Romania,ROU,20/03/2020,1
+Romania,ROU,21/03/2020,1
+Romania,ROU,22/03/2020,1
+Romania,ROU,23/03/2020,1
+Romania,ROU,24/03/2020,1
+Romania,ROU,25/03/2020,1
+Romania,ROU,26/03/2020,1
+Romania,ROU,27/03/2020,1
+Romania,ROU,28/03/2020,1
+Romania,ROU,29/03/2020,1
+Romania,ROU,30/03/2020,1
+Romania,ROU,31/03/2020,1
+Russia,RUS,01/03/2020,0
+Russia,RUS,02/03/2020,0
+Russia,RUS,03/03/2020,0
+Russia,RUS,04/03/2020,0
+Russia,RUS,05/03/2020,0
+Russia,RUS,06/03/2020,0
+Russia,RUS,07/03/2020,0
+Russia,RUS,08/03/2020,0
+Russia,RUS,09/03/2020,0
+Russia,RUS,10/03/2020,0
+Russia,RUS,11/03/2020,0
+Russia,RUS,12/03/2020,0
+Russia,RUS,13/03/2020,0
+Russia,RUS,14/03/2020,0
+Russia,RUS,15/03/2020,0
+Russia,RUS,16/03/2020,0
+Russia,RUS,17/03/2020,0
+Russia,RUS,18/03/2020,0
+Russia,RUS,19/03/2020,0
+Russia,RUS,20/03/2020,0
+Russia,RUS,21/03/2020,1
+Russia,RUS,22/03/2020,1
+Russia,RUS,23/03/2020,1
+Russia,RUS,24/03/2020,1
+Russia,RUS,25/03/2020,1
+Russia,RUS,26/03/2020,1
+Russia,RUS,27/03/2020,1
+Russia,RUS,28/03/2020,1
+Russia,RUS,29/03/2020,1
+Russia,RUS,30/03/2020,1
+Russia,RUS,31/03/2020,1
+Rwanda,RWA,01/03/2020,0
+Rwanda,RWA,02/03/2020,0
+Rwanda,RWA,03/03/2020,0
+Rwanda,RWA,04/03/2020,0
+Rwanda,RWA,05/03/2020,0
+Rwanda,RWA,06/03/2020,0
+Rwanda,RWA,07/03/2020,0
+Rwanda,RWA,08/03/2020,0
+Rwanda,RWA,09/03/2020,0
+Rwanda,RWA,10/03/2020,0
+Rwanda,RWA,11/03/2020,0
+Rwanda,RWA,12/03/2020,0
+Rwanda,RWA,13/03/2020,0
+Rwanda,RWA,14/03/2020,0
+Rwanda,RWA,15/03/2020,0
+Rwanda,RWA,16/03/2020,1
+Rwanda,RWA,17/03/2020,1
+Rwanda,RWA,18/03/2020,1
+Rwanda,RWA,19/03/2020,1
+Rwanda,RWA,20/03/2020,1
+Rwanda,RWA,21/03/2020,1
+Rwanda,RWA,22/03/2020,1
+Rwanda,RWA,23/03/2020,1
+Rwanda,RWA,24/03/2020,1
+Rwanda,RWA,25/03/2020,1
+Rwanda,RWA,26/03/2020,1
+Rwanda,RWA,27/03/2020,1
+Rwanda,RWA,28/03/2020,1
+Rwanda,RWA,29/03/2020,1
+Rwanda,RWA,30/03/2020,1
+Rwanda,RWA,31/03/2020,1
+San Marino,SMR,01/03/2020,1
+San Marino,SMR,02/03/2020,1
+San Marino,SMR,03/03/2020,1
+San Marino,SMR,04/03/2020,1
+San Marino,SMR,05/03/2020,1
+San Marino,SMR,06/03/2020,1
+San Marino,SMR,07/03/2020,1
+San Marino,SMR,08/03/2020,1
+San Marino,SMR,09/03/2020,1
+San Marino,SMR,10/03/2020,1
+San Marino,SMR,11/03/2020,1
+San Marino,SMR,12/03/2020,1
+San Marino,SMR,13/03/2020,1
+San Marino,SMR,14/03/2020,1
+San Marino,SMR,15/03/2020,1
+San Marino,SMR,16/03/2020,1
+San Marino,SMR,17/03/2020,1
+San Marino,SMR,18/03/2020,1
+San Marino,SMR,19/03/2020,1
+San Marino,SMR,20/03/2020,1
+San Marino,SMR,21/03/2020,1
+San Marino,SMR,22/03/2020,1
+San Marino,SMR,23/03/2020,1
+San Marino,SMR,24/03/2020,1
+San Marino,SMR,25/03/2020,1
+San Marino,SMR,26/03/2020,1
+San Marino,SMR,27/03/2020,1
+San Marino,SMR,28/03/2020,1
+San Marino,SMR,29/03/2020,1
+San Marino,SMR,30/03/2020,1
+San Marino,SMR,31/03/2020,1
+Saudi Arabia,SAU,01/03/2020,0
+Saudi Arabia,SAU,02/03/2020,0
+Saudi Arabia,SAU,03/03/2020,0
+Saudi Arabia,SAU,04/03/2020,0
+Saudi Arabia,SAU,05/03/2020,0
+Saudi Arabia,SAU,06/03/2020,0
+Saudi Arabia,SAU,07/03/2020,0
+Saudi Arabia,SAU,08/03/2020,0
+Saudi Arabia,SAU,09/03/2020,1
+Saudi Arabia,SAU,10/03/2020,1
+Saudi Arabia,SAU,11/03/2020,1
+Saudi Arabia,SAU,12/03/2020,1
+Saudi Arabia,SAU,13/03/2020,1
+Saudi Arabia,SAU,14/03/2020,1
+Saudi Arabia,SAU,15/03/2020,1
+Saudi Arabia,SAU,16/03/2020,1
+Saudi Arabia,SAU,17/03/2020,1
+Saudi Arabia,SAU,18/03/2020,1
+Saudi Arabia,SAU,19/03/2020,1
+Saudi Arabia,SAU,20/03/2020,1
+Saudi Arabia,SAU,21/03/2020,1
+Saudi Arabia,SAU,22/03/2020,1
+Saudi Arabia,SAU,23/03/2020,1
+Saudi Arabia,SAU,24/03/2020,1
+Saudi Arabia,SAU,25/03/2020,1
+Saudi Arabia,SAU,26/03/2020,1
+Saudi Arabia,SAU,27/03/2020,1
+Saudi Arabia,SAU,28/03/2020,1
+Saudi Arabia,SAU,29/03/2020,1
+Saudi Arabia,SAU,30/03/2020,1
+Saudi Arabia,SAU,31/03/2020,1
+Senegal,SEN,01/03/2020,0
+Senegal,SEN,02/03/2020,0
+Senegal,SEN,03/03/2020,0
+Senegal,SEN,04/03/2020,0
+Senegal,SEN,05/03/2020,0
+Senegal,SEN,06/03/2020,0
+Senegal,SEN,07/03/2020,0
+Senegal,SEN,08/03/2020,0
+Senegal,SEN,09/03/2020,0
+Senegal,SEN,10/03/2020,0
+Senegal,SEN,11/03/2020,0
+Senegal,SEN,12/03/2020,0
+Senegal,SEN,13/03/2020,0
+Senegal,SEN,14/03/2020,0
+Senegal,SEN,15/03/2020,0
+Senegal,SEN,16/03/2020,1
+Senegal,SEN,17/03/2020,1
+Senegal,SEN,18/03/2020,1
+Senegal,SEN,19/03/2020,1
+Senegal,SEN,20/03/2020,1
+Senegal,SEN,21/03/2020,1
+Senegal,SEN,22/03/2020,1
+Senegal,SEN,23/03/2020,1
+Senegal,SEN,24/03/2020,1
+Senegal,SEN,25/03/2020,1
+Senegal,SEN,26/03/2020,1
+Senegal,SEN,27/03/2020,1
+Senegal,SEN,28/03/2020,1
+Senegal,SEN,29/03/2020,1
+Senegal,SEN,30/03/2020,1
+Senegal,SEN,31/03/2020,1
+Serbia,SRB,01/03/2020,0
+Serbia,SRB,02/03/2020,0
+Serbia,SRB,03/03/2020,0
+Serbia,SRB,04/03/2020,0
+Serbia,SRB,05/03/2020,0
+Serbia,SRB,06/03/2020,0
+Serbia,SRB,07/03/2020,0
+Serbia,SRB,08/03/2020,0
+Serbia,SRB,09/03/2020,0
+Serbia,SRB,10/03/2020,0
+Serbia,SRB,11/03/2020,0
+Serbia,SRB,12/03/2020,0
+Serbia,SRB,13/03/2020,0
+Serbia,SRB,14/03/2020,0
+Serbia,SRB,15/03/2020,0
+Serbia,SRB,16/03/2020,1
+Serbia,SRB,17/03/2020,1
+Serbia,SRB,18/03/2020,1
+Serbia,SRB,19/03/2020,1
+Serbia,SRB,20/03/2020,1
+Serbia,SRB,21/03/2020,1
+Serbia,SRB,22/03/2020,1
+Serbia,SRB,23/03/2020,1
+Serbia,SRB,24/03/2020,1
+Serbia,SRB,25/03/2020,1
+Serbia,SRB,26/03/2020,1
+Serbia,SRB,27/03/2020,1
+Serbia,SRB,28/03/2020,1
+Serbia,SRB,29/03/2020,1
+Serbia,SRB,30/03/2020,1
+Serbia,SRB,31/03/2020,1
+Seychelles,SYC,01/03/2020,0
+Seychelles,SYC,02/03/2020,0
+Seychelles,SYC,03/03/2020,0
+Seychelles,SYC,04/03/2020,0
+Seychelles,SYC,05/03/2020,0
+Seychelles,SYC,06/03/2020,0
+Seychelles,SYC,07/03/2020,0
+Seychelles,SYC,08/03/2020,0
+Seychelles,SYC,09/03/2020,0
+Seychelles,SYC,10/03/2020,0
+Seychelles,SYC,11/03/2020,0
+Seychelles,SYC,12/03/2020,0
+Seychelles,SYC,13/03/2020,0
+Seychelles,SYC,14/03/2020,0
+Seychelles,SYC,15/03/2020,0
+Seychelles,SYC,16/03/2020,1
+Seychelles,SYC,17/03/2020,1
+Seychelles,SYC,18/03/2020,1
+Seychelles,SYC,19/03/2020,1
+Seychelles,SYC,20/03/2020,1
+Seychelles,SYC,21/03/2020,1
+Seychelles,SYC,22/03/2020,1
+Seychelles,SYC,23/03/2020,1
+Seychelles,SYC,24/03/2020,1
+Seychelles,SYC,25/03/2020,1
+Seychelles,SYC,26/03/2020,1
+Seychelles,SYC,27/03/2020,1
+Seychelles,SYC,28/03/2020,1
+Seychelles,SYC,29/03/2020,1
+Seychelles,SYC,30/03/2020,1
+Seychelles,SYC,31/03/2020,1
+Sierra Leone,SLE,01/03/2020,0
+Sierra Leone,SLE,02/03/2020,0
+Sierra Leone,SLE,03/03/2020,0
+Sierra Leone,SLE,04/03/2020,0
+Sierra Leone,SLE,05/03/2020,0
+Sierra Leone,SLE,06/03/2020,0
+Sierra Leone,SLE,07/03/2020,0
+Sierra Leone,SLE,08/03/2020,0
+Sierra Leone,SLE,09/03/2020,0
+Sierra Leone,SLE,10/03/2020,0
+Sierra Leone,SLE,11/03/2020,0
+Sierra Leone,SLE,12/03/2020,0
+Sierra Leone,SLE,13/03/2020,0
+Sierra Leone,SLE,14/03/2020,0
+Sierra Leone,SLE,15/03/2020,0
+Sierra Leone,SLE,16/03/2020,0
+Sierra Leone,SLE,17/03/2020,0
+Sierra Leone,SLE,18/03/2020,0
+Sierra Leone,SLE,19/03/2020,0
+Sierra Leone,SLE,20/03/2020,0
+Sierra Leone,SLE,21/03/2020,0
+Sierra Leone,SLE,22/03/2020,0
+Sierra Leone,SLE,23/03/2020,0
+Sierra Leone,SLE,24/03/2020,0
+Sierra Leone,SLE,25/03/2020,0
+Sierra Leone,SLE,26/03/2020,0
+Sierra Leone,SLE,27/03/2020,0
+Sierra Leone,SLE,28/03/2020,0
+Sierra Leone,SLE,29/03/2020,0
+Sierra Leone,SLE,30/03/2020,0
+Sierra Leone,SLE,31/03/2020,1
+Singapore,SGP,01/03/2020,0
+Singapore,SGP,02/03/2020,0
+Singapore,SGP,03/03/2020,0
+Singapore,SGP,04/03/2020,0
+Singapore,SGP,05/03/2020,0
+Singapore,SGP,06/03/2020,0
+Singapore,SGP,07/03/2020,0
+Singapore,SGP,08/03/2020,0
+Singapore,SGP,09/03/2020,0
+Singapore,SGP,10/03/2020,0
+Singapore,SGP,11/03/2020,0
+Singapore,SGP,12/03/2020,0
+Singapore,SGP,13/03/2020,0
+Singapore,SGP,14/03/2020,0
+Singapore,SGP,15/03/2020,0
+Singapore,SGP,16/03/2020,0
+Singapore,SGP,17/03/2020,0
+Singapore,SGP,18/03/2020,0
+Singapore,SGP,19/03/2020,0
+Singapore,SGP,20/03/2020,0
+Singapore,SGP,21/03/2020,0
+Singapore,SGP,22/03/2020,0
+Singapore,SGP,23/03/2020,0
+Singapore,SGP,24/03/2020,0
+Singapore,SGP,25/03/2020,0
+Singapore,SGP,26/03/2020,0
+Singapore,SGP,27/03/2020,0
+Singapore,SGP,28/03/2020,0
+Singapore,SGP,29/03/2020,0
+Singapore,SGP,30/03/2020,0
+Singapore,SGP,31/03/2020,0
+Slovakia,SVK,01/03/2020,0
+Slovakia,SVK,02/03/2020,0
+Slovakia,SVK,03/03/2020,0
+Slovakia,SVK,04/03/2020,0
+Slovakia,SVK,05/03/2020,0
+Slovakia,SVK,06/03/2020,0
+Slovakia,SVK,07/03/2020,0
+Slovakia,SVK,08/03/2020,0
+Slovakia,SVK,09/03/2020,0
+Slovakia,SVK,10/03/2020,0
+Slovakia,SVK,11/03/2020,0
+Slovakia,SVK,12/03/2020,0
+Slovakia,SVK,13/03/2020,0
+Slovakia,SVK,14/03/2020,0
+Slovakia,SVK,15/03/2020,0
+Slovakia,SVK,16/03/2020,1
+Slovakia,SVK,17/03/2020,1
+Slovakia,SVK,18/03/2020,1
+Slovakia,SVK,19/03/2020,1
+Slovakia,SVK,20/03/2020,1
+Slovakia,SVK,21/03/2020,1
+Slovakia,SVK,22/03/2020,1
+Slovakia,SVK,23/03/2020,1
+Slovakia,SVK,24/03/2020,1
+Slovakia,SVK,25/03/2020,1
+Slovakia,SVK,26/03/2020,1
+Slovakia,SVK,27/03/2020,1
+Slovakia,SVK,28/03/2020,1
+Slovakia,SVK,29/03/2020,1
+Slovakia,SVK,30/03/2020,1
+Slovakia,SVK,31/03/2020,1
+Slovenia,SVN,01/03/2020,0
+Slovenia,SVN,02/03/2020,0
+Slovenia,SVN,03/03/2020,0
+Slovenia,SVN,04/03/2020,0
+Slovenia,SVN,05/03/2020,0
+Slovenia,SVN,06/03/2020,0
+Slovenia,SVN,07/03/2020,0
+Slovenia,SVN,08/03/2020,0
+Slovenia,SVN,09/03/2020,0
+Slovenia,SVN,10/03/2020,0
+Slovenia,SVN,11/03/2020,0
+Slovenia,SVN,12/03/2020,0
+Slovenia,SVN,13/03/2020,0
+Slovenia,SVN,14/03/2020,0
+Slovenia,SVN,15/03/2020,0
+Slovenia,SVN,16/03/2020,1
+Slovenia,SVN,17/03/2020,1
+Slovenia,SVN,18/03/2020,1
+Slovenia,SVN,19/03/2020,1
+Slovenia,SVN,20/03/2020,1
+Slovenia,SVN,21/03/2020,1
+Slovenia,SVN,22/03/2020,1
+Slovenia,SVN,23/03/2020,1
+Slovenia,SVN,24/03/2020,1
+Slovenia,SVN,25/03/2020,1
+Slovenia,SVN,26/03/2020,1
+Slovenia,SVN,27/03/2020,1
+Slovenia,SVN,28/03/2020,1
+Slovenia,SVN,29/03/2020,1
+Slovenia,SVN,30/03/2020,1
+Slovenia,SVN,31/03/2020,1
+Solomon Islands,SLB,01/03/2020,0
+Solomon Islands,SLB,02/03/2020,0
+Solomon Islands,SLB,03/03/2020,0
+Solomon Islands,SLB,04/03/2020,0
+Solomon Islands,SLB,05/03/2020,0
+Solomon Islands,SLB,06/03/2020,0
+Solomon Islands,SLB,07/03/2020,0
+Solomon Islands,SLB,08/03/2020,0
+Solomon Islands,SLB,09/03/2020,0
+Solomon Islands,SLB,10/03/2020,0
+Solomon Islands,SLB,11/03/2020,0
+Solomon Islands,SLB,12/03/2020,0
+Solomon Islands,SLB,13/03/2020,0
+Solomon Islands,SLB,14/03/2020,0
+Solomon Islands,SLB,15/03/2020,0
+Solomon Islands,SLB,16/03/2020,0
+Solomon Islands,SLB,17/03/2020,0
+Solomon Islands,SLB,18/03/2020,0
+Solomon Islands,SLB,19/03/2020,0
+Solomon Islands,SLB,20/03/2020,1
+Solomon Islands,SLB,21/03/2020,1
+Solomon Islands,SLB,22/03/2020,1
+Solomon Islands,SLB,23/03/2020,1
+Solomon Islands,SLB,24/03/2020,1
+Solomon Islands,SLB,25/03/2020,1
+Solomon Islands,SLB,26/03/2020,1
+Solomon Islands,SLB,27/03/2020,1
+Solomon Islands,SLB,28/03/2020,1
+Solomon Islands,SLB,29/03/2020,1
+Solomon Islands,SLB,30/03/2020,1
+Solomon Islands,SLB,31/03/2020,1
+Somalia,SOM,01/03/2020,0
+Somalia,SOM,02/03/2020,0
+Somalia,SOM,03/03/2020,0
+Somalia,SOM,04/03/2020,0
+Somalia,SOM,05/03/2020,0
+Somalia,SOM,06/03/2020,0
+Somalia,SOM,07/03/2020,0
+Somalia,SOM,08/03/2020,0
+Somalia,SOM,09/03/2020,0
+Somalia,SOM,10/03/2020,0
+Somalia,SOM,11/03/2020,0
+Somalia,SOM,12/03/2020,0
+Somalia,SOM,13/03/2020,0
+Somalia,SOM,14/03/2020,0
+Somalia,SOM,15/03/2020,0
+Somalia,SOM,16/03/2020,0
+Somalia,SOM,17/03/2020,0
+Somalia,SOM,18/03/2020,0
+Somalia,SOM,19/03/2020,0
+Somalia,SOM,20/03/2020,0
+Somalia,SOM,21/03/2020,1
+Somalia,SOM,22/03/2020,1
+Somalia,SOM,23/03/2020,1
+Somalia,SOM,24/03/2020,1
+Somalia,SOM,25/03/2020,1
+Somalia,SOM,26/03/2020,1
+Somalia,SOM,27/03/2020,1
+Somalia,SOM,28/03/2020,1
+Somalia,SOM,29/03/2020,1
+Somalia,SOM,30/03/2020,1
+Somalia,SOM,31/03/2020,1
+South Africa,ZAF,01/03/2020,0
+South Africa,ZAF,02/03/2020,0
+South Africa,ZAF,03/03/2020,0
+South Africa,ZAF,04/03/2020,0
+South Africa,ZAF,05/03/2020,0
+South Africa,ZAF,06/03/2020,0
+South Africa,ZAF,07/03/2020,0
+South Africa,ZAF,08/03/2020,0
+South Africa,ZAF,09/03/2020,0
+South Africa,ZAF,10/03/2020,0
+South Africa,ZAF,11/03/2020,0
+South Africa,ZAF,12/03/2020,0
+South Africa,ZAF,13/03/2020,0
+South Africa,ZAF,14/03/2020,0
+South Africa,ZAF,15/03/2020,0
+South Africa,ZAF,16/03/2020,0
+South Africa,ZAF,17/03/2020,0
+South Africa,ZAF,18/03/2020,1
+South Africa,ZAF,19/03/2020,1
+South Africa,ZAF,20/03/2020,1
+South Africa,ZAF,21/03/2020,1
+South Africa,ZAF,22/03/2020,1
+South Africa,ZAF,23/03/2020,1
+South Africa,ZAF,24/03/2020,1
+South Africa,ZAF,25/03/2020,1
+South Africa,ZAF,26/03/2020,1
+South Africa,ZAF,27/03/2020,1
+South Africa,ZAF,28/03/2020,1
+South Africa,ZAF,29/03/2020,1
+South Africa,ZAF,30/03/2020,1
+South Africa,ZAF,31/03/2020,1
+South Korea,KOR,01/03/2020,1
+South Korea,KOR,02/03/2020,1
+South Korea,KOR,03/03/2020,1
+South Korea,KOR,04/03/2020,1
+South Korea,KOR,05/03/2020,1
+South Korea,KOR,06/03/2020,1
+South Korea,KOR,07/03/2020,1
+South Korea,KOR,08/03/2020,1
+South Korea,KOR,09/03/2020,1
+South Korea,KOR,10/03/2020,1
+South Korea,KOR,11/03/2020,1
+South Korea,KOR,12/03/2020,1
+South Korea,KOR,13/03/2020,1
+South Korea,KOR,14/03/2020,1
+South Korea,KOR,15/03/2020,1
+South Korea,KOR,16/03/2020,1
+South Korea,KOR,17/03/2020,1
+South Korea,KOR,18/03/2020,1
+South Korea,KOR,19/03/2020,1
+South Korea,KOR,20/03/2020,1
+South Korea,KOR,21/03/2020,1
+South Korea,KOR,22/03/2020,1
+South Korea,KOR,23/03/2020,1
+South Korea,KOR,24/03/2020,1
+South Korea,KOR,25/03/2020,1
+South Korea,KOR,26/03/2020,1
+South Korea,KOR,27/03/2020,1
+South Korea,KOR,28/03/2020,1
+South Korea,KOR,29/03/2020,1
+South Korea,KOR,30/03/2020,1
+South Korea,KOR,31/03/2020,1
+South Sudan,SSD,01/03/2020,0
+South Sudan,SSD,02/03/2020,0
+South Sudan,SSD,03/03/2020,0
+South Sudan,SSD,04/03/2020,0
+South Sudan,SSD,05/03/2020,0
+South Sudan,SSD,06/03/2020,0
+South Sudan,SSD,07/03/2020,0
+South Sudan,SSD,08/03/2020,0
+South Sudan,SSD,09/03/2020,0
+South Sudan,SSD,10/03/2020,0
+South Sudan,SSD,11/03/2020,0
+South Sudan,SSD,12/03/2020,0
+South Sudan,SSD,13/03/2020,0
+South Sudan,SSD,14/03/2020,0
+South Sudan,SSD,15/03/2020,0
+South Sudan,SSD,16/03/2020,0
+South Sudan,SSD,17/03/2020,0
+South Sudan,SSD,18/03/2020,0
+South Sudan,SSD,19/03/2020,0
+South Sudan,SSD,20/03/2020,1
+South Sudan,SSD,21/03/2020,1
+South Sudan,SSD,22/03/2020,1
+South Sudan,SSD,23/03/2020,1
+South Sudan,SSD,24/03/2020,1
+South Sudan,SSD,25/03/2020,1
+South Sudan,SSD,26/03/2020,1
+South Sudan,SSD,27/03/2020,1
+South Sudan,SSD,28/03/2020,1
+South Sudan,SSD,29/03/2020,1
+South Sudan,SSD,30/03/2020,1
+South Sudan,SSD,31/03/2020,1
+Spain,ESP,01/03/2020,0
+Spain,ESP,02/03/2020,0
+Spain,ESP,03/03/2020,0
+Spain,ESP,04/03/2020,0
+Spain,ESP,05/03/2020,0
+Spain,ESP,06/03/2020,0
+Spain,ESP,07/03/2020,0
+Spain,ESP,08/03/2020,0
+Spain,ESP,09/03/2020,1
+Spain,ESP,10/03/2020,1
+Spain,ESP,11/03/2020,1
+Spain,ESP,12/03/2020,1
+Spain,ESP,13/03/2020,1
+Spain,ESP,14/03/2020,1
+Spain,ESP,15/03/2020,1
+Spain,ESP,16/03/2020,1
+Spain,ESP,17/03/2020,1
+Spain,ESP,18/03/2020,1
+Spain,ESP,19/03/2020,1
+Spain,ESP,20/03/2020,1
+Spain,ESP,21/03/2020,1
+Spain,ESP,22/03/2020,1
+Spain,ESP,23/03/2020,1
+Spain,ESP,24/03/2020,1
+Spain,ESP,25/03/2020,1
+Spain,ESP,26/03/2020,1
+Spain,ESP,27/03/2020,1
+Spain,ESP,28/03/2020,1
+Spain,ESP,29/03/2020,1
+Spain,ESP,30/03/2020,1
+Spain,ESP,31/03/2020,1
+Sri Lanka,LKA,01/03/2020,0
+Sri Lanka,LKA,02/03/2020,0
+Sri Lanka,LKA,03/03/2020,0
+Sri Lanka,LKA,04/03/2020,0
+Sri Lanka,LKA,05/03/2020,0
+Sri Lanka,LKA,06/03/2020,0
+Sri Lanka,LKA,07/03/2020,0
+Sri Lanka,LKA,08/03/2020,0
+Sri Lanka,LKA,09/03/2020,0
+Sri Lanka,LKA,10/03/2020,0
+Sri Lanka,LKA,11/03/2020,0
+Sri Lanka,LKA,12/03/2020,0
+Sri Lanka,LKA,13/03/2020,0
+Sri Lanka,LKA,14/03/2020,0
+Sri Lanka,LKA,15/03/2020,0
+Sri Lanka,LKA,16/03/2020,0
+Sri Lanka,LKA,17/03/2020,0
+Sri Lanka,LKA,18/03/2020,1
+Sri Lanka,LKA,19/03/2020,1
+Sri Lanka,LKA,20/03/2020,1
+Sri Lanka,LKA,21/03/2020,1
+Sri Lanka,LKA,22/03/2020,1
+Sri Lanka,LKA,23/03/2020,1
+Sri Lanka,LKA,24/03/2020,1
+Sri Lanka,LKA,25/03/2020,1
+Sri Lanka,LKA,26/03/2020,1
+Sri Lanka,LKA,27/03/2020,1
+Sri Lanka,LKA,28/03/2020,1
+Sri Lanka,LKA,29/03/2020,1
+Sri Lanka,LKA,30/03/2020,1
+Sri Lanka,LKA,31/03/2020,1
+Sudan,SDN,01/03/2020,0
+Sudan,SDN,02/03/2020,0
+Sudan,SDN,03/03/2020,0
+Sudan,SDN,04/03/2020,0
+Sudan,SDN,05/03/2020,0
+Sudan,SDN,06/03/2020,0
+Sudan,SDN,07/03/2020,0
+Sudan,SDN,08/03/2020,0
+Sudan,SDN,09/03/2020,0
+Sudan,SDN,10/03/2020,0
+Sudan,SDN,11/03/2020,0
+Sudan,SDN,12/03/2020,0
+Sudan,SDN,13/03/2020,0
+Sudan,SDN,14/03/2020,1
+Sudan,SDN,15/03/2020,1
+Sudan,SDN,16/03/2020,1
+Sudan,SDN,17/03/2020,1
+Sudan,SDN,18/03/2020,1
+Sudan,SDN,19/03/2020,1
+Sudan,SDN,20/03/2020,1
+Sudan,SDN,21/03/2020,1
+Sudan,SDN,22/03/2020,1
+Sudan,SDN,23/03/2020,1
+Sudan,SDN,24/03/2020,1
+Sudan,SDN,25/03/2020,1
+Sudan,SDN,26/03/2020,1
+Sudan,SDN,27/03/2020,1
+Sudan,SDN,28/03/2020,1
+Sudan,SDN,29/03/2020,1
+Sudan,SDN,30/03/2020,1
+Sudan,SDN,31/03/2020,1
+Suriname,SUR,01/03/2020,0
+Suriname,SUR,02/03/2020,0
+Suriname,SUR,03/03/2020,0
+Suriname,SUR,04/03/2020,0
+Suriname,SUR,05/03/2020,0
+Suriname,SUR,06/03/2020,0
+Suriname,SUR,07/03/2020,0
+Suriname,SUR,08/03/2020,0
+Suriname,SUR,09/03/2020,0
+Suriname,SUR,10/03/2020,0
+Suriname,SUR,11/03/2020,0
+Suriname,SUR,12/03/2020,0
+Suriname,SUR,13/03/2020,0
+Suriname,SUR,14/03/2020,0
+Suriname,SUR,15/03/2020,0
+Suriname,SUR,16/03/2020,1
+Suriname,SUR,17/03/2020,1
+Suriname,SUR,18/03/2020,1
+Suriname,SUR,19/03/2020,1
+Suriname,SUR,20/03/2020,1
+Suriname,SUR,21/03/2020,1
+Suriname,SUR,22/03/2020,1
+Suriname,SUR,23/03/2020,1
+Suriname,SUR,24/03/2020,1
+Suriname,SUR,25/03/2020,1
+Suriname,SUR,26/03/2020,1
+Suriname,SUR,27/03/2020,1
+Suriname,SUR,28/03/2020,1
+Suriname,SUR,29/03/2020,1
+Suriname,SUR,30/03/2020,1
+Suriname,SUR,31/03/2020,1
+Sweden,SWE,01/03/2020,0
+Sweden,SWE,02/03/2020,0
+Sweden,SWE,03/03/2020,0
+Sweden,SWE,04/03/2020,0
+Sweden,SWE,05/03/2020,0
+Sweden,SWE,06/03/2020,0
+Sweden,SWE,07/03/2020,0
+Sweden,SWE,08/03/2020,0
+Sweden,SWE,09/03/2020,0
+Sweden,SWE,10/03/2020,0
+Sweden,SWE,11/03/2020,0
+Sweden,SWE,12/03/2020,0
+Sweden,SWE,13/03/2020,0
+Sweden,SWE,14/03/2020,0
+Sweden,SWE,15/03/2020,0
+Sweden,SWE,16/03/2020,0
+Sweden,SWE,17/03/2020,0
+Sweden,SWE,18/03/2020,0
+Sweden,SWE,19/03/2020,0
+Sweden,SWE,20/03/2020,0
+Sweden,SWE,21/03/2020,0
+Sweden,SWE,22/03/2020,0
+Sweden,SWE,23/03/2020,0
+Sweden,SWE,24/03/2020,0
+Sweden,SWE,25/03/2020,0
+Sweden,SWE,26/03/2020,0
+Sweden,SWE,27/03/2020,0
+Sweden,SWE,28/03/2020,0
+Sweden,SWE,29/03/2020,0
+Sweden,SWE,30/03/2020,0
+Sweden,SWE,31/03/2020,0
+Switzerland,CHE,01/03/2020,0
+Switzerland,CHE,02/03/2020,0
+Switzerland,CHE,03/03/2020,0
+Switzerland,CHE,04/03/2020,0
+Switzerland,CHE,05/03/2020,0
+Switzerland,CHE,06/03/2020,0
+Switzerland,CHE,07/03/2020,0
+Switzerland,CHE,08/03/2020,0
+Switzerland,CHE,09/03/2020,0
+Switzerland,CHE,10/03/2020,0
+Switzerland,CHE,11/03/2020,0
+Switzerland,CHE,12/03/2020,0
+Switzerland,CHE,13/03/2020,0
+Switzerland,CHE,14/03/2020,0
+Switzerland,CHE,15/03/2020,0
+Switzerland,CHE,16/03/2020,1
+Switzerland,CHE,17/03/2020,1
+Switzerland,CHE,18/03/2020,1
+Switzerland,CHE,19/03/2020,1
+Switzerland,CHE,20/03/2020,1
+Switzerland,CHE,21/03/2020,1
+Switzerland,CHE,22/03/2020,1
+Switzerland,CHE,23/03/2020,1
+Switzerland,CHE,24/03/2020,1
+Switzerland,CHE,25/03/2020,1
+Switzerland,CHE,26/03/2020,1
+Switzerland,CHE,27/03/2020,1
+Switzerland,CHE,28/03/2020,1
+Switzerland,CHE,29/03/2020,1
+Switzerland,CHE,30/03/2020,1
+Switzerland,CHE,31/03/2020,1
+Syria,SYR,01/03/2020,0
+Syria,SYR,02/03/2020,0
+Syria,SYR,03/03/2020,0
+Syria,SYR,04/03/2020,0
+Syria,SYR,05/03/2020,0
+Syria,SYR,06/03/2020,0
+Syria,SYR,07/03/2020,0
+Syria,SYR,08/03/2020,0
+Syria,SYR,09/03/2020,0
+Syria,SYR,10/03/2020,0
+Syria,SYR,11/03/2020,0
+Syria,SYR,12/03/2020,0
+Syria,SYR,13/03/2020,0
+Syria,SYR,14/03/2020,1
+Syria,SYR,15/03/2020,1
+Syria,SYR,16/03/2020,1
+Syria,SYR,17/03/2020,1
+Syria,SYR,18/03/2020,1
+Syria,SYR,19/03/2020,1
+Syria,SYR,20/03/2020,1
+Syria,SYR,21/03/2020,1
+Syria,SYR,22/03/2020,1
+Syria,SYR,23/03/2020,1
+Syria,SYR,24/03/2020,1
+Syria,SYR,25/03/2020,1
+Syria,SYR,26/03/2020,1
+Syria,SYR,27/03/2020,1
+Syria,SYR,28/03/2020,1
+Syria,SYR,29/03/2020,1
+Syria,SYR,30/03/2020,1
+Syria,SYR,31/03/2020,1
+Taiwan,TWN,01/03/2020,0
+Taiwan,TWN,02/03/2020,0
+Taiwan,TWN,03/03/2020,0
+Taiwan,TWN,04/03/2020,0
+Taiwan,TWN,05/03/2020,0
+Taiwan,TWN,06/03/2020,0
+Taiwan,TWN,07/03/2020,0
+Taiwan,TWN,08/03/2020,0
+Taiwan,TWN,09/03/2020,0
+Taiwan,TWN,10/03/2020,0
+Taiwan,TWN,11/03/2020,0
+Taiwan,TWN,12/03/2020,0
+Taiwan,TWN,13/03/2020,0
+Taiwan,TWN,14/03/2020,0
+Taiwan,TWN,15/03/2020,0
+Taiwan,TWN,16/03/2020,0
+Taiwan,TWN,17/03/2020,0
+Taiwan,TWN,18/03/2020,0
+Taiwan,TWN,19/03/2020,0
+Taiwan,TWN,20/03/2020,0
+Taiwan,TWN,21/03/2020,0
+Taiwan,TWN,22/03/2020,0
+Taiwan,TWN,23/03/2020,0
+Taiwan,TWN,24/03/2020,0
+Taiwan,TWN,25/03/2020,0
+Taiwan,TWN,26/03/2020,0
+Taiwan,TWN,27/03/2020,0
+Taiwan,TWN,28/03/2020,0
+Taiwan,TWN,29/03/2020,0
+Taiwan,TWN,30/03/2020,0
+Taiwan,TWN,31/03/2020,0
+Tajikistan,TJK,01/03/2020,0
+Tajikistan,TJK,02/03/2020,0
+Tajikistan,TJK,03/03/2020,0
+Tajikistan,TJK,04/03/2020,0
+Tajikistan,TJK,05/03/2020,0
+Tajikistan,TJK,06/03/2020,0
+Tajikistan,TJK,07/03/2020,0
+Tajikistan,TJK,08/03/2020,0
+Tajikistan,TJK,09/03/2020,0
+Tajikistan,TJK,10/03/2020,0
+Tajikistan,TJK,11/03/2020,0
+Tajikistan,TJK,12/03/2020,0
+Tajikistan,TJK,13/03/2020,0
+Tajikistan,TJK,14/03/2020,0
+Tajikistan,TJK,15/03/2020,0
+Tajikistan,TJK,16/03/2020,0
+Tajikistan,TJK,17/03/2020,0
+Tajikistan,TJK,18/03/2020,0
+Tajikistan,TJK,19/03/2020,0
+Tajikistan,TJK,20/03/2020,0
+Tajikistan,TJK,21/03/2020,0
+Tajikistan,TJK,22/03/2020,0
+Tajikistan,TJK,23/03/2020,0
+Tajikistan,TJK,24/03/2020,0
+Tajikistan,TJK,25/03/2020,0
+Tajikistan,TJK,26/03/2020,0
+Tajikistan,TJK,27/03/2020,0
+Tajikistan,TJK,28/03/2020,0
+Tajikistan,TJK,29/03/2020,0
+Tajikistan,TJK,30/03/2020,0
+Tajikistan,TJK,31/03/2020,0
+Tanzania,TZA,01/03/2020,0
+Tanzania,TZA,02/03/2020,0
+Tanzania,TZA,03/03/2020,0
+Tanzania,TZA,04/03/2020,0
+Tanzania,TZA,05/03/2020,0
+Tanzania,TZA,06/03/2020,0
+Tanzania,TZA,07/03/2020,0
+Tanzania,TZA,08/03/2020,0
+Tanzania,TZA,09/03/2020,0
+Tanzania,TZA,10/03/2020,0
+Tanzania,TZA,11/03/2020,0
+Tanzania,TZA,12/03/2020,0
+Tanzania,TZA,13/03/2020,0
+Tanzania,TZA,14/03/2020,0
+Tanzania,TZA,15/03/2020,0
+Tanzania,TZA,16/03/2020,0
+Tanzania,TZA,17/03/2020,0
+Tanzania,TZA,18/03/2020,1
+Tanzania,TZA,19/03/2020,1
+Tanzania,TZA,20/03/2020,1
+Tanzania,TZA,21/03/2020,1
+Tanzania,TZA,22/03/2020,1
+Tanzania,TZA,23/03/2020,1
+Tanzania,TZA,24/03/2020,1
+Tanzania,TZA,25/03/2020,1
+Tanzania,TZA,26/03/2020,1
+Tanzania,TZA,27/03/2020,1
+Tanzania,TZA,28/03/2020,1
+Tanzania,TZA,29/03/2020,1
+Tanzania,TZA,30/03/2020,1
+Tanzania,TZA,31/03/2020,1
+Thailand,THA,01/03/2020,0
+Thailand,THA,02/03/2020,0
+Thailand,THA,03/03/2020,0
+Thailand,THA,04/03/2020,0
+Thailand,THA,05/03/2020,0
+Thailand,THA,06/03/2020,0
+Thailand,THA,07/03/2020,0
+Thailand,THA,08/03/2020,0
+Thailand,THA,09/03/2020,0
+Thailand,THA,10/03/2020,0
+Thailand,THA,11/03/2020,0
+Thailand,THA,12/03/2020,0
+Thailand,THA,13/03/2020,0
+Thailand,THA,14/03/2020,0
+Thailand,THA,15/03/2020,0
+Thailand,THA,16/03/2020,0
+Thailand,THA,17/03/2020,0
+Thailand,THA,18/03/2020,1
+Thailand,THA,19/03/2020,1
+Thailand,THA,20/03/2020,1
+Thailand,THA,21/03/2020,1
+Thailand,THA,22/03/2020,1
+Thailand,THA,23/03/2020,1
+Thailand,THA,24/03/2020,1
+Thailand,THA,25/03/2020,1
+Thailand,THA,26/03/2020,1
+Thailand,THA,27/03/2020,1
+Thailand,THA,28/03/2020,1
+Thailand,THA,29/03/2020,1
+Thailand,THA,30/03/2020,1
+Thailand,THA,31/03/2020,1
+Timor,TLS,01/03/2020,0
+Timor,TLS,02/03/2020,0
+Timor,TLS,03/03/2020,0
+Timor,TLS,04/03/2020,0
+Timor,TLS,05/03/2020,0
+Timor,TLS,06/03/2020,0
+Timor,TLS,07/03/2020,0
+Timor,TLS,08/03/2020,0
+Timor,TLS,09/03/2020,0
+Timor,TLS,10/03/2020,0
+Timor,TLS,11/03/2020,0
+Timor,TLS,12/03/2020,0
+Timor,TLS,13/03/2020,0
+Timor,TLS,14/03/2020,0
+Timor,TLS,15/03/2020,0
+Timor,TLS,16/03/2020,0
+Timor,TLS,17/03/2020,0
+Timor,TLS,18/03/2020,0
+Timor,TLS,19/03/2020,0
+Timor,TLS,20/03/2020,0
+Timor,TLS,21/03/2020,0
+Timor,TLS,22/03/2020,0
+Timor,TLS,23/03/2020,1
+Timor,TLS,24/03/2020,1
+Timor,TLS,25/03/2020,1
+Timor,TLS,26/03/2020,1
+Timor,TLS,27/03/2020,1
+Timor,TLS,28/03/2020,1
+Timor,TLS,29/03/2020,1
+Timor,TLS,30/03/2020,1
+Timor,TLS,31/03/2020,1
+Togo,TGO,01/03/2020,0
+Togo,TGO,02/03/2020,0
+Togo,TGO,03/03/2020,0
+Togo,TGO,04/03/2020,0
+Togo,TGO,05/03/2020,0
+Togo,TGO,06/03/2020,0
+Togo,TGO,07/03/2020,0
+Togo,TGO,08/03/2020,0
+Togo,TGO,09/03/2020,0
+Togo,TGO,10/03/2020,0
+Togo,TGO,11/03/2020,0
+Togo,TGO,12/03/2020,0
+Togo,TGO,13/03/2020,0
+Togo,TGO,14/03/2020,0
+Togo,TGO,15/03/2020,0
+Togo,TGO,16/03/2020,0
+Togo,TGO,17/03/2020,0
+Togo,TGO,18/03/2020,0
+Togo,TGO,19/03/2020,0
+Togo,TGO,20/03/2020,1
+Togo,TGO,21/03/2020,1
+Togo,TGO,22/03/2020,1
+Togo,TGO,23/03/2020,1
+Togo,TGO,24/03/2020,1
+Togo,TGO,25/03/2020,1
+Togo,TGO,26/03/2020,1
+Togo,TGO,27/03/2020,1
+Togo,TGO,28/03/2020,1
+Togo,TGO,29/03/2020,1
+Togo,TGO,30/03/2020,1
+Togo,TGO,31/03/2020,1
+Tonga,TON,01/03/2020,0
+Tonga,TON,02/03/2020,0
+Tonga,TON,03/03/2020,0
+Tonga,TON,04/03/2020,0
+Tonga,TON,05/03/2020,0
+Tonga,TON,06/03/2020,0
+Tonga,TON,07/03/2020,0
+Tonga,TON,08/03/2020,0
+Tonga,TON,09/03/2020,0
+Tonga,TON,10/03/2020,0
+Tonga,TON,11/03/2020,0
+Tonga,TON,12/03/2020,0
+Tonga,TON,13/03/2020,0
+Tonga,TON,14/03/2020,0
+Tonga,TON,15/03/2020,0
+Tonga,TON,16/03/2020,0
+Tonga,TON,17/03/2020,0
+Tonga,TON,18/03/2020,0
+Tonga,TON,19/03/2020,0
+Tonga,TON,20/03/2020,0
+Tonga,TON,21/03/2020,0
+Tonga,TON,22/03/2020,0
+Tonga,TON,23/03/2020,0
+Tonga,TON,24/03/2020,0
+Tonga,TON,25/03/2020,0
+Tonga,TON,26/03/2020,0
+Tonga,TON,27/03/2020,0
+Tonga,TON,28/03/2020,0
+Tonga,TON,29/03/2020,1
+Tonga,TON,30/03/2020,1
+Tonga,TON,31/03/2020,1
+Trinidad and Tobago,TTO,01/03/2020,0
+Trinidad and Tobago,TTO,02/03/2020,0
+Trinidad and Tobago,TTO,03/03/2020,0
+Trinidad and Tobago,TTO,04/03/2020,0
+Trinidad and Tobago,TTO,05/03/2020,0
+Trinidad and Tobago,TTO,06/03/2020,0
+Trinidad and Tobago,TTO,07/03/2020,0
+Trinidad and Tobago,TTO,08/03/2020,0
+Trinidad and Tobago,TTO,09/03/2020,0
+Trinidad and Tobago,TTO,10/03/2020,0
+Trinidad and Tobago,TTO,11/03/2020,0
+Trinidad and Tobago,TTO,12/03/2020,0
+Trinidad and Tobago,TTO,13/03/2020,0
+Trinidad and Tobago,TTO,14/03/2020,1
+Trinidad and Tobago,TTO,15/03/2020,1
+Trinidad and Tobago,TTO,16/03/2020,1
+Trinidad and Tobago,TTO,17/03/2020,1
+Trinidad and Tobago,TTO,18/03/2020,1
+Trinidad and Tobago,TTO,19/03/2020,1
+Trinidad and Tobago,TTO,20/03/2020,1
+Trinidad and Tobago,TTO,21/03/2020,1
+Trinidad and Tobago,TTO,22/03/2020,1
+Trinidad and Tobago,TTO,23/03/2020,1
+Trinidad and Tobago,TTO,24/03/2020,1
+Trinidad and Tobago,TTO,25/03/2020,1
+Trinidad and Tobago,TTO,26/03/2020,1
+Trinidad and Tobago,TTO,27/03/2020,1
+Trinidad and Tobago,TTO,28/03/2020,1
+Trinidad and Tobago,TTO,29/03/2020,1
+Trinidad and Tobago,TTO,30/03/2020,1
+Trinidad and Tobago,TTO,31/03/2020,1
+Tunisia,TUN,01/03/2020,0
+Tunisia,TUN,02/03/2020,0
+Tunisia,TUN,03/03/2020,0
+Tunisia,TUN,04/03/2020,0
+Tunisia,TUN,05/03/2020,0
+Tunisia,TUN,06/03/2020,0
+Tunisia,TUN,07/03/2020,0
+Tunisia,TUN,08/03/2020,0
+Tunisia,TUN,09/03/2020,0
+Tunisia,TUN,10/03/2020,0
+Tunisia,TUN,11/03/2020,0
+Tunisia,TUN,12/03/2020,1
+Tunisia,TUN,13/03/2020,1
+Tunisia,TUN,14/03/2020,1
+Tunisia,TUN,15/03/2020,1
+Tunisia,TUN,16/03/2020,1
+Tunisia,TUN,17/03/2020,1
+Tunisia,TUN,18/03/2020,1
+Tunisia,TUN,19/03/2020,1
+Tunisia,TUN,20/03/2020,1
+Tunisia,TUN,21/03/2020,1
+Tunisia,TUN,22/03/2020,1
+Tunisia,TUN,23/03/2020,1
+Tunisia,TUN,24/03/2020,1
+Tunisia,TUN,25/03/2020,1
+Tunisia,TUN,26/03/2020,1
+Tunisia,TUN,27/03/2020,1
+Tunisia,TUN,28/03/2020,1
+Tunisia,TUN,29/03/2020,1
+Tunisia,TUN,30/03/2020,1
+Tunisia,TUN,31/03/2020,1
+Turkey,TUR,01/03/2020,0
+Turkey,TUR,02/03/2020,0
+Turkey,TUR,03/03/2020,0
+Turkey,TUR,04/03/2020,0
+Turkey,TUR,05/03/2020,0
+Turkey,TUR,06/03/2020,0
+Turkey,TUR,07/03/2020,0
+Turkey,TUR,08/03/2020,0
+Turkey,TUR,09/03/2020,0
+Turkey,TUR,10/03/2020,0
+Turkey,TUR,11/03/2020,0
+Turkey,TUR,12/03/2020,0
+Turkey,TUR,13/03/2020,0
+Turkey,TUR,14/03/2020,0
+Turkey,TUR,15/03/2020,0
+Turkey,TUR,16/03/2020,1
+Turkey,TUR,17/03/2020,1
+Turkey,TUR,18/03/2020,1
+Turkey,TUR,19/03/2020,1
+Turkey,TUR,20/03/2020,1
+Turkey,TUR,21/03/2020,1
+Turkey,TUR,22/03/2020,1
+Turkey,TUR,23/03/2020,1
+Turkey,TUR,24/03/2020,1
+Turkey,TUR,25/03/2020,1
+Turkey,TUR,26/03/2020,1
+Turkey,TUR,27/03/2020,1
+Turkey,TUR,28/03/2020,1
+Turkey,TUR,29/03/2020,1
+Turkey,TUR,30/03/2020,1
+Turkey,TUR,31/03/2020,1
+Turkmenistan,TKM,01/03/2020,0
+Turkmenistan,TKM,02/03/2020,0
+Turkmenistan,TKM,03/03/2020,0
+Turkmenistan,TKM,04/03/2020,0
+Turkmenistan,TKM,05/03/2020,0
+Turkmenistan,TKM,06/03/2020,0
+Turkmenistan,TKM,07/03/2020,0
+Turkmenistan,TKM,08/03/2020,0
+Turkmenistan,TKM,09/03/2020,0
+Turkmenistan,TKM,10/03/2020,0
+Turkmenistan,TKM,11/03/2020,0
+Turkmenistan,TKM,12/03/2020,0
+Turkmenistan,TKM,13/03/2020,0
+Turkmenistan,TKM,14/03/2020,0
+Turkmenistan,TKM,15/03/2020,0
+Turkmenistan,TKM,16/03/2020,0
+Turkmenistan,TKM,17/03/2020,0
+Turkmenistan,TKM,18/03/2020,0
+Turkmenistan,TKM,19/03/2020,0
+Turkmenistan,TKM,20/03/2020,0
+Turkmenistan,TKM,21/03/2020,0
+Turkmenistan,TKM,22/03/2020,0
+Turkmenistan,TKM,23/03/2020,0
+Turkmenistan,TKM,24/03/2020,0
+Turkmenistan,TKM,25/03/2020,0
+Turkmenistan,TKM,26/03/2020,0
+Turkmenistan,TKM,27/03/2020,0
+Turkmenistan,TKM,28/03/2020,0
+Turkmenistan,TKM,29/03/2020,0
+Turkmenistan,TKM,30/03/2020,0
+Turkmenistan,TKM,31/03/2020,0
+Uganda,UGA,01/03/2020,0
+Uganda,UGA,02/03/2020,0
+Uganda,UGA,03/03/2020,0
+Uganda,UGA,04/03/2020,0
+Uganda,UGA,05/03/2020,0
+Uganda,UGA,06/03/2020,0
+Uganda,UGA,07/03/2020,0
+Uganda,UGA,08/03/2020,0
+Uganda,UGA,09/03/2020,0
+Uganda,UGA,10/03/2020,0
+Uganda,UGA,11/03/2020,0
+Uganda,UGA,12/03/2020,0
+Uganda,UGA,13/03/2020,0
+Uganda,UGA,14/03/2020,0
+Uganda,UGA,15/03/2020,0
+Uganda,UGA,16/03/2020,0
+Uganda,UGA,17/03/2020,0
+Uganda,UGA,18/03/2020,0
+Uganda,UGA,19/03/2020,0
+Uganda,UGA,20/03/2020,1
+Uganda,UGA,21/03/2020,1
+Uganda,UGA,22/03/2020,1
+Uganda,UGA,23/03/2020,1
+Uganda,UGA,24/03/2020,1
+Uganda,UGA,25/03/2020,1
+Uganda,UGA,26/03/2020,1
+Uganda,UGA,27/03/2020,1
+Uganda,UGA,28/03/2020,1
+Uganda,UGA,29/03/2020,1
+Uganda,UGA,30/03/2020,1
+Uganda,UGA,31/03/2020,1
+Ukraine,UKR,01/03/2020,0
+Ukraine,UKR,02/03/2020,0
+Ukraine,UKR,03/03/2020,0
+Ukraine,UKR,04/03/2020,0
+Ukraine,UKR,05/03/2020,0
+Ukraine,UKR,06/03/2020,0
+Ukraine,UKR,07/03/2020,0
+Ukraine,UKR,08/03/2020,0
+Ukraine,UKR,09/03/2020,0
+Ukraine,UKR,10/03/2020,0
+Ukraine,UKR,11/03/2020,0
+Ukraine,UKR,12/03/2020,1
+Ukraine,UKR,13/03/2020,1
+Ukraine,UKR,14/03/2020,1
+Ukraine,UKR,15/03/2020,1
+Ukraine,UKR,16/03/2020,1
+Ukraine,UKR,17/03/2020,1
+Ukraine,UKR,18/03/2020,1
+Ukraine,UKR,19/03/2020,1
+Ukraine,UKR,20/03/2020,1
+Ukraine,UKR,21/03/2020,1
+Ukraine,UKR,22/03/2020,1
+Ukraine,UKR,23/03/2020,1
+Ukraine,UKR,24/03/2020,1
+Ukraine,UKR,25/03/2020,1
+Ukraine,UKR,26/03/2020,1
+Ukraine,UKR,27/03/2020,1
+Ukraine,UKR,28/03/2020,1
+Ukraine,UKR,29/03/2020,1
+Ukraine,UKR,30/03/2020,1
+Ukraine,UKR,31/03/2020,1
+United Arab Emirates,ARE,01/03/2020,0
+United Arab Emirates,ARE,02/03/2020,0
+United Arab Emirates,ARE,03/03/2020,0
+United Arab Emirates,ARE,04/03/2020,0
+United Arab Emirates,ARE,05/03/2020,0
+United Arab Emirates,ARE,06/03/2020,0
+United Arab Emirates,ARE,07/03/2020,0
+United Arab Emirates,ARE,08/03/2020,1
+United Arab Emirates,ARE,09/03/2020,1
+United Arab Emirates,ARE,10/03/2020,1
+United Arab Emirates,ARE,11/03/2020,1
+United Arab Emirates,ARE,12/03/2020,1
+United Arab Emirates,ARE,13/03/2020,1
+United Arab Emirates,ARE,14/03/2020,1
+United Arab Emirates,ARE,15/03/2020,1
+United Arab Emirates,ARE,16/03/2020,1
+United Arab Emirates,ARE,17/03/2020,1
+United Arab Emirates,ARE,18/03/2020,1
+United Arab Emirates,ARE,19/03/2020,1
+United Arab Emirates,ARE,20/03/2020,1
+United Arab Emirates,ARE,21/03/2020,1
+United Arab Emirates,ARE,22/03/2020,1
+United Arab Emirates,ARE,23/03/2020,1
+United Arab Emirates,ARE,24/03/2020,1
+United Arab Emirates,ARE,25/03/2020,1
+United Arab Emirates,ARE,26/03/2020,1
+United Arab Emirates,ARE,27/03/2020,1
+United Arab Emirates,ARE,28/03/2020,1
+United Arab Emirates,ARE,29/03/2020,1
+United Arab Emirates,ARE,30/03/2020,1
+United Arab Emirates,ARE,31/03/2020,1
+United Kingdom,GBR,01/03/2020,0
+United Kingdom,GBR,02/03/2020,0
+United Kingdom,GBR,03/03/2020,0
+United Kingdom,GBR,04/03/2020,0
+United Kingdom,GBR,05/03/2020,0
+United Kingdom,GBR,06/03/2020,0
+United Kingdom,GBR,07/03/2020,0
+United Kingdom,GBR,08/03/2020,0
+United Kingdom,GBR,09/03/2020,0
+United Kingdom,GBR,10/03/2020,0
+United Kingdom,GBR,11/03/2020,0
+United Kingdom,GBR,12/03/2020,0
+United Kingdom,GBR,13/03/2020,0
+United Kingdom,GBR,14/03/2020,0
+United Kingdom,GBR,15/03/2020,0
+United Kingdom,GBR,16/03/2020,0
+United Kingdom,GBR,17/03/2020,0
+United Kingdom,GBR,18/03/2020,1
+United Kingdom,GBR,19/03/2020,1
+United Kingdom,GBR,20/03/2020,1
+United Kingdom,GBR,21/03/2020,1
+United Kingdom,GBR,22/03/2020,1
+United Kingdom,GBR,23/03/2020,1
+United Kingdom,GBR,24/03/2020,1
+United Kingdom,GBR,25/03/2020,1
+United Kingdom,GBR,26/03/2020,1
+United Kingdom,GBR,27/03/2020,1
+United Kingdom,GBR,28/03/2020,1
+United Kingdom,GBR,29/03/2020,1
+United Kingdom,GBR,30/03/2020,1
+United Kingdom,GBR,31/03/2020,1
+United States,USA,01/03/2020,0
+United States,USA,02/03/2020,0
+United States,USA,03/03/2020,0
+United States,USA,04/03/2020,0
+United States,USA,05/03/2020,1
+United States,USA,06/03/2020,1
+United States,USA,07/03/2020,1
+United States,USA,08/03/2020,1
+United States,USA,09/03/2020,1
+United States,USA,10/03/2020,1
+United States,USA,11/03/2020,1
+United States,USA,12/03/2020,1
+United States,USA,13/03/2020,1
+United States,USA,14/03/2020,1
+United States,USA,15/03/2020,1
+United States,USA,16/03/2020,1
+United States,USA,17/03/2020,1
+United States,USA,18/03/2020,1
+United States,USA,19/03/2020,1
+United States,USA,20/03/2020,1
+United States,USA,21/03/2020,1
+United States,USA,22/03/2020,1
+United States,USA,23/03/2020,1
+United States,USA,24/03/2020,1
+United States,USA,25/03/2020,1
+United States,USA,26/03/2020,1
+United States,USA,27/03/2020,1
+United States,USA,28/03/2020,1
+United States,USA,29/03/2020,1
+United States,USA,30/03/2020,1
+United States,USA,31/03/2020,1
+United States Virgin Islands,VIR,01/03/2020,0
+United States Virgin Islands,VIR,02/03/2020,0
+United States Virgin Islands,VIR,03/03/2020,0
+United States Virgin Islands,VIR,04/03/2020,0
+United States Virgin Islands,VIR,05/03/2020,0
+United States Virgin Islands,VIR,06/03/2020,0
+United States Virgin Islands,VIR,07/03/2020,0
+United States Virgin Islands,VIR,08/03/2020,0
+United States Virgin Islands,VIR,09/03/2020,0
+United States Virgin Islands,VIR,10/03/2020,0
+United States Virgin Islands,VIR,11/03/2020,0
+United States Virgin Islands,VIR,12/03/2020,0
+United States Virgin Islands,VIR,13/03/2020,0
+United States Virgin Islands,VIR,14/03/2020,0
+United States Virgin Islands,VIR,15/03/2020,0
+United States Virgin Islands,VIR,16/03/2020,0
+United States Virgin Islands,VIR,17/03/2020,0
+United States Virgin Islands,VIR,18/03/2020,1
+United States Virgin Islands,VIR,19/03/2020,1
+United States Virgin Islands,VIR,20/03/2020,1
+United States Virgin Islands,VIR,21/03/2020,1
+United States Virgin Islands,VIR,22/03/2020,1
+United States Virgin Islands,VIR,23/03/2020,1
+United States Virgin Islands,VIR,24/03/2020,1
+United States Virgin Islands,VIR,25/03/2020,1
+United States Virgin Islands,VIR,26/03/2020,1
+United States Virgin Islands,VIR,27/03/2020,1
+United States Virgin Islands,VIR,28/03/2020,1
+United States Virgin Islands,VIR,29/03/2020,1
+United States Virgin Islands,VIR,30/03/2020,1
+United States Virgin Islands,VIR,31/03/2020,1
+Uruguay,URY,01/03/2020,0
+Uruguay,URY,02/03/2020,0
+Uruguay,URY,03/03/2020,0
+Uruguay,URY,04/03/2020,0
+Uruguay,URY,05/03/2020,0
+Uruguay,URY,06/03/2020,0
+Uruguay,URY,07/03/2020,0
+Uruguay,URY,08/03/2020,0
+Uruguay,URY,09/03/2020,0
+Uruguay,URY,10/03/2020,0
+Uruguay,URY,11/03/2020,0
+Uruguay,URY,12/03/2020,0
+Uruguay,URY,13/03/2020,0
+Uruguay,URY,14/03/2020,1
+Uruguay,URY,15/03/2020,1
+Uruguay,URY,16/03/2020,1
+Uruguay,URY,17/03/2020,1
+Uruguay,URY,18/03/2020,1
+Uruguay,URY,19/03/2020,1
+Uruguay,URY,20/03/2020,1
+Uruguay,URY,21/03/2020,1
+Uruguay,URY,22/03/2020,1
+Uruguay,URY,23/03/2020,1
+Uruguay,URY,24/03/2020,1
+Uruguay,URY,25/03/2020,1
+Uruguay,URY,26/03/2020,1
+Uruguay,URY,27/03/2020,1
+Uruguay,URY,28/03/2020,1
+Uruguay,URY,29/03/2020,1
+Uruguay,URY,30/03/2020,1
+Uruguay,URY,31/03/2020,1
+Uzbekistan,UZB,01/03/2020,0
+Uzbekistan,UZB,02/03/2020,0
+Uzbekistan,UZB,03/03/2020,0
+Uzbekistan,UZB,04/03/2020,0
+Uzbekistan,UZB,05/03/2020,0
+Uzbekistan,UZB,06/03/2020,0
+Uzbekistan,UZB,07/03/2020,0
+Uzbekistan,UZB,08/03/2020,0
+Uzbekistan,UZB,09/03/2020,0
+Uzbekistan,UZB,10/03/2020,0
+Uzbekistan,UZB,11/03/2020,0
+Uzbekistan,UZB,12/03/2020,0
+Uzbekistan,UZB,13/03/2020,0
+Uzbekistan,UZB,14/03/2020,0
+Uzbekistan,UZB,15/03/2020,0
+Uzbekistan,UZB,16/03/2020,1
+Uzbekistan,UZB,17/03/2020,1
+Uzbekistan,UZB,18/03/2020,1
+Uzbekistan,UZB,19/03/2020,1
+Uzbekistan,UZB,20/03/2020,1
+Uzbekistan,UZB,21/03/2020,1
+Uzbekistan,UZB,22/03/2020,1
+Uzbekistan,UZB,23/03/2020,1
+Uzbekistan,UZB,24/03/2020,1
+Uzbekistan,UZB,25/03/2020,1
+Uzbekistan,UZB,26/03/2020,1
+Uzbekistan,UZB,27/03/2020,1
+Uzbekistan,UZB,28/03/2020,1
+Uzbekistan,UZB,29/03/2020,1
+Uzbekistan,UZB,30/03/2020,1
+Uzbekistan,UZB,31/03/2020,1
+Vanuatu,VUT,01/03/2020,1
+Vanuatu,VUT,02/03/2020,1
+Vanuatu,VUT,03/03/2020,1
+Vanuatu,VUT,04/03/2020,1
+Vanuatu,VUT,05/03/2020,1
+Vanuatu,VUT,06/03/2020,1
+Vanuatu,VUT,07/03/2020,1
+Vanuatu,VUT,08/03/2020,1
+Vanuatu,VUT,09/03/2020,1
+Vanuatu,VUT,10/03/2020,1
+Vanuatu,VUT,11/03/2020,1
+Vanuatu,VUT,12/03/2020,1
+Vanuatu,VUT,13/03/2020,1
+Vanuatu,VUT,14/03/2020,1
+Vanuatu,VUT,15/03/2020,1
+Vanuatu,VUT,16/03/2020,1
+Vanuatu,VUT,17/03/2020,1
+Vanuatu,VUT,18/03/2020,1
+Vanuatu,VUT,19/03/2020,1
+Vanuatu,VUT,20/03/2020,1
+Vanuatu,VUT,21/03/2020,1
+Vanuatu,VUT,22/03/2020,1
+Vanuatu,VUT,23/03/2020,1
+Vanuatu,VUT,24/03/2020,1
+Vanuatu,VUT,25/03/2020,1
+Vanuatu,VUT,26/03/2020,1
+Vanuatu,VUT,27/03/2020,1
+Vanuatu,VUT,28/03/2020,1
+Vanuatu,VUT,29/03/2020,1
+Vanuatu,VUT,30/03/2020,1
+Vanuatu,VUT,31/03/2020,1
+Venezuela,VEN,01/03/2020,0
+Venezuela,VEN,02/03/2020,0
+Venezuela,VEN,03/03/2020,0
+Venezuela,VEN,04/03/2020,0
+Venezuela,VEN,05/03/2020,0
+Venezuela,VEN,06/03/2020,0
+Venezuela,VEN,07/03/2020,0
+Venezuela,VEN,08/03/2020,0
+Venezuela,VEN,09/03/2020,0
+Venezuela,VEN,10/03/2020,0
+Venezuela,VEN,11/03/2020,0
+Venezuela,VEN,12/03/2020,0
+Venezuela,VEN,13/03/2020,0
+Venezuela,VEN,14/03/2020,0
+Venezuela,VEN,15/03/2020,0
+Venezuela,VEN,16/03/2020,1
+Venezuela,VEN,17/03/2020,1
+Venezuela,VEN,18/03/2020,1
+Venezuela,VEN,19/03/2020,1
+Venezuela,VEN,20/03/2020,1
+Venezuela,VEN,21/03/2020,1
+Venezuela,VEN,22/03/2020,1
+Venezuela,VEN,23/03/2020,1
+Venezuela,VEN,24/03/2020,1
+Venezuela,VEN,25/03/2020,1
+Venezuela,VEN,26/03/2020,1
+Venezuela,VEN,27/03/2020,1
+Venezuela,VEN,28/03/2020,1
+Venezuela,VEN,29/03/2020,1
+Venezuela,VEN,30/03/2020,1
+Venezuela,VEN,31/03/2020,1
+Vietnam,VNM,01/03/2020,1
+Vietnam,VNM,02/03/2020,1
+Vietnam,VNM,03/03/2020,1
+Vietnam,VNM,04/03/2020,1
+Vietnam,VNM,05/03/2020,1
+Vietnam,VNM,06/03/2020,1
+Vietnam,VNM,07/03/2020,1
+Vietnam,VNM,08/03/2020,1
+Vietnam,VNM,09/03/2020,1
+Vietnam,VNM,10/03/2020,1
+Vietnam,VNM,11/03/2020,1
+Vietnam,VNM,12/03/2020,1
+Vietnam,VNM,13/03/2020,1
+Vietnam,VNM,14/03/2020,1
+Vietnam,VNM,15/03/2020,1
+Vietnam,VNM,16/03/2020,1
+Vietnam,VNM,17/03/2020,1
+Vietnam,VNM,18/03/2020,1
+Vietnam,VNM,19/03/2020,1
+Vietnam,VNM,20/03/2020,1
+Vietnam,VNM,21/03/2020,1
+Vietnam,VNM,22/03/2020,1
+Vietnam,VNM,23/03/2020,1
+Vietnam,VNM,24/03/2020,1
+Vietnam,VNM,25/03/2020,1
+Vietnam,VNM,26/03/2020,1
+Vietnam,VNM,27/03/2020,1
+Vietnam,VNM,28/03/2020,1
+Vietnam,VNM,29/03/2020,1
+Vietnam,VNM,30/03/2020,1
+Vietnam,VNM,31/03/2020,1
+Yemen,YEM,01/03/2020,0
+Yemen,YEM,02/03/2020,0
+Yemen,YEM,03/03/2020,0
+Yemen,YEM,04/03/2020,0
+Yemen,YEM,05/03/2020,0
+Yemen,YEM,06/03/2020,0
+Yemen,YEM,07/03/2020,0
+Yemen,YEM,08/03/2020,0
+Yemen,YEM,09/03/2020,0
+Yemen,YEM,10/03/2020,0
+Yemen,YEM,11/03/2020,0
+Yemen,YEM,12/03/2020,0
+Yemen,YEM,13/03/2020,0
+Yemen,YEM,14/03/2020,0
+Yemen,YEM,15/03/2020,1
+Yemen,YEM,16/03/2020,1
+Yemen,YEM,17/03/2020,1
+Yemen,YEM,18/03/2020,1
+Yemen,YEM,19/03/2020,1
+Yemen,YEM,20/03/2020,1
+Yemen,YEM,21/03/2020,1
+Yemen,YEM,22/03/2020,1
+Yemen,YEM,23/03/2020,1
+Yemen,YEM,24/03/2020,1
+Yemen,YEM,25/03/2020,1
+Yemen,YEM,26/03/2020,1
+Yemen,YEM,27/03/2020,1
+Yemen,YEM,28/03/2020,1
+Yemen,YEM,29/03/2020,1
+Yemen,YEM,30/03/2020,1
+Yemen,YEM,31/03/2020,1
+Zambia,ZMB,01/03/2020,0
+Zambia,ZMB,02/03/2020,0
+Zambia,ZMB,03/03/2020,0
+Zambia,ZMB,04/03/2020,0
+Zambia,ZMB,05/03/2020,0
+Zambia,ZMB,06/03/2020,0
+Zambia,ZMB,07/03/2020,0
+Zambia,ZMB,08/03/2020,0
+Zambia,ZMB,09/03/2020,0
+Zambia,ZMB,10/03/2020,0
+Zambia,ZMB,11/03/2020,0
+Zambia,ZMB,12/03/2020,0
+Zambia,ZMB,13/03/2020,0
+Zambia,ZMB,14/03/2020,0
+Zambia,ZMB,15/03/2020,0
+Zambia,ZMB,16/03/2020,0
+Zambia,ZMB,17/03/2020,0
+Zambia,ZMB,18/03/2020,0
+Zambia,ZMB,19/03/2020,0
+Zambia,ZMB,20/03/2020,1
+Zambia,ZMB,21/03/2020,1
+Zambia,ZMB,22/03/2020,1
+Zambia,ZMB,23/03/2020,1
+Zambia,ZMB,24/03/2020,1
+Zambia,ZMB,25/03/2020,1
+Zambia,ZMB,26/03/2020,1
+Zambia,ZMB,27/03/2020,1
+Zambia,ZMB,28/03/2020,1
+Zambia,ZMB,29/03/2020,1
+Zambia,ZMB,30/03/2020,1
+Zambia,ZMB,31/03/2020,1
+Zimbabwe,ZWE,01/03/2020,0
+Zimbabwe,ZWE,02/03/2020,0
+Zimbabwe,ZWE,03/03/2020,0
+Zimbabwe,ZWE,04/03/2020,0
+Zimbabwe,ZWE,05/03/2020,0
+Zimbabwe,ZWE,06/03/2020,0
+Zimbabwe,ZWE,07/03/2020,0
+Zimbabwe,ZWE,08/03/2020,0
+Zimbabwe,ZWE,09/03/2020,0
+Zimbabwe,ZWE,10/03/2020,0
+Zimbabwe,ZWE,11/03/2020,0
+Zimbabwe,ZWE,12/03/2020,0
+Zimbabwe,ZWE,13/03/2020,0
+Zimbabwe,ZWE,14/03/2020,0
+Zimbabwe,ZWE,15/03/2020,0
+Zimbabwe,ZWE,16/03/2020,0
+Zimbabwe,ZWE,17/03/2020,0
+Zimbabwe,ZWE,18/03/2020,0
+Zimbabwe,ZWE,19/03/2020,0
+Zimbabwe,ZWE,20/03/2020,0
+Zimbabwe,ZWE,21/03/2020,0
+Zimbabwe,ZWE,22/03/2020,0
+Zimbabwe,ZWE,23/03/2020,0
+Zimbabwe,ZWE,24/03/2020,1
+Zimbabwe,ZWE,25/03/2020,1
+Zimbabwe,ZWE,26/03/2020,1
+Zimbabwe,ZWE,27/03/2020,1
+Zimbabwe,ZWE,28/03/2020,1
+Zimbabwe,ZWE,29/03/2020,1
+Zimbabwe,ZWE,30/03/2020,1
+Zimbabwe,ZWE,31/03/2020,1
