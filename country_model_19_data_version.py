@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Covid lockdown adoption model and particle filter
+Covid lockdown adoption model script and particle filter
 modified: 08/09/2022
 modified and created by: Yannick Oswald
 """
 
 #%%
+
 ### import necessary libraries
 import os
 import mesa
@@ -33,6 +34,7 @@ import pytest
 
 #work laptop path
 os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python first steps/implement own covid policy model")
+
 
 #%% READ DATA, DEFINE A FEW CLASS INDEPENDENT FUNCTIONS AND GLOBAL VARIABLES
 ### read country/agent data
@@ -85,10 +87,13 @@ range_politicalregime = max_politicalregime - min_politicalregime
 max_distance_on_earth = 40075.017/2
 
 
+#%%
+### import model class (which itself imports agent class)
 
+from model_class1 import CountryModel
         
 #%%
-### run the model and save data
+### run the model, without particle filter, and save data
 
 start = dt.now()
 
@@ -99,14 +104,12 @@ for j in range(no_of_iterations):
         model = CountryModel(0.01, 0.13, 18, 'real', 'no')
         for i in range(31):
                         
-        
                         
                         model.step()
                         
                         df1 = model.datacollector.get_agent_vars_dataframe()
                         df2 = model.datacollector.get_model_vars_dataframe()
-                        
-                  
+                                
        
         ### here insert code for merging dataframes
         df3 = (df1.reset_index(level=0)).reset_index(level = 0)
@@ -427,11 +430,10 @@ non_adopters = df_results[(df_results.iteration == 0) & (df_results.Step == 30) 
 ### https://github.com/Urban-Analytics/dust/blob/main/Projects/ABM_DA/stationsim/particle_filter_gcs.py
 
 
-# parameters
-## N = number of particles
-## da_window = data_assimilation_window
+
 ### GLOBAL PF parameters
-#percentage_filtered = 10
+
+#### da_window determines how many time steps prediction is made without DA
 da_window = 5
 da_instances = int(30/da_window)
 No_of_particles = 100
@@ -445,26 +447,25 @@ def create_particles(No_of_particles):
     list_of_particles = []
     for i in range(No_of_particles):
             ### call the model iteration
-            ##4th parameter initial conditions can be real, no countries yet or random
+            ### the 4th parameter, the initial conditions, is a string
+            ### and can be set to 'real', 'no countries yet' or 'random'
             current_model = (CountryModel(0.01, 0.13, 18, 'real', 'no'))
             current_model.model_id = i
-            #current_model.set_random_seed()
             list_of_particles.append(copy.deepcopy(current_model)) 
             
     return list_of_particles
             
 
-list_of_particles = create_particles(No_of_particles)
-
 
 def error_particle_obs(particle):
+    
     '''DESCRIPTION
        returns a metric for the error between particle and real-world
        Counter-intuitively, if close to 0 that means high error. If close to 1 this means 
        low error. Because it measures the % of countries estimated in their correct state
     
        PARAMETERS
-       particle because a specific particle needs to be passed  '''
+       - particle:         because a specific particle needs to be passed  '''
     
     ## find current time step
     t = particle.time
@@ -481,7 +482,6 @@ def error_particle_obs(particle):
 
 
 
-particle = list_of_particles[i]
 
 
 ##unit test here? 
@@ -524,44 +524,69 @@ def resample_particles(list_of_particles_arg, weights_arg):
                 else:
                     j += 1
                     
-    list_of_particles_new = [list_of_particles[int(x)] for x in re_sampled_particles]
-    return list_of_particles_new, re_sampled_particles, weights
+    list_of_particles_new = [copy.deepcopy(list_of_particles[int(x)]) for x in re_sampled_particles]
+    return list_of_particles_new
 
 
 
-
-
-
-
-
-
-
-def advance_particle(particle):    
-           for j in range(da_window):             
+def advance_particle(particle):                
                             particle.step()
 
 
-def run_particle_filter(da_instances_arg):
+def run_particle_filter(da_instances_arg, da_window_arg):
+    
+    list_of_particles = create_particles(No_of_particles)
     da_instances = da_instances_arg
-    for k in range(da_instances):
-        list_of_errors = []        
-        for i in range(len(list_of_particles)):
-                advance_particle(list_of_particles[i])
-                list_of_errors.append(error_particle_obs(list_of_particles[i]))
+    da_window = da_window_arg
+    
+    for k in range(da_instances + 1):
+        
+            if k < da_instances:
                 
-        
-        weights = particle_weights(list_of_errors)
-        list_of_particles_resampled = resample_particles(list_of_particles, weights)
-        
-    return list_of_particles_resampled
+                list_of_errors = []        
+                for i in range(len(list_of_particles)):
+                    
+                                  for j in range(da_window):
+                                        advance_particle(list_of_particles[i])
+                                  assert list_of_particles[i].time <= 30
+                                  list_of_errors.append(error_particle_obs(list_of_particles[i]))
+                                                
+                                    
+                weights = particle_weights(list_of_errors)
+                list_of_particles = resample_particles(list_of_particles, weights)
+                
+            else: 
+                
+                list_of_errors = []        
+                for i in range(len(list_of_particles)):
+                    
+                              for j in range(1):
+                                    advance_particle(list_of_particles[i])
+                              assert list_of_particles[i].time <= 30
+                              list_of_errors.append(error_particle_obs(list_of_particles[i]))
+       
+                weights = particle_weights(list_of_errors)
+                list_of_particles = resample_particles(list_of_particles, weights)
+                
+                
+
+    list_of_particles_filtered = list_of_particles
+    return list_of_particles_filtered, weights
     
     
     
+list_of_particles_filtered, weights = run_particle_filter(da_instances, da_window)    
+
+for i in range(100): print(list_of_particles_filtered[i].time)
+for i in range(100): print(list_of_particles_filtered[i].model_id)
+print(weights)
 
 
 
+
+#%%
 results_pf_test = np.zeros((da_window, No_of_particles))
-results_pf_test_resampled = np.zeros((da_window, No_of_particles))
+results_pf_test_resampled = np.zeros((30, No_of_particles))
 for i in range(No_of_particles):
    test = copy.deepcopy(list_of_particles[i].datacollector.get_agent_vars_dataframe())
    test2 = copy.deepcopy((test.reset_index(level=0)).reset_index(level = 0))
