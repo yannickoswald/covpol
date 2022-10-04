@@ -4,7 +4,7 @@ save_data_on_exit = True
 save_history = True
 save_non_project_files = False
 project_type = 'empty-project-type'
-recent_files = ['country_model_18_data_version.py', 'test_sample.py']
+recent_files = ['country_model_19_data_version.py', 'agent_class1.py', 'model_class1.py', 'intermediate saving file.py']
 
 [main]
 version = 0.2.0
