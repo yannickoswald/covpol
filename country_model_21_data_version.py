@@ -36,7 +36,7 @@ import pytest
 os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python first steps/implement own covid policy model")
 
 
-#%% READ DATA, DEFINE A FEW CLASS INDEPENDENT FUNCTIONS AND GLOBAL VARIABLES
+#%% READ DATA
 ### read country/agent data
 agent_data = pd.read_csv('agent_data_v2.csv', encoding = 'unicode_escape')
 Num_agents = len(agent_data)
@@ -51,53 +51,19 @@ lockdown_data1 = pd.read_csv('lockdown_diffusion_curve_updated_for_calibration.c
 lockdown_data2 = pd.read_csv('lockdown_tracking.csv', 
                              encoding = 'unicode_escape')
 
-### this a function from here
-### https://www.geeksforgeeks.org/program-distance-two-points-earth/
-### for calculating the distance between points on earth
-
-def geo_distance(lat1, lat2, lon1, lon2):
-        # The math module contains a function named
-        # radians which converts from degrees to radians.
-        lon1 = radians(lon1)
-        lon2 = radians(lon2)
-        lat1 = radians(lat1)
-        lat2 = radians(lat2)
-        # Haversine formula
-        dlon = lon2 - lon1
-        dlat = lat2 - lat1
-        a = sin(dlat / 2)**2 + cos(lat1) * cos(lat2) * sin(dlon / 2)**2
-        c = 2 * asin(sqrt(a))
-        # Radius of earth in kilometers. Use 3956 for miles
-        r = 6371
-        # calculate the result
-        return c * r
-    
-    
-### compute ranges of agent properties (later important for normalization
-## of distance measure in the compute distance function by the agent)
-max_income = max(agent_data["gdp_pc"]) ##
-min_income = min(agent_data["gdp_pc"])
-max_politicalregime = max(agent_data["democracy_index"])
-min_politicalregime = min(agent_data["democracy_index"])
-range_income = max_income - min_income
-range_politicalregime = max_politicalregime - min_politicalregime
-
-## max distance between two points on earth =
-## earth circumference divided by two
-max_distance_on_earth = 40075.017/2
 
 
 #%%
 ### import model class (which itself imports agent class)
 
-from model_class1 import CountryModel
+from model_class2 import CountryModel
         
 #%%
 ### run the model, without particle filter, and save data
 
 start = dt.now()
 
-no_of_iterations = 100
+no_of_iterations = 10
 for j in range(no_of_iterations):
         ### call the model iteration
         ##4th parameter initial conditions can be real, no countries yet or random
@@ -134,6 +100,9 @@ for j in range(no_of_iterations):
 
 running_secs = (dt.now() - start).seconds
 print("running time was " + str(running_secs) + " sec")
+
+
+print(model.schedule.agents)
 
 #%%
 
@@ -572,6 +541,43 @@ def run_particle_filter(da_instances_arg, da_window_arg):
     
     
     
+
+
+#%%
+
+
+class ParticleFilter():
+    
+    '''
+    A particle filter to model the dynamics of the
+    state of the model as it develops in time.
+    
+    '''
+
+    def __init__(self, ModelClass:Model, model_params:dict, filter_params:dict, numcores:int = None):
+       '''
+       Initialise Particle Filter
+           
+       PARAMETERS
+        - number_of_particles:     The number of particles used to simulate the model
+        - number_of_runs:          The number of times to run this particle filter (e.g. experiment)
+        - resample_window:         The number of iterations between resampling particles
+        - multi_step:              Whether to do all model iterations in between DA windows in one go
+
+       DESCRIPTION
+       Firstly, set all attributes using filter parameters. Set time and
+       initialise base model using model parameters. Initialise particle
+       models using a deepcopy of base model. Determine particle filter 
+       dimensions, initialise all remaining arrays, and set initial
+       particle states to the base model state using multiprocessing. 
+       '''
+       
+       
+    
+    def method(self):
+        
+
+
 
 #%%
 #RUN PARTICLE FILTER
