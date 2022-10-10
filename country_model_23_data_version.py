@@ -385,166 +385,12 @@ plt.show()
 #%%
 
 non_adopters = df_results[(df_results.iteration == 0) & (df_results.Step == 30) & (df_results.Lockdown == 0)]
-
-#%%
-
-####################################
-####################################
-######   Particle Filter      ######
-####################################
-####################################
-
-
-### role-model?
-### https://github.com/Urban-Analytics/dust/blob/main/Projects/ABM_DA/stationsim/particle_filter_gcs.py
-
-
-
-### GLOBAL PF parameters
-
-#### da_window determines how many time steps prediction is made without DA
-da_window = 5
-da_instances = int(30/da_window)
-No_of_particles = 100
-#n_of_filterings_per_step = int(No_of_particles * percentage_filtered/100)
-
-
-### create and store particles 
-
-def create_particles(No_of_particles):
-
-    list_of_particles = []
-    for i in range(No_of_particles):
-            ### call the model iteration
-            ### the 4th parameter, the initial conditions, is a string
-            ### and can be set to 'real', 'no countries yet' or 'random'
-            current_model = (CountryModel(0.01, 0.13, 18, 'real', 'no'))
-            current_model.model_id = i
-            list_of_particles.append(copy.deepcopy(current_model)) 
-            
-    return list_of_particles
-            
-
-
-def error_particle_obs(particle):
-    
-    '''DESCRIPTION
-       returns a metric for the error between particle and real-world
-       Counter-intuitively, if close to 0 that means high error. If close to 1 this means 
-       low error. Because it measures the % of countries estimated in their correct state
-    
-       PARAMETERS
-       - particle:         because a specific particle needs to be passed  '''
-    
-    ## find current time step
-    t = particle.time
-    ### go through all datasteps necessary to find error
-    data1 = copy.deepcopy(particle.datacollector.get_agent_vars_dataframe())
-    data2 = (data1.reset_index(level=0)).reset_index(level = 0)
-    data3 = data2[(data2.Step == t)]
-    data4 = pd.Series.reset_index(data3["Lockdown"], drop = True)
-    data5 = lockdown_data2[(lockdown_data2.model_step == t)]["lockdown"]
-    data6 = pd.Series.reset_index(data5, drop = True)
-    particle_validity = np.mean(data4 == data6)
-    return particle_validity
-
-
-
-##unit test here? 
-### what happens if i give a certain num. like 1 to the weights
-### test the function itself
-
-### https://github.com/Urban-Analytics/RAMP-UA/blob/master/tests/test_microsim_model.py
-
-##  pytest
-
-
-def particle_weights(error_list):
-    ### DESCRIPTION
-    ### computes all particle weights from particle error/validity metric
-    ### squared to "penalize" low ranking particles more
-    weights = [error**2 for error in error_list]
-    ### normalization constraint such that sum(weights) = 1
-    weights = weights/sum(weights)    
-    return weights
-
-
-##unit test here? 
-
-def resample_particles(list_of_particles_arg, weights_arg):
-    
-    weights = weights_arg
-    list_of_particles = list_of_particles_arg
-    
-    number_of_particles = len(list_of_particles)
-    re_sampled_particles = np.zeros(number_of_particles)
-    random_partition_one_to_zero = ((np.arange(number_of_particles)
-                                 + np.random.uniform()) / number_of_particles)
-
-    cumsum = np.cumsum(weights)
-    i, j = 0, 0
-    while i < number_of_particles :
-                if random_partition_one_to_zero[i] < cumsum[j]:
-                    re_sampled_particles[i] = j
-                    i += 1
-                else:
-                    j += 1
-                    
-    list_of_particles_new = [copy.deepcopy(list_of_particles[int(x)]) for x in re_sampled_particles]
-    return list_of_particles_new
-
-
-
-def advance_particle(particle):                
-                            particle.step()
-
-
-def run_particle_filter(da_instances_arg, da_window_arg):
-    
-    list_of_particles = create_particles(No_of_particles)
-    da_instances = da_instances_arg
-    da_window = da_window_arg
-    
-    for k in range(da_instances + 1):
-        
-            if k < da_instances:
-                
-                list_of_errors = []        
-                for i in range(len(list_of_particles)):
-                    
-                                  for j in range(da_window):
-                                        advance_particle(list_of_particles[i])
-                                  assert list_of_particles[i].time <= 30
-                                  list_of_errors.append(error_particle_obs(list_of_particles[i]))
-                                                
-                                    
-                weights = particle_weights(list_of_errors)
-                list_of_particles = resample_particles(list_of_particles, weights)
-                
-            else: 
-                
-                list_of_errors = []        
-                for i in range(len(list_of_particles)):
-                    
-                              for j in range(1):
-                                    advance_particle(list_of_particles[i])
-                              assert list_of_particles[i].time <= 30
-                              list_of_errors.append(error_particle_obs(list_of_particles[i]))
-       
-                weights = particle_weights(list_of_errors)
-                list_of_particles = resample_particles(list_of_particles, weights)
-                
-                
-
-    list_of_particles_filtered = list_of_particles
-    return list_of_particles_filtered, weights
-    
-    
     
 
 
 #%%
 
+from model_class2 import CountryModel
 
 class ParticleFilter():
     
@@ -555,6 +401,7 @@ class ParticleFilter():
     '''
 
     def __init__(self, ModelClass:CountryModel, model_params:dict, filter_params:dict):
+        
        '''
        Initialise Particle Filter
            
@@ -572,18 +419,34 @@ class ParticleFilter():
        particle states to the base model state using multiprocessing. 
        '''
        
+       ### GLOBAL PF parameters
+        
+       #### da_window determines how many time steps prediction is made without DA
+       self.da_window = filter_params['da_window']
+       self.da_instances = filter_params['da_instances']
+       self.No_of_particles = filter_params['No_of_particles']
        
+       ### PF Data variables
+       self.list_of_particles_filtered = []
+       self.weights = []
+
     
     ### create and store particles 
-    
-    def create_particles(No_of_particles):
+    def create_particles(self):
     
         list_of_particles = []
-        for i in range(No_of_particles):
+        for i in range(self.No_of_particles):
                 ### call the model iteration
                 ### the 4th parameter, the initial conditions, is a string
                 ### and can be set to 'real', 'no countries yet' or 'random'
-                current_model = (CountryModel(0.01, 0.13, 18, 'real', 'no'))
+                current_model = (CountryModel(
+                                              self.model_params['base_alert'],
+                                              self.model_params['social_base_threshold'],
+                                              self.model_params['clique_size'],
+                                              self.model_params['initial_conditions'],
+                                              self.model_params['data_update']
+                                              )
+                                 )
                 current_model.model_id = i
                 list_of_particles.append(copy.deepcopy(current_model)) 
                 
@@ -591,7 +454,7 @@ class ParticleFilter():
                 
     
     
-    def error_particle_obs(particle):
+    def error_particle_obs(self, particle):
         
         '''DESCRIPTION
            returns a metric for the error between particle and real-world
@@ -614,17 +477,7 @@ class ParticleFilter():
         return particle_validity
     
     
-    
-    ##unit test here? 
-    ### what happens if i give a certain num. like 1 to the weights
-    ### test the function itself
-    
-    ### https://github.com/Urban-Analytics/RAMP-UA/blob/master/tests/test_microsim_model.py
-    
-    ##  pytest
-    
-    
-    def particle_weights(error_list):
+    def particle_weights(self, error_list):
         ### DESCRIPTION
         ### computes all particle weights from particle error/validity metric
         ### squared to "penalize" low ranking particles more
@@ -636,7 +489,7 @@ class ParticleFilter():
     
     ##unit test here? 
     
-    def resample_particles(list_of_particles_arg, weights_arg):
+    def resample_particles(self, list_of_particles_arg, weights_arg):
         
         weights = weights_arg
         list_of_particles = list_of_particles_arg
@@ -660,31 +513,30 @@ class ParticleFilter():
     
     
     
-    def advance_particle(particle):                
+    def advance_particle(self, particle):                
                                 particle.step()
     
     
-    def run_particle_filter(da_instances_arg, da_window_arg):
+    def run_particle_filter(self):
         
-        list_of_particles = create_particles(No_of_particles)
-        da_instances = da_instances_arg
-        da_window = da_window_arg
+        list_of_particles = self.create_particles(self.No_of_particles)
+
         
-        for k in range(da_instances + 1):
+        for k in range(self.da_instances + 1):
             
-                if k < da_instances:
+                if k < self.da_instances:
                     
                     list_of_errors = []        
                     for i in range(len(list_of_particles)):
                         
-                                      for j in range(da_window):
-                                            advance_particle(list_of_particles[i])
+                                      for j in range(self.da_window):
+                                            self.advance_particle(list_of_particles[i])
                                       assert list_of_particles[i].time <= 30
-                                      list_of_errors.append(error_particle_obs(list_of_particles[i]))
+                                      list_of_errors.append(self.error_particle_obs(list_of_particles[i]))
                                                     
                                         
-                    weights = particle_weights(list_of_errors)
-                    list_of_particles = resample_particles(list_of_particles, weights)
+                    weights = self.particle_weights(list_of_errors)
+                    list_of_particles = self.resample_particles(list_of_particles, weights)
                     
                 else: 
                     
@@ -692,41 +544,47 @@ class ParticleFilter():
                     for i in range(len(list_of_particles)):
                         
                                   for j in range(1):
-                                        advance_particle(list_of_particles[i])
+                                        self.advance_particle(list_of_particles[i])
                                   assert list_of_particles[i].time <= 30
-                                  list_of_errors.append(error_particle_obs(list_of_particles[i]))
+                                  list_of_errors.append(self.error_particle_obs(list_of_particles[i]))
            
-                    weights = particle_weights(list_of_errors)
-                    list_of_particles = resample_particles(list_of_particles, weights)
+                    weights = self.particle_weights(list_of_errors)
+                    list_of_particles = self.resample_particles(list_of_particles, weights)
                     
                     
     
-        list_of_particles_filtered = list_of_particles
-        return list_of_particles_filtered, weights
+        self.list_of_particles_filtered = list_of_particles
+        self.weights = weights
+        
+       
 
 
 
 #%%
 #RUN PARTICLE FILTER
-list_of_particles_filtered, weights = run_particle_filter(da_instances, da_window)    
+ 
 
-thisdict = {
-  "da_window": 5
+pf_parameters = {
+  "da_window": 5,
   "da_instances": 30/5,
-  "number_of_particles": 10
+  "No_of_particles": 10
 }
 
 
+model_parameters = {
+  "base_alert": 0.01,
+  "social_base_threshold": 0.13,
+  "clique_size": 18,
+  "initial_conditions": 'real',
+  "data_update": 'no'
+}
+
+current_PF = ParticleFilter(CountryModel, model_parameters, pf_parameters)  
+current_PF.run_particle_filter
 
 
-    ### GLOBAL PF parameters
-    
-    #### da_window determines how many time steps prediction is made without DA
-    da_window = filter_params[0]5
-    da_instances = int(30/da_window)
-    No_of_particles = 100
-    #n_of_filterings_per_step = int(No_of_particles * percentage_filtered/100)
-    
+
+
 
 #%% PLOTTING PARTICLE FILTER RESULTS
 results_pf_test = np.zeros((da_window, No_of_particles))

@@ -555,6 +555,7 @@ class ParticleFilter():
     '''
 
     def __init__(self, ModelClass:CountryModel, model_params:dict, filter_params:dict):
+        
        '''
        Initialise Particle Filter
            
@@ -572,7 +573,13 @@ class ParticleFilter():
        particle states to the base model state using multiprocessing. 
        '''
        
-       
+    ### GLOBAL PF parameters
+    
+    #### da_window determines how many time steps prediction is made without DA
+    da_window = filter_params['da_window']
+    da_instances = filter_params['da_instances']
+    No_of_particles = filter_params['No_of_particles']
+    
     
     ### create and store particles 
     
@@ -583,7 +590,14 @@ class ParticleFilter():
                 ### call the model iteration
                 ### the 4th parameter, the initial conditions, is a string
                 ### and can be set to 'real', 'no countries yet' or 'random'
-                current_model = (CountryModel(0.01, 0.13, 18, 'real', 'no'))
+                current_model = (CountryModel(
+                                              model_params['base_alert'],
+                                              model_params['social_base_threshold'],
+                                              model_params['clique_size'],
+                                              model_params['initial_conditions'],
+                                              model_params['data_update']
+                                              )
+                                 )
                 current_model.model_id = i
                 list_of_particles.append(copy.deepcopy(current_model)) 
                 
@@ -612,16 +626,6 @@ class ParticleFilter():
         data6 = pd.Series.reset_index(data5, drop = True)
         particle_validity = np.mean(data4 == data6)
         return particle_validity
-    
-    
-    
-    ##unit test here? 
-    ### what happens if i give a certain num. like 1 to the weights
-    ### test the function itself
-    
-    ### https://github.com/Urban-Analytics/RAMP-UA/blob/master/tests/test_microsim_model.py
-    
-    ##  pytest
     
     
     def particle_weights(error_list):
@@ -710,23 +714,20 @@ class ParticleFilter():
 #RUN PARTICLE FILTER
 list_of_particles_filtered, weights = run_particle_filter(da_instances, da_window)    
 
-thisdict = {
-  "da_window": 5
+pf_parameters = {
+  "da_window": 5,
   "da_instances": 30/5,
-  "number_of_particles": 10
+  "No_of_particles": 10
 }
 
 
-
-
-    ### GLOBAL PF parameters
-    
-    #### da_window determines how many time steps prediction is made without DA
-    da_window = filter_params[0]5
-    da_instances = int(30/da_window)
-    No_of_particles = 100
-    #n_of_filterings_per_step = int(No_of_particles * percentage_filtered/100)
-    
+model_parameters = {
+  "base_alert": 0.01,
+  "social_base_threshold": 0.13,
+  "clique_size": 18,
+  "initial_conditions": 'real',
+  "data_update": 'no'
+}
 
 #%% PLOTTING PARTICLE FILTER RESULTS
 results_pf_test = np.zeros((da_window, No_of_particles))
