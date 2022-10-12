@@ -4,7 +4,7 @@ save_data_on_exit = True
 save_history = True
 save_non_project_files = False
 project_type = 'empty-project-type'
-recent_files = ['..\\..\\training\\OOP_tutorial_youtube_7.py', '..\\..\\training\\Item.py', 'agent_class1.py', 'model_class2.py', 'country_model_23_data_version.py']
+recent_files = ['country_model_24_data_version.py', 'country_model_23_data_version.py', 'model_class2.py', 'agent_class1.py']
 
 [main]
 version = 0.2.0

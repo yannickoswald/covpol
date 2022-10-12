@@ -459,8 +459,8 @@ class ParticleFilter():
         return list_of_particles
                 
     
-    
-    def error_particle_obs(self, particle):
+    @classmethod
+    def error_particle_obs(cls, particle):
         
         '''DESCRIPTION
            returns a metric for the error between particle and real-world
@@ -497,17 +497,24 @@ class ParticleFilter():
     
     def resample_particles(self, list_of_particles_arg, weights_arg):
         
+        
         weights = weights_arg
         list_of_particles = list_of_particles_arg
         
+        assert len(weights) == len(list_of_particles)
+        
         number_of_particles = len(list_of_particles)
+        assert number_of_particles == 10
         re_sampled_particles = np.zeros(number_of_particles)
         random_partition_one_to_zero = ((np.arange(number_of_particles)
                                      + np.random.uniform()) / number_of_particles)
     
         cumsum = np.cumsum(weights)
+        assert len(cumsum) == 10
+        print(cumsum)
+
         i, j = 0, 0
-        while i < number_of_particles :
+        while i < number_of_particles:
                     if random_partition_one_to_zero[i] < cumsum[j]:
                         re_sampled_particles[i] = j
                         i += 1
@@ -518,58 +525,44 @@ class ParticleFilter():
         return list_of_particles_new
     
     
-    
-    def advance_particle(self, particle): 
-        
+            
     #### steps a model one time step forward in time  
     #### particle arg. is one specific model instance
-              
-                                particle.step()
+    #### return statement necessary 
     
+    @classmethod
+    def advance_particle(cls, particle): 
+        particle.step()
+        return particle
     
+
     def run_particle_filter(self):
+
         
         list_of_particles = self.create_particles()
+        list_of_lists_particles = []
+        list_of_lists_weights = []
 
-        
-        for k in range(self.da_instances + 1):
+        for i in range(31):                
+                
+                [ParticleFilter.advance_particle(x) for x in list_of_particles]
             
-                if k < self.da_instances:
-                    
-                    list_of_errors = []        
-                    for i in range(len(list_of_particles)):
-                                      
-                                      for j in range(self.da_window):
-                                            self.advance_particle(list_of_particles[i])
-                                            
-                                      assert list_of_particles[i].time <= 30
-                                      list_of_errors.append(self.error_particle_obs(list_of_particles[i]))
-                                                    
-                    print(list_of_errors)
+                if (i > 0) and (i % self.da_window == 0): 
+                   
+                    list_of_errors = list(map(ParticleFilter.error_particle_obs(), list_of_particles))
+                
+                    print("This is list of errors", list_of_errors)
                     weights = self.particle_weights(list_of_errors)
                     list_of_particles = self.resample_particles(list_of_particles, weights)
-                    
-                else: 
-                    
-                    list_of_errors = []        
-                    for i in range(len(list_of_particles)):
-                        
-                                  for j in range(1):
-                                        self.advance_particle(list_of_particles[i])
-                                  assert list_of_particles[i].time <= 30
-                                  list_of_errors.append(self.error_particle_obs(list_of_particles[i]))
-           
-                    weights = self.particle_weights(list_of_errors)
-                    list_of_particles = self.resample_particles(list_of_particles, weights)
-                    
-                    
+                    list_of_lists_weights.append(weights)
+                list_of_lists_particles.append(list_of_particles)
+                print("this is time step", i)
+                
     
-        self.list_of_particles_filtered = list_of_particles
-        self.weights = weights
+        self.list_of_particles_filtered = list_of_lists_particles
+        self.weights = list_of_lists_weights
         
        
-
-
 
 #%%
 #RUN PARTICLE FILTER EXPERIMENTS
@@ -595,7 +588,7 @@ current_PF.run_particle_filter()
 
 
 
-current_PF.list_of_particles_filtered[0]
+current_PF.list_of_particles_filtered
 
 
 
