@@ -440,7 +440,7 @@ class ParticleFilter():
        for the particle filter, the model and the storing the model/particle data
        
        PARAMETERS
-        - ModelClass:              The number of particles used to simulate the model
+        - ModelClass:              The model class is set to CountryModel
         - No_of_particles          The number of particles used to simulate the model
         - da_window:               The number of days between filtering steps
         - da_instances   :         The number of times that filtering is undertaken
@@ -517,7 +517,7 @@ class ParticleFilter():
         
         '''DESCRIPTION
             ### Method that omputes all particle weights from particle error/validity metric
-            ### squared to "penalize" low ranking particles more
+            ### squared to "penalize" low ranking particles more.
         
            PARAMETERS
            - error list:        the errors of the particles  '''
@@ -536,11 +536,11 @@ class ParticleFilter():
             window. The function works based on sequential importance resampling,
             where every particle weight determines its likelihood to be 
             resampled. The weights are cumulatively counted, so they constitute a
-            cumulative distr. function (CDF), of the weight distribution and compared against 
-            a uniformly random partition of the interval [0,1] constitung a uniformly 
-            random CDF. If the uniformly random CDF makes larger steps than the 
-            weights cumulation, it is likely that particles are filtered out, that is
-            small weights lead to be thrown out.
+            cumulative distr. function (CDF) -- a weight distribution. And this distr. is
+            compared against a uniformly random partition of the interval [0,1]
+            constitung a uniformly random CDF. If the uniformly random CDF 'makes' 
+            larger steps than the weights cumulation, because the weights are small, 
+            it is likely that particles are filtered out.
         
            PARAMETERS
            - list_of_particles_arg:        the errors of the particles 
