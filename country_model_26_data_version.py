@@ -16,7 +16,6 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import numpy as np
 import math as math
-import mesa.batchrunner
 import pandas as pd
 import copy as copy
 from math import radians, cos, sin, asin, sqrt
@@ -33,6 +32,7 @@ from multiprocessing import Pool
 import pytest
 ### import model class (which itself imports agent class)
 from model_class2 import CountryModel
+from particle_filter_class import ParticleFilter
 
 #work laptop path
 os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python first steps/implement own covid policy model")
@@ -99,6 +99,7 @@ print("running time was " + str(running_secs) + " sec")
 print(model.schedule.agents)
 
 #%% PLOTTING
+
 
 ### Initial conditions 
 #### plot #0.0 distributions of variables (income, democracy index, latitude and longitude)
@@ -362,229 +363,6 @@ plt.show()
 #%%
 
 non_adopters = df_results[(df_results.iteration == 0) & (df_results.Step == 30) & (df_results.Lockdown == 0)]
-    
-
-
-#%% PARTICLE FILTER
-
-### import necessary libraries
-import os
-import mesa
-import mesa.time
-import mesa.space
-import matplotlib.pyplot as plt
-import matplotlib as mpl
-import numpy as np
-import math as math
-import mesa.batchrunner
-import pandas as pd
-import copy as copy
-from math import radians, cos, sin, asin, sqrt
-import random
-from datetime import datetime as dt
-import sys
-# import random 
-from random import sample
-### colormaps import
-import matplotlib.cm
-##
-from multiprocessing import Pool
-##
-import pytest
-
-#######################
-#### IMPORT MODEL #####
-#######################
-
-from model_class2 import CountryModel
-
-class ParticleFilter():
-    
-    '''
-    A particle filter to create n instances of a the CountryModel
-    for Covid lockdown diffusion and run the filtering process with
-    sequential importance resampling.
-    
-    '''
-
-    def __init__(self, ModelClass:CountryModel, model_params:dict, filter_params:dict):
-        
-       '''
-       Initialise Particle Filter
-           
-       DESCRIPTION
-       This method defines a few class properties, setting the parameters
-       for the particle filter, the model and the storing the model/particle data
-       
-       PARAMETERS
-        - ModelClass:              The model class is set to CountryModel
-        - No_of_particles          The number of particles used to simulate the model
-        - da_window:               The number of days between filtering steps
-        - da_instances   :         The number of times that filtering is undertaken
-
-       '''
-       
-       ### GLOBAL PF parameters
-       self.da_window = filter_params['da_window']
-       self.da_instances = int(filter_params['da_instances'])
-       self.No_of_particles = filter_params['No_of_particles']
-       
-       ### MODEL parameters given as one more PF parameter
-       self.model_params = model_params
-       
-       ### PF Data variables
-       self.part_filtered_all = []
-       self.weights = []
-
-    
-    ### create and store particles 
-    def create_particles(self):
-        
-        '''DESCRIPTION
-           This method creates the particles based on
-           No_of_particles with model parameters provided.
-        
-           PARAMETERS
-           - self only '''
-    
-        list_of_particles = []
-        for i in range(self.No_of_particles):
-                ### call the model iteration
-                ### the 4th parameter, the initial conditions, is a string
-                ### and can be set to 'real', 'no countries yet' or 'random'
-                current_model = CountryModel(
-                                              self.model_params['base_alert'],
-                                              self.model_params['social_base_threshold'],
-                                              self.model_params['clique_size'],
-                                              self.model_params['initial_conditions'],
-                                              self.model_params['data_update']
-                                              )
-                                
-                current_model.model_id = i
-                list_of_particles.append(current_model) 
-                
-        return list_of_particles
-                
-    
-    @classmethod
-    def error_particle_obs(cls, particle):
-        
-        '''DESCRIPTION
-           Returns a metric for the error between particle and real-world
-           If close to 0 that means high error. If close to 1 this means 
-           low error. Because it measures the % of countries estimated in their correct state
-        
-           PARAMETERS
-           - particle:         because a specific particle needs to be passed  '''
-        
-        ## find current time step
-        t = particle.time
-        ### go through all datasteps necessary to find error
-        data1 = copy.deepcopy(particle.datacollector.get_agent_vars_dataframe())
-        data2 = (data1.reset_index(level=0)).reset_index(level = 0)
-        data3 = data2[(data2.Step == t)]
-        data4 = pd.Series.reset_index(data3["Lockdown"], drop = True)
-        data5 = lockdown_data2[(lockdown_data2.model_step == t)]["lockdown"]
-        data6 = pd.Series.reset_index(data5, drop = True)
-        particle_validity = np.mean(data4 == data6)
-        return particle_validity
-    
-    @classmethod
-    def particle_weights(cls, error_list):
-        
-        '''DESCRIPTION
-            ### Method that computes all particle weights from particle error/validity metric.
-            ### Taken "Squared" to "penalize" low ranking particles more.
-        
-           PARAMETERS
-           - error list:        the errors of the particles  '''
-
-        weights = [error**2 for error in error_list]
-        ### normalization constraint such that sum(weights) = 1
-        weights = weights/sum(weights)    
-        return weights
-    
-    
-    @classmethod
-    def resample_particles(cls, list_of_particles, weights):
-        
-        '''DESCRIPTION
-            Method that resamples the particles after each data assimilation
-            window. The function works based on sequential importance resampling,
-            where every particle weight determines its likelihood to be 
-            resampled. The weights are cumulatively counted, so they constitute a
-            cumulative distr. function (CDF) -- a weight distribution. And this distr. is
-            compared against a uniformly random partition of the interval [0,1]
-            constitung a uniformly random CDF. If the uniformly random CDF 'makes' 
-            larger steps than the weights cumulation, because the weights are small, 
-            it is likely that particles are filtered out.
-        
-           PARAMETERS
-           - list_of_particles_arg:        the errors of the particles 
-           - weights_arg:                  list of weights     '''
-        
-    
-        
-        number_of_particles = len(list_of_particles)
-        re_sampled_particles = np.zeros(number_of_particles)
-        random_partition_one_to_zero = ((np.arange(number_of_particles)
-                                     + np.random.uniform()) / number_of_particles)    
-        cumsum = np.cumsum(weights)
-
-        i, j = 0, 0
-        while i < number_of_particles:
-                    if random_partition_one_to_zero[i] < cumsum[j]:
-                        re_sampled_particles[i] = j
-                        i += 1
-                    else:
-                        j += 1
-                        
-        #### IMPORTANT: here deepcopy is necessary otherwise it creates
-        #### reference between resampled particles with same model_id
-        #### and messes up the model   
-             
-        list_of_particles_new = [copy.deepcopy(list_of_particles[int(x)])
-                                 for x in re_sampled_particles]
-        return list_of_particles_new
-    
-
-    
-
-    def run_particle_filter(self):
-        
-        '''DESCRIPTION
-           This method actually runs the particle filter. It mostly calls other
-           methods defined above.
-        
-           PARAMETERS
-           - only self'''
-
-        
-        list_of_particles = self.create_particles()
-        list_of_lists_particles = []
-        list_of_lists_weights = []
-
-        for i in range(31):          
-                 
-                ## step particles forward in time
-                for x in list_of_particles:
-                    x.step()
-                
-                if (i > 0) and (i % self.da_window == 0):
-                    
-                    list_of_errors = [ParticleFilter.error_particle_obs(k) 
-                                      for k in list_of_particles]
-                    weights = ParticleFilter.particle_weights(list_of_errors)
-                    list_of_particles = ParticleFilter.resample_particles(list_of_particles,
-                                                                          weights)
-                    list_of_lists_weights.append(weights)
-                    
-                list_of_lists_particles.append(list_of_particles)          
-    
-        self.part_filtered_all = list_of_lists_particles
-        self.weights = list_of_lists_weights
-        
-       
 
 #%% RUN PARTICLE FILTER EXPERIMENTS
  
@@ -607,35 +385,14 @@ model_parameters = {
 current_PF = ParticleFilter(CountryModel, model_parameters, pf_parameters)  
 current_PF.run_particle_filter()
 
-#%%
-
-current_PF.part_filtered_all
-
-current_PF.current_particles
-
-
-current_PF.current_particles[0].datacollector.get_agent_vars_dataframe()
-
-
-t = current_PF.current_particles[0].time
-
-
-data1 = current_PF.current_particles[0].datacollector.get_agent_vars_dataframe()
-data2 = (data1.reset_index(level=0)).reset_index(level = 0)
-data3 = data2[(data2.Step == t)]
-data4 = pd.Series.reset_index(data3["Lockdown"], drop = True)
-data5 = lockdown_data2[(lockdown_data2.model_step == t)]["lockdown"]
-data6 = pd.Series.reset_index(data5, drop = True)
-
-np.mean(data4 == data6)
-
 
 #%% PLOTTING PARTICLE FILTER RESULTS 
 
  ### TO DO verify whether pf works correctly 
 No_of_particles = pf_parameters['No_of_particles']
 da_window = pf_parameters['No_of_particles']
-results = np.zeros((31, No_of_particles))
+results_pf = np.zeros((31, No_of_particles))
+micro_validity_metric_array_pf = np.zeros((31, No_of_particles))
 
 Dit={}
 time_steps = 31
@@ -643,15 +400,18 @@ for i in range(31):
     for j in range(No_of_particles):
         ### key is a tuple where i equals time step, j particle number and
         ### the third number the model id, initially unique, but later can
-        ### be associated with several particles because they are resample 
-        ### versions of one another. 
+        ### be associated with several particles because they are resampled 
+        ### versions of one another. Therefore ultimately j is the *unique* 
+        ### identifier as well as the tuple as a whole given j. 
         key = (i,j, current_PF.part_filtered_all[i][j].model_id)
         value = current_PF.part_filtered_all[i][j].datacollector.get_agent_vars_dataframe()
         Dit[key] = value
         df = Dit[key]
         df = (df.reset_index(level=0)).reset_index(level = 0)
-        results[i,j] = df[(df.Step == i)]["Lockdown"].sum()
-        
+        results_pf[i,j] = df[(df.Step == i)]["Lockdown"].sum()
+        micro_state = pd.Series.reset_index(df[(df.Step == i)]["Lockdown"],drop = True)
+        micro_state_data = pd.Series.reset_index(lockdown_data2[(lockdown_data2.model_step == i)]["lockdown"],drop = True) 
+        micro_validity_metric_array_pf[i,j] = np.mean(micro_state == micro_state_data)
         
         
 
@@ -680,8 +440,38 @@ def create_fanchart_PF(arr):
     ax.margins(x=0)
     return fig, ax
 
-create_fanchart_PF(results/Num_agents*100)
+create_fanchart_PF(results_pf/Num_agents*100)
 plt.savefig('fanchart_1_macro_validity_PF.png', bbox_inches='tight', dpi=300)
+plt.show()
+
+
+##### PLOT mean squared error per time step. pf results vs no pf results 
+results_pf_percent = results_pf/164
+square_diffs_pf = np.zeros((31,No_of_particles))
+for i in range(No_of_particles):
+    square_diffs_pf[:,i] = (results_pf_percent[:,i] - lockdown_data1.iloc[:,0].to_numpy())**2
+
+mse_pf =  np.mean(square_diffs_pf, axis = 1)
+
+
+results_pf_percent = results_pf/164
+results_percent = array_run_results.T/164
+square_diffs_pf = np.zeros((31,No_of_particles))
+square_diffs = np.zeros((31,No_of_particles))
+for i in range(No_of_particles):
+    square_diffs_pf[:,i] = (results_pf_percent[:,i] - lockdown_data1.iloc[:,0].to_numpy())**2
+    square_diffs[:,i] = (results_percent[:,i] - lockdown_data1.iloc[:,0].to_numpy())**2 
+
+mse_pf =  np.mean(square_diffs_pf, axis = 1)
+mse =  np.mean(square_diffs, axis = 1)
+
+
+plt.plot(np.linspace(1,31,31), mse)
+plt.plot(np.linspace(1,31,31), mse_pf)
+plt.savefig('fanchart_1_macro_validity_PF.png', bbox_inches='tight', dpi=300)
+plt.xlabel("Day of March")
+plt.ylabel("Mean squared error") ### perhaps plot squared error as fan-chart around?
+plt.savefig('MSE_over_time.png', bbox_inches='tight', dpi=300)
 plt.show()
 
 
@@ -708,6 +498,6 @@ def create_fanchart_2_PF(arr):
     return fig, ax
 
 
-create_fanchart_2_PF(micro_validity_PF*100)
-plt.savefig('fanchart_2_micro_validity_PF.png', bbox_inches='tight', dpi=300)
+create_fanchart_2_PF(micro_validity_metric_array_pf*100)
+plt.savefig('fanchart_2_micro_validity_pf.png', bbox_inches='tight', dpi=300)
 plt.show()
