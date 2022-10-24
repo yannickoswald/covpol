@@ -65,7 +65,7 @@ lockdown_data2 = pd.read_csv('lockdown_tracking.csv',
                              encoding = 'unicode_escape')      
 #%% 
 num_power_particles = 2
-iterations_filter = 8
+iterations_filter = 20
 start = datetime.now()
 ### goes to num_power - 1
 for num_power in range(1,num_power_particles):

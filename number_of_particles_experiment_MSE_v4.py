@@ -141,11 +141,9 @@ def run_experiment(num_power):
 
 #print(run_experiment(num_power_particles))
 #print(str(__name__ == '__main__') + "xxxx")
-
-
 #num_power_particles_list = [2,4,8,16,32,64,128,256,512,1024]
 
-num_power_particles_list = [2,3,4,5,6]
+num_power_particles_list = [2,3,4,5,6,7]
 number_of_particles_per_experiment = [2**x for x in num_power_particles_list]
 results_mse_all = []
 results_msepf_all = []
@@ -175,9 +173,11 @@ for num_power_particles in num_power_particles_list:
         
         results_mse_all.append(results_mse)
         results_msepf_all.append(results_msepf)
-        print("Completed the iterations with ", 2**num_power_particles, "particles")
-        
+        print(f"Completed the iterations with  {2**num_power_particles} particles")
+
+
 df1 = pd.DataFrame(results_mse_all, columns=iterations_as_columns)
+df2 = pd.DataFrame(results_msepf_all, columns=iterations_as_columns)
 #df.set_index(pd.Series(number_of_particles_per_experiment))
 df1.index.name = 'Number of particles'
 df1.to_csv("N_of_particles_exp_without_pf.csv", sep=',')
@@ -190,29 +190,12 @@ df2.to_csv("N_of_particles_exp_with_pf.csv", sep=',')
 finish = datetime.now()
 print("time to execute was: ", (finish - start).total_seconds())
 
-##### tidy up the code a bit, put it into classes    
-    
-#%%    
-#print(result)
+##### tidy up the code a bit, put it into classes
+
+### make sure the effort/overhead to put up parallel processing is worth it 
+### https://stackoverflow.com/questions/20727375/multiprocessing-pool-slower-than-just-using-ordinary-functions
 
 
 
+#%%
 
-
-                      #%%
-                      
-                      #mse_array = mse
-                      #mse_array_pf = mse_pf
-                      
-                      #plt.scatter(2**num_power,sum(mse), label = "no filter", color = "tab:blue")
-                      #plt.scatter(2**num_power,sum(mse_pf), label = "particle filter", color = "tab:red")
-                      #plt.xscale("log", base=2)
-                      #plt.xlabel("Number of particles considered")
-                      #plt.ylabel("Sum of MSEs over time")  
-                      #print(f"This iteration is {2**num_power} number of particles, tested the {itr} time")
-                  
-              ##this super nice code here
-              ##https://stackoverflow.com/questions/13588920/stop-matplotlib-repeating-labels-in-legend        
-              #handles, labels = plt.gca().get_legend_handles_labels()
-              #by_label = dict(zip(labels, handles))
-              #plt.legend(by_label.values(), by_label.keys(), frameon = False, loc=(1.05, 0.5))
