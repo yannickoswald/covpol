@@ -14,9 +14,8 @@ import mesa.time
 import mesa.space
 import pandas as pd
 import sys
-
 #work laptop path
-os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python first steps/implement own covid policy model")
+os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
 
 #%% import agents
 

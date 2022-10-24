@@ -27,7 +27,14 @@ from random import sample
 ### colormaps import
 import matplotlib.cm
 ##
+import multiprocessing as mp
 from multiprocessing import Pool
+
+
+#work laptop path
+os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
+
+
 ##
 import pytest
 ### import model class (which itself imports agent class)
@@ -37,8 +44,9 @@ from particle_filter_class import ParticleFilter
 from run_base_model import run_base_model
 
 
-#work laptop path
-os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python first steps/implement own covid policy model")
+
+
+
 
 
 #%% READ DATA
@@ -56,9 +64,12 @@ lockdown_data1 = pd.read_csv('lockdown_diffusion_curve_updated_for_calibration.c
 lockdown_data2 = pd.read_csv('lockdown_tracking.csv', 
                              encoding = 'unicode_escape')      
 #%% 
+num_power_particles = 4
+iterations_filter = 2
 
-for num_power in range(1,4):
-    for itr in range(10):
+### goes to num_power - 1
+for num_power in range(1,num_power_particles):
+    for itr in range(iterations_filter):
         #RUN THE MODEL
         ### run the model, without particle filter, and save data
         
@@ -125,17 +136,68 @@ for num_power in range(1,4):
         mse_pf =  np.mean(square_diffs_pf, axis = 1)
         mse =  np.mean(square_diffs, axis = 1)
         
-        plt.scatter(2**num_power,sum(mse), color = "tab:blue")
-        plt.scatter(2**num_power,sum(mse_pf), color = "tab:red")
+        plt.scatter(2**num_power,sum(mse), label = "no filter", color = "tab:blue")
+        plt.scatter(2**num_power,sum(mse_pf), label = "particle filter", color = "tab:red")
         plt.xscale("log", base=2)
         plt.xlabel("Number of particles considered")
-        plt.ylabel("Sum of MSEs over time")
+        plt.ylabel("Sum of MSEs over time")  
         print(f"This iteration is {num_power} number of particles, tested the {itr} time")
+    
+##this super nice code here
+##https://stackoverflow.com/questions/13588920/stop-matplotlib-repeating-labels-in-legend        
+handles, labels = plt.gca().get_legend_handles_labels()
+by_label = dict(zip(labels, handles))
+plt.legend(by_label.values(), by_label.keys(), frameon = False, loc=(1.05, 0.5))
+
+
+
+
+#%%
+
+numcores = mp.cpu_count()
+
 #%%
 
 
-run_base_model(2)
+
+import time
+import multiprocessing
+ 
+def calc_square(numbers):
+    for n in numbers:
+        print('square ' + str(n*n))
+ 
+def calc_cube(numbers):
+    for n in numbers:
+        print('cube '+ str(n*n*n))
+ 
+if __name__ == "__main__":
+    arr=[2,3,8,9]
+    p1=multiprocessing.Process(target=calc_square,args=(arr,))
+    p2=multiprocessing.Process(target=calc_cube,args=(arr,))
+    
+    p1.start()
+    p2.start()
+    
+    p1.join()
+    p2.join()
+     
+    print("Done")
 
 
-with Pool(10) as p:
-        (p.map(run_base_model, [1, 2, 3]))
+#%%
+
+
+from multiprocessing import Pool
+
+vals = [1,2,3,4]
+
+def do_something(x):
+    print(f"Doing something: {x}")
+    return x*2
+
+if __name__ == "__main__":
+    with Pool() as p:
+        result = p.map(do_something, vals)
+
+    print(f"Finished: {result}")

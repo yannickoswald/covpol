@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Oct 17 10:51:55 2022
+Created on Wed Oct 19 13:06:38 2022
 
 @author: earyo
 """
@@ -37,9 +37,8 @@ from model_class2 import CountryModel
 #%% RUN THE MODEL
 ### run the model, without particle filter, and save data
 
-def run_base_model(no_of_iterations):
+def run_base_model():
     
-    for j in range(no_of_iterations):
             ### call the model iteration
             ##4th parameter initial conditions can be real, no countries yet or random
             model = CountryModel(0.01, 0.13, 18, 'real', 'no')
@@ -57,19 +56,6 @@ def run_base_model(no_of_iterations):
             df4 = df4[["code","AgentID", "Step", "minimum_difference", "Lockdown", "income",
                        "politicalregime", "social_thre", "own_thre",
                        "adoption_mode"]]
-            df4.insert(0, "iteration", [j]*len(df4))
+            #df4.insert(0, "iteration", [j]*len(df4))
             
-            if j == 0 :
-                df_results = pd.DataFrame(columns = df4.columns)
-                df_results = pd.concat([df_results, df4], join="inner")
-            else:
-                df_results = pd.concat([df_results, df4], join="inner", ignore_index=True)
-            
-            #print("model iteration is " + str(j))
-    
-    array_run_results = np.zeros((no_of_iterations,31))
-    for i in range(no_of_iterations):
-        array_run_results[i,:] = np.sum(np.split(np.array(df_results[(df_results.iteration == i)]["Lockdown"]),31),axis=1)
-
-    
-    return df_results, array_run_results
+            return df4
