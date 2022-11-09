@@ -35,7 +35,7 @@ from model_class2 import CountryModel
 from particle_filter_class import ParticleFilter
 
 #work laptop path
-os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python first steps/implement own covid policy model")
+os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
 
 
 #%% READ DATA
@@ -57,7 +57,7 @@ lockdown_data2 = pd.read_csv('lockdown_tracking.csv',
 
 start = dt.now()
 
-no_of_iterations = 10
+no_of_iterations = 100
 for j in range(no_of_iterations):
         ### call the model iteration
         ##4th parameter initial conditions can be real, no countries yet or random
@@ -96,7 +96,7 @@ running_secs = (dt.now() - start).seconds
 print("running time was " + str(running_secs) + " sec")
 
 
-print(model.schedule.agents)
+#print(model.schedule.agents)
 
 #%% PLOTTING
 
@@ -105,12 +105,12 @@ print(model.schedule.agents)
 #### plot #0.0 distributions of variables (income, democracy index, latitude and longitude)
 ### plot #0.1 map of lockdowns 
 
-df_initial_conditions_countries = pd.DataFrame(columns = df_results.columns)
+#df_initial_conditions_countries = pd.DataFrame(columns = df_results.columns)
 
-for i in range(no_of_iterations):
-          df_initial_conditions_countries = pd.concat([df_initial_conditions_countries, 
-                                                       df_results[(df_results.iteration == i) & (df_results.Step == 0) & (df_results.Lockdown == 1)]],
-                                                       ignore_index=True)
+#for i in range(no_of_iterations):
+  #        df_initial_conditions_countries = pd.concat([df_initial_conditions_countries, 
+   #                                                    df_results[(df_results.iteration == i) & (df_results.Step == 0) & (df_results.Lockdown == 1)]],
+    #                                                   ignore_index=True)
 
 ### plot #1 number of lockdowns over time steps
 
@@ -145,6 +145,7 @@ df_results_filtered = df_results[(df_results.AgentID == 9)]
 array_run_results = np.zeros((no_of_iterations,31))
 for i in range(no_of_iterations):
     array_run_results[i,:] = np.sum(np.split(np.array(df_results[(df_results.iteration == i)]["Lockdown"]),31),axis=1)
+    print("array run results making is at ", i)
 
 
 ###plotting takes too long if too many runs and also does not make sense if too few
@@ -468,7 +469,6 @@ mse =  np.mean(square_diffs, axis = 1)
 
 plt.plot(np.linspace(1,31,31), mse)
 plt.plot(np.linspace(1,31,31), mse_pf)
-plt.savefig('fanchart_1_macro_validity_PF.png', bbox_inches='tight', dpi=300)
 plt.xlabel("Day of March")
 plt.ylabel("Mean squared error") ### perhaps plot squared error as fan-chart around?
 plt.savefig('MSE_over_time.png', bbox_inches='tight', dpi=300)

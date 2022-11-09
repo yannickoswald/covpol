@@ -48,37 +48,42 @@ data2 = pd.read_csv('N_of_particles_exp_with_pf.csv',
                              encoding = 'unicode_escape',
                              header = 0, index_col=0)
 
-powers_of_two = list(np.linspace(1,len(data1),len(data1)))
+powers_of_two = list(np.linspace(2,len(data1)+1,len(data1)))
 number_of_particles_per_experiment = [str(int(2**x)) for x in powers_of_two ]
+xticks = np.linspace(1,len(data1),len(data1))+0.25
 
 fig = plt.figure()
 ax = fig.add_axes([0.1, 0.1, 0.8, 0.8]) # main axes
-ax2 = fig.add_axes([0.2, 0.1, 0.8, 0.8])
-ax.boxplot(data1.T, widths = 0.25)
+ax2 = fig.add_axes([0.15, 0.1, 0.8, 0.8])
 
+###https://stackoverflow.com/questions/41997493/python-matplotlib-boxplot-color
+c = 'lightblue'
+box1 = ax.boxplot(data1.T, widths = 0.25, patch_artist=True,
+                  boxprops=dict(facecolor=c, color=c),
+                  medianprops=dict(color='black'))
+ax.set_xticks(xticks)
 ax.set_xticklabels(number_of_particles_per_experiment)
-ax.set_xlabel("number_of_particles")
-ax.spines['top'].set_visible(False)
-ax.spines['right'].set_visible(False)
-ax.spines['bottom'].set_visible(False)
-ax.spines['left'].set_visible(False)
+ax.set_xlabel("number of particles")
+ax.set_ylabel("sum of MSE over time")
+ax.set_xlim((0.5,len(data1)+1.1))
+ax.annotate("N=20 per boxplot", (3.5,0.88), fontsize = 12)
+ax.legend()
 
 
 
-
-
-
-
-ax2.boxplot(data2.T, widths = 0.25)
+c2 = 'orangered'
+box2 = ax2.boxplot(data2.T, widths = 0.25, patch_artist=True,
+                   boxprops=dict(facecolor=c2, color=c2),
+                   medianprops=dict(color='black'))
+ax2.set_xticks(xticks)
 ax2.patch.set_alpha(0.01)
 ax2.axis('off')
+ax2.set_xlim((0.5,len(data1)+1.1))
 
 
+##https://stackoverflow.com/questions/47528955/adding-a-legend-to-a-matplotlib-boxplot-with-multiple-plots-on-same-axes
+ax.legend([box1["boxes"][0], box2["boxes"][0]], ['NO PF', 'PF'], loc='upper right', frameon = False)
+
+plt.savefig('MSE_number_of_particles_exp.png',  bbox_inches='tight', dpi=300)
 
 
-
-plt.scatter(2**num_power,sum(mse), label = "no filter", color = "tab:blue")
-plt.scatter(2**num_power,sum(mse_pf), label = "particle filter", color = "tab:red")
-plt.xscale("log", base=2)
-plt.xlabel("Number of particles considered")
-plt.ylabel("Sum of MSEs over time")  

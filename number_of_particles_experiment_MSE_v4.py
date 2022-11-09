@@ -143,7 +143,7 @@ def run_experiment(num_power):
 #print(str(__name__ == '__main__') + "xxxx")
 #num_power_particles_list = [2,4,8,16,32,64,128,256,512,1024]
 
-num_power_particles_list = [2,3,4,5,6,7]
+num_power_particles_list = [2,3,4,5,6,7,8,9]
 number_of_particles_per_experiment = [2**x for x in num_power_particles_list]
 results_mse_all = []
 results_msepf_all = []
