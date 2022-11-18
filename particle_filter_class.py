@@ -158,7 +158,7 @@ class ParticleFilter():
             resampled. The weights are cumulatively counted, so they constitute a
             cumulative distr. function (CDF) -- a weight distribution. And this distr. is
             compared against a uniformly random partition of the interval [0,1]
-            constitung a uniformly random CDF. If the uniformly random CDF 'makes' 
+            constituting a uniformly random CDF. If the uniformly random CDF 'makes' 
             larger steps than the weights cumulation, because the weights are small, 
             it is likely that particles are filtered out.
         

@@ -38,15 +38,19 @@ os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/imp
 
 #%%
 
-data1 = pd.read_csv('N_of_particles_exp_without_pf.csv', 
+
+data0 = pd.read_csv('preliminary data on number of particles experiment aggregate.csv', 
                              encoding = 'unicode_escape',
                              header = 0, index_col=0)
 
 
 
-data2 = pd.read_csv('N_of_particles_exp_with_pf.csv', 
-                             encoding = 'unicode_escape',
-                             header = 0, index_col=0)
+
+data2 = data0.iloc[0:8,:]
+
+
+
+data1 = data0.iloc[8:16,:]
 
 powers_of_two = list(np.linspace(2,len(data1)+1,len(data1)))
 number_of_particles_per_experiment = [str(int(2**x)) for x in powers_of_two ]

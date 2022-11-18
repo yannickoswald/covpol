@@ -33,7 +33,6 @@ import csv
 
 #work laptop path
 os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
-
 ##
 import pytest
 ### import model class (which itself imports agent class)
@@ -134,7 +133,16 @@ def run_experiment(num_power):
         mse_pf =  np.mean(square_diffs_pf, axis = 1)
         mse =  np.mean(square_diffs, axis = 1)
         
-        return mse, mse_pf
+        
+        #### measure microvalidity for one run over time for plotting
+        #### using micro_validity_metric_array_pf
+        #### here we take the average correctness over time which should tend towards
+        #### 100% if it improves with the particle filter etc.
+        ### so first we sum over time, subsequently over the particles
+        
+        micro_valid_metric = np.mean(np.mean(micro_validity_metric_array_pf, axis = 0))
+        
+        return mse, mse_pf, micro_valid_metric
     
     
 #%%    
@@ -143,10 +151,11 @@ def run_experiment(num_power):
 #print(str(__name__ == '__main__') + "xxxx")
 #num_power_particles_list = [2,4,8,16,32,64,128,256,512,1024]
 
-num_power_particles_list = [2,3,4,5,6,7,8,9]
+num_power_particles_list = [0]
 number_of_particles_per_experiment = [2**x for x in num_power_particles_list]
 results_mse_all = []
 results_msepf_all = []
+results_micro_all = []
 
 iterations_filter = 20
 iterations_as_columns = np.linspace(1,iterations_filter,iterations_filter)
@@ -162,6 +171,7 @@ for num_power_particles in num_power_particles_list:
         data_results = pool.map(run_experiment, pool_input)
         results_mse =[]
         results_msepf =[]
+        results_micro =[]
         for i in range(iterations_filter):
                 ### here the sum over time is taken of the MSE. so it is basically
                 ### an approximation to the integral of the MSE over time. since
@@ -170,18 +180,20 @@ for num_power_particles in num_power_particles_list:
                 ### the better the particles work 
                 results_mse.append(sum(data_results[i][0]))
                 results_msepf.append(sum(data_results[i][1])) 
+                results_micro.append(data_results[i][2])
         
         results_mse_all.append(results_mse)
         results_msepf_all.append(results_msepf)
+        results_micro_all.append(results_micro)
         print(f"Completed the iterations with  {2**num_power_particles} particles")
 
-
+print(results_micro_all)
+#C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/
 df1 = pd.DataFrame(results_mse_all, columns=iterations_as_columns)
 df2 = pd.DataFrame(results_msepf_all, columns=iterations_as_columns)
 #df.set_index(pd.Series(number_of_particles_per_experiment))
 df1.index.name = 'Number of particles'
 df1.to_csv("N_of_particles_exp_without_pf.csv", sep=',')
-df2 = pd.DataFrame(results_msepf_all, columns=iterations_as_columns)
 #df.set_index(pd.Series(number_of_particles_per_experiment))
 df2.index.name = 'Number of particles'
 df2.to_csv("N_of_particles_exp_with_pf.csv", sep=',')

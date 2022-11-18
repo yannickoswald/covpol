@@ -20,6 +20,9 @@ os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/imp
 #%% import agents
 
 from agent_class1 import CountryAgent
+#### data per country
+lockdown_data2 = pd.read_csv('lockdown_tracking.csv', 
+                             encoding = 'unicode_escape')
 
 #%%
 
@@ -108,6 +111,15 @@ class CountryModel(mesa.Model):
     
     def step(self):
         self.time = self.time + 1
+        
+        if ((self.data_update == "yes") and ((self.time + 1) % 5 == 0) and ((self.time + 1) <= 10)):
+             for agent in self.schedule.agents:
+                 agent.state = lockdown_data2[(agent.code==lockdown_data2.Code) 
+                                              & (self.time == lockdown_data2.model_step)]["lockdown"].iloc[0]
+        else:
+             pass
+
+        
         self.datacollector.collect(self)
         self.schedule.step()
         
