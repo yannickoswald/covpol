@@ -33,11 +33,18 @@ import pytest
 ### import model class (which itself imports agent class)
 from model_class2 import CountryModel
 from particle_filter_class import ParticleFilter
+from run_base_model_opt import model_run
+from multiprocessing import Pool
+
+
+
 
 #work laptop path
 os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
 
 
+
+    
 #%% READ DATA
 ### read country/agent data
 agent_data = pd.read_csv('agent_data_v2.csv', encoding = 'unicode_escape')
@@ -52,12 +59,11 @@ lockdown_data1 = pd.read_csv('lockdown_diffusion_curve_updated_for_calibration.c
 #### data per country
 lockdown_data2 = pd.read_csv('lockdown_tracking.csv', 
                              encoding = 'unicode_escape')      
-#%% RUN THE MODEL
-### run the model, without particle filter, and save data
 
 start = dt.now()
 
-no_of_iterations = 1000
+
+no_of_iterations = 10
 for j in range(no_of_iterations):
         ### call the model iteration
         ##4th parameter initial conditions can be real, no countries yet or random
@@ -132,7 +138,7 @@ if no_of_iterations <= 200:
     ax1.text(23, 15, "Base alert: " + str(model.base_alert))
     ax1.text(23, 10, "Social alert: " + str(model.social_base_threshold))
     ax1.text(21, 5, "Initial conditions " + str(model.initial_conditions))
-    plt.show()
+    #plt.show()
 
 
 
@@ -186,7 +192,7 @@ if no_of_iterations <= 200:
            
     ax2.set_xlabel("Day of March 2020")
     ax2.set_ylabel("Average min distance")
-    plt.show()
+    #plt.show()
 
 ### plot #3 plots the micro-validity (or non-validity of the model) by
 ### measuring the difference between the day a country adopts in the model and adopted in the real-world
@@ -214,7 +220,7 @@ if no_of_iterations <= 50:
     ax3.plot([0,164],[0,0], color = "black", linewidth = 3)
     ax3.margins(0)
     plt.savefig('Micro_validity_1.png', bbox_inches='tight', dpi=300)
-    plt.show()
+    #plt.show()
 
 
 
@@ -243,26 +249,26 @@ df_differences_per_country_sorted = df_differences_per_country.sort_values(by=['
 
 cmap = plt.cm.viridis
 norm = mpl.colors.Normalize(vmin=0, vmax=10)
-
-fig30, ax30 = plt.subplots(figsize=(12, 6))
-for i in range(164):
-    ax30.scatter(np.repeat(i, len(df_differences_per_country_sorted.iloc[i,0:no_of_iterations])),
-                 df_differences_per_country_sorted.iloc[i,0:no_of_iterations], 
-                 color = cmap(df_differences_per_country_sorted.iloc[i,12]/10), alpha = 0.2)    
-    ax30.set_ylabel("diff. in days", size = 16)   
-    ax30.set_xlabel("country index", size = 16) 
-    ax30.plot([0,164],[0,0], color = "black", linewidth = 3)
-    ax30.margins(x=0)
-#ax30.set_xticks(np.linspace(1,164,164), df_differences_per_country_sorted.index, rotation=90, size = 8)
-ax30.xaxis.set_tick_params(labelsize=16)
-ax30.yaxis.set_tick_params(labelsize=16)
-
-cbar_ax = fig30.add_axes([0.35, 0.21, 0.15, 0.03])
-#fig30.colorbar(ax30, cax=cbar_ax)
-fig30.colorbar(mpl.cm.ScalarMappable(norm=norm, cmap=cmap),
-             cax=cbar_ax, orientation='horizontal', label='Democracy index')
-
-plt.savefig('Micro_validity_2.png', bbox_inches='tight', dpi=300)
+if no_of_iterations < 50:
+    fig30, ax30 = plt.subplots(figsize=(12, 6))
+    for i in range(164):
+        ax30.scatter(np.repeat(i, len(df_differences_per_country_sorted.iloc[i,0:no_of_iterations])),
+                     df_differences_per_country_sorted.iloc[i,0:no_of_iterations], 
+                     color = cmap(df_differences_per_country_sorted.iloc[i,12]/10), alpha = 0.2)    
+        ax30.set_ylabel("diff. in days", size = 16)   
+        ax30.set_xlabel("country index", size = 16) 
+        ax30.plot([0,164],[0,0], color = "black", linewidth = 3)
+        ax30.margins(x=0)
+    #ax30.set_xticks(np.linspace(1,164,164), df_differences_per_country_sorted.index, rotation=90, size = 8)
+    ax30.xaxis.set_tick_params(labelsize=16)
+    ax30.yaxis.set_tick_params(labelsize=16)
+    
+    cbar_ax = fig30.add_axes([0.35, 0.21, 0.15, 0.03])
+    #fig30.colorbar(ax30, cax=cbar_ax)
+    fig30.colorbar(mpl.cm.ScalarMappable(norm=norm, cmap=cmap),
+                 cax=cbar_ax, orientation='horizontal', label='Democracy index')
+    
+    plt.savefig('Micro_validity_2.png', bbox_inches='tight', dpi=300)
 
 
 ### plot #4 fan chart of model runs 
@@ -297,7 +303,7 @@ def create_fanchart(arr):
 
 create_fanchart(array_run_results.T/Num_agents*100)
 plt.savefig('fanchart_1_macro_validity.png', bbox_inches='tight', dpi=300)
-plt.show()
+#plt.show()
 #4.1 report least squares of mean to data and variance per time step 
 ## (both metrics need to minimized)
 mean_model_runs = np.mean(array_run_results, axis = 0)
@@ -365,7 +371,7 @@ def create_fanchart_2(arr):
 
 create_fanchart_2(micro_validity_metric_array*100)
 plt.savefig('fanchart_2_micro_validity.png', bbox_inches='tight', dpi=300)
-plt.show()
+#plt.show()
 
 #########################################
 ##################################################################################
@@ -437,7 +443,7 @@ non_adopters = df_results[(df_results.iteration == 0) & (df_results.Step == 30) 
 pf_parameters = {
   "da_window": 5,
   "da_instances": 30/5,
-  "No_of_particles": 1000
+  "No_of_particles": 5
 }
 
 
@@ -479,7 +485,7 @@ for i in range(31):
         micro_state = pd.Series.reset_index(df[(df.Step == i)]["Lockdown"],drop = True)
         micro_state_data = pd.Series.reset_index(lockdown_data2[(lockdown_data2.model_step == i)]["lockdown"],drop = True) 
         micro_validity_metric_array_pf[i,j] = np.mean(micro_state == micro_state_data)
-        
+        print(i,j)
         
 
 def create_fanchart_PF(arr):
@@ -541,6 +547,12 @@ plt.savefig('MSE_over_time.png', bbox_inches='tight', dpi=300)
 plt.show()
 
 
+mse_list = [sum(mse), sum(mse_pf)]
+df_mse = pd.DataFrame(mse_list)
+
+df_mse.to_csv("df_mse.csv", sep=',')
+
+
 #%%
 
 def create_fanchart_2_PF(arr):
@@ -567,6 +579,8 @@ def create_fanchart_2_PF(arr):
 create_fanchart_2_PF(micro_validity_metric_array_pf*100)
 plt.savefig('fanchart_2_micro_validity_pf.png', bbox_inches='tight', dpi=300)
 plt.show()
+
+
 
 
 #%%
@@ -636,6 +650,32 @@ plt.savefig('fig5.png', bbox_inches='tight', dpi=300)
 
 
 
+
+
+##### microvalidity pf vs. no pf as a chart of the mean lines
+
+fig3, ax1 = plt.subplots(figsize = (5.5,5))
+arr1 = micro_validity_metric_array*100
+arr2 = micro_validity_metric_array_pf*100
+x = np.arange(arr1.shape[0])+1
+y = np.arange(arr2.shape[0])+1
+# for the median use `np.median` and change the legend below
+mean1 = np.mean(arr1, axis=1)
+mean2 = np.mean(arr2, axis=1)
+offsets = (25,67/2,47.5)
+ax1.plot(x, mean1, color='black', lw=3, label = "no_pf")
+ax1.plot(y, mean2, color='tab:red', lw=3, label = "with_pf")
+ax1.set_xlabel("Day of March")
+ax1.set_ylabel("% in correct state")
+ax1.legend()
+
+
+
+
+
+
+
+#%%
 """
 
 

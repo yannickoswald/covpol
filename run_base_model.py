@@ -33,6 +33,10 @@ import pytest
 ### import model class (which itself imports agent class)
 from model_class2 import CountryModel
 
+#### data per country
+lockdown_data2 = pd.read_csv('lockdown_tracking.csv', 
+                             encoding = 'unicode_escape')     
+
 
 #%% RUN THE MODEL
 ### run the model, without particle filter, and save data
@@ -68,8 +72,13 @@ def run_base_model(no_of_iterations):
             #print("model iteration is " + str(j))
     
     array_run_results = np.zeros((no_of_iterations,31))
+    micro_validity_metric_array = np.zeros((31,no_of_iterations))
     for i in range(no_of_iterations):
         array_run_results[i,:] = np.sum(np.split(np.array(df_results[(df_results.iteration == i)]["Lockdown"]),31),axis=1)
-
+        alpha = pd.Series.reset_index(df_results[(df_results.iteration == i) ]["Lockdown"], drop = True) 
+        beta =  pd.Series.reset_index(lockdown_data2.sort_values(['model_step', 'Entity'])["lockdown"],drop = True)          
+        micro_validity_metric_array[:,i] = np.mean(np.array_split(np.array(alpha == beta),31),axis = 1)
     
-    return df_results, array_run_results
+    return df_results, array_run_results, micro_validity_metric_array
+
+

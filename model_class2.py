@@ -91,7 +91,7 @@ class CountryModel(mesa.Model):
             
             model_reporters={
                              ### lambda is an anonymous function
-                             "N": lambda model: model.schedule.get_agent_count(),
+                             "N": self.schedule.get_agent_count,
 
                              },
             agent_reporters={ "code": "code",

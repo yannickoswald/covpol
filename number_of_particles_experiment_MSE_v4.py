@@ -27,8 +27,8 @@ from random import sample
 ### colormaps import
 import matplotlib.cm
 ##
-import multiprocessing as mp
 from multiprocessing import Pool
+from itertools import starmap
 import csv
 
 #work laptop path
@@ -40,138 +40,82 @@ from model_class2 import CountryModel
 from particle_filter_class import ParticleFilter
 # import random 
 from run_base_model import run_base_model
-
-#%% READ DATA
-### read country/agent data
-agent_data = pd.read_csv('agent_data_v2.csv', encoding = 'unicode_escape')
-Num_agents = len(agent_data)
-agent_data["gdp_pc"] = pd.to_numeric(agent_data["gdp_pc"])
-
-##### Read data for calibration
-#### aggregate diffusion curve data
-lockdown_data1 = pd.read_csv('lockdown_diffusion_curve_updated_for_calibration.csv', 
-                             encoding = 'unicode_escape',
-                             header = None)
-#### data per country
-lockdown_data2 = pd.read_csv('lockdown_tracking.csv', 
-                             encoding = 'unicode_escape')      
-#%% 
+from experiment import Experiment
 
 
-### https://stackoverflow.com/questions/20190668/multiprocessing-a-for-loop
-
-#mse_array = np.zeros(iterations_filter, num_power_particles)
-#mse_array_pf = np.zeros(iterations_filter, num_power_particles)
-
-
-
-def run_experiment(num_power):
-        ### goes to num_power - 1
-        #RUN THE MODEL
-        ### run the model, without particle filter, and save data
-        #print("am i doing sth.?")
-        testy = run_base_model(2**num_power)
-        array_run_results = testy[1]
-        
-        # RUN PARTICLE FILTER EXPERIMENTS 
-        
-        pf_parameters = {
-          "da_window": 5,
-          "da_instances": 30/5,
-          "No_of_particles": 2**num_power
-        }
+if __name__ == '__main__':
+    #READ DATA
+    ### read country/agent data
+    agent_data = pd.read_csv('agent_data_v2.csv', encoding = 'unicode_escape')
+    Num_agents = len(agent_data)
+    agent_data["gdp_pc"] = pd.to_numeric(agent_data["gdp_pc"])
+    
+    ##### Read data for calibration
+    #### aggregate diffusion curve data
+    lockdown_data1 = pd.read_csv('lockdown_diffusion_curve_updated_for_calibration.csv', 
+                                 encoding = 'unicode_escape',
+                                 header = None)
+    #### data per country
+    lockdown_data2 = pd.read_csv('lockdown_tracking.csv', 
+                                 encoding = 'unicode_escape')      
         
         
-        model_parameters = {
-          "base_alert": 0.01,
-          "social_base_threshold": 0.13,
-          "clique_size": 18,
-          "initial_conditions": 'real',
-          "data_update": 'no'
-        }
-        
-        current_PF = ParticleFilter(CountryModel, model_parameters, pf_parameters)  
-        current_PF.run_particle_filter()
-        
-        
-         ### TO DO verify whether pf works correctly 
-        No_of_particles = pf_parameters['No_of_particles']
-        da_window = pf_parameters['No_of_particles']
-        results_pf = np.zeros((31, No_of_particles))
-        micro_validity_metric_array_pf = np.zeros((31, No_of_particles))
-        
-        Dit={}
-        time_steps = 31
-        for i in range(31):
-            for j in range(No_of_particles):
-                ### key is a tuple where i equals time step, j particle number and
-                ### the third number the model id, initially unique, but later can
-                ### be associated with several particles because they are resampled 
-                ### versions of one another. Therefore ultimately j is the *unique* 
-                ### identifier as well as the tuple as a whole given j. 
-                key = (i,j, current_PF.part_filtered_all[i][j].model_id)
-                value = current_PF.part_filtered_all[i][j].datacollector.get_agent_vars_dataframe()
-                Dit[key] = value
-                df = Dit[key]
-                df = (df.reset_index(level=0)).reset_index(level = 0)
-                results_pf[i,j] = df[(df.Step == i)]["Lockdown"].sum()
-                micro_state = pd.Series.reset_index(df[(df.Step == i)]["Lockdown"],drop = True)
-                micro_state_data = pd.Series.reset_index(lockdown_data2[(lockdown_data2.model_step == i)]["lockdown"],drop = True) 
-                micro_validity_metric_array_pf[i,j] = np.mean(micro_state == micro_state_data)
-        
-        
-        ##### PLOT mean squared error per time step. pf results vs no pf results        
-        
-        results_pf_percent = results_pf/164
-        results_percent = array_run_results.T/164
-        square_diffs_pf = np.zeros((31,No_of_particles))
-        square_diffs = np.zeros((31,No_of_particles))
-        for i in range(No_of_particles):
-            square_diffs_pf[:,i] = (results_pf_percent[:,i] - lockdown_data1.iloc[:,0].to_numpy())**2
-            square_diffs[:,i] = (results_percent[:,i] - lockdown_data1.iloc[:,0].to_numpy())**2 
-        
-        mse_pf =  np.mean(square_diffs_pf, axis = 1)
-        mse =  np.mean(square_diffs, axis = 1)
-        
-        
-        #### measure microvalidity for one run over time for plotting
-        #### using micro_validity_metric_array_pf
-        #### here we take the average correctness over time which should tend towards
-        #### 100% if it improves with the particle filter etc.
-        ### so first we sum over time, subsequently over the particles
-        
-        micro_valid_metric = np.mean(np.mean(micro_validity_metric_array_pf, axis = 0))
-        
-        return mse, mse_pf, micro_valid_metric
+    #%%    
+    
+    #print(run_experiment(num_power_particles))
+    #print(str(__name__ == '__main__') + "xxxx")
+    #num_power_particles_list = [2,4,8,16,32,64,128,256,512,1024]
+    
+    num_power_particles_list = [10]
+    iterations_filter = 1
+    
+    #### this must be multiplied by the len of the number of particles as well as the iterations
+    ### per particle number
+    lockdown_data1_list = [lockdown_data1]*len(num_power_particles_list)*iterations_filter
+    lockdown_data2_list = [lockdown_data2]*len(num_power_particles_list)*iterations_filter
     
     
-#%%    
-
-#print(run_experiment(num_power_particles))
-#print(str(__name__ == '__main__') + "xxxx")
-#num_power_particles_list = [2,4,8,16,32,64,128,256,512,1024]
-
-num_power_particles_list = [0]
-number_of_particles_per_experiment = [2**x for x in num_power_particles_list]
-results_mse_all = []
-results_msepf_all = []
-results_micro_all = []
-
-iterations_filter = 20
-iterations_as_columns = np.linspace(1,iterations_filter,iterations_filter)
-start = datetime.now()
-
-start = datetime.now()
-for num_power_particles in num_power_particles_list:
     
-    if __name__ == '__main__':
+    number_of_particles_per_experiment = [2**x for x in num_power_particles_list]
+    results_mse_all = []
+    results_msepf_all = []
+    results_micro_all = []
+    results_micro_all_pf = []
+    
+    if iterations_filter <= 8:
+        number_of_processors = iterations_filter
+    else:
+        number_of_processors = 8
+    
+    iterations_as_columns = np.linspace(1,iterations_filter,iterations_filter)
+    start = datetime.now()
+    
+    start = datetime.now()
+    for num_power_particles in num_power_particles_list:
+        
         # Create a multiprocessing Pool
-        pool = Pool(processes = 8)  
-        pool_input = list(np.repeat(num_power_particles, iterations_filter))                      
-        data_results = pool.map(run_experiment, pool_input)
+        
+   
+        ### use itertools.starmap instead of pool.starmap
+        ### make sure to debug
+   
+        pool_input = [num_power_particles]*iterations_filter
+        #print(pool_input)
+        #### inputs_for_starmap must be sorted so that first all runs with x particles are done
+        #### and subsequently only with y particles, where x < y etc. 
+        ### it needs to be done like this sorted(list(zip([0,1]*7,[8]*7*2,[9]*7*2)))
+        
+        inputs_for_starmap = sorted(list(zip(pool_input, lockdown_data1_list, lockdown_data2_list)))
+        #print(inputs_for_starmap)
+        #print(np.array(list(inputs_for_starmap)).shape)    
+        with Pool(processes=number_of_processors) as pool:     
+            data_results = list(pool.starmap(Experiment.run_experiment, inputs_for_starmap))
+       # assert len(data_results) == len(num_power_particles_list), f"The length of the results isn't what we expected {len(num_power_particles_list)}"
+        #print("this is data results", data_results)
         results_mse =[]
         results_msepf =[]
-        results_micro =[]
+        results_micro = []
+        results_micro_pf = []
         for i in range(iterations_filter):
                 ### here the sum over time is taken of the MSE. so it is basically
                 ### an approximation to the integral of the MSE over time. since
@@ -181,31 +125,38 @@ for num_power_particles in num_power_particles_list:
                 results_mse.append(sum(data_results[i][0]))
                 results_msepf.append(sum(data_results[i][1])) 
                 results_micro.append(data_results[i][2])
+                results_micro_pf.append(data_results[i][3])
         
         results_mse_all.append(results_mse)
         results_msepf_all.append(results_msepf)
         results_micro_all.append(results_micro)
+        results_micro_all_pf.append(results_micro_pf)
         print(f"Completed the iterations with  {2**num_power_particles} particles")
-
-print(results_micro_all)
-#C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/
-df1 = pd.DataFrame(results_mse_all, columns=iterations_as_columns)
-df2 = pd.DataFrame(results_msepf_all, columns=iterations_as_columns)
-#df.set_index(pd.Series(number_of_particles_per_experiment))
-df1.index.name = 'Number of particles'
-df1.to_csv("N_of_particles_exp_without_pf.csv", sep=',')
-#df.set_index(pd.Series(number_of_particles_per_experiment))
-df2.index.name = 'Number of particles'
-df2.to_csv("N_of_particles_exp_with_pf.csv", sep=',')
-
-
-finish = datetime.now()
-print("time to execute was: ", (finish - start).total_seconds())
-
-##### tidy up the code a bit, put it into classes
-
-### make sure the effort/overhead to put up parallel processing is worth it 
-### https://stackoverflow.com/questions/20727375/multiprocessing-pool-slower-than-just-using-ordinary-functions
+    
+    
+    
+    #C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/
+    df1 = pd.DataFrame(results_mse_all, columns = iterations_as_columns)
+    df2 = pd.DataFrame(results_msepf_all, columns = iterations_as_columns)
+    df3 = pd.DataFrame(results_micro_all, columns = iterations_as_columns)
+    df4 = pd.DataFrame(results_micro_all_pf, columns = iterations_as_columns)
+    #df.set_index(pd.Series(number_of_particles_per_experiment))
+    df1.index.name = 'Number of particles'
+    df1.to_csv("N_of_particles_exp_without_pf.csv", sep=',')
+    #df.set_index(pd.Series(number_of_particles_per_experiment))
+    df2.index.name = 'Number of particles'
+    df2.to_csv("N_of_particles_exp_with_pf.csv", sep=',')
+    df3.to_csv("micro_validity_without_pf.csv", sep=',')
+    df4.to_csv("micro_validity_with_pf.csv", sep=',')
+    
+    
+    finish = datetime.now()
+    print("time to execute was: ", (finish - start).total_seconds())
+    
+    ##### tidy up the code a bit, put it into classes
+    
+    ### make sure the effort/overhead to put up parallel processing is worth it 
+    ### https://stackoverflow.com/questions/20727375/multiprocessing-pool-slower-than-just-using-ordinary-functions
 
 
 

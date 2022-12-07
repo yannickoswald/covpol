@@ -25,8 +25,13 @@ import sys
 from random import sample
 ### colormaps import
 import matplotlib.cm
-##
+
+### for explanation of pathos multiprocessing
+#### https://stackoverflow.com/questions/8804830/python-multiprocessing-picklingerror-cant-pickle-type-function
+#### https://edbennett.github.io/high-performance-python/08-pathos/index.html
+#from pathos.pools import ParallelPool
 from multiprocessing import Pool
+
 ##
 import pytest
 
@@ -39,7 +44,6 @@ from model_class2 import CountryModel
 #### data per country
 lockdown_data2 = pd.read_csv('lockdown_tracking.csv', 
                              encoding = 'unicode_escape') 
-
 
 class ParticleFilter():
     
@@ -78,7 +82,10 @@ class ParticleFilter():
        ### PF Data variables
        self.part_filtered_all = []
        self.weights = []
-
+       
+       
+       #self.pool = ParallelPool(processes=8)
+       
     
     ### create and store particles 
     def create_particles(self):
@@ -107,7 +114,6 @@ class ParticleFilter():
                 list_of_particles.append(current_model) 
                 
         return list_of_particles
-                
     
     @classmethod
     def error_particle_obs(cls, particle):
@@ -138,6 +144,8 @@ class ParticleFilter():
         '''DESCRIPTION
             ### Method that computes all particle weights from particle error/validity metric.
             ### Taken "Squared" to "penalize" low ranking particles more.
+            ### Weight equals error squared because error close to 0 means high 
+            ### error, so weight should also be low if error is close to 0.
         
            PARAMETERS
            - error list:        the errors of the particles  '''
@@ -190,9 +198,13 @@ class ParticleFilter():
                                  for x in re_sampled_particles]
         return list_of_particles_new
     
-
-    
-
+    @classmethod
+    def step_particle(cls, particle):  
+        particle.step()
+        return particle
+        
+        
+        
     def run_particle_filter(self):
         
         '''DESCRIPTION
@@ -201,32 +213,42 @@ class ParticleFilter():
         
            PARAMETERS
            - only self'''
-
-        
+ 
         list_of_particles = self.create_particles()
         list_of_lists_particles = []
         list_of_lists_weights = []
         
-        ### i here for time steps in the model, the month of March 2020
-        for i in range(31):          
-                 
-                ## step particles forward in time
-                for x in list_of_particles:
-                    x.step()
+        #print(list_of_particles)
+        with Pool() as pool:
+        
+            ### i here for time steps in the model, the month of March 2020
+            for i in range(31):          
+                     
+                    ## step particles forward in time
+                    #for x in list_of_particles:
+                     #   ParticleFilter.step_particle(x)
+                        
+                    #if __name__ == "__main__":
+                     #   list_of_particles = list(self.pool.map(ParticleFilter.step_particle, list_of_particles))
                     
-                ## go into the data assimilitation if this time step is actually
-                ## at the end of a data assimilation window
-                if (i > 0) and (i % self.da_window == 0):
+    
+                    list_of_particles = list(pool.map(ParticleFilter.step_particle, list_of_particles))
+                        
+                    ## go into the data assimilitation if this time step is actually
+                    ## at the end of a data assimilation window
+                    if (i > 0) and (i % self.da_window == 0):
+                        
+                        list_of_errors = [ParticleFilter.error_particle_obs(k) 
+                                          for k in list_of_particles]
+                
+                        weights = ParticleFilter.particle_weights(list_of_errors)
+                        list_of_particles = ParticleFilter.resample_particles(list_of_particles,
+                                                                              weights)
+                        list_of_lists_weights.append(weights)
+                        
+                    list_of_lists_particles.append(list_of_particles)   
                     
-                    list_of_errors = [ParticleFilter.error_particle_obs(k) 
-                                      for k in list_of_particles]
-                    weights = ParticleFilter.particle_weights(list_of_errors)
-                    list_of_particles = ParticleFilter.resample_particles(list_of_particles,
-                                                                          weights)
-                    list_of_lists_weights.append(weights)
-                    
-                list_of_lists_particles.append(list_of_particles)          
+                    print("Particle filter is at time step ", i)
     
         self.part_filtered_all = list_of_lists_particles
         self.weights = list_of_lists_weights
-        
