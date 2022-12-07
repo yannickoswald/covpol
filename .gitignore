@@ -1,0 +1,13 @@
+# Python stuff:
+
+__pycache__/
+.spyproject/
+
+
+# data and history
+older model versions/
+exeter conference/
+source_data_some_figures/
+
+#images
+*.png
