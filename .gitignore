@@ -161,8 +161,7 @@ cython_debug/
 #.idea/
 
 # data and history
-older model versions/
-exeter conference/
+older_model_versions/
 source_data_some_figures/
 
 #images

@@ -46,6 +46,7 @@ if __name__ == '__main__':
     ### read country/agent data
     with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/agent_data_v2.csv') as f:
         agent_data = pd.read_csv(f, encoding = 'unicode_escape')
+    
     Num_agents = len(agent_data)
     agent_data["gdp_pc"] = pd.to_numeric(agent_data["gdp_pc"])
     
