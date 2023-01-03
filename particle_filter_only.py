@@ -67,7 +67,7 @@ if __name__ == "__main__":
     pf_parameters = {
       "da_window": 5,
       "da_instances": 30/5,
-      "No_of_particles": 1000
+      "No_of_particles": 10
     }
     
     
