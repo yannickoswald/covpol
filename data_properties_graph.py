@@ -40,7 +40,10 @@ os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/imp
 
 #%%
 
-data = pd.read_csv('correlation_between_policies_and_metrics.csv', encoding = 'unicode_escape')
+
+with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/correlation_between_policies_and_metrics.csv') as f:
+    data = pd.read_csv(f, encoding = 'unicode_escape')
+    
 
 
 

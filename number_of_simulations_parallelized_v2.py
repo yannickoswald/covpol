@@ -44,26 +44,26 @@ if __name__ == '__main__':
     
     ## READ DATA
     ### read country/agent data
-    agent_data = pd.read_csv('agent_data_v2.csv', encoding = 'unicode_escape')
+    with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/agent_data_v2.csv') as f:
+        agent_data = pd.read_csv(f, encoding = 'unicode_escape')
     Num_agents = len(agent_data)
     agent_data["gdp_pc"] = pd.to_numeric(agent_data["gdp_pc"])
     
     ##### Read data for calibration
     #### aggregate diffusion curve data
-    lockdown_data1 = pd.read_csv('lockdown_diffusion_curve_updated_for_calibration.csv', 
-                                 encoding = 'unicode_escape',
-                                 header = None)
+    with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_diffusion_curve_updated_for_calibration.csv') as f:
+        lockdown_data1 = pd.read_csv(f, encoding = 'unicode_escape', header = None)
+    
     #### data per country
-    lockdown_data2 = pd.read_csv('lockdown_tracking.csv', 
-                                 encoding = 'unicode_escape')      
-
+    with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_tracking.csv') as f:
+        lockdown_data2  = pd.read_csv(f, encoding = 'unicode_escape')
 
     start = dt.now()
 
     # Create a multiprocessing Pool
     ## INPUT
     number_of_processors = 8
-    number_of_runs = 4096
+    number_of_runs = 8
     lockdown_data1_list = [lockdown_data1]*number_of_runs
     lockdown_data2_list = [lockdown_data2]*number_of_runs
     inputs_for_starmap = list(zip(lockdown_data1_list, lockdown_data2_list))

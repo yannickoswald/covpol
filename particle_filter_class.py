@@ -41,9 +41,12 @@ import pytest
 
 from model_class2 import CountryModel
 
+
+
 #### data per country
-lockdown_data2 = pd.read_csv('lockdown_tracking.csv', 
-                             encoding = 'unicode_escape') 
+with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_tracking.csv') as f:
+    lockdown_data2  = pd.read_csv(f, encoding = 'unicode_escape')
+
 
 class ParticleFilter():
     

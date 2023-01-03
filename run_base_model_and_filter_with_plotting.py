@@ -59,7 +59,7 @@ agent_data["gdp_pc"] = pd.to_numeric(agent_data["gdp_pc"])
 #### aggregate diffusion curve data
 
 with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_diffusion_curve_updated_for_calibration.csv') as f:
-    lockdown_data1 = pd.read_csv(f, encoding = 'unicode_escape')
+    lockdown_data1 = pd.read_csv(f, encoding = 'unicode_escape', header = None)
 
 #### data per country
 with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_tracking.csv') as f:

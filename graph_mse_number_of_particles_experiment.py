@@ -66,10 +66,8 @@ def draw_brace(ax, xspan, yy, text):
 #%%
 
 
-data0 = pd.read_csv('preliminary data on number of particles experiment aggregate.csv', 
-                             encoding = 'unicode_escape',
-                             header = 0, index_col=0)
-
+with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/preliminary data on number of particles experiment aggregate.csv') as f:
+    data0 = pd.read_csv(f, encoding = 'unicode_escape')
 
 
 ### select 32 particles to 512 particles for boxplot
