@@ -7,6 +7,10 @@ modified and created by: Yannick Oswald
 
 #%% Loading libraries
 
+### IN ORDER TO REPRODUCE FIGURE 4 RUN THIS SCRIPT WITH no_of_iterations = 100
+### IN ORDER TO REPRODUCE FIGURE 5 RUN THIS SCRIPT WITH no_of_iterations = 1000
+
+
 ### import necessary libraries
 import os
 import mesa
@@ -37,19 +41,14 @@ from run_base_model_opt import model_run
 from multiprocessing import Pool
 
 
-
-
 #work laptop path
 os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
-
-
 
     
 #%% READ DATA
 ### read country/agent data
 with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/agent_data_v2.csv') as f:
     agent_data = pd.read_csv(f, encoding = 'unicode_escape')
-    
 
 
 Num_agents = len(agent_data)
@@ -68,7 +67,7 @@ with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/im
 start = dt.now()
 
 
-no_of_iterations = 10
+no_of_iterations = 100
 for j in range(no_of_iterations):
         ### call the model iteration
         ##4th parameter initial conditions can be real, no countries yet or random
@@ -449,7 +448,7 @@ if __name__ == "__main__":
     pf_parameters = {
       "da_window": 5,
       "da_instances": 30/5,
-      "No_of_particles": 10
+      "No_of_particles": no_of_iterations
     }
     
     
@@ -680,27 +679,3 @@ if __name__ == "__main__":
     
     
     
-    
-    #%%
-    """
-    
-    
-    [x.social_thre for x in model.schedule.agents]
-    
-    
-    
-    testdistr = [x.own_thre for x in model.schedule.agents]
-    
-    plt.hist(testdistr, density=True, bins=30)
-    plt.xlabel("initiative threshold")
-    plt.ylabel("number of countries")
-    plt.show
-    
-    
-    testdistr2 = [x.social_thre for x in model.schedule.agents]
-    
-    plt.hist(testdistr2, density=True, bins=30)
-    plt.xlabel("social threshold")
-    plt.ylabel("number of countries")
-
-"""

@@ -163,6 +163,7 @@ cython_debug/
 # data and history
 older_model_versions/
 source_data_some_figures/
+more_text_docs_supp_mat_eg/
 
 #images
 *.png
