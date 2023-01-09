@@ -54,7 +54,6 @@ if __name__ == '__main__':
     
     ##### Read data for calibration
     #### aggregate diffusion curve data
-    
     with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_diffusion_curve_updated_for_calibration.csv') as f:
         lockdown_data1 = pd.read_csv(f, encoding = 'unicode_escape', header = None)
     
@@ -62,8 +61,6 @@ if __name__ == '__main__':
     with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_tracking.csv') as f:
         lockdown_data2  = pd.read_csv(f, encoding = 'unicode_escape')
 
-        
-        
     #%%    
     
     #print(run_experiment(num_power_particles))
@@ -77,7 +74,6 @@ if __name__ == '__main__':
     ### per particle number
     lockdown_data1_list = [lockdown_data1]*len(num_power_particles_list)*iterations_filter
     lockdown_data2_list = [lockdown_data2]*len(num_power_particles_list)*iterations_filter
-    
     
     
     number_of_particles_per_experiment = [2**x for x in num_power_particles_list]
@@ -98,8 +94,6 @@ if __name__ == '__main__':
     for num_power_particles in num_power_particles_list:
         
         # Create a multiprocessing Pool
-        
-   
         ### use itertools.starmap instead of pool.starmap
         ### make sure to debug
    
@@ -136,7 +130,6 @@ if __name__ == '__main__':
         results_micro_all.append(results_micro)
         results_micro_all_pf.append(results_micro_pf)
         print(f"Completed the iterations with  {2**num_power_particles} particles")
-    
     
     
     #C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/

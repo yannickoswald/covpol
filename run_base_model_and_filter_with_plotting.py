@@ -308,6 +308,8 @@ def create_fanchart(arr):
 create_fanchart(array_run_results.T/Num_agents*100)
 plt.savefig('fanchart_1_macro_validity.png', bbox_inches='tight', dpi=300)
 #plt.show()
+
+
 #4.1 report least squares of mean to data and variance per time step 
 ## (both metrics need to minimized)
 mean_model_runs = np.mean(array_run_results, axis = 0)

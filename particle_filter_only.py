@@ -37,12 +37,8 @@ from run_base_model_opt import model_run
 from multiprocessing import Pool
 
 
-
-
 #work laptop path
 os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
-
-
     
 if __name__ == "__main__":
 #%% READ DATA

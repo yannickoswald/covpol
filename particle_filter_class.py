@@ -250,8 +250,24 @@ class ParticleFilter():
                         list_of_lists_weights.append(weights)
                         
                     list_of_lists_particles.append(list_of_particles)   
+        
+                        list_of_particles = list(pool.map(ParticleFilter.step_particle, list_of_particles))
+                            
+                        ## go into the data assimilitation if this time step is actually
+                        ## at the end of a data assimilation window
+                        if (i > 0) and (i % self.da_window == 0):
+                            
+                            list_of_errors = [ParticleFilter.error_particle_obs(k) 
+                                              for k in list_of_particles]
                     
-                    print("Particle filter is at time step ", i)
-    
+                            weights = ParticleFilter.particle_weights(list_of_errors)
+                            list_of_particles = ParticleFilter.resample_particles(list_of_particles,
+                                                                                  weights)
+                            list_of_lists_weights.append(weights)
+                            
+                        list_of_lists_particles.append(list_of_particles)   
+                        
+                        print("Particle filter is at time step ", i)
+        
         self.part_filtered_all = list_of_lists_particles
         self.weights = list_of_lists_weights
