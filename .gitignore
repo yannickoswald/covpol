@@ -167,3 +167,6 @@ more_text_docs_supp_mat_eg/
 
 #images
 *.png
+
+## presentations
+*.pptx
