@@ -170,3 +170,6 @@ more_text_docs_supp_mat_eg/
 
 ## presentations
 *.pptx
+
+#all data produced by the scripts
+*.csv
