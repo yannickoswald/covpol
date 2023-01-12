@@ -12,7 +12,7 @@ To reproduce the full body of work, take the following steps:
    To reproduce Figure 4 exactly, the notebook has to take the parameter no_of_iterations equal to 100.
    To reproduce Figure 5 exactly, the notebeook has to take the parameter n_of_iterations equal to 1000.
    
-2. To reproduce Figure 6 in full several intermediary steps are necessary: 
+2. To reproduce Figure 6 in full several intermediate steps are necessary: 
     
     2.1
     
