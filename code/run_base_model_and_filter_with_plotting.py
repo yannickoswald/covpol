@@ -42,7 +42,7 @@ from multiprocessing import Pool
 
 
 #work laptop path
-os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
+os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/code")
 
     
 #%% READ DATA

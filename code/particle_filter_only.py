@@ -31,14 +31,14 @@ from multiprocessing import Pool
 ##
 import pytest
 ### import model class (which itself imports agent class)
-from model_class2 import CountryModel
+from model_class import CountryModel
 from particle_filter_class_parallelized import ParticleFilter
 from run_base_model_opt import model_run
 from multiprocessing import Pool
 
 
 #work laptop path
-os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
+os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/code")
     
 if __name__ == "__main__":
 #%% READ DATA
