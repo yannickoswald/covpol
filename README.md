@@ -3,7 +3,7 @@
 This repository is for the publication 
 
 Oswald, Malleson, Suchak (2023). An agent-based model of the 2020 international policy 
-diffusion in response to the COVID-19 pandemic with particle filter
+diffusion in response to the COVID-19 pandemic with particle filter. (in preparation)
 
 To reproduce the full body of work, take the following steps:
 
@@ -13,9 +13,13 @@ To reproduce the full body of work, take the following steps:
    To reproduce Figure 5 exactly, the notebeook has to take the parameter n_of_iterations equal to 1000.
    
 2. To reproduce Figure 6 in full several intermediary steps are necessary: 
+    
     2.1
+    
     2.2
+    
     2.3 
+    
     2.4
     
 3. To reproduce Figure 7 run the script "experiment_da_window_size.py".
