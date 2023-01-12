@@ -31,7 +31,7 @@ from multiprocessing import Pool
 ##
 import pytest
 ### import model class (which itself imports agent class)
-from model_class2 import CountryModel
+from model_class import CountryModel
 
 #### data per country
 with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_tracking.csv') as f:

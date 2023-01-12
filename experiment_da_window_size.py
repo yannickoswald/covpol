@@ -34,7 +34,7 @@ from multiprocessing import Pool
 ##
 import pytest
 ### import model class (which itself imports agent class)
-from model_class2 import CountryModel
+from model_class import CountryModel
 from particle_filter_class import ParticleFilter
 from run_base_model_opt import model_run
 from multiprocessing import Pool

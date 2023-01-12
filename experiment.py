@@ -17,8 +17,9 @@ os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/imp
 
 # import random 
 from run_base_model import run_base_model
+#from run_base_model_opt import model_run
 from particle_filter_class import ParticleFilter
-from model_class2 import CountryModel
+from model_class import CountryModel
 
 
 #%% READ DATA

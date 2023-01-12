@@ -9,7 +9,7 @@ Created on Mon Nov 28 10:40:45 2022
 #%%
 import os
 
-from model_class2 import CountryModel
+from model_class import CountryModel
 
 import pandas as pd
 import numpy as np

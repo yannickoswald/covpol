@@ -19,7 +19,7 @@ os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/imp
 
 #%% import agents
 
-from agent_class1 import CountryAgent
+from agent_class import CountryAgent
 #### data per country
 with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_tracking.csv') as f:
     lockdown_data2 = pd.read_csv(f, encoding = 'unicode_escape')

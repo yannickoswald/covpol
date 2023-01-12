@@ -39,7 +39,7 @@ import pytest
 #### IMPORT MODEL #####
 #######################
 
-from model_class2 import CountryModel
+from model_class import CountryModel
 
 
 
