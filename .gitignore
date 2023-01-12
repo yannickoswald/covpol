@@ -164,6 +164,7 @@ cython_debug/
 older_model_versions/
 source_data_some_figures/
 more_text_docs_supp_mat_eg/
+key_literature/
 
 #images
 *.png
