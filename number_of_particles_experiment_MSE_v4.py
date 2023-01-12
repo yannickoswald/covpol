@@ -37,6 +37,8 @@ os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/imp
 import pytest
 ### import model class (which itself imports agent class)
 from model_class2 import CountryModel
+### import NON-parallelized particle filter (because here the experiment itself gets parallelized 
+## and one cannot have parallelization within parallelization)
 from particle_filter_class import ParticleFilter
 # import random 
 from run_base_model import run_base_model

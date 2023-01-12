@@ -32,7 +32,7 @@ from multiprocessing import Pool
 import pytest
 ### import model class (which itself imports agent class)
 from model_class2 import CountryModel
-from particle_filter_class import ParticleFilter
+from particle_filter_class_parallelized import ParticleFilter
 from run_base_model_opt import model_run
 from multiprocessing import Pool
 
@@ -43,19 +43,19 @@ os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/imp
 if __name__ == "__main__":
 #%% READ DATA
     ### read country/agent data
-    agent_data = pd.read_csv('agent_data_v2.csv', encoding = 'unicode_escape')
+    with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/agent_data_v2.csv') as f:
+        agent_data = pd.read_csv(f, encoding = 'unicode_escape')
     Num_agents = len(agent_data)
     agent_data["gdp_pc"] = pd.to_numeric(agent_data["gdp_pc"])
     
     ##### Read data for calibration
     #### aggregate diffusion curve data
-    lockdown_data1 = pd.read_csv('lockdown_diffusion_curve_updated_for_calibration.csv', 
-                                 encoding = 'unicode_escape',
-                                 header = None)
+    with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_diffusion_curve_updated_for_calibration.csv') as f:
+        lockdown_data1 = pd.read_csv(f, encoding = 'unicode_escape', header = None)
+        
     #### data per country
-    lockdown_data2 = pd.read_csv('lockdown_tracking.csv', 
-                                 encoding = 'unicode_escape')      
-
+    with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_tracking.csv') as f:
+        lockdown_data2  = pd.read_csv(f, encoding = 'unicode_escape')
 
     #%% RUN PARTICLE FILTER EXPERIMENTS
     start = dt.now()

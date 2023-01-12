@@ -1,5 +1,12 @@
 # -*- coding: utf-8 -*-
 """
+Created on Thu Jan 12 10:28:42 2023
+
+@author: earyo
+"""
+
+# -*- coding: utf-8 -*-
+"""
 Created on Fri Oct 14 10:12:36 2022
 
 @author: earyo
@@ -222,31 +229,31 @@ class ParticleFilter():
         list_of_lists_weights = []
 
         print(list_of_particles)
-        ### if parallized then use with Pool() as pool:
-        ### i here for time steps in the model, the month of March 2020
-        for i in range(31):          
-                 
+        with Pool() as pool:
+            ### i here for time steps in the model, the month of March 2020
+            for i in range(31):          
+                     
                     ## step particles forward in time
-                    for x in list_of_particles:
-                        ParticleFilter.step_particle(x)
+                    #for x in list_of_particles:
+                     #   ParticleFilter.step_particle(x)
         
-                    #list_of_particles = list(pool.map(ParticleFilter.step_particle, list_of_particles))
-                        
-                    ## go into the data assimilitation if this time step is actually
-                    ## at the end of a data assimilation window
-                    if (i > 0) and (i % self.da_window == 0):
-                        
-                        list_of_errors = [ParticleFilter.error_particle_obs(k) 
-                                          for k in list_of_particles]
-                
-                        weights = ParticleFilter.particle_weights(list_of_errors)
-                        list_of_particles = ParticleFilter.resample_particles(list_of_particles,
-                                                                              weights)
-                        list_of_lists_weights.append(weights)
-                        
-                    list_of_lists_particles.append(list_of_particles)   
+                        list_of_particles = list(pool.map(ParticleFilter.step_particle, list_of_particles))
+                            
+                        ## go into the data assimilitation if this time step is actually
+                        ## at the end of a data assimilation window
+                        if (i > 0) and (i % self.da_window == 0):
+                            
+                            list_of_errors = [ParticleFilter.error_particle_obs(k) 
+                                              for k in list_of_particles]
                     
-                    print("Particle filter is at time step ", i)
+                            weights = ParticleFilter.particle_weights(list_of_errors)
+                            list_of_particles = ParticleFilter.resample_particles(list_of_particles,
+                                                                                  weights)
+                            list_of_lists_weights.append(weights)
+                            
+                        list_of_lists_particles.append(list_of_particles)   
+                        
+                        print("Particle filter is at time step ", i)
     
         self.part_filtered_all = list_of_lists_particles
         self.weights = list_of_lists_weights
