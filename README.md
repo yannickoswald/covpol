@@ -5,6 +5,8 @@ This repository is for the publication
 Oswald, Malleson, Suchak (2023). An agent-based model of the 2020 international policy 
 diffusion in response to the COVID-19 pandemic with particle filter. (in preparation)
 
+This work has been implemented using the Python Anaconda distribution and the agent-based model package MESA in particular.
+
 To reproduce the full body of work, take the following steps:
 
 1. Run the jupyter "notebook run_base_model_and_filter_with_plotting_jupyter.ipynb"
@@ -21,7 +23,7 @@ To reproduce the full body of work, take the following steps:
         2.2.1 "particle_filter_only.py" and collect the data.
         2.2.2 "run_base_model_only_parallelized,py" and collect the data.
     
-    2.3 Alternatively Figure 6 can be reproduced exactly as it is from the script file "graph_mse_number_of_particles_experiment.py".
+    2.3 Alternatively Figure 6 can be reproduced exactly in a time-cheap manner as it is from the script file "graph_mse_number_of_particles_experiment.py".
     
     Best run from anaconda command prompt.
     
