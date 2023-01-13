@@ -14,14 +14,13 @@ To reproduce the full body of work, take the following steps:
    
 2. To reproduce Figure 6 in full several intermediate steps are necessary: 
     
-    2.1 Run the script file "number_of_particles_experiment_MSE" to reproduce the data points where iterations = 20.
+    2.1 Run the script file "number_of_particles_experiment_MSE.py" to reproduce the data points where iterations = 20.
     
-    2.2 To reproduce the datapoints where iterations = 1, run the following
+    2.2 To reproduce the datapoints where iterations = 1, run the following:
     
-         2.2.1
+         2.2.1 "particle_filter_only.py" and collect the data.
          
-         2.2.2
-    
+         2.2.2 "run_base_model_only_parallelized" and collect the data.
     
     Best run from anaconda command prompt.
     
