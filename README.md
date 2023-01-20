@@ -6,6 +6,17 @@ Oswald, Malleson, Suchak (2023). An agent-based model of the 2020 international 
 diffusion in response to the COVID-19 pandemic with particle filter. (in preparation)
 
 This work has been implemented using the Python Anaconda distribution and the agent-based model package MESA in particular.
+It is provided with a `.yml` file specifying a conda environment which contains the required packages.
+In order to set up the environment, run the following command from the
+terminal/conda prompt:
+```
+conda env create -f env.yml
+```
+This will create a new conda environment titled `cov-pol`.
+The environment can then be activated using the following command:
+```
+conda activate cov-pol
+```
 
 To reproduce the full body of work, take the following steps:
 
