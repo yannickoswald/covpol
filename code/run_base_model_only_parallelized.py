@@ -46,45 +46,39 @@ if __name__ == '__main__':
     #%% READ DATA
     ### read country/agent data
     with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/agent_data_v2.csv') as f:
-        agent_data = pd.read_csv(f, encoding = 'unicode_escape')
+        agent_data = pd.read_csv(f, encoding='unicode_escape')
 
     Num_agents = len(agent_data)
     agent_data["gdp_pc"] = pd.to_numeric(agent_data["gdp_pc"])
-    
+
     ##### Read data for calibration
     #### aggregate diffusion curve data
     with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_diffusion_curve_updated_for_calibration.csv') as f:
-        lockdown_data1 = pd.read_csv(f, encoding = 'unicode_escape', header = None)
-    
+        lockdown_data1 = pd.read_csv(f, encoding='unicode_escape', header=None)
+
     #### data per country
     with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_tracking.csv') as f:
-        lockdown_data2  = pd.read_csv(f, encoding = 'unicode_escape')     
-    
+        lockdown_data2 = pd.read_csv(f, encoding='unicode_escape')
+
     start = dt.now()
 
-
-     # Create a multiprocessing Pool
+    # Create a multiprocessing Pool
     number_of_processors = 8
     number_of_runs = 100
     lockdown_data1_list = [lockdown_data1]*number_of_runs
     lockdown_data2_list = [lockdown_data2]*number_of_runs
 
-     
     inputs_for_starmap = list(zip(lockdown_data1_list, lockdown_data2_list))
     #print(inputs_for_starmap)
-    #print(np.array(list(inputs_for_starmap)).shape)    
-    with Pool(processes=number_of_processors) as pool:     
-         data_results = list(pool.starmap(model_run.run_base_model_opt, inputs_for_starmap))
+    #print(np.array(list(inputs_for_starmap)).shape)
+    with Pool(processes=number_of_processors) as pool:
+        data_results = list(pool.starmap(
+            model_run.run_base_model_opt, inputs_for_starmap))
     # assert len(data_results) == len(num_power_particles_list), f"The length of the results isn't what we expected {len(num_power_particles_list)}"
     #print("this is data results", data_results)
 
     running_secs = (dt.now() - start).seconds
     print("running time was " + str(running_secs) + " sec")
-             
-    square_error_list = [x[1] for x in data_results ]
+
+    square_error_list = [x[1] for x in data_results]
     mse_as_list = [sum(x)/len(x) for x in zip(*square_error_list)]
-    
-
-    
-
-
