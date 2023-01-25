@@ -5,13 +5,6 @@ Created on Thu Jan 12 10:28:42 2023
 @author: earyo
 """
 
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Oct 14 10:12:36 2022
-
-@author: earyo
-"""
-
 ### import necessary libraries
 import os
 import mesa
@@ -51,7 +44,7 @@ from model_class import CountryModel
 
 
 #### data per country
-with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_tracking.csv') as f:
+with open('../data/lockdown_tracking.csv') as f:
     lockdown_data2  = pd.read_csv(f, encoding = 'unicode_escape')
 
 

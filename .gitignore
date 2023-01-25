@@ -165,6 +165,8 @@ older_model_versions/
 source_data_some_figures/
 more_text_docs_supp_mat_eg/
 key_literature/
+for_submission_JASSS/
+maps_for_GIS_conference/
 
 #images
 *.png
@@ -174,3 +176,6 @@ key_literature/
 
 #all data produced by the scripts
 *.csv
+
+# pycharm
+.idea/

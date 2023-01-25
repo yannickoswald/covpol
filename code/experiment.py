@@ -9,11 +9,11 @@ Created on Mon Nov 21 14:19:59 2022
 ### import necessary libraries
 
 import pandas as pd
-import os
+#import os
 import numpy as np
 
 #work laptop path
-os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
+#os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
 
 # import random 
 from run_base_model import run_base_model

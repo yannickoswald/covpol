@@ -15,14 +15,15 @@ import mesa.space
 import pandas as pd
 import sys
 #work laptop path
-os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
+
+#os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
 
 #%% import agents
 
 from agent_class import CountryAgent
+#os.chdir("..")
 #### data per country
-with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_tracking.csv') as f:
-    lockdown_data2 = pd.read_csv(f, encoding = 'unicode_escape')
+
 
 #%%
 
@@ -35,8 +36,12 @@ class CountryModel(mesa.Model):
         
         #### read data for data-driven agent instantiation 
         ### read country/agent data
-        with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/agent_data_v2.csv') as f:
+        with open('../data/agent_data_v2.csv') as f:
             agent_data = pd.read_csv(f, encoding = 'unicode_escape')
+            
+        #### data per country    
+        with open('../data/lockdown_tracking.csv') as f:
+            lockdown_data2 = pd.read_csv(f, encoding = 'unicode_escape')
             
         agent_data["gdp_pc"] = pd.to_numeric(agent_data["gdp_pc"])
         

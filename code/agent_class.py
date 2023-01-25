@@ -7,87 +7,50 @@ Created on Mon Oct  3 10:35:04 2022
 
 ### import necessary libraries
 import os
-import mesa
-import mesa.time
-import mesa.space
-import matplotlib.pyplot as plt
-import matplotlib as mpl
+
 import numpy as np
-import math as math
 import mesa.batchrunner
 import pandas as pd
-import copy as copy
 from math import radians, cos, sin, asin, sqrt
 import random
-from datetime import datetime as dt
-import sys
-# import random 
-from random import sample
-### colormaps import
-import matplotlib.cm
-##
-from multiprocessing import Pool
-##
-import pytest
 
 #work laptop path
-os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
+#os.chdir(".")
 
 
-#%% READ DATA, DEFINE A FEW CLASS INDEPENDENT FUNCTIONS AND GLOBAL VARIABLES
+#%% READ DATA, DEFINE A FEW CLASS INDEPENDENT GLOBAL VARIABLES
 ### read country/agent data
 ### read country/agent data
-with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/agent_data_v2.csv') as f:
-    agent_data = pd.read_csv(f, encoding = 'unicode_escape')
+#with open('../data/agent_data_v2.csv') as f:
+ #   agent_data = pd.read_csv(f, encoding = 'unicode_escape')
     
-Num_agents = len(agent_data)
-agent_data["gdp_pc"] = pd.to_numeric(agent_data["gdp_pc"])
+#Num_agents = len(agent_data)
+#agent_data["gdp_pc"] = pd.to_numeric(agent_data["gdp_pc"])
 
 ##### Read data for calibration
 #### aggregate diffusion curve data
 
-with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_diffusion_curve_updated_for_calibration.csv') as f:
-    lockdown_data1 = pd.read_csv(f, encoding = 'unicode_escape')
+#with open('../data/lockdown_diffusion_curve_updated_for_calibration.csv') as f:
+   # lockdown_data1 = pd.read_csv(f, encoding = 'unicode_escape')
     
     
 #### data per country
-with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_tracking.csv') as f:
-    lockdown_data2  = pd.read_csv(f, encoding = 'unicode_escape')
+#with open('../data/lockdown_tracking.csv') as f:
+   # lockdown_data2  = pd.read_csv(f, encoding = 'unicode_escape')
 
-### this a function from here
-### https://www.geeksforgeeks.org/program-distance-two-points-earth/
-### for calculating the distance between points on earth
-
-def geo_distance(lat1, lat2, lon1, lon2):
-        # The math module contains a function named
-        # radians which converts from degrees to radians.
-        lon1 = radians(lon1)
-        lon2 = radians(lon2)
-        lat1 = radians(lat1)
-        lat2 = radians(lat2)
-        # Haversine formula
-        dlon = lon2 - lon1
-        dlat = lat2 - lat1
-        a = sin(dlat / 2)**2 + cos(lat1) * cos(lat2) * sin(dlon / 2)**2
-        c = 2 * asin(sqrt(a))
-        # Radius of earth in kilometers. Use 3956 for miles
-        r = 6371
-        # calculate the result
-        return c * r
-    
     
 ### compute ranges of agent properties (later important for normalization
 ## of distance measure in the compute distance function by the agent)
-max_income = max(agent_data["gdp_pc"]) ##
-min_income = min(agent_data["gdp_pc"])
-max_politicalregime = max(agent_data["democracy_index"])
-min_politicalregime = min(agent_data["democracy_index"])
-range_income = max_income - min_income
-range_politicalregime = max_politicalregime - min_politicalregime
+#max_income = max(agent_data["gdp_pc"]) ##
+#min_income = min(agent_data["gdp_pc"])
+#max_politicalregime = max(agent_data["democracy_index"])
+#min_politicalregime = min(agent_data["democracy_index"])
+#range_income = max_income - min_income
+#range_politicalregime = max_politicalregime - min_politicalregime
 
 ## max distance between two points on earth =
 ## earth circumference divided by two
-max_distance_on_earth = 40075.017/2
+#max_distance_on_earth = 40075.017/2
 
 
 
@@ -105,7 +68,9 @@ class CountryAgent(mesa.Agent):
     longitude_begin = 0
     social_thre_begin = 0
     own_thre_begin = 0
-
+    
+  
+    
     ### all agents need to have access to information about all other agents
     ### hence this list of agent instances
     ### https://stackoverflow.com/questions/328851/printing-all-instances-of-a-class
@@ -174,8 +139,42 @@ class CountryAgent(mesa.Agent):
        if self.social_thre <= 0.001:
               self.social_thre  = 0.01
               
+       #### define a few constants defining the range
+       #### of variables across agent and important 
+       #### for the computation of the distance metric
+       self.range_income = 117075.04
+       self.range_politicalregime = 8.739999999999998
+        ## max distance between two points on earth =
+        ## earth circumference divided by two
+       self.max_distance_on_earth = 40075.017/2
+
+              
    
     
+   
+    ### this a function from here
+    ### https://www.geeksforgeeks.org/program-distance-two-points-earth/
+    ### for calculating the distance between points on earth
+    
+    def geo_distance(self, lat1, lat2, lon1, lon2):
+            # The math module contains a function named
+            # radians which converts from degrees to radians.
+            lon1 = radians(lon1)
+            lon2 = radians(lon2)
+            lat1 = radians(lat1)
+            lat2 = radians(lat2)
+            # Haversine formula
+            dlon = lon2 - lon1
+            dlat = lat2 - lat1
+            a = sin(dlat / 2)**2 + cos(lat1) * cos(lat2) * sin(dlon / 2)**2
+            c = 2 * asin(sqrt(a))
+            # Radius of earth in kilometers. Use 3956 for miles
+            r = 6371
+            # calculate the result
+            return c * r
+        
+    
+   
     def compute_distance(self):
         
        '''
@@ -208,10 +207,10 @@ class CountryAgent(mesa.Agent):
            y3_2 = self.longitude
 
            total_differences_array = np.sort(np.array(
-               [  1/3 * abs(y1 - x.income) / range_income 
-                + 1/3 * abs(y2 - x.politicalregime) / range_politicalregime
-                + 1/3 * (geo_distance(y3_1, x.latitude,
-                                      y3_2, x.longitude) / max_distance_on_earth)
+               [  1/3 * abs(y1 - x.income) / self.range_income 
+                + 1/3 * abs(y2 - x.politicalregime) / self.range_politicalregime
+                + 1/3 * (self.geo_distance(y3_1, x.latitude,
+                                      y3_2, x.longitude) / self.max_distance_on_earth)
                  for x in self.model.schedule.agents if x.state == 1]
                   )
                )
