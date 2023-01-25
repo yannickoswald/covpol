@@ -176,3 +176,6 @@ maps_for_GIS_conference/
 
 #all data produced by the scripts
 *.csv
+
+# pycharm
+.idea/
