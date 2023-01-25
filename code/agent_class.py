@@ -7,28 +7,12 @@ Created on Mon Oct  3 10:35:04 2022
 
 ### import necessary libraries
 import os
-import mesa
-import mesa.time
-import mesa.space
-import matplotlib.pyplot as plt
-import matplotlib as mpl
+
 import numpy as np
-import math as math
 import mesa.batchrunner
 import pandas as pd
-import copy as copy
 from math import radians, cos, sin, asin, sqrt
 import random
-from datetime import datetime as dt
-import sys
-# import random 
-from random import sample
-### colormaps import
-import matplotlib.cm
-##
-from multiprocessing import Pool
-##
-import pytest
 
 #work laptop path
 #os.chdir(".")
