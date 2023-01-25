@@ -34,7 +34,7 @@ import pytest
 from model_class import CountryModel
 
 #### data per country
-with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_tracking.csv') as f:
+with open('../data/lockdown_tracking.csv') as f:
     lockdown_data2  = pd.read_csv(f, encoding = 'unicode_escape')
 
 

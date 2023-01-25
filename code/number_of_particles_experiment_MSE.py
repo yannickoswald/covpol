@@ -32,7 +32,7 @@ from itertools import starmap
 import csv
 
 #work laptop path
-os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
+#os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
 ##
 import pytest
 ### import model class (which itself imports agent class)
@@ -48,7 +48,7 @@ from experiment import Experiment
 if __name__ == '__main__':
     #READ DATA
     ### read country/agent data
-    with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/agent_data_v2.csv') as f:
+    with open('../data/agent_data_v2.csv') as f:
         agent_data = pd.read_csv(f, encoding='unicode_escape')
 
     Num_agents = len(agent_data)
@@ -56,11 +56,11 @@ if __name__ == '__main__':
 
     ##### Read data for calibration
     #### aggregate diffusion curve data
-    with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_diffusion_curve_updated_for_calibration.csv') as f:
+    with open('../data/lockdown_diffusion_curve_updated_for_calibration.csv') as f:
         lockdown_data1 = pd.read_csv(f, encoding='unicode_escape', header=None)
 
     #### data per country
-    with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_tracking.csv') as f:
+    with open('../data/lockdown_tracking.csv') as f:
         lockdown_data2 = pd.read_csv(f, encoding='unicode_escape')
 
     #%%

@@ -11,7 +11,7 @@ Created on Wed Nov 30 14:28:32 2022
 ### RUN THIS SCRIPT TO REPRODUCE FIGURE 7
 
 ### import necessary libraries
-import os
+#import os
 import mesa
 import mesa.time
 import mesa.space
@@ -41,12 +41,12 @@ from multiprocessing import Pool
 from sklearn.linear_model import LinearRegression
 
 #work laptop path
-os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
+#os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
 
 
 #%% READ DATA
 ### read country/agent data
-with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/agent_data_v2.csv') as f:
+with open('./data/agent_data_v2.csv') as f:
     agent_data = pd.read_csv(f, encoding='unicode_escape')
 Num_agents = len(agent_data)
 agent_data["gdp_pc"] = pd.to_numeric(agent_data["gdp_pc"])
@@ -54,11 +54,11 @@ agent_data["gdp_pc"] = pd.to_numeric(agent_data["gdp_pc"])
 ##### Read data for calibration
 #### aggregate diffusion curve data
 
-with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_diffusion_curve_updated_for_calibration.csv') as f:
+with open('./data/lockdown_diffusion_curve_updated_for_calibration.csv') as f:
     lockdown_data1 = pd.read_csv(f, encoding='unicode_escape', header=None)
 
 #### data per country
-with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/lockdown_tracking.csv') as f:
+with open('./data/lockdown_tracking.csv') as f:
     lockdown_data2 = pd.read_csv(f, encoding='unicode_escape')
 
 

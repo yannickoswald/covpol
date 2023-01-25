@@ -10,6 +10,7 @@ Created on Mon Oct 24 14:40:49 2022
 
 ### import necessary libraries
 import os
+os.chdir(".")
 import mesa
 import mesa.time
 import mesa.space
@@ -32,9 +33,6 @@ import multiprocessing as mp
 from multiprocessing import Pool
 import csv
 
-
-#work laptop path
-os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
 
 #%%
 # https://stackoverflow.com/questions/18386210/annotating-ranges-of-data-in-matplotlib
@@ -66,8 +64,8 @@ def draw_brace(ax, xspan, yy, text):
 
 #%%
 
-
-with open('C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model/data/preliminary data on number of particles experiment aggregate.csv') as f:
+os.chdir("..")
+with open('./data/preliminary data on number of particles experiment aggregate.csv') as f:
     data0 = pd.read_csv(f, encoding='unicode_escape')
 
 
