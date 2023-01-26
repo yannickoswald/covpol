@@ -10,12 +10,12 @@ modified and created by: Yannick Oswald
 
 ### import necessary libraries
 import copy as copy
-from datetime import datetime as dt
 import math as math
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 import numpy as np
 import pandas as pd
+from tqdm import tqdm
 
 from model_class import CountryModel
 from particle_filter_class_parallelized import ParticleFilter
@@ -39,10 +39,8 @@ with open('../data/lockdown_diffusion_curve_updated_for_calibration.csv') as f:
 with open('../data/lockdown_tracking.csv') as f:
     lockdown_data2  = pd.read_csv(f, encoding = 'unicode_escape')
 
-start = dt.now()
-
 no_of_iterations = 100
-for j in range(no_of_iterations):
+for j in tqdm(range(no_of_iterations)):
         ### call the model iteration
         ##4th parameter initial conditions can be real, no countries yet or random
         model = CountryModel(0.01, 0.13, 18, 'real', 'no')
@@ -68,12 +66,7 @@ for j in range(no_of_iterations):
         else:
             df_results = pd.concat([df_results, df4], join="inner", ignore_index=True)
         
-        print("model iteration is " + str(j))
-        
         #CountryAgent.reset(CountryAgent)
-
-running_secs = (dt.now() - start).seconds
-print("running time was " + str(running_secs) + " sec")
 
 #print(model.schedule.agents)
 
