@@ -10,7 +10,6 @@ modified and created by: Yannick Oswald
 ### IN ORDER TO REPRODUCE FIGURE 4 RUN THIS SCRIPT WITH no_of_iterations = 100
 ### IN ORDER TO REPRODUCE FIGURE 5 RUN THIS SCRIPT WITH no_of_iterations = 1000
 
-
 ### import necessary libraries
 import os
 
@@ -44,14 +43,11 @@ from particle_filter_class_parallelized import ParticleFilter
 from run_base_model_opt import model_run
 from multiprocessing import Pool
 
-
-    
 #%% READ DATA
 ### read country/agent data
 #os.chdir("..")
 with open('../data/agent_data_v2.csv') as f:
     agent_data = pd.read_csv(f, encoding = 'unicode_escape')
-
 
 Num_agents = len(agent_data)
 agent_data["gdp_pc"] = pd.to_numeric(agent_data["gdp_pc"])
@@ -68,21 +64,17 @@ with open('../data/lockdown_tracking.csv') as f:
 
 start = dt.now()
 
-
 no_of_iterations = 100
 for j in range(no_of_iterations):
         ### call the model iteration
         ##4th parameter initial conditions can be real, no countries yet or random
         model = CountryModel(0.01, 0.13, 18, 'real', 'no')
         for i in range(31):
-                        
-                        
-                        model.step()
-                        
-                        df1 = model.datacollector.get_agent_vars_dataframe()
-                        df2 = model.datacollector.get_model_vars_dataframe()
-                                
-       
+            model.step()
+            
+            df1 = model.datacollector.get_agent_vars_dataframe()
+            df2 = model.datacollector.get_model_vars_dataframe()
+
         ### here insert code for merging dataframes
         df3 = (df1.reset_index(level=0)).reset_index(level = 0)
         df4 = pd.DataFrame(np.repeat(df2.values, 200, axis=0))
@@ -103,15 +95,12 @@ for j in range(no_of_iterations):
         
         #CountryAgent.reset(CountryAgent)
 
-
 running_secs = (dt.now() - start).seconds
 print("running time was " + str(running_secs) + " sec")
-
 
 #print(model.schedule.agents)
 
 #%% PLOTTING
-
 
 ### Initial conditions 
 #### plot #0.0 distributions of variables (income, democracy index, latitude and longitude)
@@ -146,19 +135,15 @@ if no_of_iterations <= 200:
     ax1.text(21, 5, "Initial conditions " + str(model.initial_conditions))
     #plt.show()
 
-
-
 ### plot #1.1 distribution of runs at every time step
 ### is the distribution of the model estimate normal or not?
 ### df_results_filtered
 df_results_filtered = df_results[(df_results.AgentID == 9)]
 
-
 array_run_results = np.zeros((no_of_iterations,31))
 for i in range(no_of_iterations):
     array_run_results[i,:] = np.sum(np.split(np.array(df_results[(df_results.iteration == i)]["Lockdown"]),31),axis=1)
     print("array run results making is at ", i)
-
 
 ###plotting takes too long if too many runs and also does not make sense if too few
 if no_of_iterations >= 10 and no_of_iterations <= 50:
@@ -191,11 +176,11 @@ if no_of_iterations <= 200:
                average_min_diff_array[j,0] = np.mean( df_iter[(df_iter.Step == j)]["minimum_difference"])
                average_min_and_max_diff[j,0] = min(df_iter[(df_iter.Step == j)]["minimum_difference"])
                average_min_and_max_diff[j,1] = max(df_iter[(df_iter.Step == j)]["minimum_difference"])
-                             
+
         ax2.plot((df_results[(df_results.iteration == i) & (df_results.AgentID == 0)]["Step"] + 1)[1:30], average_min_diff_array[1:30])
         #plt.plot((df_results[(df_results.iteration == i) & (df_results.AgentID == 0)]["Step"] + 1)[1:30], average_min_and_max_diff[1:30,0])
         #plt.plot((df_results[(df_results.iteration == i) & (df_results.AgentID == 0)]["Step"] + 1)[1:30], average_min_and_max_diff[1:30,1])
-           
+
     ax2.set_xlabel("Day of March 2020")
     ax2.set_ylabel("Average min distance")
     #plt.show()
@@ -205,8 +190,6 @@ if no_of_iterations <= 200:
 ### (thus the difference is measured in number of days)
 ### if number is positive it is too late
 ### if negative, it is too early predicted
-
-
 
 micro_validity_BIG = np.zeros((no_of_iterations,164))
 if no_of_iterations <= 50:
@@ -228,10 +211,7 @@ if no_of_iterations <= 50:
     plt.savefig('Micro_validity_1.png', bbox_inches='tight', dpi=300)
     #plt.show()
 
-
-
 ### plot #3 NEW BETTER VERSION
-
 
 df_differences_per_country = pd.DataFrame(data=micro_validity_BIG.T,
                  index=agent_data.code , 
@@ -276,11 +256,9 @@ if no_of_iterations < 50:
     
     plt.savefig('Micro_validity_2.png', bbox_inches='tight', dpi=300)
 
-
 ### plot #4 fan chart of model runs 
 ##https://stackoverflow.com/questions/28807169/making-a-python-fan-chart-fan-plot
 # THIS --> https://stackoverflow.com/questions/66146705/creating-a-fanchart-from-a-series-of-monte-carlo-projections-in-python
-
 
 def create_fanchart(arr):
     x = np.arange(arr.shape[0]) + 1
@@ -311,7 +289,6 @@ create_fanchart(array_run_results.T/Num_agents*100)
 plt.savefig('fanchart_1_macro_validity.png', bbox_inches='tight', dpi=300)
 #plt.show()
 
-
 #4.1 report least squares of mean to data and variance per time step 
 ## (both metrics need to minimized)
 mean_model_runs = np.mean(array_run_results, axis = 0)
@@ -327,19 +304,15 @@ std_model_run_percentage = np.std(array_run_results/164, axis = 0)
 ### == pd.Series.reset_index(lockdown_data2[(lockdown_data2.model_step == j)]["Code"], drop=True)
 
 micro_validity_metric_array = np.zeros((31,no_of_iterations))
-   
+
 for i in range(no_of_iterations):
     
-  alpha = pd.Series.reset_index(df_results[(df_results.iteration == i) ]["Lockdown"], drop = True) 
-  beta =  pd.Series.reset_index(lockdown_data2.sort_values(['model_step', 'Entity'])["lockdown"],drop = True)          
+  alpha = pd.Series.reset_index(df_results[(df_results.iteration == i) ]["Lockdown"], drop = True)
+  beta =  pd.Series.reset_index(lockdown_data2.sort_values(['model_step', 'Entity'])["lockdown"],drop = True)
   micro_validity_metric_array[:,i] = np.mean(np.array_split(np.array(alpha == beta),31),axis = 1)
-
-
-
 
 ##### this is the real mean_squared_error_macro_level
 #mean_squared_error_macro_level = np.mean(np.square(array_run_results/164 - lockdown_data1[0].to_numpy()), axis = 0)
-
 
 #correlation_model_mean_data = np.corrcoef(mean_model_runs,lockdown_data1[0].to_numpy())
 #squared_error_macro_level = ((mean_model_runs/164 - lockdown_data1[0].to_numpy())**2)*100
@@ -349,12 +322,8 @@ for i in range(no_of_iterations):
 #plt.title("Predicting the accuracy of the model macro level from micro pattern")
 #mean_over_time_error_macro_level = np.mean(squared_error_macro_level)
 
-
-
 mean_at_t_15 = mean_model_runs[15]/164
 datapoints_at_t_15 = array_run_results[:,15]/164
-
-
 
 def create_fanchart_2(arr):
     x = np.arange(arr.shape[0])+1
@@ -376,7 +345,6 @@ def create_fanchart_2(arr):
     ax.margins(x=0)
     return fig, ax
 
-
 create_fanchart_2(micro_validity_metric_array*100)
 plt.savefig('fanchart_2_micro_validity.png', bbox_inches='tight', dpi=300)
 #plt.show()
@@ -386,7 +354,6 @@ plt.savefig('fanchart_2_micro_validity.png', bbox_inches='tight', dpi=300)
 ### joint figure fan charts #########################################
 ##################################################################################
 #########################################
-
 
 fig1, (ax1,ax2) = plt.subplots(1,2, figsize = (10,4))
 
@@ -419,7 +386,6 @@ ax1.margins(x=0)
 ax1.text(0, 110, 'a', fontsize=12)
 ax1.text(23, 30, f'N = {no_of_iterations}', fontsize=12)
 
-
 arr2 = micro_validity_metric_array*100
 x = np.arange(arr.shape[0])+1
     # for the median use `np.median` and change the legend below
@@ -447,14 +413,11 @@ plt.savefig('fig4.png', bbox_inches='tight', dpi=300)
 
 if __name__ == "__main__":
 #%% RUN PARTICLE FILTER EXPERIMENTS
-     
-    
     pf_parameters = {
       "da_window": 5,
       "da_instances": 30/5,
       "No_of_particles": no_of_iterations
     }
-    
     
     model_parameters = {
       "base_alert": 0.01,
@@ -466,7 +429,6 @@ if __name__ == "__main__":
     
     current_PF = ParticleFilter(CountryModel, model_parameters, pf_parameters)  
     current_PF.run_particle_filter()
-    
     
     #%% PLOTTING PARTICLE FILTER RESULTS 
     
@@ -495,7 +457,6 @@ if __name__ == "__main__":
             micro_state_data = pd.Series.reset_index(lockdown_data2[(lockdown_data2.model_step == i)]["lockdown"],drop = True) 
             micro_validity_metric_array_pf[i,j] = np.mean(micro_state == micro_state_data)
             print(i,j)
-            
     
     def create_fanchart_PF(arr):
         x = np.arange(arr.shape[0]) + 1
@@ -512,7 +473,7 @@ if __name__ == "__main__":
             alpha = (55 - offset) / 100
             ax.fill_between(x, low, high, color='tab:blue', alpha=alpha)
         
-        ax.plot(df_results[(df_results.iteration == 0) & (df_results.AgentID == 0)]["Step"] +1, 
+        ax.plot(df_results[(df_results.iteration == 0) & (df_results.AgentID == 0)]["Step"] +1,
                  lockdown_data1[0]*100,
                  linewidth=3 ,label = "data", linestyle= "--", color = "tab:red")
         
@@ -535,18 +496,16 @@ if __name__ == "__main__":
     
     mse_pf =  np.mean(square_diffs_pf, axis = 1)
     
-    
     results_pf_percent = results_pf/164
     results_percent = array_run_results.T/164
     square_diffs_pf = np.zeros((31,No_of_particles))
     square_diffs = np.zeros((31,No_of_particles))
     for i in range(No_of_particles):
         square_diffs_pf[:,i] = (results_pf_percent[:,i] - lockdown_data1.iloc[:,0].to_numpy())**2
-        square_diffs[:,i] = (results_percent[:,i] - lockdown_data1.iloc[:,0].to_numpy())**2 
+        square_diffs[:,i] = (results_percent[:,i] - lockdown_data1.iloc[:,0].to_numpy())**2
     
     mse_pf =  np.mean(square_diffs_pf, axis = 1)
     mse =  np.mean(square_diffs, axis = 1)
-    
     
     plt.plot(np.linspace(1,31,31), mse)
     plt.plot(np.linspace(1,31,31), mse_pf)
@@ -555,12 +514,10 @@ if __name__ == "__main__":
     plt.savefig('MSE_over_time.png', bbox_inches='tight', dpi=300)
     plt.show()
     
-    
     mse_list = [sum(mse), sum(mse_pf)]
     df_mse = pd.DataFrame(mse_list)
     
     df_mse.to_csv("df_mse.csv", sep=',')
-    
     
     #%%
     
@@ -584,24 +541,17 @@ if __name__ == "__main__":
         ax.margins(x=0)
         return fig, ax
     
-    
     create_fanchart_2_PF(micro_validity_metric_array_pf*100)
     plt.savefig('fanchart_2_micro_validity_pf.png', bbox_inches='tight', dpi=300)
     plt.show()
     
-    
-    
-    
     #%%
-    
-    
     
     #########################################
     ##################################################################################
     ### Joint Figure 5 fan charts    ########################################
     ##################################################################################
     #########################################
-    
     
     fig2, (ax1,ax2) = plt.subplots(1,2, figsize = (10,4))
     
@@ -620,14 +570,12 @@ if __name__ == "__main__":
        alpha = (55 - offset) / 100
        ax1.fill_between(x, low, high, color='tab:blue', alpha=alpha)
     
-        
-    ax1.plot(df_results[(df_results.iteration == 0) & (df_results.AgentID == 0)]["Step"] +1, 
+    ax1.plot(df_results[(df_results.iteration == 0) & (df_results.AgentID == 0)]["Step"] +1,
                  lockdown_data1[0]*100,
                  linewidth=3 ,label = "data", linestyle= "--", color = "tab:red")
     ax1.plot(x, CI_original_lines[4, :], c = 'grey', alpha = 0.5, linestyle = 'dotted')
     ax1.plot(x, CI_original_lines[5, :], c = 'grey', alpha = 0.5, linestyle = 'dotted')
-          
-       
+
     ax1.set_xlabel("Day of March")
     ax1.set_ylabel("% of countries in lockdown")
     ax1.legend(['Mean'] + ['Ensemble only mean'] + [f'Pct{int(2*o)}' for o in offsets] + ['data'] + ['Pct95e'], frameon = False, loc = 'upper left')
@@ -635,10 +583,8 @@ if __name__ == "__main__":
     ax1.text(0, 110, 'a', fontsize=12)
     ax1.text(23, 30, f'N = {no_of_iterations}', fontsize=12)
     
-    
     #for idx, y in enumerate(CI_original_lines):
      #   ax1.plot(x, CI_original_lines[idx, :], c = 'grey', alpha = 0.5)
-        
     
     ax2.plot(np.linspace(1,31,31), mse, label = "MSE base")
     ax2.plot(np.linspace(1,31,31), mse_pf, label = "MSE PF", linestyle = 'dashed')
@@ -650,19 +596,11 @@ if __name__ == "__main__":
     ax2.margins(0)
     ax2.set_ylim(0 ,0.06)
     
-    
     plt.savefig('fig5.png', bbox_inches='tight', dpi=300)
-    
-    
     
     #%% a few more data visuals for exploration of the model and sup mat.
     
-    
-    
-    
-    
     ##### microvalidity pf vs. no pf as a chart of the mean lines
-    
     fig3, ax1 = plt.subplots(figsize = (5.5,5))
     arr1 = micro_validity_metric_array*100
     arr2 = micro_validity_metric_array_pf*100
@@ -677,9 +615,3 @@ if __name__ == "__main__":
     ax1.set_xlabel("Day of March")
     ax1.set_ylabel("% in correct state")
     ax1.legend()
-    
-    
-    
-    
-    
-    
