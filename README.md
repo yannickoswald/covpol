@@ -1,4 +1,4 @@
-# Covid_policy_response_abm
+# COVPOL: An agent-based model of the international covid policy response
 
 This repository is for the publication 
 
