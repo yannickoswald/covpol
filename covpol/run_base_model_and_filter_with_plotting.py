@@ -5,43 +5,20 @@ modified: 08/09/2022
 modified and created by: Yannick Oswald
 """
 
-#%% Loading libraries
-
 ### IN ORDER TO REPRODUCE FIGURE 4 RUN THIS SCRIPT WITH no_of_iterations = 100
 ### IN ORDER TO REPRODUCE FIGURE 5 RUN THIS SCRIPT WITH no_of_iterations = 1000
 
 ### import necessary libraries
-import os
-
-#work laptop path
-os.chdir(".")
-
-import mesa
-import mesa.time
-import mesa.space
+import copy as copy
+from datetime import datetime as dt
+import math as math
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 import numpy as np
-import math as math
 import pandas as pd
-import copy as copy
-from math import radians, cos, sin, asin, sqrt
-import random
-from datetime import datetime as dt
-import sys
-# import random 
-from random import sample
-### colormaps import
-import matplotlib.cm
-##
-from multiprocessing import Pool
-##
-import pytest
-### import model class (which itself imports agent class)
+
 from model_class import CountryModel
 from particle_filter_class_parallelized import ParticleFilter
-from run_base_model_opt import model_run
-from multiprocessing import Pool
 
 #%% READ DATA
 ### read country/agent data
