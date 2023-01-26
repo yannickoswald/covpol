@@ -1,4 +1,4 @@
-# COVPOL: An agent-based model of the international covid policy response
+# COVPOL: An agent-based model of the international COVID-19 policy response
 
 This repository is for the publication 
 
