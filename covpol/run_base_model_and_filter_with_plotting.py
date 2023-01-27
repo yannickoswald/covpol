@@ -111,9 +111,9 @@ if no_of_iterations <= 200:
 df_results_filtered = df_results[(df_results.AgentID == 9)]
 
 array_run_results = np.zeros((no_of_iterations,31))
-for i in range(no_of_iterations):
+for i in tqdm(range(no_of_iterations)):
     array_run_results[i,:] = np.sum(np.split(np.array(df_results[(df_results.iteration == i)]["Lockdown"]),31),axis=1)
-    print("array run results making is at ", i)
+    # print("array run results making is at ", i)
 
 ###plotting takes too long if too many runs and also does not make sense if too few
 if no_of_iterations >= 10 and no_of_iterations <= 50:
@@ -164,7 +164,7 @@ if no_of_iterations <= 200:
 micro_validity_BIG = np.zeros((no_of_iterations,164))
 if no_of_iterations <= 50:
     fig3, ax3 = plt.subplots(figsize=(12, 6))
-    for i in range(Num_agents):  
+    for i in tqdm(range(Num_agents)):
             model_lockdown_data = df_results[(df_results.code == agent_data["code"][i]) & (df_results.Lockdown == 1)]
             real_world_lockdown_date = lockdown_data2[(lockdown_data2.Code ==  agent_data["code"][i]) & (lockdown_data2.lockdown == 1)]
             for p in range(no_of_iterations):
@@ -173,7 +173,7 @@ if no_of_iterations <= 50:
                     difference = model_lockdown_data2.iloc[0] - (int(real_world_lockdown_date.iloc[0]["Day"][0:2])-1)
                     micro_validity_BIG[p,i] = difference 
                     ax3.scatter(i,difference, color = "tab:blue", alpha = 0.2)
-            print("iteration of micro-level-plot is " + str(i))
+            # print("iteration of micro-level-plot is " + str(i))
     ax3.set_ylabel("diff. in days")   
     ax3.set_xlabel("country index")  
     ax3.plot([0,164],[0,0], color = "black", linewidth = 3)
@@ -410,8 +410,8 @@ if __name__ == "__main__":
     
     Dit={}
     time_steps = 31
-    for i in range(31):
-        for j in range(No_of_particles):
+    for i in tqdm(range(31)):
+        for j in tqdm(range(No_of_particles)):
             ### key is a tuple where i equals time step, j particle number and
             ### the third number the model id, initially unique, but later can
             ### be associated with several particles because they are resampled 
@@ -426,7 +426,7 @@ if __name__ == "__main__":
             micro_state = pd.Series.reset_index(df[(df.Step == i)]["Lockdown"],drop = True)
             micro_state_data = pd.Series.reset_index(lockdown_data2[(lockdown_data2.model_step == i)]["lockdown"],drop = True) 
             micro_validity_metric_array_pf[i,j] = np.mean(micro_state == micro_state_data)
-            print(i,j)
+            # print(i,j)
     
     def create_fanchart_PF(arr):
         x = np.arange(arr.shape[0]) + 1
@@ -585,3 +585,4 @@ if __name__ == "__main__":
     ax1.set_xlabel("Day of March")
     ax1.set_ylabel("% in correct state")
     ax1.legend()
+
