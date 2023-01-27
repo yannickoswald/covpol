@@ -11,6 +11,7 @@ modified and created by: Yannick Oswald
 ### import necessary libraries
 import copy as copy
 import math as math
+import logging
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 import numpy as np
@@ -20,9 +21,15 @@ from tqdm import tqdm
 from model_class import CountryModel
 from particle_filter_class_parallelized import ParticleFilter
 
+logging.basicConfig(format="[%(asctime)s] %(message)s",
+                    datefmt="%y/%m/%d %H:%M:%S",
+                    level=logging.INFO)
 #%% READ DATA
 ### read country/agent data
 #os.chdir("..")
+
+logging.info("Reading data")
+
 with open('../data/agent_data_v2.csv') as f:
     agent_data = pd.read_csv(f, encoding='unicode_escape')
 
@@ -40,6 +47,8 @@ with open('../data/lockdown_tracking.csv') as f:
     lockdown_data2 = pd.read_csv(f, encoding='unicode_escape')
 
 no_of_iterations = 100
+m = "Model" if no_of_iterations == 1 else "Models"
+logging.info(f"Running {no_of_iterations} {m}")
 for j in tqdm(range(no_of_iterations)):
     ### call the model iteration
     ##4th parameter initial conditions can be real, no countries yet or random
@@ -86,6 +95,7 @@ for j in tqdm(range(no_of_iterations)):
 ### plot #1 number of lockdowns over time steps
 
 ###plotting takes too long if too many runs 
+logging.info("Making plot 1: Number of lockdowns over time steps")
 if no_of_iterations <= 200:
 
     fig1, ax1 = plt.subplots(figsize=(6, 5))
@@ -108,6 +118,8 @@ if no_of_iterations <= 200:
 ### plot #1.1 distribution of runs at every time step
 ### is the distribution of the model estimate normal or not?
 ### df_results_filtered
+logging.info("Making plot 1.1: Distribution of runs at every time step")
+
 df_results_filtered = df_results[(df_results.AgentID == 9)]
 
 array_run_results = np.zeros((no_of_iterations, 31))
@@ -136,6 +148,8 @@ if no_of_iterations >= 10 and no_of_iterations <= 50:
 ### plot #2 average minimum_difference (should decay over time)
 ### because more countries adopt a lockdown so for each country more and more similar countries
 ### serve as a benchmark
+
+logging.info("Making plot 2: Average minimum distance")
 
 if no_of_iterations <= 200:
 
@@ -168,6 +182,8 @@ if no_of_iterations <= 200:
 ### if number is positive it is too late
 ### if negative, it is too early predicted
 
+logging.info("Making plot 3: Micro-validity")
+
 micro_validity_BIG = np.zeros((no_of_iterations, 164))
 if no_of_iterations <= 50:
     fig3, ax3 = plt.subplots(figsize=(12, 6))
@@ -193,6 +209,8 @@ if no_of_iterations <= 50:
     #plt.show()
 
 ### plot #3 NEW BETTER VERSION
+
+logging.info("Making plot 3+: Micro-validity improved")
 
 df_differences_per_country = pd.DataFrame(data=micro_validity_BIG.T,
                                           index=agent_data.code,
@@ -246,6 +264,8 @@ if no_of_iterations < 50:
 # THIS --> https://stackoverflow.com/questions/66146705/creating-a-fanchart-from-a-series-of-monte-carlo-projections-in-python
 
 
+logging.info("Making plot 4: Fan chart of model runs")
+
 def create_fanchart(arr):
     x = np.arange(arr.shape[0]) + 1
     # for the median use `np.median` and change the legend below
@@ -290,6 +310,8 @@ std_model_run_percentage = np.std(array_run_results/164, axis=0)
 ### test whether dataframes are in the exact same order
 ## test = df_results[(df_results.iteration == i) & (df_results.Step == j)]["code"]
 ### == pd.Series.reset_index(lockdown_data2[(lockdown_data2.model_step == j)]["Code"], drop=True)
+
+logging.info("Making plot 5: Micro-validity over time")
 
 micro_validity_metric_array = np.zeros((31, no_of_iterations))
 
@@ -347,6 +369,8 @@ plt.savefig('fanchart_2_micro_validity.png', bbox_inches='tight', dpi=300)
 ### joint figure fan charts #########################################
 ##################################################################################
 #########################################
+
+logging.info("Making joint fan chart figures")
 
 fig1, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4))
 
@@ -407,6 +431,7 @@ plt.savefig('fig4.png', bbox_inches='tight', dpi=300)
 #non_adopters = df_results[(df_results.iteration == 0) & (df_results.Step == 30) & (df_results.Lockdown == 0)]
 
 #%% RUN PARTICLE FILTER EXPERIMENTS
+logging.info("Setting up Particle Filter")
 pf_parameters = {
     "da_window": 5,
     "da_instances": 30/5,
@@ -422,11 +447,14 @@ model_parameters = {
 }
 
 current_PF = ParticleFilter(CountryModel, model_parameters, pf_parameters)
+
+logging.info("Running Particle Filter (PF)")
 current_PF.run_particle_filter()
 
 #%% PLOTTING PARTICLE FILTER RESULTS
 
 ### TO DO verify whether pf works correctly
+logging.info("Processing PF results")
 No_of_particles = pf_parameters['No_of_particles']
 da_window = pf_parameters['No_of_particles']
 results_pf = np.zeros((31, No_of_particles))
@@ -481,12 +509,14 @@ def create_fanchart_PF(arr):
     ax.margins(x=0)
     return fig, ax
 
+logging.info("Making PF fan-chart")
 create_fanchart_PF(results_pf/Num_agents*100)
 plt.savefig('fanchart_1_macro_validity_PF.png',
             bbox_inches='tight', dpi=300)
 plt.show()
 
 ##### PLOT mean squared error per time step. pf results vs no pf results
+logging.info("Making comparison of PF vs. non-PF chart")
 results_pf_percent = results_pf/164
 square_diffs_pf = np.zeros((31, No_of_particles))
 for i in range(No_of_particles):
@@ -557,6 +587,8 @@ plt.show()
 ##################################################################################
 #########################################
 
+logging.info("Making PF join figures")
+
 fig2, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4))
 
 arr = results_pf/Num_agents*100
@@ -610,6 +642,8 @@ plt.savefig('fig5.png', bbox_inches='tight', dpi=300)
 #%% a few more data visuals for exploration of the model and sup mat.
 
 ##### microvalidity pf vs. no pf as a chart of the mean lines
+logging.info("Making micro-validity chart: PF vs. non-PF")
+
 fig3, ax1 = plt.subplots(figsize=(5.5, 5))
 arr1 = micro_validity_metric_array*100
 arr2 = micro_validity_metric_array_pf*100
