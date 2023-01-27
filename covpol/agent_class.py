@@ -265,5 +265,6 @@ class CountryAgent(mesa.Agent):
        nudge_final = a*np.exp(b)    
        self.own_thre = self.own_thre + nudge_final
     
+    @classmethod
     def reset(cls):
-        CountryAgent.instances = []
+        cls.instances = []
