@@ -464,8 +464,8 @@ if __name__ == "__main__":
 
     Dit = {}
     time_steps = 31
-    for i in tqdm(range(31)):
-        for j in tqdm(range(No_of_particles)):
+    for i in tqdm(range(31), position=0):
+        for j in tqdm(range(No_of_particles), position=1, leave=False):
             ### key is a tuple where i equals time step, j particle number and
             ### the third number the model id, initially unique, but later can
             ### be associated with several particles because they are resampled
