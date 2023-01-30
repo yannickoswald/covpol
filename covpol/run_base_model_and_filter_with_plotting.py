@@ -43,6 +43,7 @@ from model_class import CountryModel
 from particle_filter_class_parallelized import ParticleFilter
 from run_base_model_opt import model_run
 from multiprocessing import Pool
+import multiprocessing
 
 
     
@@ -53,7 +54,7 @@ with open('../data/agent_data_v2.csv') as f:
     agent_data = pd.read_csv(f, encoding = 'unicode_escape')
 
 
-Num_agents = len(agent_data)
+num_agents = len(agent_data)
 agent_data["gdp_pc"] = pd.to_numeric(agent_data["gdp_pc"])
 
 ##### Read data for calibration
@@ -133,7 +134,7 @@ if no_of_iterations <= 200:
     
     for i in range(no_of_iterations):
         ax1.plot( df_results[(df_results.iteration == i) & (df_results.AgentID == 0)]["Step"] + 1,
-                  np.sum(np.split(np.array(df_results[(df_results.iteration == i)]["Lockdown"]),31),axis=1) / Num_agents * 100, alpha = 0.5)
+                  np.sum(np.split(np.array(df_results[(df_results.iteration == i)]["Lockdown"]),31),axis=1) / num_agents * 100, alpha = 0.5)
     ax1.plot(df_results[(df_results.iteration == i) & (df_results.AgentID == 0)]["Step"] + 1, 
              lockdown_data1[0]*100,
              linewidth=3 ,label = "data")
@@ -211,7 +212,7 @@ if no_of_iterations <= 200:
 micro_validity_BIG = np.zeros((no_of_iterations,164))
 if no_of_iterations <= 50:
     fig3, ax3 = plt.subplots(figsize=(12, 6))
-    for i in range(Num_agents):  
+    for i in range(num_agents):  
             model_lockdown_data = df_results[(df_results.code == agent_data["code"][i]) & (df_results.Lockdown == 1)]
             real_world_lockdown_date = lockdown_data2[(lockdown_data2.Code ==  agent_data["code"][i]) & (lockdown_data2.lockdown == 1)]
             for p in range(no_of_iterations):
@@ -307,7 +308,7 @@ def create_fanchart(arr):
     ax.margins(x=0)
     return fig, ax
 
-create_fanchart(array_run_results.T/Num_agents*100)
+create_fanchart(array_run_results.T/num_agents*100)
 plt.savefig('fanchart_1_macro_validity.png', bbox_inches='tight', dpi=300)
 #plt.show()
 
@@ -390,7 +391,7 @@ plt.savefig('fanchart_2_micro_validity.png', bbox_inches='tight', dpi=300)
 
 fig1, (ax1,ax2) = plt.subplots(1,2, figsize = (10,4))
 
-arr = array_run_results.T/Num_agents*100
+arr = array_run_results.T/num_agents*100
 x = np.arange(arr.shape[0]) + 1
 # for the median use `np.median` and change the legend below
 mean = np.mean(arr, axis=1)
@@ -522,7 +523,7 @@ if __name__ == "__main__":
         ax.margins(x=0)
         return fig, ax
     
-    create_fanchart_PF(results_pf/Num_agents*100)
+    create_fanchart_PF(results_pf/num_agents*100)
     plt.savefig('fanchart_1_macro_validity_PF.png', bbox_inches='tight', dpi=300)
     plt.show()
     
@@ -605,7 +606,7 @@ if __name__ == "__main__":
     
     fig2, (ax1,ax2) = plt.subplots(1,2, figsize = (10,4))
     
-    arr = results_pf/Num_agents*100
+    arr = results_pf/num_agents*100
     x = np.arange(arr.shape[0]) + 1
     # for the median use `np.median` and change the legend below
     mean = np.mean(arr, axis=1)
