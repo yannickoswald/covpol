@@ -20,7 +20,7 @@ conda activate cov-pol
 
 To reproduce the full body of work, take the following steps:
 
-1. Run the jupyter `notebook run_base_model_and_filter_with_plotting_jupyter.ipynb`.
+1. Run the script file `run_base_model_and_filter_with_plotting.py`.
    This reproduces a substantial amount of the above paper including Figure 2, 4 and 5.
    To reproduce Figure 4 exactly, the notebook has to take the parameter `no_of_iterations = 100`.
    To reproduce Figure 5 exactly, the notebeook has to take the parameter `no_of_iterations = 1000`.
