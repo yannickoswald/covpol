@@ -7,6 +7,7 @@ modified and created by: Yannick Oswald
 
 ### IN ORDER TO REPRODUCE FIGURE 4 RUN THIS SCRIPT WITH no_of_iterations = 100
 ### IN ORDER TO REPRODUCE FIGURE 5 RUN THIS SCRIPT WITH no_of_iterations = 1000
+no_of_iterations = 100
 
 ### import necessary libraries
 import copy as copy
@@ -48,7 +49,6 @@ if __name__ == "__main__":
     with open('../data/lockdown_tracking.csv') as f:
         lockdown_data2 = pd.read_csv(f, encoding='unicode_escape')
 
-    no_of_iterations = 100
     m = "Model" if no_of_iterations == 1 else "Models"
     logging.info(f"Running {no_of_iterations} {m}")
     for j in tqdm(range(no_of_iterations)):
