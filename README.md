@@ -5,7 +5,7 @@ This repository is for the publication
 Oswald, Malleson, Suchak (2023). An agent-based model of the 2020 international policy 
 diffusion in response to the COVID-19 pandemic with particle filter 
 
-available as *preprint* at https://arxiv.org/list/cs.MA/recent
+available as *preprint* at https://arxiv.org/abs/2302.11277
 
 This work has been implemented using the Python Anaconda distribution and the agent-based model package MESA in particular.
 It is provided with a `.yml` file specifying a conda environment which contains the required packages.
