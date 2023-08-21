@@ -36,6 +36,7 @@ from model_class import CountryModel
 from particle_filter_class import ParticleFilter
 from run_base_model_opt import model_run
 from multiprocessing import Pool
+import multiprocessing
 
 #work laptop path
 #os.chdir("C:/Users/earyo/Dropbox/Arbeit/postdoc_leeds/ABM_python_first_steps/implement_own_covid_policy_model")
@@ -63,7 +64,8 @@ if __name__ == '__main__':
     start = dt.now()
 
     # Create a multiprocessing Pool
-    number_of_processors = 8
+    
+    number_of_processors = multiprocessing.cpu_count()
     number_of_runs = 100
     lockdown_data1_list = [lockdown_data1]*number_of_runs
     lockdown_data2_list = [lockdown_data2]*number_of_runs

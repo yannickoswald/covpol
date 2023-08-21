@@ -22,6 +22,13 @@ from tqdm import tqdm
 from model_class import CountryModel
 from particle_filter_class_parallelized import ParticleFilter
 
+from run_base_model_opt import model_run
+from multiprocessing import Pool
+import multiprocessing
+
+=======
+
+
 logging.basicConfig(format="[%(asctime)s] %(message)s",
                     datefmt="%y/%m/%d %H:%M:%S",
                     level=logging.INFO)
@@ -31,7 +38,12 @@ logging.basicConfig(format="[%(asctime)s] %(message)s",
 
 if __name__ == "__main__":
 
-    logging.info("Reading data")
+
+num_agents = len(agent_data)
+agent_data["gdp_pc"] = pd.to_numeric(agent_data["gdp_pc"])
+=======
+logging.info("Reading data")
+
 
     with open('../data/agent_data_v2.csv') as f:
         agent_data = pd.read_csv(f, encoding='unicode_escape')
@@ -89,10 +101,24 @@ if __name__ == "__main__":
 
     #df_initial_conditions_countries = pd.DataFrame(columns = df_results.columns)
 
+
+#%% Compute and save distance matrix of countries 
+matrix_d = np.zeros((164,164))
+
+for i in range(164):
+    matrix_d[i,:] = model.schedule.agents[i].all_distances
+
+plt.hist(matrix_d.flatten(), bins= 20)
+plt.xlabel("distance measure")
+plt.ylabel("frequency")
+
+#%% PLOTTING
+=======
     #for i in range(no_of_iterations):
       #        df_initial_conditions_countries = pd.concat([df_initial_conditions_countries, 
        #                                                    df_results[(df_results.iteration == i) & (df_results.Step == 0) & (df_results.Lockdown == 1)]],
         #                                                   ignore_index=True)
+
 
     ### plot #1 number of lockdowns over time steps
 
@@ -102,6 +128,47 @@ if __name__ == "__main__":
 
         fig1, ax1 = plt.subplots(figsize=(6, 5))
 
+
+#for i in range(no_of_iterations):
+  #        df_initial_conditions_countries = pd.concat([df_initial_conditions_countries, 
+   #                                                    df_results[(df_results.iteration == i) & (df_results.Step == 0) & (df_results.Lockdown == 1)]],
+    #                                                   ignore_index=True)
+
+### plot #1 number of lockdowns over time steps
+
+###plotting takes too long if too many runs 
+if no_of_iterations <= 200:
+
+    fig1, ax1 = plt.subplots(figsize = (6,5))
+    
+    for i in range(no_of_iterations):
+        ax1.plot( df_results[(df_results.iteration == i) & (df_results.AgentID == 0)]["Step"] + 1,
+                  np.sum(np.split(np.array(df_results[(df_results.iteration == i)]["Lockdown"]),31),axis=1) / num_agents * 100, alpha = 0.5)
+    ax1.plot(df_results[(df_results.iteration == i) & (df_results.AgentID == 0)]["Step"] + 1, 
+             lockdown_data1[0]*100,
+             linewidth=3 ,label = "data")
+    ax1.set_xlabel("Day of March 2020")
+    ax1.set_ylabel("% of countries in lockdown")
+    ax1.legend(frameon=False)
+    ax1.text(23, 20, "Clique size: " + str(model.clique_size))
+    ax1.text(23, 15, "Base alert: " + str(model.base_alert))
+    ax1.text(23, 10, "Social alert: " + str(model.social_base_threshold))
+    ax1.text(21, 5, "Initial conditions " + str(model.initial_conditions))
+    #plt.show()
+
+
+
+### plot #1.1 distribution of runs at every time step
+### is the distribution of the model estimate normal or not?
+### df_results_filtered
+df_results_filtered = df_results[(df_results.AgentID == 9)]
+
+
+array_run_results = np.zeros((no_of_iterations,31))
+for i in range(no_of_iterations):
+    array_run_results[i,:] = np.sum(np.split(np.array(df_results[(df_results.iteration == i)]["Lockdown"]),31),axis=1)
+    print("array run results making is at ", i)
+=======
         for i in range(no_of_iterations):
             ax1.plot(df_results[(df_results.iteration == i) & (df_results.AgentID == 0)]["Step"] + 1,
                      np.sum(np.split(np.array(df_results[(df_results.iteration == i)]["Lockdown"]), 31), axis=1) / Num_agents * 100, alpha=0.5)
@@ -135,6 +202,7 @@ if __name__ == "__main__":
 
         fig = plt.figure(figsize=(12, 12), constrained_layout=True)
         spec = fig.add_gridspec(ncols=6, nrows=6)
+
 
         for i in range(31):
             globals()['ax11%s' % i] = fig.add_subplot(spec[math.floor(i/6), i % 6])
@@ -313,7 +381,30 @@ if __name__ == "__main__":
     ## test = df_results[(df_results.iteration == i) & (df_results.Step == j)]["code"]
     ### == pd.Series.reset_index(lockdown_data2[(lockdown_data2.model_step == j)]["Code"], drop=True)
 
+
+micro_validity_BIG = np.zeros((no_of_iterations,164))
+if no_of_iterations <= 50:
+    fig3, ax3 = plt.subplots(figsize=(12, 6))
+    for i in range(num_agents):  
+            model_lockdown_data = df_results[(df_results.code == agent_data["code"][i]) & (df_results.Lockdown == 1)]
+            real_world_lockdown_date = lockdown_data2[(lockdown_data2.Code ==  agent_data["code"][i]) & (lockdown_data2.lockdown == 1)]
+            for p in range(no_of_iterations):
+                model_lockdown_data2 = model_lockdown_data[(model_lockdown_data.iteration == p)]["Step"]
+                if len(model_lockdown_data2) > 0 and len(real_world_lockdown_date) > 0:
+                    difference = model_lockdown_data2.iloc[0] - (int(real_world_lockdown_date.iloc[0]["Day"][0:2])-1)
+                    micro_validity_BIG[p,i] = difference 
+                    ax3.scatter(i,difference, color = "tab:blue", alpha = 0.2)
+            print("iteration of micro-level-plot is " + str(i))
+    ax3.set_ylabel("diff. in days")   
+    ax3.set_xlabel("country index")  
+    ax3.plot([0,164],[0,0], color = "black", linewidth = 3)
+    ax3.margins(0)
+    plt.savefig('Micro_validity_1.png', bbox_inches='tight', dpi=300)
+    #plt.show()
+
+=======
     logging.info("Making plot 5: Micro-validity over time")
+
 
     micro_validity_metric_array = np.zeros((31, no_of_iterations))
 
@@ -380,6 +471,75 @@ if __name__ == "__main__":
     x = np.arange(arr.shape[0]) + 1
     # for the median use `np.median` and change the legend below
     mean = np.mean(arr, axis=1)
+
+    offsets = (25,67/2,47.5)
+    fig, ax = plt.subplots()
+    ax.plot(x, mean, color='black', lw=3)
+    for offset in offsets:
+        low = np.percentile(arr, 50-offset, axis=1)
+        high = np.percentile(arr, 50+offset, axis=1)
+        # since `offset` will never be bigger than 50, do 55-offset so that
+        # even for the whole range of the graph the fanchart is visible
+        alpha = (55 - offset) / 100
+        ax.fill_between(x, low, high, color='tab:blue', alpha=alpha)
+    
+    ax.plot(df_results[(df_results.iteration == 0) & (df_results.AgentID == 0)]["Step"] +1, 
+             lockdown_data1[0]*100,
+             linewidth=3 ,label = "data", linestyle= "--", color = "tab:red")
+    
+    ax.set_xlabel("Day of March")
+    ax.set_ylabel("% of countries in lockdown")
+    ax.legend(['Mean'] + [f'Pct{int(2*o)}' for o in offsets] + ['data'], frameon = False)
+    ax.margins(x=0)
+    return fig, ax
+
+create_fanchart(array_run_results.T/num_agents*100)
+plt.savefig('fanchart_1_macro_validity.png', bbox_inches='tight', dpi=300)
+#plt.show()
+
+
+#4.1 report least squares of mean to data and variance per time step 
+## (both metrics need to minimized)
+mean_model_runs = np.mean(array_run_results, axis = 0)
+variance_model_runs = np.var(array_run_results, axis = 0)
+std_model_run = np.std(array_run_results, axis = 0)
+std_model_run_percentage = np.std(array_run_results/164, axis = 0)
+
+### plot #5 micro validity over time as a function of how many countries are in their
+### correct lockdown state (lockdown yes or no)
+
+### test whether dataframes are in the exact same order
+## test = df_results[(df_results.iteration == i) & (df_results.Step == j)]["code"] 
+### == pd.Series.reset_index(lockdown_data2[(lockdown_data2.model_step == j)]["Code"], drop=True)
+
+micro_validity_metric_array = np.zeros((31,no_of_iterations))
+   
+for i in range(no_of_iterations):
+    
+  alpha = pd.Series.reset_index(df_results[(df_results.iteration == i) ]["Lockdown"], drop = True) 
+  beta =  pd.Series.reset_index(lockdown_data2.sort_values(['model_step', 'Entity'])["lockdown"],drop = True)          
+  micro_validity_metric_array[:,i] = np.mean(np.array_split(np.array(alpha == beta),31),axis = 1)
+
+
+
+
+##### this is the real mean_squared_error_macro_level
+#mean_squared_error_macro_level = np.mean(np.square(array_run_results/164 - lockdown_data1[0].to_numpy()), axis = 0)
+
+
+#correlation_model_mean_data = np.corrcoef(mean_model_runs,lockdown_data1[0].to_numpy())
+#squared_error_macro_level = ((mean_model_runs/164 - lockdown_data1[0].to_numpy())**2)*100
+#plt.scatter(np.log(np.var(micro_validity_metric_array, axis =1 )), np.log(squared_error_macro_level))
+#plt.xlabel("log(micro_validity_metric_variance)")
+#plt.ylabel("log(squared_error_macro_level)")
+#plt.title("Predicting the accuracy of the model macro level from micro pattern")
+#mean_over_time_error_macro_level = np.mean(squared_error_macro_level)
+
+
+
+mean_at_t_15 = mean_model_runs[15]/164
+datapoints_at_t_15 = array_run_results[:,15]/164
+=======
     original_mean = copy.deepcopy(mean)
     CI_original_lines = np.zeros((6, len(arr)))
     offsets = (25, 67/2, 47.5)
@@ -393,6 +553,7 @@ if __name__ == "__main__":
        ax1.fill_between(x, low, high, color='tab:blue', alpha=alpha)
        CI_original_lines[2*idx, :] = copy.deepcopy(high)
        CI_original_lines[2*idx + 1, :] = copy.deepcopy(low)
+
 
     ax1.plot(df_results[(df_results.iteration == 0) & (df_results.AgentID == 0)]["Step"] + 1,
              lockdown_data1[0]*100,
@@ -413,6 +574,72 @@ if __name__ == "__main__":
     offsets = (25, 67/2, 47.5)
     ax2.plot(x, mean, color='black', lw=3)
     for offset in offsets:
+
+        low = np.percentile(arr, 50-offset, axis=1)
+        high = np.percentile(arr, 50+offset, axis=1)
+        # since `offset` will never be bigger than 50, do 55-offset so that
+        # even for the whole range of the graph the fanchart is visible
+        alpha = (55 - offset) / 100
+        ax.fill_between(x, low, high, color='tab:red', alpha=alpha)
+        ax.set_xlabel("Day of March")
+        ax.set_ylabel("% of countries in correct state")
+        ax.legend(['Mean'] + [f'Pct{int(2*o)}' for o in offsets] + ['data'], frameon = False)
+    ax.margins(x=0)
+    return fig, ax
+
+
+create_fanchart_2(micro_validity_metric_array*100)
+plt.savefig('fanchart_2_micro_validity.png', bbox_inches='tight', dpi=300)
+#plt.show()
+
+#########################################
+##################################################################################
+### joint figure fan charts #########################################
+##################################################################################
+#########################################
+
+
+fig1, (ax1,ax2) = plt.subplots(1,2, figsize = (10,4))
+
+arr = array_run_results.T/num_agents*100
+x = np.arange(arr.shape[0]) + 1
+# for the median use `np.median` and change the legend below
+mean = np.mean(arr, axis=1)
+original_mean = copy.deepcopy(mean)
+CI_original_lines = np.zeros((6,len(arr)))
+offsets = (25,67/2,47.5)
+ax1.plot(x, mean, color='black', lw=3)
+for idx, offset in enumerate(offsets):
+   low = np.percentile(arr, 50-offset, axis=1)
+   high = np.percentile(arr, 50+offset, axis=1)
+        # since `offset` will never be bigger than 50, do 55-offset so that
+        # even for the whole range of the graph the fanchart is visible
+   alpha = (55 - offset) / 100
+   ax1.fill_between(x, low, high, color='tab:blue', alpha=alpha)
+   CI_original_lines[2*idx,:]= copy.deepcopy(high) 
+   CI_original_lines[2*idx + 1,:]= copy.deepcopy(low) 
+    
+ax1.plot(df_results[(df_results.iteration == 0) & (df_results.AgentID == 0)]["Step"] +1, 
+             lockdown_data1[0]*100,
+             linewidth=3 ,label = "data", linestyle= "--", color = "tab:red")
+    
+ax1.set_xlabel("Day of March")
+ax1.set_ylabel("% of countries in lockdown")
+ax1.legend(['Mean'] + [f'Pct{int(2*o)}' for o in offsets] + ['data'], frameon = False)
+ax1.margins(x=0)
+ax1.text(0, 110, 'a', fontsize=12)
+ax1.text(23, 30, f'N = {no_of_iterations}', fontsize=12)
+
+
+arr2 = micro_validity_metric_array*100
+x = np.arange(arr.shape[0])+1
+    # for the median use `np.median` and change the legend below
+mean = np.mean(arr2, axis=1)
+offsets = (25,67/2,47.5)
+ax2.plot(x, mean, color='black', lw=3)
+for offset in offsets:
+=======
+
         low = np.percentile(arr2, 50-offset, axis=1)
         high = np.percentile(arr2, 50+offset, axis=1)
         # since `offset` will never be bigger than 50, do 55-offset so that
@@ -511,10 +738,16 @@ if __name__ == "__main__":
         ax.margins(x=0)
         return fig, ax
 
+    
+    create_fanchart_PF(results_pf/num_agents*100)
+    plt.savefig('fanchart_1_macro_validity_PF.png', bbox_inches='tight', dpi=300)
+=======
+
     logging.info("Making PF fan-chart")
     create_fanchart_PF(results_pf/Num_agents*100)
     plt.savefig('fanchart_1_macro_validity_PF.png',
                 bbox_inches='tight', dpi=300)
+
     plt.show()
 
     ##### PLOT mean squared error per time step. pf results vs no pf results
@@ -589,11 +822,18 @@ if __name__ == "__main__":
     ##################################################################################
     #########################################
 
+    
+    fig2, (ax1,ax2) = plt.subplots(1,2, figsize = (10,4))
+    
+    arr = results_pf/num_agents*100
+=======
+
     logging.info("Making PF join figures")
 
     fig2, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4))
 
     arr = results_pf/Num_agents*100
+
     x = np.arange(arr.shape[0]) + 1
     # for the median use `np.median` and change the legend below
     mean = np.mean(arr, axis=1)

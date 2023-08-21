@@ -138,6 +138,7 @@ class CountryAgent(mesa.Agent):
        self.state = init_state
        if self.social_thre <= 0.001:
               self.social_thre  = 0.01
+       self.all_distances = None 
               
        #### define a few constants defining the range
        #### of variables across agent and important 
@@ -193,7 +194,22 @@ class CountryAgent(mesa.Agent):
         ...
 
        '''
-        
+       
+       '''
+       y1 = self.income
+       y2 = self.politicalregime
+       y3_1 = self.latitude
+       y3_2 = self.longitude
+       
+       
+       self.all_distances = np.array(
+           [  1/3 * abs(y1 - x.income) / self.range_income 
+            + 1/3 * abs(y2 - x.politicalregime) / self.range_politicalregime
+            + 1/3 * (self.geo_distance(y3_1, x.latitude,
+                                  y3_2, x.longitude) / self.max_distance_on_earth)
+             for x in self.model.schedule.agents]
+              )
+       '''
        ### execute the following steps only if not implemented a lockdown yet
        if self.state == 0:
            
@@ -221,6 +237,10 @@ class CountryAgent(mesa.Agent):
            ### and computes how similar all of them (by taking the average) to onself are
            self.minimum_difference = np.mean(total_differences_array[0:self.clique_size])
            
+           
+           
+          
+               
            
        else:
              pass
