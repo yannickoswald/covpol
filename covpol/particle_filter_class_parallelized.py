@@ -26,6 +26,9 @@ from random import sample
 ### colormaps import
 import matplotlib.cm
 
+import logging
+from tqdm import tqdm
+
 ### for explanation of pathos multiprocessing
 #### https://stackoverflow.com/questions/8804830/python-multiprocessing-picklingerror-cant-pickle-type-function
 #### https://edbennett.github.io/high-performance-python/08-pathos/index.html
@@ -221,10 +224,11 @@ class ParticleFilter():
         list_of_lists_particles = []
         list_of_lists_weights = []
 
-        print(list_of_particles)
+        # print(list_of_particles)
+        logging.debug(list_of_particles)
         with Pool() as pool:
             ### i here for time steps in the model, the month of March 2020
-            for i in range(31):          
+            for i in tqdm(range(31)):
                      
                     ## step particles forward in time
                     #for x in list_of_particles:
@@ -246,7 +250,7 @@ class ParticleFilter():
                             
                         list_of_lists_particles.append(list_of_particles)   
                         
-                        print("Particle filter is at time step ", i)
+                        # print("Particle filter is at time step ", i)
     
         self.part_filtered_all = list_of_lists_particles
         self.weights = list_of_lists_weights
