@@ -111,6 +111,16 @@ print("running time was " + str(running_secs) + " sec")
 
 #print(model.schedule.agents)
 
+#%% Compute and save distance matrix of countries 
+matrix_d = np.zeros((164,164))
+
+for i in range(164):
+    matrix_d[i,:] = model.schedule.agents[i].all_distances
+
+plt.hist(matrix_d.flatten(), bins= 20)
+plt.xlabel("distance measure")
+plt.ylabel("frequency")
+
 #%% PLOTTING
 
 

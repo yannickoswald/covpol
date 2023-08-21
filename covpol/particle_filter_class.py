@@ -68,9 +68,9 @@ class ParticleFilter():
        
        PARAMETERS
         - ModelClass:              The model class is set to CountryModel
-        - No_of_particles          The number of particles used to simulate the model
+        - No_of_particles:         The number of particles used to simulate the model
         - da_window:               The number of days between filtering steps
-        - da_instances   :         The number of times that filtering is undertaken
+        - da_instances:            The number of times that filtering is undertaken
 
        '''
        
@@ -138,6 +138,7 @@ class ParticleFilter():
         data4 = pd.Series.reset_index(data3["Lockdown"], drop = True)
         data5 = lockdown_data2[(lockdown_data2.model_step == t)]["lockdown"]
         data6 = pd.Series.reset_index(data5, drop = True)
+        ### here compare ultimately model microstate (data4) with obs. (data6)
         particle_validity = np.mean(data4 == data6)
         return particle_validity
     
